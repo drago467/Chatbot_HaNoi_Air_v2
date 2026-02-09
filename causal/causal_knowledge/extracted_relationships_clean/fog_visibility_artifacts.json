@@ -1,0 +1,843 @@
+{
+  "schema_version": "canonical_v1",
+  "metadata": {
+    "task_id": "edge_case_fog_visibility_pm25",
+    "created_at": "2026-01-23T08:15:00+07:00",
+    "cleaned_at": "2026-02-04T12:00:00+07:00",
+    "version": "2.0",
+    "description": "Causal relationships extracted from scientific literature about edge cases related to fog, visibility, and measurement artifacts in PM2.5 monitoring - CLEANED & NORMALIZED"
+  },
+  "categories": ["measurement_artifact", "accelerated_chemistry", "photochemical_formation", "positive_feedback"],
+  "source_count": 8,
+  "relationship_count_raw": 12,
+  "relationship_count_valid": 12,
+  "bibliography": [
+    {
+      "source_id": "C001",
+      "source_title": "Effects of Gas and Steam Humidity on Particulate Matter Measurements Obtained Using Light-Scattering Sensors",
+      "source_authors": "Kim, H., Kim, J., Roh, S.",
+      "source_year": "2023",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10347098/",
+      "source_doi": "10.3390/s23136199",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Steam humidity (fog) causes errors in PM measurement via light-scattering method, while gaseous humidity does not"
+    },
+    {
+      "source_id": "C002",
+      "source_title": "The influence of humidity on the performance of a low-cost air particle mass sensor and the effect of atmospheric fog",
+      "source_authors": "Jayaratne, R., Liu, X., Thai, P., Dunbabin, M., Morawska, L.",
+      "source_year": "2018",
+      "source_url": "https://amt.copernicus.org/articles/11/4883/2018/",
+      "source_doi": "10.5194/amt-11-4883-2018",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Sensor overestimation increases by factor of 2-3 at RH > 85% due to hygroscopic particle growth"
+    },
+    {
+      "source_id": "C003",
+      "source_title": "Important Role of Low Cloud and Fog in Sulfate Aerosol Formation During Winter Haze Over the North China Plain",
+      "source_authors": "Cai, S., Liu, T., Huang, X., Song, Y., Wang, T., Sun, Z., Gao, J., Ding, A.",
+      "source_year": "2024",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106597",
+      "source_doi": "10.1029/2023GL106597",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "High sulfur oxidation ratios (>0.6) under heavily polluted conditions are associated with low clouds and fog"
+    },
+    {
+      "source_id": "C004",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Wang, J., Li, J., Ye, J., Zhao, J., Wu, Y., Hu, J., Liu, D., Nie, D., Shen, F., Huang, X., et al.",
+      "source_year": "2020",
+      "source_url": "https://www.nature.com/articles/s41467-020-16683-x",
+      "source_doi": "10.1038/s41467-020-16683-x",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Fog and cloud with high pH (>5.5) enable fast aqueous-phase oxidation of SO2 by NO2"
+    },
+    {
+      "source_id": "C005",
+      "source_title": "Particle phase state and aerosol liquid water greatly impact secondary aerosol formation: insights into phase transition and its role in haze events",
+      "source_authors": "Meng, X., Wu, Z., Chen, J., Qiu, Y., Zong, T., Song, M., Lee, J., Hu, M.",
+      "source_year": "2024",
+      "source_url": "https://acp.copernicus.org/articles/24/2399/2024/",
+      "source_doi": "10.5194/acp-24-2399-2024",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Sulfate and nitrate transformation rates increase by 48% and 11% respectively during phase transition"
+    },
+    {
+      "source_id": "C006",
+      "source_title": "Reactive nitrogen chemistry in aerosol water as a source of sulfate during haze events in China",
+      "source_authors": "Cheng, Y., Zheng, G., Wei, C., Mu, Q., Zheng, B., Wang, Z., Gao, M., Zhang, Q., He, K., Carmichael, G., Pöschl, U., Su, H.",
+      "source_year": "2016",
+      "source_url": "https://www.science.org/doi/10.1126/sciadv.1601530",
+      "source_doi": "10.1126/sciadv.1601530",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Synergistic effect between NOx and SO2 in aqueous phase explains rapid sulfate formation during severe haze"
+    },
+    {
+      "source_id": "C007",
+      "source_title": "Tracing the Formation of Secondary Aerosols Influenced by Solar Radiation and Relative Humidity in Suburban Environment",
+      "source_authors": "Wu, Y., Liu, D., Tian, P., Sheng, J., Liu, Q., Li, R., Hu, K., Jiang, X., Li, S., Bi, K., Zhao, D., Huang, M., Ding, D., Wang, J.",
+      "source_year": "2022",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JD036913",
+      "source_doi": "10.1029/2022JD036913",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "OOA production rate reached 15.0% h⁻¹ under intense solar radiation"
+    },
+    {
+      "source_id": "C008",
+      "source_title": "Differences in fine particle chemical composition on clear and cloudy days",
+      "source_authors": "Christiansen, A.E., Carlton, A.G., Henderson, B.H.",
+      "source_year": "2020",
+      "source_url": "https://acp.copernicus.org/articles/20/11607/2020/",
+      "source_doi": "10.5194/acp-20-11607-2020",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Clear-sky PM2.5 concentrations are generally higher than cloudy with some exceptions during winter"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "edge_fog_001",
+      "original_id": "R001",
+      "category": "measurement_artifact",
+      "cause_node": "fog",
+      "effect_node": "measurement_artifact_pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Fog droplets are detected as particles by light-scattering PM sensors, causing measurement overestimation",
+      "mechanism": "Fog droplets are liquid aerosols that scatter light similarly to solid particles. Light-scattering PM sensors cannot distinguish between fog droplets and actual PM particles, leading to false positive readings.",
+      "conditions": [
+        {
+          "relationship_id": "edge_fog_001",
+          "relationship_category": "measurement_artifact",
+          "condition_index": 0,
+          "original_text": ">100% (supersaturation) or visible fog",
+          "type": "categorical",
+          "field": "fog_indicator",
+          "operator": "==",
+          "value": "present",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Fog presence required - either supersaturation or visible fog",
+            "alternative_encoding": "relative_humidity >= 100 OR visibility < 1000m"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_001",
+          "relationship_category": "measurement_artifact",
+          "condition_index": 1,
+          "original_text": "<1000m",
+          "type": "threshold",
+          "field": "visibility",
+          "operator": "<",
+          "value": 1000,
+          "checkable": true,
+          "normalized": {
+            "unit": "m",
+            "interpretation": "Low visibility indicating fog conditions"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_001",
+          "relationship_category": "measurement_artifact",
+          "condition_index": 2,
+          "original_text": "light-scattering sensors",
+          "type": "categorical",
+          "field": "sensor_type",
+          "operator": "==",
+          "value": "light_scattering",
+          "checkable": false,
+          "normalized": {
+            "issue": "sensor_type_not_in_core_fields",
+            "note": "This condition applies to sensor hardware, not environmental variables"
+          }
+        }
+      ],
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["C001"],
+      "source_quote": "The gaseous humidity did not cause errors in the PM measurements via the light-scattering method. In contrast, steam humidity, such as that caused by fog, resulted in errors in the PM measurement.",
+      "quantitative_evidence": {
+        "description": "PM concentrations increased linearly with RH below 70% in steam humidity tests",
+        "correlation_coefficients": {
+          "PM1.0": 0.767,
+          "PM2.5": 0.756,
+          "PM10": 0.740
+        }
+      },
+      "notes": "This is a measurement artifact, not actual pollution increase. Critical for data quality assessment."
+    },
+    {
+      "id": "edge_fog_002",
+      "original_id": "R002",
+      "category": "measurement_artifact",
+      "cause_node": "humidity",
+      "effect_node": "sensor_overestimation_pm25",
+      "relationship_type": "INDIRECT_CAUSE",
+      "description": "High RH causes hygroscopic particle growth, leading to sensor overestimation of PM2.5",
+      "mechanism": "At very high RH (>85%), hygroscopic particles absorb water and grow in size, increasing their light-scattering cross-section. This causes light-scattering sensors to overestimate PM mass concentrations.",
+      "conditions": [
+        {
+          "relationship_id": "edge_fog_002",
+          "relationship_category": "measurement_artifact",
+          "condition_index": 0,
+          "original_text": ">85%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 85,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "High humidity threshold for significant hygroscopic growth"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_002",
+          "relationship_category": "measurement_artifact",
+          "condition_index": 1,
+          "original_text": "high (sulfate, nitrate, sea salt)",
+          "type": "categorical",
+          "field": "particle_type",
+          "operator": "in",
+          "value": ["sulfate", "nitrate", "sea_salt"],
+          "checkable": false,
+          "normalized": {
+            "issue": "particle_composition_not_directly_checkable",
+            "note": "Requires chemical speciation data"
+          }
+        }
+      ],
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["C002"],
+      "source_quote": "The sensor showed a high sensitivity to humidity, with the measured PM2.5 mass concentration increasing by a factor of 2-3 at RH > 85%.",
+      "quantitative_evidence": {
+        "description": "Sensor overestimation increases significantly at RH > 75%",
+        "overestimation_factor": "1.5-3x at RH > 85%"
+      },
+      "notes": "Overestimation factor varies with particle hygroscopicity"
+    },
+    {
+      "id": "edge_fog_003",
+      "original_id": "R003",
+      "category": "accelerated_chemistry",
+      "cause_node": "fog",
+      "effect_node": "accelerated_aqueous_phase_reaction",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Fog provides aqueous-phase environment for rapid SO2 oxidation",
+      "mechanism": "Fog droplets provide high liquid water content (LWC) environment where SO2 dissolves and is rapidly oxidized by NO2, HONO, H2O2, and O3. The high pH (>5.5) from elevated ammonia enables fast aqueous-phase oxidation.",
+      "conditions": [
+        {
+          "relationship_id": "edge_fog_003",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 0,
+          "original_text": ">0.1 g/m³",
+          "type": "threshold",
+          "field": "aerosol_liquid_water",
+          "operator": ">",
+          "value": 0.1,
+          "checkable": true,
+          "normalized": {
+            "unit": "g/m³",
+            "interpretation": "Minimum liquid water content for aqueous-phase reactions"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_003",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 1,
+          "original_text": ">5.5",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": ">",
+          "value": 5.5,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "High pH enables fast NO2-driven SO2 oxidation pathway"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_003",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 2,
+          "original_text": ">10 ppb",
+          "type": "threshold",
+          "field": "so2_concentration",
+          "operator": ">",
+          "value": 10,
+          "checkable": true,
+          "normalized": {
+            "unit": "ppb",
+            "interpretation": "Sufficient SO2 precursor for sulfate formation"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_003",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 3,
+          "original_text": "NO2, HONO, H2O2, O3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": "==",
+          "value": "oxidants_present",
+          "checkable": false,
+          "normalized": {
+            "issue": "multiple_oxidants_not_directly_checkable",
+            "oxidants_list": ["NO2", "HONO", "H2O2", "O3"],
+            "note": "At least one oxidant must be present"
+          }
+        }
+      ],
+      "temporal_lag": "0h-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["C003", "C004"],
+      "source_quote": "Fog and cloud readily form under winter haze conditions, leading to high liquid water contents with high pH (>5.5) from elevated ammonia. Such conditions enable fast aqueous-phase oxidation of SO2 by NO2.",
+      "quantitative_evidence": {
+        "description": "Sulfate production rate in cloud water can reach 0.5-1.3 μg m⁻³ h⁻¹",
+        "sulfate_production_rate": "0.5-1.3 μg m⁻³ h⁻¹"
+      },
+      "notes": "This is actual chemistry, not measurement artifact. Produces real PM2.5 increase."
+    },
+    {
+      "id": "edge_fog_004",
+      "original_id": "R004",
+      "category": "accelerated_chemistry",
+      "cause_node": "accelerated_aqueous_phase_reaction",
+      "effect_node": "sia_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Aqueous-phase oxidation produces secondary inorganic aerosols (sulfate, nitrate)",
+      "mechanism": "Rapid aqueous-phase oxidation of SO2 produces sulfate, while similar processes convert NOx to nitrate. These secondary inorganic aerosols (SIA) contribute significantly to PM2.5 mass.",
+      "conditions": [
+        {
+          "relationship_id": "edge_fog_004",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 0,
+          "original_text": "SO2, NOx, NH3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": "==",
+          "value": "precursors_present",
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_mix_not_directly_checkable",
+            "precursors_list": ["SO2", "NOx", "NH3"],
+            "note": "All three precursors needed for complete SIA formation"
+          }
+        },
+        {
+          "relationship_id": "edge_fog_004",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 1,
+          "original_text": "fog droplets, cloud water, aerosol liquid water",
+          "type": "categorical",
+          "field": "aerosol_liquid_water",
+          "operator": ">",
+          "value": 0,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Aqueous environment required - fog, cloud, or ALW"
+          }
+        }
+      ],
+      "temporal_lag": "1h-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["C005", "C006"],
+      "source_quote": "The synergistic effect between nitrogen oxides and sulfur dioxide in the aqueous phase of aerosol particles can explain the rapid sulfate formation during severe haze events.",
+      "quantitative_evidence": {
+        "description": "Transformation rates of sulfate and nitrate aerosols increase by 48% and 11% respectively",
+        "sulfate_increase": "48%",
+        "nitrate_increase": "11%"
+      },
+      "notes": "SIA = sulfate + nitrate + ammonium"
+    },
+    {
+      "id": "edge_fog_005",
+      "original_id": "R005",
+      "category": "accelerated_chemistry",
+      "cause_node": "sia_formation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Secondary inorganic aerosols directly contribute to PM2.5 mass",
+      "mechanism": "Secondary inorganic aerosols (sulfate, nitrate, ammonium) directly contribute to PM2.5 mass. These hygroscopic species also promote further water uptake, creating positive feedback.",
+      "conditions": [
+        {
+          "relationship_id": "edge_fog_005",
+          "relationship_category": "accelerated_chemistry",
+          "condition_index": 0,
+          "original_text": ">40%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 40,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Minimum RH for hygroscopic growth contribution"
+          }
+        }
+      ],
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["C004"],
+      "source_quote": "PM2.5 concentrations rose to over 400 μg m⁻³ during the high-RH period (Stage II) in concert with a rise in sulfate.",
+      "quantitative_evidence": {
+        "description": "PM2.5 increased from 210 μg/m³ to 330 μg/m³, sulfate increased 4x",
+        "pm25_stage_I": "210 μg/m³",
+        "pm25_stage_II": "330 μg/m³",
+        "sulfate_increase": "4x (10 to 40 μg/m³)"
+      },
+      "notes": "Direct mass contribution plus positive feedback through hygroscopicity"
+    },
+    {
+      "id": "edge_photo_001",
+      "original_id": "R006",
+      "category": "photochemical_formation",
+      "cause_node": "solar_radiation",
+      "effect_node": "photochemistry",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Intense solar radiation drives photolysis reactions producing oxidants",
+      "mechanism": "Intense solar radiation (especially UV) drives photolysis reactions that produce hydroxyl radicals (OH) and other oxidants. These oxidants initiate the oxidation of volatile organic compounds (VOCs).",
+      "conditions": [
+        {
+          "relationship_id": "edge_photo_001",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 0,
+          "original_text": "high (clear sky)",
+          "type": "categorical",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 20,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Clear sky allows maximum solar radiation"
+          }
+        },
+        {
+          "relationship_id": "edge_photo_001",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 1,
+          "original_text": ">6",
+          "type": "threshold",
+          "field": "uv_index",
+          "operator": ">",
+          "value": 6,
+          "checkable": false,
+          "normalized": {
+            "issue": "uv_index_not_in_core_fields",
+            "note": "Can be proxied by solar_radiation intensity"
+          }
+        },
+        {
+          "relationship_id": "edge_photo_001",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 2,
+          "original_text": "daytime (10:00-16:00)",
+          "type": "time_range",
+          "field": "hour",
+          "range": [10, 16],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Peak solar radiation hours"
+          }
+        }
+      ],
+      "temporal_lag": "0h-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["C007"],
+      "source_quote": "At lower pollution levels, the intense solar radiation caused substantial and rapid production of OOA (O/C = 0.81) and intermediate VOCs (both in a high oxidation state) at a rate of 15.0% h⁻¹ and 14.0% h⁻¹, respectively.",
+      "quantitative_evidence": {
+        "description": "OOA production rate 15.0% h⁻¹, intermediate VOCs at 14.0% h⁻¹"
+      },
+      "notes": "Photochemistry peaks during midday hours"
+    },
+    {
+      "id": "edge_photo_002",
+      "original_id": "R007",
+      "category": "photochemical_formation",
+      "cause_node": "photochemistry",
+      "effect_node": "soa_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Photochemical oxidation of VOCs produces secondary organic aerosol",
+      "mechanism": "Photochemical oxidation of VOCs by OH radicals produces low-volatility oxidized organic compounds that partition into the particle phase, forming secondary organic aerosol (SOA).",
+      "conditions": [
+        {
+          "relationship_id": "edge_photo_002",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 0,
+          "original_text": "aromatics, terpenes, alkanes",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": "==",
+          "value": "voc_precursors_present",
+          "checkable": false,
+          "normalized": {
+            "issue": "voc_speciation_not_directly_checkable",
+            "voc_types": ["aromatics", "terpenes", "alkanes"],
+            "note": "Different VOC types produce different SOA yields"
+          }
+        },
+        {
+          "relationship_id": "edge_photo_002",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 1,
+          "original_text": "OH, O3, NO3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": "==",
+          "value": "oxidants_present",
+          "checkable": false,
+          "normalized": {
+            "issue": "oxidant_mix_not_directly_checkable",
+            "oxidants_list": ["OH", "O3", "NO3"]
+          }
+        }
+      ],
+      "temporal_lag": "2h-6h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["C007"],
+      "source_quote": "These results highlight the feedback effects between radiation and moisture in terms of altering the formation mechanism of secondary aerosols.",
+      "quantitative_evidence": {
+        "description": "Highly oxygenated OOA (O/C = 0.81) formed rapidly under strong solar radiation"
+      },
+      "notes": "SOA formation rate depends on NOx regime (VOC-limited vs NOx-limited)"
+    },
+    {
+      "id": "edge_photo_003",
+      "original_id": "R008",
+      "category": "photochemical_formation",
+      "cause_node": "cloud_cover",
+      "effect_node": "pm25",
+      "relationship_type": "INDIRECT_CAUSE",
+      "description": "Clear sky conditions lead to higher PM2.5 than cloudy conditions",
+      "mechanism": "Clear sky conditions enhance photochemistry and SOA formation. Additionally, clear sky is often associated with stagnant high-pressure systems that trap pollutants near the surface.",
+      "conditions": [
+        {
+          "relationship_id": "edge_photo_003",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 0,
+          "original_text": "<20%",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 20,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Clear sky threshold"
+          }
+        },
+        {
+          "relationship_id": "edge_photo_003",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 1,
+          "original_text": "stable (high pressure)",
+          "type": "categorical",
+          "field": "stability_index",
+          "operator": "==",
+          "value": "stable",
+          "checkable": false,
+          "normalized": {
+            "issue": "stability_requires_derived_index",
+            "note": "Can be proxied by pressure gradient or LTS"
+          }
+        },
+        {
+          "relationship_id": "edge_photo_003",
+          "relationship_category": "photochemical_formation",
+          "condition_index": 2,
+          "original_text": "low",
+          "type": "qualitative",
+          "field": "boundary_layer_height",
+          "checkable": false,
+          "normalized": {
+            "issue": "no_numeric_threshold_in_source",
+            "note": "Low PBLH traps pollutants near surface"
+          }
+        }
+      ],
+      "temporal_lag": "4h-12h",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "sources": ["C008"],
+      "source_quote": "In all regions, clear-sky PM2.5 concentrations are generally higher than cloudy with some exceptions during winter.",
+      "quantitative_evidence": {
+        "description": "Clear-sky PM2.5 generally higher than cloudy in all regions studied"
+      },
+      "notes": "Winter may show exceptions due to different chemistry pathways"
+    },
+    {
+      "id": "edge_feedback_001",
+      "original_id": "R009",
+      "category": "positive_feedback",
+      "cause_node": "humidity",
+      "effect_node": "particle_phase_transition",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "High RH triggers particle phase transition from semi-solid to liquid",
+      "mechanism": "At RH above 40-60%, particles transition from semi-solid/solid state to liquid state. This occurs when aerosol liquid water (ALW) mass fraction exceeds 15% of dry mass.",
+      "conditions": [
+        {
+          "relationship_id": "edge_feedback_001",
+          "relationship_category": "positive_feedback",
+          "condition_index": 0,
+          "original_text": ">40-60% (transition threshold)",
+          "type": "range",
+          "field": "relative_humidity",
+          "range": [40, 60],
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Phase transition RH threshold varies by particle composition",
+            "note": "Lower bound for onset, upper bound for complete transition"
+          }
+        },
+        {
+          "relationship_id": "edge_feedback_001",
+          "relationship_category": "positive_feedback",
+          "condition_index": 1,
+          "original_text": ">15% of dry mass",
+          "type": "threshold",
+          "field": "aerosol_liquid_water",
+          "operator": ">",
+          "value": 15,
+          "checkable": false,
+          "normalized": {
+            "unit": "% of dry mass",
+            "issue": "alw_fraction_not_standard_measurement",
+            "note": "ALW mass fraction threshold for phase transition"
+          }
+        }
+      ],
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["C005"],
+      "source_quote": "A non-liquid to liquid phase transition occurs when the ALW mass fraction exceeds 15% (dry mass) at transition RH thresholds of 40%–60%.",
+      "quantitative_evidence": {
+        "description": "Phase transition at RH 40-60%, ALW > 15% of dry mass"
+      },
+      "notes": "Phase transition is key trigger for positive feedback loop"
+    },
+    {
+      "id": "edge_feedback_002",
+      "original_id": "R010",
+      "category": "positive_feedback",
+      "cause_node": "particle_phase_transition",
+      "effect_node": "accelerated_heterogeneous_chemistry",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Liquid particles enable faster heterogeneous and aqueous-phase reactions",
+      "mechanism": "Liquid particles enable faster heterogeneous and aqueous-phase reactions. Gas-phase species can more easily partition into liquid particles and undergo aqueous-phase oxidation.",
+      "conditions": [
+        {
+          "relationship_id": "edge_feedback_002",
+          "relationship_category": "positive_feedback",
+          "condition_index": 0,
+          "original_text": "liquid",
+          "type": "categorical",
+          "field": "particle_type",
+          "operator": "==",
+          "value": "liquid",
+          "checkable": false,
+          "normalized": {
+            "issue": "particle_phase_state_not_directly_observable",
+            "note": "Inferred from RH and composition"
+          }
+        },
+        {
+          "relationship_id": "edge_feedback_002",
+          "relationship_category": "positive_feedback",
+          "condition_index": 1,
+          "original_text": "SO2, NOx, VOCs",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": "==",
+          "value": "reactive_gases_present",
+          "checkable": false,
+          "normalized": {
+            "issue": "multiple_precursors_not_directly_checkable",
+            "gases_list": ["SO2", "NOx", "VOCs"]
+          }
+        }
+      ],
+      "temporal_lag": "1h-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["C005"],
+      "source_quote": "The presence of abundant ALW, favored by elevated RH and higher proportion of SIA, facilitates the partitioning of water-soluble compounds from the gas to the particle phase.",
+      "quantitative_evidence": {
+        "description": "Sulfate and nitrate transformation rates increase by 48% and 11%"
+      },
+      "notes": "Key step in positive feedback loop"
+    },
+    {
+      "id": "edge_feedback_003",
+      "original_id": "R011",
+      "category": "positive_feedback",
+      "cause_node": "accelerated_heterogeneous_chemistry",
+      "effect_node": "hygroscopicity_enhancement",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Secondary aerosol production increases particle hygroscopicity",
+      "mechanism": "Production of secondary inorganic aerosols (sulfate, nitrate) and oxidized organic aerosols increases particle hygroscopicity, enabling more water uptake.",
+      "conditions": [
+        {
+          "relationship_id": "edge_feedback_003",
+          "relationship_category": "positive_feedback",
+          "condition_index": 0,
+          "original_text": "active",
+          "type": "qualitative",
+          "field": "secondary_aerosol_production",
+          "checkable": false,
+          "normalized": {
+            "issue": "qualitative_condition",
+            "note": "Active secondary aerosol production required"
+          }
+        }
+      ],
+      "temporal_lag": "2h-6h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["C005"],
+      "source_quote": "Consequently, the overall hygroscopicity parameters exhibit a substantial enhancement, with a mean value of 23%.",
+      "quantitative_evidence": {
+        "description": "Overall hygroscopicity increases by 23%",
+        "hygroscopicity_increase": "23%"
+      },
+      "notes": "Hygroscopic species: sulfate, nitrate, oxidized organics"
+    },
+    {
+      "id": "edge_feedback_004",
+      "original_id": "R012",
+      "category": "positive_feedback",
+      "cause_node": "hygroscopicity_enhancement",
+      "effect_node": "aerosol_liquid_water",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "More hygroscopic particles absorb more water, increasing ALW",
+      "mechanism": "More hygroscopic particles absorb more water at the same RH, increasing aerosol liquid water content. This creates a positive feedback loop.",
+      "conditions": [
+        {
+          "relationship_id": "edge_feedback_004",
+          "relationship_category": "positive_feedback",
+          "condition_index": 0,
+          "original_text": ">40%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 40,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Minimum RH for significant water uptake"
+          }
+        }
+      ],
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["C005"],
+      "source_quote": "These results highlight phase transition as a key factor initiating the positive feedback loops between ALW and secondary aerosol formation during haze episodes.",
+      "quantitative_evidence": {
+        "description": "Positive feedback loop between ALW and secondary aerosol formation"
+      },
+      "notes": "Completes the positive feedback loop: RH → phase transition → chemistry → hygroscopicity → ALW → more chemistry"
+    }
+  ],
+  "causal_chains": [
+    {
+      "id": "CC001",
+      "name": "Fog → Measurement Artifact Chain",
+      "description": "Fog directly causes PM2.5 measurement overestimation in light-scattering sensors",
+      "chain": ["fog", "measurement_artifact_pm25"],
+      "relationship_ids": ["edge_fog_001"],
+      "total_confidence": "HIGH"
+    },
+    {
+      "id": "CC002",
+      "name": "Fog → Accelerated Chemistry → PM2.5 Chain",
+      "description": "Fog enables rapid aqueous-phase chemistry that produces secondary aerosols, increasing actual PM2.5",
+      "chain": ["fog", "accelerated_aqueous_phase_reaction", "sia_formation", "pm25"],
+      "relationship_ids": ["edge_fog_003", "edge_fog_004", "edge_fog_005"],
+      "total_confidence": "HIGH"
+    },
+    {
+      "id": "CC003",
+      "name": "Clear Sky → Photochemistry → SOA → PM2.5 Chain",
+      "description": "Clear sky conditions enhance photochemistry, producing SOA that contributes to PM2.5",
+      "chain": ["solar_radiation", "photochemistry", "soa_formation", "pm25"],
+      "relationship_ids": ["edge_photo_001", "edge_photo_002"],
+      "total_confidence": "HIGH"
+    },
+    {
+      "id": "CC004",
+      "name": "High RH → Phase Transition → Positive Feedback Chain",
+      "description": "High RH triggers particle phase transition, enabling accelerated chemistry that increases hygroscopicity and ALW in a positive feedback loop",
+      "chain": ["humidity", "particle_phase_transition", "accelerated_heterogeneous_chemistry", "hygroscopicity_enhancement", "aerosol_liquid_water"],
+      "relationship_ids": ["edge_feedback_001", "edge_feedback_002", "edge_feedback_003", "edge_feedback_004"],
+      "total_confidence": "HIGH"
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "meteorological_pathways - for general humidity/temperature effects",
+    "chemical_processes - for detailed SIA/SOA formation mechanisms",
+    "seasonal_patterns - for winter-specific chemistry"
+  ],
+  "missing_info": "UV index data source for photochemistry conditions; particle phase state direct measurement methods",
+  "contradictions": [],
+  "summary": {
+    "total_edge_cases": 4,
+    "total_relationships": 12,
+    "total_causal_chains": 4,
+    "total_citations": 8,
+    "checkable_conditions_count": 14,
+    "uncheckable_conditions_count": 16,
+    "key_findings": [
+      "Fog droplets are detected as particles by light-scattering PM sensors, causing measurement artifacts (not actual pollution increase)",
+      "Fog and low clouds provide aqueous-phase reaction environment that accelerates sulfate formation by 0.5-1.3 μg m⁻³ h⁻¹, much faster than gas-phase pathways",
+      "Clear sky conditions can lead to higher PM2.5 than cloudy conditions due to enhanced photochemical SOA formation",
+      "High RH triggers particle phase transition that initiates positive feedback loops between aerosol liquid water and secondary aerosol formation",
+      "The distinction between measurement artifacts and actual pollution increase is critical for accurate air quality assessment"
+    ],
+    "implications_for_hanoi": [
+      "Hanoi's tropical humid climate with frequent fog events requires careful interpretation of PM2.5 sensor data",
+      "Winter monsoon cold surges bringing dry air followed by humid conditions can trigger rapid secondary aerosol formation",
+      "Clear sunny days in Hanoi can still have elevated PM2.5 due to photochemical SOA formation from traffic and industrial VOC emissions",
+      "Fog correction algorithms should be applied to light-scattering sensor data during fog events"
+    ]
+  }
+}

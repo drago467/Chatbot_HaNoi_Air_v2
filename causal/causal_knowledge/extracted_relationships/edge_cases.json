@@ -1,0 +1,214 @@
+{
+  "category": "edge_cases",
+  "bibliography": [
+    {
+      "source_title": "Relationships of relative humidity with PM2.5 and PM10 in the Yangtze River Delta, China",
+      "source_authors": "Cairong Lou, Hongyu Liu, Yufeng Li, Yan Peng, Juan Wang & Lingjun Dai",
+      "source_year": "2017",
+      "source_url": "https://link.springer.com/article/10.1007/s10661-017-6281-z",
+      "source_doi": "10.1007/s10661-017-6281-z",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Identified an inverted U-shaped relationship between RH and PM2.5, with a peak at 45-70% RH. Above 70% RH, the effect turns into reduction. This establishes a critical non-linear relationship and threshold."
+    },
+    {
+      "source_title": "Effect of precipitation on reducing atmospheric pollutant over Beijing",
+      "source_authors": "Zuofang Zheng, Guirong Xu, Qingchun Li, Conglan Chen, Jiangbo Li",
+      "source_year": "2019",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1309104218307049",
+      "source_doi": "10.1016/j.apr.2019.04.001",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Explicitly states that drizzle has a negative removal effect on PM2.5 (i.e., it can increase concentrations), which is a direct exception to the general rule that rain cleans the air."
+    },
+    {
+      "source_title": "Characterizing PM2.5 in Hanoi with New High Temporal Resolution Sensor",
+      "source_authors": "Bich-Thuy Ly, Yutaka Matsumi, Tomoki Nakayama, Yosuke Sakamoto, Yoshizumi Kajii, Trung-Dung Nghiem",
+      "source_year": "2018",
+      "source_url": "https://aaqr.org/articles/aaqr-17-10-maps-0435.pdf",
+      "source_doi": "10.4209/aaqr.2017.10.0435",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Observed in Hanoi that large increases in PM2.5 frequently occur several days (4-5 days) after a cold surge, demonstrating a delayed, non-linear effect."
+    },
+    {
+      "source_title": "Rapid reappearance of air pollution after cold air outbreaks in northern and eastern China",
+      "source_authors": "Qian Liu, Guixing Chen, Lifang Sheng, and Toshiki Iwasaki",
+      "source_year": "2022",
+      "source_url": "https://acp.copernicus.org/articles/22/13371/2022/",
+      "source_doi": "10.5194/acp-22-13371-2022",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Explains the mechanism for the post-cold surge pollution spike, attributing it to stable stratification in the lower troposphere forced by the residual cold air mass."
+    },
+    {
+      "source_title": "Effect of Vertical Wind Shear on PM2.5 Changes over a Receptor Region in Central China",
+      "source_authors": "Xiaoyun Sun, Yue Zhou, Tianliang Zhao, Yongqing Bai, Tao Huo, Liang Leng, Huan He, Jing Sun",
+      "source_year": "2022",
+      "source_url": "https://www.mdpi.com/2072-4292/14/14/3333",
+      "source_doi": "10.3390/rs14143333",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Shows that the correlation between wind speed and PM2.5 can be positive under polluted conditions, indicating that strong winds can increase pollution at a receptor site via long-range transport."
+    },
+    {
+      "source_title": "Hygroscopic properties of particulate matter and effects of their interactions with weather on visibility",
+      "source_authors": "Wan-Sik Won, Rosy Oh, Woojoo Lee, Sungkwan Ku, Pei-Chen Su, Yong-Jin Yoon",
+      "source_year": "2021",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361198/",
+      "source_doi": "10.1038/s41598-021-95834-6",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Explains the mechanism of hygroscopic growth, where particles absorb water at high RH, increasing their size and causing light-scattering-based sensors to overestimate PM2.5 mass. This is a key measurement artifact."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "humidity_pm25_nonlinear_001",
+      "cause_node": "humidity",
+      "effect_node": "pm25",
+      "relationship_type": "MODERATOR",
+      "mechanism": "Mối quan hệ giữa độ ẩm và PM2.5 có dạng chữ U ngược. Ở độ ẩm thấp đến trung bình (RH < 70%), độ ẩm thúc đẩy các phản ứng hóa học thứ cấp (ví dụ: chuyển đổi SO2 và NO2 thành sulfate và nitrate), làm tăng nồng độ PM2.5. Tuy nhiên, ở độ ẩm rất cao (RH > 70%), các quá trình lắng đọng ướt (wet deposition) trở nên chiếm ưu thế, dẫn đến việc loại bỏ các hạt khỏi khí quyển và làm giảm nồng độ PM2.5.",
+      "conditions": [
+        "RH < 70% (tích lũy)",
+        "RH > 70% (loại bỏ)",
+        "Có sự hiện diện của các tiền chất như SO2 và NO2"
+      ],
+      "temporal_lag": "N/A",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://link.springer.com/article/10.1007/s10661-017-6281-z",
+      "source_title": "Relationships of relative humidity with PM2.5 and PM10 in the Yangtze River Delta, China",
+      "source_authors": "Cairong Lou, Hongyu Liu, Yufeng Li, Yan Peng, Juan Wang & Lingjun Dai",
+      "source_year": "2017",
+      "source_quote": "Our results revealed that RH had an inverted U-shaped relationship with PM2.5 concentrations (peaking at RH = 45–70%)... The very-dry (RH < 45%), dry (RH = 45–60%) and low-humidity (RH = 60–70%) conditions positively affected PM2.5 and exerted an accumulation effect, while the mid-humidity (RH = 70–80%), high-humidity (RH = 80–90%), and extreme-humidity (RH = 90–100%) conditions played a significant role in reducing particle concentrations.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "EDGE CASE: Non-linear relationship (Inverted U-shaped). Phá vỡ quy tắc chung rằng độ ẩm cao luôn làm giảm PM2.5. Hiệu ứng đảo ngược tại ngưỡng RH khoảng 70%."
+    },
+    {
+      "id": "drizzle_pm25_increase_001",
+      "cause_node": "precipitation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "mechanism": "Mưa phùn (drizzle) có hiệu ứng loại bỏ âm (negative removal effect) đối với PM2.5, nghĩa là nó có thể làm tăng nồng độ. Điều này xảy ra do các giọt mưa phùn nhỏ không đủ lớn để gây ra sự lắng đọng hiệu quả (washout) mà thay vào đó, chúng có thể làm tăng độ ẩm gần bề mặt, thúc đẩy sự hình thành aerosol thứ cấp và sự phát triển hút ẩm (hygroscopic growth) của các hạt hiện có, dẫn đến nồng độ khối lượng cao hơn.",
+      "conditions": [
+        "Loại mưa: Mưa phùn (Drizzle)",
+        "Cường độ mưa thấp"
+      ],
+      "temporal_lag": "short_term",
+      "strength": "MEDIUM",
+      "confidence": "HIGH",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1309104218307049",
+      "source_title": "Effect of precipitation on reducing atmospheric pollutant over Beijing",
+      "source_authors": "Zuofang Zheng, Guirong Xu, Qingchun Li, Conglan Chen, Jiangbo Li",
+      "source_year": "2019",
+      "source_quote": "The removal effect of drizzle on PM2.5 and PM10 was negative, and the removal effect of moderate rain and heavy rain was significantly higher than that of light rain.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "EDGE CASE: Exception. Phá vỡ quy tắc chung rằng mưa luôn làm sạch không khí. Mưa phùn có thể làm tăng PM2.5."
+    },
+    {
+      "id": "cold_surge_delayed_peak_001",
+      "cause_node": "cold_surge",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "mechanism": "Một đợt không khí lạnh (cold surge) ban đầu làm sạch không khí do gió mạnh. Tuy nhiên, sau khi đợt không khí lạnh đi qua, khối không khí lạnh còn sót lại tạo ra một lớp nghịch nhiệt ổn định ở tầng thấp. Lớp này bẫy các chất ô nhiễm phát thải sau đó, kết hợp với điều kiện gió yếu, dẫn đến sự tích tụ nhanh chóng và một đỉnh nồng độ PM2.5 mới, thường xảy ra vài ngày sau sự kiện không khí lạnh ban đầu.",
+      "conditions": [
+        "Sau khi một đợt không khí lạnh đi qua (giai đoạn suy yếu)",
+        "Điều kiện gió yếu sau đợt không khí lạnh",
+        "Có nguồn phát thải ô nhiễm tại địa phương"
+      ],
+      "temporal_lag": "2-5 days",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "source_url": "https://aaqr.org/articles/aaqr-17-10-maps-0435.pdf",
+      "source_title": "Characterizing PM2.5 in Hanoi with New High Temporal Resolution Sensor",
+      "source_authors": "Bich-Thuy Ly, et al.",
+      "source_year": "2018",
+      "source_quote": "Large increases in both PM2.5 and CO were frequently observed several days after cold surges... During five days after the cold surges, peaks of PM2.5 were appeared at night. High hourly levels of PM2.5 (higher than 120 μg m⁻³) appeared at the fourth day after the cold surge and a level higher than 160 μg m⁻³ were observed at the fifth day after the cold surge.",
+      "source_locator": "Page 7",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "EDGE CASE: Non-linear relationship (Delayed effect). Phá vỡ quy tắc chung rằng không khí lạnh và gió mạnh luôn làm giảm ô nhiễm. Hiệu ứng làm sạch ban đầu bị đảo ngược sau vài ngày."
+    },
+    {
+      "id": "wind_transport_increase_001",
+      "cause_node": "wind_speed",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "mechanism": "Trong điều kiện ô nhiễm, gió mạnh không phải lúc nào cũng làm phân tán ô nhiễm. Nếu gió thổi từ một khu vực nguồn ô nhiễm nặng, nó có thể vận chuyển một lượng lớn PM2.5 đến một khu vực tiếp nhận (receptor region), dẫn đến sự gia tăng đột ngột nồng độ PM2.5 tại địa phương. Hiệu ứng này đặc biệt rõ rệt khi có sự vận chuyển tầm xa (long-range transport).",
+      "conditions": [
+        "Tốc độ gió cao",
+        "Hướng gió từ khu vực nguồn ô nhiễm",
+        "Khu vực đang trong tình trạng ô nhiễm (polluted conditions)"
+      ],
+      "temporal_lag": "short_term",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "source_url": "https://www.mdpi.com/2072-4292/14/14/3333",
+      "source_title": "Effect of Vertical Wind Shear on PM2.5 Changes over a Receptor Region in Central China",
+      "source_authors": "Xiaoyun Sun, et al.",
+      "source_year": "2022",
+      "source_quote": "The correlation between wind speed and PM2.5 was negative for clean conditions and positive for polluted conditions in both two sites... Prevailed northerly wind disrupted the local circulation and enhanced the surface PM2.5 concentrations under polluted conditions, which tend to be an indicator of regional transport of air pollutants.",
+      "source_locator": "Abstract & Section 3.2",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "EDGE CASE: Exception. Phá vỡ quy tắc chung rằng gió mạnh luôn làm sạch không khí. Trong trường hợp vận chuyển từ nguồn ô nhiễm, gió mạnh có thể làm tăng PM2.5."
+    },
+    {
+      "id": "measurement_artifact_hygroscopic_growth_001",
+      "cause_node": "humidity",
+      "effect_node": "pm25_measurement",
+      "relationship_type": "ARTIFACT",
+      "mechanism": "Các cảm biến PM2.5 chi phí thấp dựa trên phương pháp tán xạ ánh sáng (light scattering) thường không có chức năng kiểm soát độ ẩm. Ở độ ẩm cao, các hạt PM2.5 có tính hút ẩm (hygroscopic) sẽ hấp thụ hơi nước, làm tăng kích thước và thay đổi chỉ số khúc xạ của chúng. Điều này khiến chúng tán xạ nhiều ánh sáng hơn, và cảm biến sẽ diễn giải sai điều này thành một nồng độ khối lượng (mass concentration) cao hơn thực tế. Đây là một sai số đo lường (measurement artifact), không phải là sự gia tăng thực sự của khối lượng hạt khô.",
+      "conditions": [
+        "Sử dụng cảm biến PM2.5 dựa trên tán xạ ánh sáng",
+        "Cảm biến không có bộ phận làm khô hoặc kiểm soát độ ẩm",
+        "Độ ẩm tương đối (RH) cao"
+      ],
+      "temporal_lag": "instantaneous",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361198/",
+      "source_title": "Hygroscopic properties of particulate matter and effects of their interactions with weather on visibility",
+      "source_authors": "Wan-Sik Won, et al.",
+      "source_year": "2021",
+      "source_quote": "An important reason for the lower accuracies is that low-cost sensors lack the RH and temperature control functions; therefore, light scattering sensors overestimate the PM concentration affected by humidity.",
+      "source_locator": "Introduction",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "EDGE CASE: Measurement Artifact. Các cảm biến quang học đánh giá quá cao nồng độ PM2.5 ở độ ẩm cao do sự phát triển hút ẩm của hạt, không phải do sự gia tăng thực tế về khối lượng."
+    },
+    {
+      "id": "photochemical_smog_spike_001",
+      "cause_node": "sunlight",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "mechanism": "Vào những ngày nắng, nhiệt độ cao, bức xạ mặt trời mạnh sẽ thúc đẩy các phản ứng quang hóa giữa các tiền chất ô nhiễm như oxit nitơ (NOx) và các hợp chất hữu cơ dễ bay hơi (VOCs). Quá trình này tạo ra một lượng lớn các chất oxy hóa (như ozone, O3) và các gốc tự do, sau đó oxy hóa các hợp chất khác (như SO2, NOx, VOCs) để tạo thành aerosol hữu cơ thứ cấp (Secondary Organic Aerosol - SOA) và aerosol vô cơ thứ cấp. Sự hình thành nhanh chóng của các aerosol thứ cấp này là nguyên nhân chính gây ra các đợt ô nhiễm PM2.5 đột ngột và nghiêm trọng, thường được gọi là khói quang hóa (photochemical smog).",
+      "conditions": [
+        "Bức xạ mặt trời mạnh",
+        "Nhiệt độ cao",
+        "Nồng độ cao của các tiền chất (NOx, VOCs, SO2)",
+        "Điều kiện khí quyển ổn định (gió yếu, nghịch nhiệt)"
+      ],
+      "temporal_lag": "intra-day",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019jd032033",
+      "source_title": "Estimation of Secondary Organic Aerosol Formation During a Photochemical Smog Episode in Shanghai, China",
+      "source_authors": "Hongli Wang, et al.",
+      "source_year": "2020",
+      "source_quote": "This study focuses on a pollution episode of PM2.5 that occurred simultaneously with an O3 episode in Shanghai in the summer of 2013... This suggests the importance of the photochemical formation of PM2.5 during a pollution episode. OC accounted for 28.9% of PM2.5, making it the most abundant component, and its concentration was well correlated with O3 (R2 = 0.72). The concentration of secondary OC (SOC) was estimated by the elemental carbon-tracer method, and the result showed that SOC accounted for 48.7% of OC on average, indicating that secondary formation was the main source of OC.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "urban/regional",
+      "notes": "EDGE CASE: Exception. Phá vỡ quy tắc chung rằng thời tiết nắng, quang đãng đồng nghĩa với không khí trong lành. Trong điều kiện có nhiều tiền chất, nắng nóng lại là tác nhân chính gây ra ô nhiễm PM2.5 nghiêm trọng."
+    }
+  ],
+  "handoff_to_other_prompts": [],
+  "missing_info": "More quantitative data is needed to define the precise wind speed threshold for the wind transport exception, and the specific temperature/precursor thresholds for the photochemical exception.",
+  "contradictions": []
+}

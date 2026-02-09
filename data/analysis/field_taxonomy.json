@@ -1,0 +1,1477 @@
+{
+  "canonical_fields": [
+    {
+      "canonical": "aerosol_liquid_water",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Liquid water content in aerosol particles"
+    },
+    {
+      "canonical": "aerosol_ph",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Acidity of aerosol particles, affecting chemical reactions"
+    },
+    {
+      "canonical": "atmospheric_layer",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: atmospheric_layer"
+    },
+    {
+      "canonical": "atmospheric_stability",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: atmospheric_stability"
+    },
+    {
+      "canonical": "enso_phase",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: enso_phase"
+    },
+    {
+      "canonical": "geographic_region",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: geographic_region"
+    },
+    {
+      "canonical": "particle_size_um",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: particle_size_um"
+    },
+    {
+      "canonical": "particle_type",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: particle_type"
+    },
+    {
+      "canonical": "photolysis_rate",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: photolysis_rate"
+    },
+    {
+      "canonical": "topography",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: topography"
+    },
+    {
+      "canonical": "topography_type",
+      "aliases": [],
+      "category": "aerosol_properties",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: topography_type"
+    },
+    {
+      "canonical": "boundary_layer_height",
+      "aliases": [],
+      "category": "atmospheric_structure",
+      "unit": "m",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Height of planetary boundary layer, affecting vertical mixing"
+    },
+    {
+      "canonical": "inversion",
+      "aliases": [],
+      "category": "atmospheric_structure",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: inversion"
+    },
+    {
+      "canonical": "inversion_presence",
+      "aliases": [],
+      "category": "atmospheric_structure",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: inversion_presence"
+    },
+    {
+      "canonical": "inversion_type",
+      "aliases": [],
+      "category": "atmospheric_structure",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: inversion_type"
+    },
+    {
+      "canonical": "stability_index",
+      "aliases": [],
+      "category": "atmospheric_structure",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: stability_index"
+    },
+    {
+      "canonical": "cap_event",
+      "aliases": [],
+      "category": "events",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: cap_event"
+    },
+    {
+      "canonical": "dust_event",
+      "aliases": [],
+      "category": "events",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: dust_event"
+    },
+    {
+      "canonical": "event_type",
+      "aliases": [],
+      "category": "events",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: event_type"
+    },
+    {
+      "canonical": "monsoon_cycle_duration",
+      "aliases": [],
+      "category": "events",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: monsoon_cycle_duration"
+    },
+    {
+      "canonical": "monsoon_regime",
+      "aliases": [],
+      "category": "events",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: monsoon_regime"
+    },
+    {
+      "canonical": "accumulated_precipitation_mm",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "mm",
+      "api_mapping": {
+        "openweathermap": "rain"
+      },
+      "mapping_type": "derived",
+      "description": "Amount of precipitation (rain, snow, etc.)"
+    },
+    {
+      "canonical": "cloud_base_height",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "%",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: cloud_base_height"
+    },
+    {
+      "canonical": "cloud_liquid_water",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "%",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: cloud_liquid_water"
+    },
+    {
+      "canonical": "precipitation_duration_hours",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "mm",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Amount of precipitation (rain, snow, etc.)"
+    },
+    {
+      "canonical": "precipitation_intensity_mmph",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "mm/h",
+      "api_mapping": {
+        "openweathermap": "rain"
+      },
+      "mapping_type": "derived",
+      "description": "Amount of precipitation (rain, snow, etc.)"
+    },
+    {
+      "canonical": "precipitation_occurrence",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "mm",
+      "api_mapping": {
+        "openweathermap": "rain"
+      },
+      "mapping_type": "derived",
+      "description": "Amount of precipitation (rain, snow, etc.)"
+    },
+    {
+      "canonical": "precipitation_type",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "mm",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Amount of precipitation (rain, snow, etc.)"
+    },
+    {
+      "canonical": "relative_humidity",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "%",
+      "api_mapping": {
+        "openweathermap": "humidity"
+      },
+      "mapping_type": "direct",
+      "description": "Fraction of water vapor in air relative to saturation, expressed as percentage"
+    },
+    {
+      "canonical": "solar_radiation",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": {
+        "openweathermap": "solar_radiation"
+      },
+      "mapping_type": "direct",
+      "description": "Field: solar_radiation"
+    },
+    {
+      "canonical": "solar_zenith_angle",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: solar_zenith_angle"
+    },
+    {
+      "canonical": "temperature",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "°C",
+      "api_mapping": {
+        "openweathermap": "temp"
+      },
+      "mapping_type": "direct",
+      "description": "Air temperature at surface level"
+    },
+    {
+      "canonical": "upwind_air_quality",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: upwind_air_quality"
+    },
+    {
+      "canonical": "upwind_source",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: upwind_source"
+    },
+    {
+      "canonical": "uv_index",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": {
+        "openweathermap": "uvi"
+      },
+      "mapping_type": "mapped",
+      "description": "Field: uv_index"
+    },
+    {
+      "canonical": "uv_radiation",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: uv_radiation"
+    },
+    {
+      "canonical": "uv_wavelength",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: uv_wavelength"
+    },
+    {
+      "canonical": "wind_direction",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "degrees",
+      "api_mapping": {
+        "openweathermap": "wind_deg"
+      },
+      "mapping_type": "mapped",
+      "description": "Direction from which wind blows, determining pollution source regions"
+    },
+    {
+      "canonical": "wind_direction_source",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "degrees",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Direction from which wind blows, determining pollution source regions"
+    },
+    {
+      "canonical": "wind_direction_source_alignment",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "degrees",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Direction from which wind blows, determining pollution source regions"
+    },
+    {
+      "canonical": "wind_speed",
+      "aliases": [],
+      "category": "meteorology",
+      "unit": "m/s",
+      "api_mapping": {
+        "openweathermap": "wind_speed"
+      },
+      "mapping_type": "direct",
+      "description": "Horizontal wind velocity affecting pollutant dispersion and transport"
+    },
+    {
+      "canonical": "air_mass_origin",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: air_mass_origin"
+    },
+    {
+      "canonical": "air_mass_trajectory",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: air_mass_trajectory"
+    },
+    {
+      "canonical": "burning_practice",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: burning_practice"
+    },
+    {
+      "canonical": "circulation_pattern",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: circulation_pattern"
+    },
+    {
+      "canonical": "distance_to_major_road_m",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: distance_to_major_road_m"
+    },
+    {
+      "canonical": "distance_to_road_m",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: distance_to_road_m"
+    },
+    {
+      "canonical": "elevation_gradient",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: elevation_gradient"
+    },
+    {
+      "canonical": "fog_indicator",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: fog_indicator"
+    },
+    {
+      "canonical": "industrial_zone_presence",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: industrial_zone_presence"
+    },
+    {
+      "canonical": "latitude",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: latitude"
+    },
+    {
+      "canonical": "oc_ratio",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: oc_ratio"
+    },
+    {
+      "canonical": "pollution_level",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: pollution_level"
+    },
+    {
+      "canonical": "spatial_scale",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: spatial_scale"
+    },
+    {
+      "canonical": "sulfate_presence",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: sulfate_presence"
+    },
+    {
+      "canonical": "surface_heating",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: surface_heating"
+    },
+    {
+      "canonical": "synoptic_pattern",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: synoptic_pattern"
+    },
+    {
+      "canonical": "temporal_scale",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: temporal_scale"
+    },
+    {
+      "canonical": "turbulence",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: turbulence"
+    },
+    {
+      "canonical": "urban_density_class",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: urban_density_class"
+    },
+    {
+      "canonical": "vertical_mixing",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: vertical_mixing"
+    },
+    {
+      "canonical": "vertical_motion",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: vertical_motion"
+    },
+    {
+      "canonical": "visibility",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": {
+        "openweathermap": "visibility"
+      },
+      "mapping_type": "direct",
+      "description": "Field: visibility"
+    },
+    {
+      "canonical": "water_vapor",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: water_vapor"
+    },
+    {
+      "canonical": "year",
+      "aliases": [],
+      "category": "other",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: year"
+    },
+    {
+      "canonical": "cloud_cover",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "%",
+      "api_mapping": {
+        "openweathermap": "clouds"
+      },
+      "mapping_type": "mapped",
+      "description": "Percentage of sky covered by clouds"
+    },
+    {
+      "canonical": "cloud_water_content",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "%",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: cloud_water_content"
+    },
+    {
+      "canonical": "cold_surge_phase",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "pH units",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: cold_surge_phase"
+    },
+    {
+      "canonical": "compound_meteorological",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: compound_meteorological"
+    },
+    {
+      "canonical": "condensation_sink",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: condensation_sink"
+    },
+    {
+      "canonical": "equipment_type",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: equipment_type"
+    },
+    {
+      "canonical": "nh3_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "carbon_monoxide"
+      },
+      "mapping_type": "mapped",
+      "description": "Field: nh3_concentration"
+    },
+    {
+      "canonical": "no2_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "nitrogen_dioxide"
+      },
+      "mapping_type": "mapped",
+      "description": "Nitrogen dioxide concentration in air"
+    },
+    {
+      "canonical": "nox_presence",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: nox_presence"
+    },
+    {
+      "canonical": "nox_regime",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: nox_regime"
+    },
+    {
+      "canonical": "oh_radical_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "carbon_monoxide"
+      },
+      "mapping_type": "mapped",
+      "description": "Field: oh_radical_concentration"
+    },
+    {
+      "canonical": "ox_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "carbon_monoxide"
+      },
+      "mapping_type": "mapped",
+      "description": "Field: ox_concentration"
+    },
+    {
+      "canonical": "pm25_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "pm2_5"
+      },
+      "mapping_type": "mapped",
+      "description": "Particulate matter with diameter less than 2.5 micrometers"
+    },
+    {
+      "canonical": "pm25_initial",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "pm2_5"
+      },
+      "mapping_type": "mapped",
+      "description": "Particulate matter with diameter less than 2.5 micrometers"
+    },
+    {
+      "canonical": "pm25_reduction_near_road",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "pm2_5"
+      },
+      "mapping_type": "mapped",
+      "description": "Particulate matter with diameter less than 2.5 micrometers"
+    },
+    {
+      "canonical": "pm25_residence_time",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "pm2_5"
+      },
+      "mapping_type": "mapped",
+      "description": "Particulate matter with diameter less than 2.5 micrometers"
+    },
+    {
+      "canonical": "secondary_aerosol_production",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: secondary_aerosol_production"
+    },
+    {
+      "canonical": "sensor_humidity_control",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "%",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: sensor_humidity_control"
+    },
+    {
+      "canonical": "sky_condition",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: sky_condition"
+    },
+    {
+      "canonical": "so2_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "sulphur_dioxide"
+      },
+      "mapping_type": "mapped",
+      "description": "Sulfur dioxide concentration in air"
+    },
+    {
+      "canonical": "surface_cooling_rate",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: surface_cooling_rate"
+    },
+    {
+      "canonical": "visibility_condition",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: visibility_condition"
+    },
+    {
+      "canonical": "voc_concentration",
+      "aliases": [],
+      "category": "pollutants",
+      "unit": "µg/m³",
+      "api_mapping": {
+        "open_meteo": "carbon_monoxide"
+      },
+      "mapping_type": "mapped",
+      "description": "Field: voc_concentration"
+    },
+    {
+      "canonical": "dry_deposition_efficiency",
+      "aliases": [],
+      "category": "processes",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: dry_deposition_efficiency"
+    },
+    {
+      "canonical": "oxidation_products",
+      "aliases": [],
+      "category": "processes",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: oxidation_products"
+    },
+    {
+      "canonical": "soa_formation_rate",
+      "aliases": [],
+      "category": "processes",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: soa_formation_rate"
+    },
+    {
+      "canonical": "transport_distance",
+      "aliases": [],
+      "category": "processes",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: transport_distance"
+    },
+    {
+      "canonical": "burning_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: burning_type"
+    },
+    {
+      "canonical": "catalysis",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: catalysis"
+    },
+    {
+      "canonical": "city_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: city_type"
+    },
+    {
+      "canonical": "fuel_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: fuel_type"
+    },
+    {
+      "canonical": "land_use_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: land_use_type"
+    },
+    {
+      "canonical": "oh_radical_availability",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: oh_radical_availability"
+    },
+    {
+      "canonical": "precursor_availability",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: precursor_availability"
+    },
+    {
+      "canonical": "sensor_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: sensor_type"
+    },
+    {
+      "canonical": "urban_zone_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: urban_zone_type"
+    },
+    {
+      "canonical": "vegetation_type",
+      "aliases": [],
+      "category": "qualitative",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: vegetation_type"
+    },
+    {
+      "canonical": "emission_regime",
+      "aliases": [],
+      "category": "sources",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: emission_regime"
+    },
+    {
+      "canonical": "emission_source",
+      "aliases": [],
+      "category": "sources",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: emission_source"
+    },
+    {
+      "canonical": "emissions",
+      "aliases": [],
+      "category": "sources",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: emissions"
+    },
+    {
+      "canonical": "local_emission_source",
+      "aliases": [],
+      "category": "sources",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: local_emission_source"
+    },
+    {
+      "canonical": "source_type",
+      "aliases": [],
+      "category": "sources",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: source_type"
+    },
+    {
+      "canonical": "regional_pollution_status",
+      "aliases": [],
+      "category": "spatial",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: regional_pollution_status"
+    },
+    {
+      "canonical": "site_type",
+      "aliases": [],
+      "category": "spatial",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: site_type"
+    },
+    {
+      "canonical": "source_location",
+      "aliases": [],
+      "category": "spatial",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: source_location"
+    },
+    {
+      "canonical": "event_lag_days",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "varies",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: event_lag_days"
+    },
+    {
+      "canonical": "event_lag_hours",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "hour",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: event_lag_hours"
+    },
+    {
+      "canonical": "fog_duration_hours",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "hour",
+      "api_mapping": null,
+      "mapping_type": "missing",
+      "description": "Field: fog_duration_hours"
+    },
+    {
+      "canonical": "hour",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "hour",
+      "api_mapping": {
+        "derived": "dt"
+      },
+      "mapping_type": "derived",
+      "description": "Field: hour"
+    },
+    {
+      "canonical": "month",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "month",
+      "api_mapping": {
+        "derived": "dt"
+      },
+      "mapping_type": "derived",
+      "description": "Field: month"
+    },
+    {
+      "canonical": "season",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "varies",
+      "api_mapping": {
+        "derived": "dt"
+      },
+      "mapping_type": "derived",
+      "description": "Field: season"
+    },
+    {
+      "canonical": "time_of_day",
+      "aliases": [],
+      "category": "temporal",
+      "unit": "hour",
+      "api_mapping": {
+        "derived": "dt"
+      },
+      "mapping_type": "derived",
+      "description": "Field: time_of_day"
+    }
+  ],
+  "synonym_groups": {
+    "pm25": [
+      "pm25_concentration"
+    ],
+    "enso_phase": [
+      "enso_phase"
+    ],
+    "cloud_cover": [
+      "cloud_cover"
+    ],
+    "event_lag_hours": [
+      "event_lag_hours"
+    ],
+    "cloud_water_content": [
+      "cloud_water_content"
+    ],
+    "dust_event": [
+      "dust_event"
+    ],
+    "nox_presence": [
+      "nox_presence"
+    ],
+    "catalysis": [
+      "catalysis"
+    ],
+    "accumulated_precipitation_mm": [
+      "accumulated_precipitation_mm"
+    ],
+    "equipment_type": [
+      "equipment_type"
+    ],
+    "atmospheric_layer": [
+      "atmospheric_layer"
+    ],
+    "oc_ratio": [
+      "oc_ratio"
+    ],
+    "ox_concentration": [
+      "ox_concentration"
+    ],
+    "burning_practice": [
+      "burning_practice"
+    ],
+    "sulfate_presence": [
+      "sulfate_presence"
+    ],
+    "topography": [
+      "topography"
+    ],
+    "sensor_type": [
+      "sensor_type"
+    ],
+    "wind_direction_source": [
+      "wind_direction_source"
+    ],
+    "regional_pollution_status": [
+      "regional_pollution_status"
+    ],
+    "oxidation_products": [
+      "oxidation_products"
+    ],
+    "upwind_air_quality": [
+      "upwind_air_quality"
+    ],
+    "solar_radiation": [
+      "solar_radiation"
+    ],
+    "event_lag_days": [
+      "event_lag_days"
+    ],
+    "emission_source": [
+      "emission_source"
+    ],
+    "precursor_availability": [
+      "precursor_availability"
+    ],
+    "aerosol_ph": [
+      "aerosol_ph"
+    ],
+    "source_type": [
+      "source_type"
+    ],
+    "land_use_type": [
+      "land_use_type"
+    ],
+    "cloud_base_height": [
+      "cloud_base_height"
+    ],
+    "compound_meteorological": [
+      "compound_meteorological"
+    ],
+    "cap_event": [
+      "cap_event"
+    ],
+    "so2": [
+      "so2_concentration"
+    ],
+    "stability_index": [
+      "stability_index"
+    ],
+    "vertical_motion": [
+      "vertical_motion"
+    ],
+    "voc_concentration": [
+      "voc_concentration"
+    ],
+    "uv_wavelength": [
+      "uv_wavelength"
+    ],
+    "geographic_region": [
+      "geographic_region"
+    ],
+    "visibility": [
+      "visibility"
+    ],
+    "urban_density_class": [
+      "urban_density_class"
+    ],
+    "urban_zone_type": [
+      "urban_zone_type"
+    ],
+    "precipitation_duration_hours": [
+      "precipitation_duration_hours"
+    ],
+    "cloud_liquid_water": [
+      "cloud_liquid_water"
+    ],
+    "cold_surge_phase": [
+      "cold_surge_phase"
+    ],
+    "uv_radiation": [
+      "uv_radiation"
+    ],
+    "upwind_source": [
+      "upwind_source"
+    ],
+    "burning_type": [
+      "burning_type"
+    ],
+    "inversion": [
+      "inversion"
+    ],
+    "no2": [
+      "no2_concentration"
+    ],
+    "pm25_initial": [
+      "pm25_initial"
+    ],
+    "inversion_presence": [
+      "inversion_presence"
+    ],
+    "event_type": [
+      "event_type"
+    ],
+    "oh_radical_availability": [
+      "oh_radical_availability"
+    ],
+    "latitude": [
+      "latitude"
+    ],
+    "wind_direction": [
+      "wind_direction"
+    ],
+    "local_emission_source": [
+      "local_emission_source"
+    ],
+    "particle_size_um": [
+      "particle_size_um"
+    ],
+    "distance_to_major_road_m": [
+      "distance_to_major_road_m"
+    ],
+    "photolysis_rate": [
+      "photolysis_rate"
+    ],
+    "solar_zenith_angle": [
+      "solar_zenith_angle"
+    ],
+    "temperature": [
+      "temperature"
+    ],
+    "oh_radical_concentration": [
+      "oh_radical_concentration"
+    ],
+    "pm25_reduction_near_road": [
+      "pm25_reduction_near_road"
+    ],
+    "circulation_pattern": [
+      "circulation_pattern"
+    ],
+    "emission_regime": [
+      "emission_regime"
+    ],
+    "emissions": [
+      "emissions"
+    ],
+    "temporal_scale": [
+      "temporal_scale"
+    ],
+    "vegetation_type": [
+      "vegetation_type"
+    ],
+    "topography_type": [
+      "topography_type"
+    ],
+    "city_type": [
+      "city_type"
+    ],
+    "uv_index": [
+      "uv_index"
+    ],
+    "season": [
+      "season"
+    ],
+    "relative_humidity": [
+      "relative_humidity"
+    ],
+    "site_type": [
+      "site_type"
+    ],
+    "surface_cooling_rate": [
+      "surface_cooling_rate"
+    ],
+    "surface_heating": [
+      "surface_heating"
+    ],
+    "visibility_condition": [
+      "visibility_condition"
+    ],
+    "transport_distance": [
+      "transport_distance"
+    ],
+    "time_of_day": [
+      "time_of_day"
+    ],
+    "precipitation_intensity_mmph": [
+      "precipitation_intensity_mmph"
+    ],
+    "pollution_level": [
+      "pollution_level"
+    ],
+    "synoptic_pattern": [
+      "synoptic_pattern"
+    ],
+    "atmospheric_stability": [
+      "atmospheric_stability"
+    ],
+    "aerosol_liquid_water": [
+      "aerosol_liquid_water"
+    ],
+    "distance_to_road_m": [
+      "distance_to_road_m"
+    ],
+    "fuel_type": [
+      "fuel_type"
+    ],
+    "vertical_mixing": [
+      "vertical_mixing"
+    ],
+    "hour": [
+      "hour"
+    ],
+    "turbulence": [
+      "turbulence"
+    ],
+    "source_location": [
+      "source_location"
+    ],
+    "fog_duration_hours": [
+      "fog_duration_hours"
+    ],
+    "particle_type": [
+      "particle_type"
+    ],
+    "month": [
+      "month"
+    ],
+    "sensor_humidity_control": [
+      "sensor_humidity_control"
+    ],
+    "fog_indicator": [
+      "fog_indicator"
+    ],
+    "precipitation_type": [
+      "precipitation_type"
+    ],
+    "nh3_concentration": [
+      "nh3_concentration"
+    ],
+    "elevation_gradient": [
+      "elevation_gradient"
+    ],
+    "precipitation_occurrence": [
+      "precipitation_occurrence"
+    ],
+    "year": [
+      "year"
+    ],
+    "dry_deposition_efficiency": [
+      "dry_deposition_efficiency"
+    ],
+    "secondary_aerosol_production": [
+      "secondary_aerosol_production"
+    ],
+    "soa_formation_rate": [
+      "soa_formation_rate"
+    ],
+    "inversion_type": [
+      "inversion_type"
+    ],
+    "monsoon_regime": [
+      "monsoon_regime"
+    ],
+    "boundary_layer_height": [
+      "boundary_layer_height"
+    ],
+    "monsoon_cycle_duration": [
+      "monsoon_cycle_duration"
+    ],
+    "air_mass_trajectory": [
+      "air_mass_trajectory"
+    ],
+    "water_vapor": [
+      "water_vapor"
+    ],
+    "sky_condition": [
+      "sky_condition"
+    ],
+    "spatial_scale": [
+      "spatial_scale"
+    ],
+    "nox_regime": [
+      "nox_regime"
+    ],
+    "condensation_sink": [
+      "condensation_sink"
+    ],
+    "pm25_residence_time": [
+      "pm25_residence_time"
+    ],
+    "wind_speed": [
+      "wind_speed"
+    ],
+    "air_mass_origin": [
+      "air_mass_origin"
+    ],
+    "industrial_zone_presence": [
+      "industrial_zone_presence"
+    ],
+    "wind_direction_source_alignment": [
+      "wind_direction_source_alignment"
+    ]
+  },
+  "summary": {
+    "total_canonical_fields": 117,
+    "total_synonym_groups": 117,
+    "categories": [
+      "aerosol_properties",
+      "atmospheric_structure",
+      "pollutants",
+      "spatial",
+      "temporal",
+      "qualitative",
+      "sources",
+      "processes",
+      "meteorology",
+      "other",
+      "events"
+    ]
+  }
+}

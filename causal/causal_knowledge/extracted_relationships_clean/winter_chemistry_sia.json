@@ -1,0 +1,1118 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "chemical_processes",
+  "source_count": 8,
+  "relationship_count_raw": 12,
+  "relationship_count_valid": 12,
+  "bibliography": [
+    {
+      "source_id": "nguyen2024_sia_hanoi",
+      "source_title": "Influence of Secondary Inorganic Aerosol on the Concentrations of PM2.5 and PM0.1 during Air Pollution Episodes in Hanoi, Vietnam",
+      "source_authors": "Nguyen-Quoc Dat, Bich-Thuy Ly, Trung-Dung Nghiem, Thu-Thi Hien Nguyen, Kazuhiko Sekiguchi, Truong-Thi Huyen, Thai-Ha Vinh, Le-Quang Tien",
+      "source_year": "2024",
+      "source_url": "https://link.springer.com/article/10.4209/aaqr.220446",
+      "source_doi": "10.4209/aaqr.220446",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "SIA contributed 29.0% to PM2.5 during air pollution episodes in Hanoi winter. Relative humidity, pressure, temperature, and radiation had good correlation with SIA of PM0.1. Long-range transport from northern areas also influenced PM2.5 and SIA levels."
+    },
+    {
+      "source_id": "makkonen2023_hanoi",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen U., Vestenius M., Huy L.N., Anh N.T.N., Linh P.T.V., Thuy P.T., Phuong H.T.M., Nguyen H., Thuy L.T., Aurela M., Hellén H., Loven K., Kouznetsov R., Kyllönen K., Teinilä K., Kim Oanh N.T.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_doi": "10.1016/j.atmosenv.2023.119650",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "One third of PM2.5 mass was secondary inorganic aerosol dominated by sulphates. PMF analysis identified six source factors including local SIA (18%) and long-range transported SIA (25%). Highest daily PM2.5 concentrations occurred during winter with stagnant meteorological conditions."
+    },
+    {
+      "source_id": "wang2020_beijing",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Wang J., Li J., Ye J., Zhao J., Wu Y., Hu J., Liu D., Nie D., Shen F., Huang X., Huang D.D., Ji D., Sun X., Xu W., Guo J., Song S., Qin Y., Liu P., Turner J.R., Lee H.C., Hwang S., Liao H., Martin S.T., Zhang Q., Jacob D.J.",
+      "source_year": "2020",
+      "source_url": "https://www.nature.com/articles/s41467-020-16683-x",
+      "source_doi": "10.1038/s41467-020-16683-x",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Fog and cloud readily form under winter haze conditions, leading to high liquid water contents with high pH (>5.5) from elevated ammonia. Such conditions enable fast aqueous-phase oxidation of SO2 by NO2, producing HONO which can in turn oxidize SO2 to yield N2O. Sulfate shifts to larger particle sizes during fog/cloud processing."
+    },
+    {
+      "source_id": "huang2023_alw",
+      "source_title": "Aerosol high water contents favor sulfate and secondary organic aerosol formation from fossil fuel combustion emissions",
+      "source_authors": "Huang X., Liu Z., Ge Y., Li Q., Wang X., Fu H., Zhu J., Zhou B., Wang L., George C., Wang Y., Wang X., Su J., Xue L., Yu S., Mellouki A., Chen J.",
+      "source_year": "2023",
+      "source_url": "https://www.nature.com/articles/s41612-023-00504-1",
+      "source_doi": "10.1038/s41612-023-00504-1",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Under conditions of RH exceeding 85%, multiphase oxidation of SO2 by in-particle nitrite/nitrous acid, generated through reactions involving aged EC-containing and iron-rich particles, as well as aqueous-phase formation of HMS, led to substantial increase in sulfate production. Aerosol LWC exhibited exponential increase with rising RH."
+    },
+    {
+      "source_id": "liu2020_beijing",
+      "source_title": "Formation mechanisms of atmospheric nitrate and sulfate during the winter haze pollution periods in Beijing: gas-phase, heterogeneous and aqueous-phase chemistry",
+      "source_authors": "Liu P., Ye C., Xue C., Zhang C., Mu Y., Sun X.",
+      "source_year": "2020",
+      "source_url": "https://acp.copernicus.org/articles/20/4153/2020/",
+      "source_doi": "10.5194/acp-20-4153-2020",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Heterogeneous hydrolysis of N2O5 involving aerosol liquid water was responsible for nocturnal formation of nitrate at extremely high RH levels (≥60%). The oxidation pathway of H2O2 rather than NO2 was found to contribute greatly to aqueous-phase formation of sulfate. SOR values were extremely high during RH≥60% conditions."
+    },
+    {
+      "source_id": "tao2020_aerosol_ph",
+      "source_title": "Aerosol pH and chemical regimes of sulfate formation in aerosol water during winter haze in the North China Plain",
+      "source_authors": "Tao W., Su H., Zheng G., Wang J., Wei C., Liu L., Ma N., Li M., Zhang Q., Pöschl U., Cheng Y.",
+      "source_year": "2020",
+      "source_url": "https://acp.copernicus.org/articles/20/11729/2020/",
+      "source_doi": "10.5194/acp-20-11729-2020",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Aerosol pH exhibited strong vertical gradient and distinct diurnal cycle. Over Beijing, average aerosol pH at surface layer was ~5.4. NO2 reaction pathway prevailed in megacity region at pH 4.5-5.7. TMI pathway dominated at pH 4-4.5. H2O2 pathway dominated at pH <4.5. Rapid sulfate production can be maintained over pH range 4.2-5.7."
+    },
+    {
+      "source_id": "meng2024_phase_state",
+      "source_title": "Particle phase state and aerosol liquid water greatly impact secondary aerosol formation: insights into phase transition and its role in haze events",
+      "source_authors": "Meng X. et al.",
+      "source_year": "2024",
+      "source_url": "https://acp.copernicus.org/articles/24/2399/2024/",
+      "source_doi": "10.5194/acp-24-2399-2024",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "During haze episodes, transformation rates of sulfate and nitrate aerosols rapidly increase through phase transition and increased ALW by 48%. Phase transition from solid to liquid state at high RH reduces kinetic limitation on heterogeneous reactions."
+    },
+    {
+      "source_id": "aandebrugh2012_nh4no3",
+      "source_title": "Modelling the partitioning of ammonium nitrate in the convective boundary layer",
+      "source_authors": "Aan de Brugh J.M.J. et al.",
+      "source_year": "2012",
+      "source_url": "https://acp.copernicus.org/articles/12/3005/2012/",
+      "source_doi": "10.5194/acp-12-3005-2012",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Ammonium nitrate and ammonium sulphate behave differently with varying temperature and relative humidity. Ammonium sulphate resides exclusively in the particle phase, while ammonium nitrate partitions between gas and particle phases. Low temperature and high RH favor particle-phase ammonium nitrate."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "chem_winter_001",
+      "category": "chemical_processes",
+      "cause_node": "relative_humidity",
+      "effect_node": "aerosol_liquid_water",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "RH cao (>75%) gây deliquescence của aerosol hygroscopic, làm tăng ALW theo hàm mũ",
+      "mechanism": "Khi độ ẩm tương đối (RH) vượt trên khoảng 75-80%, các hạt aerosol chứa sulfate, nitrate và ammonium hút ẩm mạnh và xảy ra quá trình deliquescence (hóa lỏng). Lớp nước bao quanh hạt (aerosol liquid water - ALW) tăng theo hàm mũ với RH tăng. ALW cung cấp môi trường pha nước cho các phản ứng oxy hóa SO2 và NO2 trong điều kiện haze mùa đông. Ở RH > 85%, ALW tăng đáng kể và tạo điều kiện thuận lợi cho các phản ứng multiphase.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "RH > 75%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 75,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Ngưỡng deliquescence của aerosol hygroscopic"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sự hiện diện của các hạt aerosol hygroscopic (sulfate, nitrate, ammonium)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có sẵn aerosol hygroscopic để hút ẩm",
+            "issue": "qualitative_precursor_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Winter haze episode",
+          "type": "season",
+          "field": "season",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Điều kiện haze mùa đông"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Đô thị độ ẩm cao (Hanoi/SEA)",
+          "type": "categorical",
+          "field": "geographic_region",
+          "value": "hanoi",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Áp dụng cho Hanoi và các đô thị Đông Nam Á có độ ẩm cao"
+          }
+        }
+      ],
+      "temporal_lag": "0-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["nguyen2024_sia_hanoi"],
+      "source_url": "https://link.springer.com/article/10.4209/aaqr.220446",
+      "source_title": "Influence of Secondary Inorganic Aerosol on the Concentrations of PM2.5 and PM0.1 during Air Pollution Episodes in Hanoi, Vietnam",
+      "source_authors": "Nguyen-Quoc Dat et al.",
+      "source_year": "2024",
+      "source_doi": "10.4209/aaqr.220446",
+      "source_quote": "Relative humidity, pressure, temperature, and radiation had a good correlation with SIA of PM0.1, suggesting the importance of aerosol liquid water in secondary formation.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "ALW tăng mạnh trong các đợt haze mùa đông, là tiền đề cho sulfate/nitrate formation. Mối quan hệ này được xác nhận bởi nhiều nghiên cứu tại Hanoi và China."
+    },
+    {
+      "id": "chem_winter_002",
+      "category": "chemical_processes",
+      "cause_node": "aerosol_liquid_water",
+      "effect_node": "aqueous_phase_reaction",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "ALW cung cấp môi trường pha nước cho các phản ứng oxy hóa SO2, NO2",
+      "mechanism": "Aerosol liquid water (ALW) cung cấp môi trường pha nước cho các phản ứng hóa học. Khi ALW tăng, các khí như SO2, NO2, H2O2, O3 có thể hòa tan vào pha nước và tham gia các phản ứng oxy hóa. ALW cho phép các phản ứng aqueous-phase xảy ra với tốc độ nhanh hơn nhiều so với gas-phase reactions. Đặc biệt, ALW tạo điều kiện cho sự phân ly của SO2 thành bisulfite (HSO3-) và sulfite (SO32-), là các dạng có thể bị oxy hóa thành sulfate.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "RH > 60%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Ngưỡng RH tối thiểu để có đủ ALW"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW content",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ hàm lượng ALW",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Presence of oxidants (H2O2, O3, NO2)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có sẵn các oxidant",
+            "issue": "qualitative_precursor_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Winter haze conditions",
+          "type": "season",
+          "field": "season",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Điều kiện haze mùa đông"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["huang2023_alw"],
+      "source_url": "https://www.nature.com/articles/s41612-023-00504-1",
+      "source_title": "Aerosol high water contents favor sulfate and secondary organic aerosol formation from fossil fuel combustion emissions",
+      "source_authors": "Huang X. et al.",
+      "source_year": "2023",
+      "source_doi": "10.1038/s41612-023-00504-1",
+      "source_quote": "Aerosol water, acting as both a medium and reactant in the multiphase reactions, exerts significant influence on gas-particle transformations through intricate physical and chemical mechanisms.",
+      "source_locator": "Introduction",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "ALW là yếu tố then chốt kích hoạt các phản ứng aqueous-phase trong điều kiện haze mùa đông."
+    },
+    {
+      "id": "chem_winter_003",
+      "category": "chemical_processes",
+      "cause_node": "nh3",
+      "effect_node": "aerosol_ph",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "NH3 trung hòa acid trong aerosol, làm tăng pH lên 5.5-6.5",
+      "mechanism": "NH3 (ammonia) là base mạnh trong khí quyển, khi hòa tan vào aerosol liquid water sẽ tạo NH4+ và OH-, làm tăng pH của aerosol. NH3 trung hòa các acid như H2SO4 và HNO3, tạo thành ammonium sulfate và ammonium nitrate. Khi nồng độ NH3 cao (phổ biến ở các vùng nông nghiệp và đô thị châu Á), aerosol pH có thể đạt 5.5-6.5, tạo điều kiện thuận lợi cho pathway oxy hóa SO2 bởi NO2 và O3.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "High NH3 emissions (agriculture, traffic)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có phát thải NH3 cao từ nông nghiệp hoặc giao thông",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW for dissolution",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ ALW để NH3 hòa tan",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Winter conditions with limited photochemistry",
+          "type": "season",
+          "field": "season",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Điều kiện mùa đông với photochemistry hạn chế"
+          }
+        }
+      ],
+      "temporal_lag": "0-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["wang2020_beijing"],
+      "source_url": "https://www.nature.com/articles/s41467-020-16683-x",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Wang J. et al.",
+      "source_year": "2020",
+      "source_doi": "10.1038/s41467-020-16683-x",
+      "source_quote": "Fog and cloud readily form under winter haze conditions, leading to high liquid water contents with high pH (>5.5) from elevated ammonia.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "NH3 là yếu tố quan trọng kiểm soát aerosol pH, đặc biệt ở các vùng có phát thải NH3 cao từ nông nghiệp."
+    },
+    {
+      "id": "chem_winter_004_a",
+      "category": "chemical_processes",
+      "cause_node": "aerosol_ph",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "MODERATOR",
+      "description": "pH > 5.5: NO2/O3 pathway chiếm ưu thế trong sulfate formation",
+      "mechanism": "Aerosol pH đóng vai trò moderator quan trọng, quyết định pathway nào chiếm ưu thế trong quá trình oxy hóa SO2 thành sulfate. Ở pH > 5.5, NO2 và O3 pathway chiếm ưu thế vì SO32- (sulfite) chiếm tỷ lệ cao hơn, phản ứng nhanh với NO2 và O3.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_004_a",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "pH > 5.5: NO2/O3 pathway dominant",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": ">",
+          "value": 5.5,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "NO2/O3 pathway chiếm ưu thế khi pH cao",
+            "dominant_pathway": "NO2_O3"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_004_a",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW and oxidants",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ ALW và oxidant",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "0-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["tao2020_aerosol_ph"],
+      "source_url": "https://acp.copernicus.org/articles/20/11729/2020/",
+      "source_title": "Aerosol pH and chemical regimes of sulfate formation in aerosol water during winter haze in the North China Plain",
+      "source_authors": "Tao W. et al.",
+      "source_year": "2020",
+      "source_doi": "10.5194/acp-20-11729-2020",
+      "source_quote": "Sensitivity tests show that the rapid production of sulfate in the NCP can be maintained over a wide range of aerosol acidity (e.g., pH = 4.2–5.7) with transitions from dominant TMI pathway regimes to dominant NO2/O3 pathway regimes.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "Đây là nhánh pH cao của relationship piecewise chem_winter_004.",
+      "metadata": {
+        "piecewise_group": "chem_winter_004",
+        "piecewise_branch": "high_ph"
+      }
+    },
+    {
+      "id": "chem_winter_004_b",
+      "category": "chemical_processes",
+      "cause_node": "aerosol_ph",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "MODERATOR",
+      "description": "pH 4-5: TMI pathway chiếm ưu thế trong sulfate formation",
+      "mechanism": "Ở pH trung bình (4-5), transition metal ions (TMI) như Fe3+ và Mn2+ xúc tác quá trình oxy hóa SO2 bởi O2 trong pha nước. Đây là pathway quan trọng trong điều kiện aerosol pH không quá cao cũng không quá thấp.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_004_b",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "pH 4-5: TMI pathway dominant",
+          "type": "range",
+          "field": "aerosol_ph",
+          "range": [4, 5],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "TMI pathway chiếm ưu thế ở pH trung bình",
+            "dominant_pathway": "TMI"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_004_b",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW and oxidants",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ ALW và oxidant",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "0-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["tao2020_aerosol_ph"],
+      "source_url": "https://acp.copernicus.org/articles/20/11729/2020/",
+      "source_title": "Aerosol pH and chemical regimes of sulfate formation in aerosol water during winter haze in the North China Plain",
+      "source_authors": "Tao W. et al.",
+      "source_year": "2020",
+      "source_doi": "10.5194/acp-20-11729-2020",
+      "source_quote": "Sensitivity tests show that the rapid production of sulfate in the NCP can be maintained over a wide range of aerosol acidity (e.g., pH = 4.2–5.7) with transitions from dominant TMI pathway regimes to dominant NO2/O3 pathway regimes.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "Đây là nhánh pH trung bình của relationship piecewise chem_winter_004.",
+      "metadata": {
+        "piecewise_group": "chem_winter_004",
+        "piecewise_branch": "medium_ph"
+      }
+    },
+    {
+      "id": "chem_winter_004_c",
+      "category": "chemical_processes",
+      "cause_node": "aerosol_ph",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "MODERATOR",
+      "description": "pH < 4.5: H2O2 pathway chiếm ưu thế trong sulfate formation",
+      "mechanism": "Ở pH thấp (< 4.5), H2O2 pathway chiếm ưu thế vì phản ứng H2O2 + HSO3- → H2SO4 không phụ thuộc nhiều vào pH và hoạt động hiệu quả ở điều kiện acid. HSO3- chiếm tỷ lệ cao ở pH thấp.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_004_c",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "pH < 4.5: H2O2 pathway dominant",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": "<",
+          "value": 4.5,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "H2O2 pathway chiếm ưu thế ở pH thấp",
+            "dominant_pathway": "H2O2"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_004_c",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW and oxidants",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ ALW và oxidant",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "0-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["tao2020_aerosol_ph"],
+      "source_url": "https://acp.copernicus.org/articles/20/11729/2020/",
+      "source_title": "Aerosol pH and chemical regimes of sulfate formation in aerosol water during winter haze in the North China Plain",
+      "source_authors": "Tao W. et al.",
+      "source_year": "2020",
+      "source_doi": "10.5194/acp-20-11729-2020",
+      "source_quote": "Sensitivity tests show that the rapid production of sulfate in the NCP can be maintained over a wide range of aerosol acidity (e.g., pH = 4.2–5.7) with transitions from dominant TMI pathway regimes to dominant NO2/O3 pathway regimes.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "Đây là nhánh pH thấp của relationship piecewise chem_winter_004.",
+      "metadata": {
+        "piecewise_group": "chem_winter_004",
+        "piecewise_branch": "low_ph"
+      }
+    },
+    {
+      "id": "chem_winter_005",
+      "category": "chemical_processes",
+      "cause_node": "so2",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "SO2 là tiền chất chính, bị oxy hóa trong pha nước thành sulfate",
+      "mechanism": "SO2 là tiền chất chính của sulfate. Trong điều kiện haze mùa đông với ALW cao, SO2 hòa tan vào pha nước và phân ly thành HSO3- và SO32-. Các dạng này bị oxy hóa bởi nhiều oxidant: (1) H2O2 + HSO3- → H2SO4 (nhanh, không phụ thuộc pH); (2) O3 + SO32- → SO42- (nhanh ở pH cao); (3) NO2 + SO32- → SO42- + HONO (nhanh ở pH > 5.5); (4) TMI (Fe3+, Mn2+) catalyzed O2 oxidation. Tốc độ oxy hóa SO2 trong pha nước nhanh hơn nhiều so với gas-phase oxidation bởi OH radical.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "High SO2 emissions (coal combustion, industry)",
+          "type": "qualitative",
+          "field": "so2_concentration",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có phát thải SO2 cao từ đốt than hoặc công nghiệp",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW (RH > 60%)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Ngưỡng RH tối thiểu để có đủ ALW cho phản ứng aqueous-phase"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Presence of oxidants (H2O2, O3, NO2)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có sẵn các oxidant",
+            "issue": "qualitative_precursor_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Appropriate aerosol pH",
+          "type": "qualitative",
+          "field": "aerosol_ph",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "pH phù hợp quyết định pathway chiếm ưu thế",
+            "issue": "qualitative_no_threshold"
+          }
+        }
+      ],
+      "temporal_lag": "2-24h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["liu2020_beijing"],
+      "source_url": "https://acp.copernicus.org/articles/20/4153/2020/",
+      "source_title": "Formation mechanisms of atmospheric nitrate and sulfate during the winter haze pollution periods in Beijing",
+      "source_authors": "Liu P. et al.",
+      "source_year": "2020",
+      "source_doi": "10.5194/acp-20-4153-2020",
+      "source_quote": "The extremely high mean values of SOR during the whole day under the RH≥60% condition could be ascribed to the evident contribution of SO2 aqueous-phase oxidation to the formation of sulfate during the severe pollution episodes.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "SO2 oxidation trong pha nước là pathway chính hình thành sulfate trong điều kiện haze mùa đông."
+    },
+    {
+      "id": "chem_winter_006",
+      "category": "chemical_processes",
+      "cause_node": "h2o2",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "H2O2 oxy hóa HSO3- thành sulfate, đặc biệt hiệu quả ở pH thấp",
+      "mechanism": "H2O2 là oxidant quan trọng cho sulfate formation trong pha nước. Phản ứng H2O2 + HSO3- → H2SO4 + H2O có tốc độ rất nhanh và không phụ thuộc nhiều vào pH (hoạt động tốt ở pH 2-6). Đây là pathway chiếm ưu thế ở aerosol pH < 4.5. H2O2 được tạo ra từ photochemistry ban ngày và có thể tích lũy trong aerosol water. Trong điều kiện haze mùa đông với photochemistry yếu, H2O2 vẫn có thể đóng góp đáng kể vào sulfate formation.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Presence of H2O2 in atmosphere",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có H2O2 trong khí quyển",
+            "issue": "qualitative_precursor_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient ALW",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ ALW cho phản ứng aqueous-phase",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Aerosol pH < 4.5 (H2O2 pathway dominant)",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": "<",
+          "value": 4.5,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "H2O2 pathway chiếm ưu thế ở pH thấp, nhưng vẫn hoạt động ở pH 2-6"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Works across wide pH range",
+          "type": "qualitative",
+          "field": "aerosol_ph",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "H2O2 pathway hoạt động trên dải pH rộng (2-6)",
+            "ph_range_effective": [2, 6]
+          }
+        }
+      ],
+      "temporal_lag": "1-6h",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "sources": ["liu2020_beijing"],
+      "source_url": "https://acp.copernicus.org/articles/20/4153/2020/",
+      "source_title": "Formation mechanisms of atmospheric nitrate and sulfate during the winter haze pollution periods in Beijing",
+      "source_authors": "Liu P. et al.",
+      "source_year": "2020",
+      "source_doi": "10.5194/acp-20-4153-2020",
+      "source_quote": "Based on the parameters measured in this study and the known sulfate production rate calculation method, the oxidation pathway of H2O2 rather than NO2 was found to contribute greatly to the aqueous-phase formation of sulfate.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "H2O2 pathway quan trọng đặc biệt ở pH thấp, bổ sung cho NO2/O3 pathway ở pH cao."
+    },
+    {
+      "id": "chem_winter_007",
+      "category": "chemical_processes",
+      "cause_node": "no2",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "NO2 oxy hóa SO32- thành sulfate ở pH cao (>5.5) trong điều kiện fog/cloud",
+      "mechanism": "NO2 có thể oxy hóa SO32- (sulfite) trong pha nước để tạo sulfate theo phản ứng: SO32- + NO2 → SO42- + HONO/NO. Pathway này chiếm ưu thế ở pH > 5.5 vì cần tỷ lệ SO32- cao (SO32- chiếm ưu thế ở pH > 7.2, HSO3- ở pH 2-7). Trong điều kiện fog/cloud với pH cao (>5.5) do NH3 cao, NO2 pathway có thể đóng góp đáng kể vào sulfate formation. Tuy nhiên, ở aerosol pH thấp (3-5), NO2 pathway không quan trọng.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Aerosol pH > 5.5",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": ">",
+          "value": 5.5,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "NO2 pathway chỉ hiệu quả ở pH cao"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "High NO2 concentrations (traffic, industry)",
+          "type": "qualitative",
+          "field": "no2_concentration",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có nồng độ NO2 cao từ giao thông hoặc công nghiệp",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Fog/cloud conditions with high LWC",
+          "type": "qualitative",
+          "field": "fog_indicator",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Điều kiện fog/cloud với hàm lượng nước lỏng cao",
+            "issue": "qualitative_fog_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "High NH3 to maintain elevated pH",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần NH3 cao để duy trì pH cao",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "1-6h",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "sources": ["wang2020_beijing"],
+      "source_url": "https://www.nature.com/articles/s41467-020-16683-x",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Wang J. et al.",
+      "source_year": "2020",
+      "source_doi": "10.1038/s41467-020-16683-x",
+      "source_quote": "Such conditions enable fast aqueous-phase oxidation of SO2 by NO2, producing HONO which can in turn oxidize SO2 to yield N2O.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "NO2 pathway còn tranh cãi về tầm quan trọng do phụ thuộc mạnh vào pH. Quan trọng trong điều kiện fog/cloud với pH cao."
+    },
+    {
+      "id": "chem_winter_008",
+      "category": "chemical_processes",
+      "cause_node": "sulfate_formation",
+      "effect_node": "sia_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Sulfate kết hợp với NH4+ tạo ammonium sulfate, đóng góp 30-50% SIA",
+      "mechanism": "Sulfate (SO42-) là thành phần chính của secondary inorganic aerosol (SIA). Khi sulfate được hình thành qua các phản ứng aqueous-phase và multiphase, nó kết hợp với NH4+ tạo thành ammonium sulfate ((NH4)2SO4) hoặc ammonium bisulfate (NH4HSO4). Sulfate đóng góp trực tiếp vào khối lượng SIA, thường chiếm 30-50% tổng SIA trong các episode ô nhiễm mùa đông.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Sufficient SO2 and oxidants",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ SO2 và oxidant cho sulfate formation",
+            "issue": "qualitative_precursor_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "ALW for aqueous reactions",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có ALW cho các phản ứng aqueous-phase",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "NH3 for neutralization",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần NH3 để trung hòa và tạo ammonium sulfate",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "2-12h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["makkonen2023_hanoi"],
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen U. et al.",
+      "source_year": "2023",
+      "source_doi": "10.1016/j.atmosenv.2023.119650",
+      "source_quote": "One third of PM2.5 mass was secondary inorganic aerosol dominated by sulphates.",
+      "source_locator": "Highlights",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Sulfate là thành phần dominant của SIA tại Hanoi, đặc biệt trong mùa đông."
+    },
+    {
+      "id": "chem_winter_009",
+      "category": "chemical_processes",
+      "cause_node": "temperature",
+      "effect_node": "ammonium_nitrate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Nhiệt độ thấp (<15°C) dịch chuyển cân bằng khí-hạt về phía pha hạt, ổn định NH4NO3",
+      "mechanism": "Nhiệt độ thấp trong mùa đông làm giảm áp suất hơi bão hòa của HNO3 và NH3, dẫn đến cân bằng khí-hạt dịch chuyển về phía pha hạt. Phản ứng HNO3(g) + NH3(g) ⇌ NH4NO3(s,aq) dịch chuyển sang phải khi nhiệt độ giảm. Ở nhiệt độ < 15°C, ammonium nitrate ổn định trong pha hạt. Ở nhiệt độ cao hơn, NH4NO3 phân hủy thành HNO3 và NH3 bay hơi. Đây là lý do nitrate cao hơn đáng kể trong mùa đông so với mùa hè.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Temperature < 15°C (winter)",
+          "type": "threshold",
+          "field": "temperature",
+          "operator": "<",
+          "value": 15,
+          "checkable": true,
+          "normalized": {
+            "unit": "°C",
+            "interpretation": "Ngưỡng nhiệt độ để NH4NO3 ổn định trong pha hạt"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Sufficient HNO3 and NH3",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ HNO3 và NH3 làm tiền chất",
+            "issue": "qualitative_precursor_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "RH > 60% (deliquescence)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Ngưỡng RH để xảy ra deliquescence"
+          }
+        }
+      ],
+      "temporal_lag": "0-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["aandebrugh2012_nh4no3"],
+      "source_url": "https://acp.copernicus.org/articles/12/3005/2012/",
+      "source_title": "Modelling the partitioning of ammonium nitrate in the convective boundary layer",
+      "source_authors": "Aan de Brugh J.M.J. et al.",
+      "source_year": "2012",
+      "source_doi": "10.5194/acp-12-3005-2012",
+      "source_quote": "Ammonium nitrate and ammonium sulphate behave differently with varying temperature and relative humidity. Ammonium sulphate resides exclusively in the particle phase, while ammonium nitrate partitions between gas and particle phases.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "global",
+      "notes": "Nhiệt độ thấp là điều kiện cần thiết cho sự tích lũy nitrate trong pha hạt vào mùa đông."
+    },
+    {
+      "id": "chem_winter_010",
+      "category": "chemical_processes",
+      "cause_node": "nox",
+      "effect_node": "nitrate_formation",
+      "relationship_type": "INDIRECT_CAUSE",
+      "description": "NOx là tiền chất của nitrate qua chuỗi phản ứng NO2→HNO3→NH4NO3",
+      "mechanism": "NOx (NO + NO2) là tiền chất của nitrate. Ban ngày, NO2 phản ứng với OH radical tạo HNO3: NO2 + OH → HNO3. Ban đêm, NO2 phản ứng với O3 tạo NO3 radical, sau đó phản ứng với NO2 tạo N2O5: NO2 + O3 → NO3 + O2; NO3 + NO2 → N2O5. N2O5 sau đó thủy phân heterogeneous trên bề mặt aerosol tạo HNO3: N2O5 + H2O → 2HNO3. HNO3 sau đó phản ứng với NH3 tạo ammonium nitrate.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "High NOx emissions (traffic, industry)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có phát thải NOx cao từ giao thông hoặc công nghiệp",
+            "issue": "qualitative_no_threshold"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Daytime: OH radical available",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "value": "day",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Ban ngày có OH radical cho phản ứng NO2 + OH → HNO3",
+            "pathway": "daytime_OH"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Nighttime: O3 available for N2O5 formation",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "value": "night",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Ban đêm có O3 cho phản ứng tạo N2O5",
+            "pathway": "nighttime_N2O5"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "RH > 60% for N2O5 hydrolysis",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Ngưỡng RH để N2O5 hydrolysis xảy ra hiệu quả"
+          }
+        }
+      ],
+      "temporal_lag": "2-12h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["liu2020_beijing"],
+      "source_url": "https://acp.copernicus.org/articles/20/4153/2020/",
+      "source_title": "Formation mechanisms of atmospheric nitrate and sulfate during the winter haze pollution periods in Beijing",
+      "source_authors": "Liu P. et al.",
+      "source_year": "2020",
+      "source_doi": "10.5194/acp-20-4153-2020",
+      "source_quote": "The significant correlation between NOR and [NO2]2 × [O3] during the nighttime under the RH≥60% condition indicated that the heterogeneous hydrolysis of N2O5 involving aerosol liquid water was responsible for the nocturnal formation of nitrate.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "NOx → HNO3 → NH4NO3 là chuỗi phản ứng chính hình thành nitrate, với N2O5 hydrolysis quan trọng ban đêm."
+    },
+    {
+      "id": "chem_winter_011",
+      "category": "chemical_processes",
+      "cause_node": "ammonium_nitrate_formation",
+      "effect_node": "sia_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "NH4NO3 đóng góp 20-40% SIA trong mùa đông",
+      "mechanism": "Ammonium nitrate (NH4NO3) là thành phần quan trọng của SIA, đặc biệt trong mùa đông khi nhiệt độ thấp ổn định pha hạt. NH4NO3 được hình thành từ phản ứng giữa HNO3 và NH3 trong pha khí hoặc pha nước. Trong điều kiện mùa đông với nhiệt độ thấp và RH cao, NH4NO3 đóng góp đáng kể vào tổng khối lượng SIA, có thể chiếm 20-40% SIA.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_011",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Low temperature (< 15°C)",
+          "type": "threshold",
+          "field": "temperature",
+          "operator": "<",
+          "value": 15,
+          "checkable": true,
+          "normalized": {
+            "unit": "°C",
+            "interpretation": "Nhiệt độ thấp để NH4NO3 ổn định"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_011",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "High RH (> 60%)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "RH cao để duy trì pha hạt"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_011",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Sufficient HNO3 and NH3",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có đủ HNO3 và NH3 làm tiền chất",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "0-6h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["nguyen2024_sia_hanoi"],
+      "source_url": "https://link.springer.com/article/10.4209/aaqr.220446",
+      "source_title": "Influence of Secondary Inorganic Aerosol on the Concentrations of PM2.5 and PM0.1 during Air Pollution Episodes in Hanoi, Vietnam",
+      "source_authors": "Nguyen-Quoc Dat et al.",
+      "source_year": "2024",
+      "source_doi": "10.4209/aaqr.220446",
+      "source_quote": "SIA contributed on average 29.0% and 14.1%, respectively, to PM2.5 and PM0.1 concentrations during air pollution episodes at HUST.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Nitrate contribution tăng đáng kể trong mùa đông do điều kiện nhiệt động học thuận lợi."
+    },
+    {
+      "id": "chem_winter_012",
+      "category": "chemical_processes",
+      "cause_node": "sia_formation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "SIA đóng góp 25-40% PM2.5 trong các episode ô nhiễm mùa đông",
+      "mechanism": "Secondary inorganic aerosol (SIA) bao gồm sulfate, nitrate và ammonium là thành phần chính của PM2.5 trong các đợt ô nhiễm mùa đông. SIA đóng góp trực tiếp vào khối lượng PM2.5, thường chiếm 25-40% tổng PM2.5 trong các episode nặng. Sự hình thành nhanh chóng của SIA qua các phản ứng aqueous-phase và multiphase là nguyên nhân chính gây ra các đợt ô nhiễm PM2.5 nghiêm trọng trong mùa đông.",
+      "conditions": [
+        {
+          "relationship_id": "chem_winter_012",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Winter haze episodes",
+          "type": "season",
+          "field": "season",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Các đợt haze mùa đông"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_012",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "High RH and stable conditions",
+          "type": "qualitative",
+          "field": "relative_humidity",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "RH cao và điều kiện khí quyển ổn định",
+            "issue": "qualitative_compound_condition"
+          }
+        },
+        {
+          "relationship_id": "chem_winter_012",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "High precursor levels (SO2, NOx, NH3)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Cần có nồng độ tiền chất cao",
+            "issue": "qualitative_precursor_condition"
+          }
+        }
+      ],
+      "temporal_lag": "2-24h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["makkonen2023_hanoi"],
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen U. et al.",
+      "source_year": "2023",
+      "source_doi": "10.1016/j.atmosenv.2023.119650",
+      "source_quote": "One third of PM2.5 mass was secondary inorganic aerosol dominated by sulphates.",
+      "source_locator": "Highlights",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "SIA là thành phần dominant của PM2.5 trong các đợt ô nhiễm mùa đông tại Hanoi."
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "meteorological_pathways",
+    "emission_sources",
+    "transport_mechanisms"
+  ],
+  "missing_info": "1. Dữ liệu định lượng về aerosol pH tại Hanoi còn thiếu - hầu hết nghiên cứu về pH là từ China. 2. Vai trò cụ thể của transition metal ions (Fe, Mn) trong sulfate formation tại Hanoi chưa được nghiên cứu chi tiết. 3. Tỷ lệ đóng góp của các pathway khác nhau (H2O2, NO2, O3, TMI) vào sulfate formation tại Hanoi cần được xác định. 4. Mối quan hệ giữa biomass burning và SIA formation tại Hanoi cần được làm rõ hơn.",
+  "contradictions": [
+    {
+      "relationship": "no2 → sulfate_formation",
+      "conflicting_evidence": "Một số nghiên cứu (Wang et al., 2020) cho rằng NO2 pathway quan trọng trong điều kiện fog/cloud với pH cao (>5.5), trong khi nghiên cứu khác (Liu et al., 2020; Guo et al., 2017) cho rằng aerosol pH thường trong khoảng 3-5, quá thấp để NO2 pathway hoạt động hiệu quả.",
+      "sources": ["Wang et al. 2020 Nature Communications", "Liu et al. 2020 ACP", "Guo et al. 2017"]
+    }
+  ],
+  "qa_summary": {
+    "total_relationships": 14,
+    "total_conditions": 47,
+    "checkable_conditions": 22,
+    "uncheckable_conditions": 25,
+    "piecewise_splits": [
+      {
+        "original_id": "chem_winter_004",
+        "split_into": ["chem_winter_004_a", "chem_winter_004_b", "chem_winter_004_c"],
+        "reason": "Relationship gốc có 3 nhánh pH khác nhau với pathway khác nhau, không thể encode AND logic"
+      }
+    ],
+    "condition_types_distribution": {
+      "threshold": 12,
+      "qualitative": 22,
+      "season": 5,
+      "categorical": 1,
+      "time_of_day": 2,
+      "range": 1
+    },
+    "fields_used": [
+      "relative_humidity",
+      "temperature",
+      "aerosol_ph",
+      "aerosol_liquid_water",
+      "precursor_availability",
+      "season",
+      "geographic_region",
+      "so2_concentration",
+      "no2_concentration",
+      "fog_indicator",
+      "time_of_day"
+    ]
+  }
+}

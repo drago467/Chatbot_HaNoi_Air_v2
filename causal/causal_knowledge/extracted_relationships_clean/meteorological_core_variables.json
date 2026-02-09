@@ -1,0 +1,1399 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "meteorological_pathways",
+  "source_count": 6,
+  "relationship_count_raw": 18,
+  "relationship_count_valid": 18,
+  "bibliography": [
+    {
+      "source_id": "bib_001",
+      "source_title": "Nocturnal surface radiation cooling modulated by cloud cover change reinforces PM2.5 accumulation: Observational study of heavy air pollution in the Sichuan Basin, Southwest China",
+      "source_authors": "Jun Hu, Tianliang Zhao, Jane Liu, Le Cao, Junrong Xia, Chenggang Wang, Xingbing Zhao, Zhiqiu Gao, Zhuozhi Shu, Yueqing Li",
+      "source_year": "2021",
+      "source_url": "https://doi.org/10.1016/j.scitotenv.2021.148624",
+      "source_doi": "10.1016/j.scitotenv.2021.148624",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Demonstrates that decreased cloud cover enhances surface radiation cooling at night, which strengthens temperature inversion and promotes PM2.5 accumulation. Provides quantitative evidence for cloud-radiation-inversion-PM2.5 pathway."
+    },
+    {
+      "source_id": "bib_002",
+      "source_title": "Tracing the Formation of Secondary Aerosols Influenced by Solar Radiation and Relative Humidity in Suburban Environment",
+      "source_authors": "Yangzhou Wu, Dantong Liu, Ping Tian, Jiujiang Sheng, Quan Liu, et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.1029/2022JD036913",
+      "source_doi": "10.1029/2022JD036913",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Shows that solar radiation drives photochemical aging and OOA (secondary organic aerosol) formation. Higher solar radiation leads to faster SOA production. Reduced solar radiation (from clouds/pollution) decreases photochemical reaction rates."
+    },
+    {
+      "source_id": "bib_003",
+      "source_title": "Formation of hydroxyl radicals from photolysis of secondary organic aerosol material",
+      "source_authors": "K. M. Badali, S. Zhou, D. Aljawhary, M. Antiñolo, W. J. Chen, A. Lok, E. Mungall, J. P. S. Wong, R. Zhao, J. P. D. Abbatt",
+      "source_year": "2015",
+      "source_url": "https://doi.org/10.5194/acp-15-7831-2015",
+      "source_doi": "10.5194/acp-15-7831-2015",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Demonstrates that UV photolysis of SOA material produces OH radicals with high quantum yield (0.8 ± 0.4). OH formation rates from SOA are 5 times faster than from H2O2 photolysis alone."
+    },
+    {
+      "source_id": "bib_004",
+      "source_title": "Impacts of atmospheric circulation patterns and cloud inhibition on aerosol radiative effect and boundary layer structure during winter air pollution in Sichuan Basin, China",
+      "source_authors": "Hua Lu, Min Xie, Bingliang Zhuang, Danyang Ma, Bojun Liu, Yangzhihao Zhan, Tijian Wang, Shu Li, Mengmeng Li, Kuanguang Zhu",
+      "source_year": "2024",
+      "source_url": "https://doi.org/10.5194/acp-24-8963-2024",
+      "source_doi": "10.5194/acp-24-8963-2024",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Quantifies cloud radiation interaction (CRI) effects: clouds reduce solar radiation through reflection and scattering, causing 50% reduction in solar radiation and boundary layer height. CRI inhibition leads to more stable stratification and aerosol accumulation."
+    },
+    {
+      "source_id": "bib_005",
+      "source_title": "Impacts of aerosol–photolysis interaction and aerosol–radiation feedback on surface-layer ozone in North China during multi-pollutant air pollution episodes",
+      "source_authors": "Hao Yang, Lei Chen, Hong Liao, Jia Zhu, Wenjie Wang, Xin Li",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.5194/acp-22-4101-2022",
+      "source_doi": "10.5194/acp-22-4101-2022",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Quantifies aerosol-photolysis interaction: reduced solar radiation decreases photolysis rates (J[NO2], J[O1D]) by 1.8-2.0×10⁻³ and 5.7-6.4×10⁻⁶ s⁻¹ respectively. This reduces O3 production and affects secondary aerosol formation."
+    },
+    {
+      "source_id": "bib_006",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "P.D. Hien, V.T. Bac, H.C. Tham, D.D. Nhan, L.D. Vinh",
+      "source_year": "2002",
+      "source_url": "https://doi.org/10.1016/S1352-2310(02)00295-9",
+      "source_doi": "10.1016/S1352-2310(02)00295-9",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Foundational paper for Hanoi: nocturnal radiation inversions (Oct-Dec) and subsidence temperature inversions (Jan-Mar) cause very high PM2.5. Meteorological parameters explain 60-74% of day-to-day PM2.5 variations."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "met_cloud_001",
+      "category": "meteorological_pathways",
+      "cause_node": "cloud_cover",
+      "effect_node": "reduced_solar_radiation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cloud cover reduces solar radiation reaching surface through reflection and scattering",
+      "mechanism": "Cloud cover (đặc biệt là overcast conditions với cloud fraction >70%) làm giảm lượng solar radiation đến bề mặt thông qua hai cơ chế: (1) phản xạ (reflection) ánh sáng mặt trời trở lại không gian, và (2) tán xạ (scattering) ánh sáng trong các hạt nước của mây. Quá trình này làm giảm cả shortwave radiation ban ngày và thay đổi longwave radiation balance ban đêm.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "High cloud cover (>70%)",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": ">",
+          "value": 70,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Cloud fraction exceeds 70%"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Cloud liquid water content present",
+          "type": "qualitative",
+          "field": "cloud_liquid_water",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Presence of cloud liquid water required for scattering",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Daytime (for shortwave effects) or Nighttime (for longwave effects)",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "logic": {
+              "op": "OR",
+              "children": [
+                {
+                  "type": "time_of_day",
+                  "field": "time_of_day",
+                  "value": "day",
+                  "effect": "shortwave"
+                },
+                {
+                  "type": "time_of_day",
+                  "field": "time_of_day",
+                  "value": "night",
+                  "effect": "longwave"
+                }
+              ]
+            },
+            "interpretation": "Different radiation effects apply for day vs night"
+          }
+        }
+      ],
+      "temporal_lag": "immediate",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_004"],
+      "source_url": "https://doi.org/10.5194/acp-24-8963-2024",
+      "source_title": "Impacts of atmospheric circulation patterns and cloud inhibition on aerosol radiative effect and boundary layer structure during winter air pollution in Sichuan Basin, China",
+      "source_authors": "Lu et al.",
+      "source_year": "2024",
+      "source_doi": "10.5194/acp-24-8963-2024",
+      "source_quote": "Clouds reduce solar radiation through reflection and scattering, resulting in more stable stratification and aerosol accumulation.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_seasons",
+      "spatial_scope": "local",
+      "notes": "Step 1 of chain: cloud_cover → reduced_solar_radiation → reduced_surface_heating → atmospheric_stability → inversion → pm25. CRI inhibition caused 50% reduction in solar radiation."
+    },
+    {
+      "id": "met_cloud_002",
+      "category": "meteorological_pathways",
+      "cause_node": "reduced_solar_radiation",
+      "effect_node": "reduced_surface_heating",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Reduced solar radiation leads to decreased surface temperature",
+      "mechanism": "Khi solar radiation đến bề mặt giảm do cloud cover, năng lượng hấp thụ bởi bề mặt đất giảm theo, dẫn đến giảm nhiệt độ bề mặt (surface temperature). Điều này làm giảm gradient nhiệt độ giữa bề mặt và khí quyển, ảnh hưởng đến sự phát triển của convective boundary layer.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Daytime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime hours when solar radiation is present"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Reduced shortwave radiation reaching surface",
+          "type": "qualitative",
+          "field": "solar_radiation",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Shortwave radiation is reduced compared to clear-sky conditions",
+            "issue": "no_numeric_threshold_available"
+          }
+        }
+      ],
+      "temporal_lag": "immediate to hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_005"],
+      "source_url": "https://doi.org/10.5194/acp-22-4101-2022",
+      "source_title": "Impacts of aerosol–photolysis interaction and aerosol–radiation feedback on surface-layer ozone in North China during multi-pollutant air pollution episodes",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_doi": "10.5194/acp-22-4101-2022",
+      "source_quote": "API and ARF reduced the daytime shortwave radiative fluxes at the surface by 92.4–102.9 W m−2",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_seasons",
+      "spatial_scope": "local",
+      "notes": "Step 2 of chain. Quantified reduction: 92-103 W/m² decrease in surface shortwave radiation."
+    },
+    {
+      "id": "met_cloud_003",
+      "category": "meteorological_pathways",
+      "cause_node": "reduced_surface_heating",
+      "effect_node": "atmospheric_stability",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Reduced surface heating leads to stable atmospheric stratification",
+      "mechanism": "Giảm nhiệt độ bề mặt làm giảm sự phát triển của turbulent mixing và convection trong boundary layer. Khi bề mặt không được làm nóng đủ, không khí gần mặt đất không có đủ năng lượng để nổi lên, dẫn đến điều kiện khí quyển ổn định (stable stratification) với reduced vertical mixing.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Daytime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime hours"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Weak surface heating",
+          "type": "qualitative",
+          "field": "surface_heating",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Surface heating is weak due to reduced solar radiation",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Low wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Wind speed below 2 m/s reduces mechanical mixing",
+            "inferred_threshold": true,
+            "threshold_source": "common_threshold_for_low_wind"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_004"],
+      "source_url": "https://doi.org/10.5194/acp-24-8963-2024",
+      "source_title": "Impacts of atmospheric circulation patterns and cloud inhibition on aerosol radiative effect and boundary layer structure during winter air pollution in Sichuan Basin, China",
+      "source_authors": "Lu et al.",
+      "source_year": "2024",
+      "source_doi": "10.5194/acp-24-8963-2024",
+      "source_quote": "Clouds reduce solar radiation through reflection and scattering, resulting in more stable stratification and aerosol accumulation.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_seasons",
+      "spatial_scope": "local",
+      "notes": "Step 3 of chain. Stable stratification inhibits vertical mixing."
+    },
+    {
+      "id": "met_cloud_004",
+      "category": "meteorological_pathways",
+      "cause_node": "atmospheric_stability",
+      "effect_node": "pblh_decrease",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Stable atmospheric conditions suppress boundary layer growth",
+      "mechanism": "Điều kiện khí quyển ổn định (stable atmospheric conditions) ức chế sự phát triển của convective boundary layer, dẫn đến giảm planetary boundary layer height (PBLH). PBLH thấp hơn có nghĩa là thể tích không khí có sẵn để pha loãng chất ô nhiễm bị giảm đáng kể.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Stable atmospheric conditions",
+          "type": "qualitative",
+          "field": "atmospheric_stability",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Atmosphere is stably stratified, inhibiting convection",
+            "issue": "no_numeric_stability_index_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Weak turbulence",
+          "type": "qualitative",
+          "field": "turbulence",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Turbulent kinetic energy is low",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Low wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Wind speed below 2 m/s",
+            "inferred_threshold": true,
+            "threshold_source": "common_threshold_for_low_wind"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_004"],
+      "source_url": "https://doi.org/10.5194/acp-24-8963-2024",
+      "source_title": "Impacts of atmospheric circulation patterns and cloud inhibition on aerosol radiative effect and boundary layer structure during winter air pollution in Sichuan Basin, China",
+      "source_authors": "Lu et al.",
+      "source_year": "2024",
+      "source_doi": "10.5194/acp-24-8963-2024",
+      "source_quote": "The CRI inhibition caused a 50% reduction in solar radiation and boundary layer height during the daytime under the LT pattern",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_seasons",
+      "spatial_scope": "local",
+      "notes": "Step 4 of chain. Quantified: 50% reduction in boundary layer height due to cloud radiation interaction."
+    },
+    {
+      "id": "met_cloud_005",
+      "category": "meteorological_pathways",
+      "cause_node": "pblh_decrease",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Decreased PBLH concentrates pollutants in smaller volume",
+      "mechanism": "Khi PBLH giảm, thể tích không khí trong boundary layer giảm, trong khi emissions vẫn tiếp tục. Điều này dẫn đến tăng nồng độ PM2.5 do hiệu ứng concentration (cùng lượng chất ô nhiễm trong thể tích nhỏ hơn). Đồng thời, reduced vertical mixing ngăn cản sự phân tán của chất ô nhiễm lên cao.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Low PBLH (<500m)",
+          "type": "threshold",
+          "field": "boundary_layer_height",
+          "operator": "<",
+          "value": 500,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m",
+            "interpretation": "Planetary boundary layer height below 500 meters"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Continued emissions",
+          "type": "qualitative",
+          "field": "emissions",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Emission sources continue to release pollutants",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Weak vertical mixing",
+          "type": "qualitative",
+          "field": "vertical_mixing",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Vertical mixing is suppressed due to stable conditions",
+            "issue": "no_numeric_threshold_available"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_005"],
+      "source_url": "https://doi.org/10.5194/acp-22-4101-2022",
+      "source_title": "Impacts of aerosol–photolysis interaction and aerosol–radiation feedback on surface-layer ozone in North China during multi-pollutant air pollution episodes",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_doi": "10.5194/acp-22-4101-2022",
+      "source_quote": "the stabilized atmosphere decreased the daytime planetary boundary layer height and 10 m wind speed by 129.0–249.0 m and 0.05–0.15 m s−1, respectively",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_seasons",
+      "spatial_scope": "local",
+      "notes": "Step 5 of chain. PBLH decrease of 129-249m leads to PM2.5 accumulation."
+    },
+    {
+      "id": "met_cloud_006",
+      "category": "meteorological_pathways",
+      "cause_node": "decreased_cloud_cover",
+      "effect_node": "enhanced_surface_radiation_cooling",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Decreased cloud cover at night enhances surface longwave radiation loss",
+      "mechanism": "Ban đêm, khi cloud cover giảm, bề mặt mất nhiệt nhanh hơn thông qua longwave radiation emission vào không gian. Mây thường trap longwave radiation và radiate nó trở lại bề mặt (greenhouse effect), nhưng khi không có mây, bề mặt cooling được tăng cường đáng kể.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Nighttime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "night",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [18, 6],
+            "wrap_day": true,
+            "interpretation": "Nighttime hours when longwave radiation dominates"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Clear sky or low cloud cover (<30%)",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 30,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Cloud fraction below 30% allows enhanced longwave emission"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Dry conditions",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": "<",
+          "value": 60,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Low humidity enhances radiative cooling",
+            "inferred_threshold": true,
+            "threshold_source": "typical_dry_condition_threshold"
+          }
+        }
+      ],
+      "temporal_lag": "immediate",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_001"],
+      "source_url": "https://doi.org/10.1016/j.scitotenv.2021.148624",
+      "source_title": "Nocturnal surface radiation cooling modulated by cloud cover change reinforces PM2.5 accumulation",
+      "source_authors": "Hu et al.",
+      "source_year": "2021",
+      "source_doi": "10.1016/j.scitotenv.2021.148624",
+      "source_quote": "Surface radiation cooling was enhanced (weakened) by decreased (increased) cloud cover fraction by changing longwave radiation at night",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Nighttime pathway. Opposite effect to daytime: low cloud cover at night enhances cooling."
+    },
+    {
+      "id": "met_cloud_007",
+      "category": "meteorological_pathways",
+      "cause_node": "enhanced_surface_radiation_cooling",
+      "effect_node": "inversion",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Strong surface cooling creates temperature inversion layer",
+      "mechanism": "Surface radiation cooling mạnh làm cho bề mặt lạnh hơn không khí phía trên, tạo ra temperature inversion (nghịch nhiệt) - một lớp không khí ấm hơn nằm trên lớp không khí lạnh gần mặt đất. Inversion này hoạt động như một 'nắp' ngăn cản sự phân tán thẳng đứng của chất ô nhiễm.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Nighttime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "night",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [18, 6],
+            "wrap_day": true,
+            "interpretation": "Nighttime hours"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Strong surface cooling",
+          "type": "qualitative",
+          "field": "surface_cooling_rate",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Surface temperature drops significantly due to radiative cooling",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Clear sky conditions",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 30,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Clear or mostly clear sky"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 3,
+          "original_text": "Low wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Wind speed below 2 m/s reduces mechanical mixing",
+            "inferred_threshold": true,
+            "threshold_source": "common_threshold_for_low_wind"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_001"],
+      "source_url": "https://doi.org/10.1016/j.scitotenv.2021.148624",
+      "source_title": "Nocturnal surface radiation cooling modulated by cloud cover change reinforces PM2.5 accumulation",
+      "source_authors": "Hu et al.",
+      "source_year": "2021",
+      "source_doi": "10.1016/j.scitotenv.2021.148624",
+      "source_quote": "this strengthened (weakened) near-surface temperature inversion intensity",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Nighttime pathway step 2. Radiation inversions form from surface cooling."
+    },
+    {
+      "id": "met_cloud_008",
+      "category": "meteorological_pathways",
+      "cause_node": "inversion",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Temperature inversion traps pollutants near surface",
+      "mechanism": "Temperature inversion tạo ra một lớp không khí ổn định ngăn cản sự trộn lẫn thẳng đứng. Chất ô nhiễm phát thải gần mặt đất bị giữ lại dưới lớp inversion, không thể phân tán lên cao, dẫn đến tích tụ PM2.5 trong lớp không khí gần mặt đất.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Temperature inversion present",
+          "type": "categorical",
+          "field": "inversion_presence",
+          "operator": "==",
+          "value": "present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Temperature inversion layer exists"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Continued emissions",
+          "type": "qualitative",
+          "field": "emissions",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Emission sources continue to release pollutants",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Low wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Wind speed below 2 m/s",
+            "inferred_threshold": true,
+            "threshold_source": "common_threshold_for_low_wind"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_001"],
+      "source_url": "https://doi.org/10.1016/j.scitotenv.2021.148624",
+      "source_title": "Nocturnal surface radiation cooling modulated by cloud cover change reinforces PM2.5 accumulation",
+      "source_authors": "Hu et al.",
+      "source_year": "2021",
+      "source_doi": "10.1016/j.scitotenv.2021.148624",
+      "source_quote": "promoted (prevented) the accumulated increase in PM2.5",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Final step of nighttime pathway. Inversion traps pollutants near surface."
+    },
+    {
+      "id": "met_solar_001",
+      "category": "meteorological_pathways",
+      "cause_node": "solar_radiation",
+      "effect_node": "photolysis",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Solar UV radiation drives photolysis of atmospheric molecules",
+      "mechanism": "Solar radiation (đặc biệt là UV radiation trong dải 290-400 nm) cung cấp năng lượng photon cần thiết để phá vỡ các liên kết hóa học trong các phân tử như NO2, O3, HONO, H2O2, và các organic peroxides. Quá trình photolysis này là bước khởi đầu cho các phản ứng photochemistry trong khí quyển.",
+      "conditions": [
+        {
+          "relationship_id": "met_solar_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Daytime (solar radiation > 0)",
+          "type": "threshold",
+          "field": "solar_radiation",
+          "operator": ">",
+          "value": 0,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "W/m²",
+            "interpretation": "Solar radiation is present (daytime)"
+          }
+        },
+        {
+          "relationship_id": "met_solar_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "UV radiation present (290-400 nm)",
+          "type": "range",
+          "field": "uv_wavelength",
+          "operator": "in",
+          "value": null,
+          "range": [290, 400],
+          "checkable": false,
+          "normalized": {
+            "unit": "nm",
+            "interpretation": "UV-A and UV-B wavelengths required for photolysis",
+            "issue": "wavelength_not_directly_measurable_in_standard_met_data"
+          }
+        },
+        {
+          "relationship_id": "met_solar_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Clear sky or partly cloudy conditions",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 70,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Cloud cover below 70% allows sufficient UV penetration"
+          }
+        }
+      ],
+      "temporal_lag": "immediate (seconds to minutes)",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_003"],
+      "source_url": "https://doi.org/10.5194/acp-15-7831-2015",
+      "source_title": "Formation of hydroxyl radicals from photolysis of secondary organic aerosol material",
+      "source_authors": "Badali et al.",
+      "source_year": "2015",
+      "source_doi": "10.5194/acp-15-7831-2015",
+      "source_quote": "This paper demonstrates that OH radicals are formed by photolysis of secondary organic aerosol (SOA) material formed by terpene ozonolysis.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "global",
+      "notes": "Step 1 of photochemistry chain: solar_radiation → photolysis → radical_formation → oxidation_reactions → soa_formation → pm25"
+    },
+    {
+      "id": "met_solar_002",
+      "category": "meteorological_pathways",
+      "cause_node": "photolysis",
+      "effect_node": "oh_radical_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Photolysis of O3, HONO, H2O2 produces OH radicals",
+      "mechanism": "Photolysis của các phân tử như O3 (tạo O(1D) + H2O → 2OH), HONO (→ OH + NO), H2O2 (→ 2OH), và organic hydroperoxides (ROOH → RO + OH) tạo ra hydroxyl radicals (OH). OH radical là chất oxy hóa chính trong khí quyển, khởi đầu hầu hết các phản ứng oxy hóa VOCs.",
+      "conditions": [
+        {
+          "relationship_id": "met_solar_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "UV radiation present",
+          "type": "threshold",
+          "field": "solar_radiation",
+          "operator": ">",
+          "value": 0,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "W/m²",
+            "interpretation": "UV radiation present for photolysis"
+          }
+        },
+        {
+          "relationship_id": "met_solar_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Precursor molecules present (O3, HONO, H2O2, ROOH)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Photolysis precursors (O3, HONO, H2O2, ROOH) must be present",
+            "issue": "multiple_species_not_individually_tracked"
+          }
+        },
+        {
+          "relationship_id": "met_solar_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Daytime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime hours"
+          }
+        }
+      ],
+      "temporal_lag": "seconds to minutes",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_003"],
+      "source_url": "https://doi.org/10.5194/acp-15-7831-2015",
+      "source_title": "Formation of hydroxyl radicals from photolysis of secondary organic aerosol material",
+      "source_authors": "Badali et al.",
+      "source_year": "2015",
+      "source_doi": "10.5194/acp-15-7831-2015",
+      "source_quote": "The OH formation rates from SOA are 5 times faster than from the photolysis of H2O2 solutions whose concentrations correspond to the peroxide content of the SOA solutions",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "global",
+      "notes": "Step 2 of photochemistry chain. Quantum yield for OH from α-pinene SOA is 0.8 ± 0.4."
+    },
+    {
+      "id": "met_solar_003",
+      "category": "meteorological_pathways",
+      "cause_node": "oh_radical_formation",
+      "effect_node": "voc_oxidation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "OH radicals oxidize VOCs to form low-volatility products",
+      "mechanism": "OH radicals phản ứng với volatile organic compounds (VOCs) thông qua hydrogen abstraction hoặc addition reactions. Phản ứng này tạo ra các organic peroxy radicals (RO2) và các sản phẩm oxy hóa có độ bay hơi thấp hơn (low-volatility oxidation products).",
+      "conditions": [
+        {
+          "relationship_id": "met_solar_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "OH radicals present",
+          "type": "qualitative",
+          "field": "oh_radical_concentration",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "OH radicals are present from photolysis",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_solar_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "VOCs present (biogenic: isoprene, terpenes; anthropogenic: aromatics, alkanes)",
+          "type": "qualitative",
+          "field": "voc_concentration",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "VOCs from biogenic or anthropogenic sources must be present",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_solar_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Daytime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime hours"
+          }
+        }
+      ],
+      "temporal_lag": "minutes to hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_002"],
+      "source_url": "https://doi.org/10.1029/2022JD036913",
+      "source_title": "Tracing the Formation of Secondary Aerosols Influenced by Solar Radiation and Relative Humidity in Suburban Environment",
+      "source_authors": "Wu et al.",
+      "source_year": "2022",
+      "source_doi": "10.1029/2022JD036913",
+      "source_quote": "The intensity of solar radiation and the air mass transport time can determine the photochemical age of pollutants",
+      "source_locator": "Section 3.2",
+      "seasonal_variation": "summer",
+      "spatial_scope": "local",
+      "notes": "Step 3 of photochemistry chain. Photochemical aging increases with solar radiation."
+    },
+    {
+      "id": "met_solar_004",
+      "category": "meteorological_pathways",
+      "cause_node": "voc_oxidation",
+      "effect_node": "soa_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Low-volatility VOC oxidation products condense to form SOA",
+      "mechanism": "Các sản phẩm oxy hóa VOCs có độ bay hơi thấp (low-volatility organic compounds, LVOCs) và cực kỳ thấp (extremely low-volatility organic compounds, ELVOCs) ngưng tụ trên các hạt aerosol hiện có hoặc nucleate để tạo hạt mới. Quá trình này tạo ra secondary organic aerosol (SOA), đóng góp đáng kể vào khối lượng PM2.5.",
+      "conditions": [
+        {
+          "relationship_id": "met_solar_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Oxidation products present",
+          "type": "qualitative",
+          "field": "oxidation_products",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Low-volatility oxidation products from VOC oxidation",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_solar_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Sufficient oxidation degree (O/C ratio)",
+          "type": "qualitative",
+          "field": "oc_ratio",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "O/C ratio indicates sufficient oxidation for condensation",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_solar_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Condensation sink available",
+          "type": "qualitative",
+          "field": "condensation_sink",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Pre-existing aerosol surface area for condensation",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_solar_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 3,
+          "original_text": "Daytime (for photochemical pathway)",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime for photochemical SOA pathway"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_002"],
+      "source_url": "https://doi.org/10.1029/2022JD036913",
+      "source_title": "Tracing the Formation of Secondary Aerosols Influenced by Solar Radiation and Relative Humidity in Suburban Environment",
+      "source_authors": "Wu et al.",
+      "source_year": "2022",
+      "source_doi": "10.1029/2022JD036913",
+      "source_quote": "all OOA/BC exhibited early afternoon peaks for all air masses corresponding to times of intense solar radiation... These results demonstrate the important role of photooxidation in OOA3 formation",
+      "source_locator": "Section 3.3",
+      "seasonal_variation": "summer",
+      "spatial_scope": "local",
+      "notes": "Step 4 of photochemistry chain. OOA3 (highly oxidized OA with O/C = 0.81) peaks with solar radiation."
+    },
+    {
+      "id": "met_solar_005",
+      "category": "meteorological_pathways",
+      "cause_node": "soa_formation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "SOA contributes directly to PM2.5 mass",
+      "mechanism": "Secondary organic aerosol (SOA) đóng góp trực tiếp vào khối lượng PM2.5 thông qua việc tăng khối lượng organic matter trong aerosol. SOA có thể chiếm 20-80% tổng khối lượng organic aerosol tùy thuộc vào điều kiện và nguồn phát thải.",
+      "conditions": [
+        {
+          "relationship_id": "met_solar_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "SOA formation active",
+          "type": "qualitative",
+          "field": "soa_formation_rate",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "SOA formation processes are occurring",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_solar_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Precursors available (VOCs, oxidants)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "VOCs and oxidants are available for SOA formation",
+            "issue": "no_numeric_threshold_available"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_002"],
+      "source_url": "https://doi.org/10.1029/2022JD036913",
+      "source_title": "Tracing the Formation of Secondary Aerosols Influenced by Solar Radiation and Relative Humidity in Suburban Environment",
+      "source_authors": "Wu et al.",
+      "source_year": "2022",
+      "source_doi": "10.1029/2022JD036913",
+      "source_quote": "Secondary PM production was more rapid at tage > 6 hr, particularly for C3 with higher solar radiation",
+      "source_locator": "Section 3.2",
+      "seasonal_variation": "summer",
+      "spatial_scope": "local",
+      "notes": "Final step of photochemistry chain. SOA contributes to PM2.5 mass."
+    },
+    {
+      "id": "met_cloud_solar_001",
+      "category": "meteorological_pathways",
+      "cause_node": "cloud_cover",
+      "effect_node": "reduced_photolysis",
+      "relationship_type": "MODERATOR",
+      "description": "Cloud cover reduces UV radiation and photolysis rates",
+      "mechanism": "Cloud cover làm giảm solar radiation (đặc biệt là UV) đến bề mặt, từ đó giảm photolysis rates của các phân tử như NO2 (J[NO2]) và O3 (J[O1D]). Điều này làm chậm toàn bộ chuỗi phản ứng photochemistry, giảm tốc độ hình thành OH radicals và các sản phẩm oxy hóa.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_solar_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "High cloud cover (>70%)",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": ">",
+          "value": 70,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Cloud fraction exceeds 70%"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_solar_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Daytime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime hours when photolysis occurs"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_solar_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "VOCs and NOx present",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "VOCs and NOx precursors are present",
+            "issue": "no_numeric_threshold_available"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "sources": ["bib_005"],
+      "source_url": "https://doi.org/10.5194/acp-22-4101-2022",
+      "source_title": "Impacts of aerosol–photolysis interaction and aerosol–radiation feedback on surface-layer ozone in North China during multi-pollutant air pollution episodes",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_doi": "10.5194/acp-22-4101-2022",
+      "source_quote": "Aerosols were simulated to reduce the daytime near-surface photolysis rates of J[NO2] and J[O1D] by 1.8 × 10−3–2.0 × 10−3 and 5.7 × 10−6–6.4 × 10−6 s−1, respectively",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_seasons",
+      "spatial_scope": "local",
+      "notes": "Moderator effect: cloud_cover moderates solar_radiation → photolysis → soa_formation. Same mechanism applies to clouds as to aerosols."
+    },
+    {
+      "id": "met_cloud_solar_002",
+      "category": "meteorological_pathways",
+      "cause_node": "reduced_photolysis",
+      "effect_node": "reduced_soa_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Reduced photolysis decreases OH production and SOA formation",
+      "mechanism": "Khi photolysis rates giảm, sản xuất OH radicals giảm, dẫn đến giảm tốc độ oxy hóa VOCs và giảm hình thành SOA. Điều này làm giảm thành phần secondary organic trong PM2.5, nhưng có thể bị offset bởi các hiệu ứng khác như tăng tích tụ do giảm PBLH.",
+      "conditions": [
+        {
+          "relationship_id": "met_cloud_solar_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Reduced UV radiation",
+          "type": "qualitative",
+          "field": "uv_radiation",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "UV radiation is reduced compared to clear-sky",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_solar_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Reduced photolysis rates",
+          "type": "qualitative",
+          "field": "photolysis_rate",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Photolysis rates J[NO2], J[O1D] are reduced",
+            "issue": "no_numeric_threshold_available"
+          }
+        },
+        {
+          "relationship_id": "met_cloud_solar_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Daytime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Daytime hours"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "sources": ["bib_005"],
+      "source_url": "https://doi.org/10.5194/acp-22-4101-2022",
+      "source_title": "Impacts of aerosol–photolysis interaction and aerosol–radiation feedback on surface-layer ozone in North China during multi-pollutant air pollution episodes",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_doi": "10.5194/acp-22-4101-2022",
+      "source_quote": "the weakened O3 chemical production made the greatest contribution to API effect",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "local",
+      "notes": "Reduced photochemistry leads to reduced secondary aerosol formation."
+    },
+    {
+      "id": "met_hanoi_001",
+      "category": "meteorological_pathways",
+      "cause_node": "nocturnal_radiation_inversion",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Nocturnal radiation inversions in Hanoi trap PM2.5 near surface",
+      "mechanism": "Tại Hà Nội, nocturnal radiation inversions hình thành từ tháng 10 đến tháng 12 do surface radiation cooling mạnh vào ban đêm. Inversion này trap chất ô nhiễm gần mặt đất, dẫn đến nồng độ PM2.5 cao, đặc biệt vào ban đêm cao hơn ban ngày.",
+      "conditions": [
+        {
+          "relationship_id": "met_hanoi_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Nighttime",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "night",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [18, 6],
+            "wrap_day": true,
+            "interpretation": "Nighttime hours"
+          }
+        },
+        {
+          "relationship_id": "met_hanoi_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "October to December",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [10, 11, 12],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 12,
+              "wrap_year": false
+            },
+            "interpretation": "October through December period"
+          }
+        },
+        {
+          "relationship_id": "met_hanoi_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Clear sky conditions",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 30,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Clear or mostly clear sky"
+          }
+        },
+        {
+          "relationship_id": "met_hanoi_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 3,
+          "original_text": "Low wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Wind speed below 2 m/s",
+            "inferred_threshold": true,
+            "threshold_source": "common_threshold_for_low_wind"
+          }
+        }
+      ],
+      "temporal_lag": "hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_006"],
+      "source_url": "https://doi.org/10.1016/S1352-2310(02)00295-9",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien et al.",
+      "source_year": "2002",
+      "source_doi": "10.1016/S1352-2310(02)00295-9",
+      "source_quote": "Very high PM2.5 and PM2.5−10 concentrations were observed in conjunction with the occurrence of nocturnal radiation inversions from October to December",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Hanoi-specific relationship. Foundational evidence for inversion-PM2.5 link in Hanoi."
+    },
+    {
+      "id": "met_hanoi_002",
+      "category": "meteorological_pathways",
+      "cause_node": "subsidence_temperature_inversion",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Subsidence inversions in Hanoi cause high PM2.5 with no diurnal variation",
+      "mechanism": "Từ tháng 1 đến tháng 3 tại Hà Nội, subsidence temperature inversions (STI) hình thành do sự hạ xuống của không khí từ hệ thống áp cao. STI tạo ra một lớp không khí ấm ở trên, ngăn cản sự phân tán thẳng đứng của chất ô nhiễm, dẫn đến nồng độ PM2.5 cao và phân bố đều giữa ngày và đêm.",
+      "conditions": [
+        {
+          "relationship_id": "met_hanoi_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "January to March",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [1, 2, 3],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 1,
+              "end_month": 3,
+              "wrap_year": false
+            },
+            "interpretation": "January through March period"
+          }
+        },
+        {
+          "relationship_id": "met_hanoi_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "High pressure system influence",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "high_pressure",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "High pressure system dominates the region"
+          }
+        },
+        {
+          "relationship_id": "met_hanoi_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Subsidence conditions",
+          "type": "categorical",
+          "field": "vertical_motion",
+          "operator": "==",
+          "value": "subsidence",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Large-scale subsidence from high pressure system",
+            "issue": "requires_synoptic_analysis"
+          }
+        }
+      ],
+      "temporal_lag": "hours to days",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["bib_006"],
+      "source_url": "https://doi.org/10.1016/S1352-2310(02)00295-9",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien et al.",
+      "source_year": "2002",
+      "source_doi": "10.1016/S1352-2310(02)00295-9",
+      "source_quote": "subsidence temperature inversions (STI) from January to March... no significant diurnal variations in concentrations were observed",
+      "source_locator": "Abstract",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Hanoi-specific relationship. Different from nocturnal inversions - no diurnal variation."
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "chemical_processes - for detailed SOA chemistry pathways beyond photochemistry initiation",
+    "meteorological_pathways - for detailed inversion formation physics not tied to cloud cover"
+  ],
+  "missing_info": "Cần thêm nghiên cứu định lượng về: (1) Ngưỡng cloud cover cụ thể ảnh hưởng đến photolysis rates tại Hà Nội; (2) Tỷ lệ đóng góp của SOA so với primary aerosol trong PM2.5 tại Hà Nội theo mùa; (3) Tương tác giữa cloud cover effects on stability và photochemistry - hiệu ứng nào chiếm ưu thế trong điều kiện cụ thể.",
+  "contradictions": [
+    {
+      "relationship": "cloud_cover → pm25 (complex effect)",
+      "conflicting_evidence": "Cloud cover có thể có hai hiệu ứng trái ngược: (1) Ban ngày: giảm solar radiation → giảm photochemistry → giảm SOA formation → giảm PM2.5 secondary; nhưng đồng thời giảm PBLH → tăng PM2.5 accumulation. (2) Ban đêm: tăng cloud cover → giảm surface cooling → giảm inversion → giảm PM2.5 accumulation. Hiệu ứng ròng phụ thuộc vào điều kiện cụ thể.",
+      "sources": ["Lu et al. 2024", "Hu et al. 2021", "Yang et al. 2022"]
+    }
+  ],
+  "metadata": {
+    "normalized_at": "2026-02-04",
+    "total_conditions": 54,
+    "checkable_conditions": 28,
+    "uncheckable_conditions": 26,
+    "condition_types": {
+      "threshold": 17,
+      "time_of_day": 12,
+      "qualitative": 19,
+      "categorical": 3,
+      "month": 2,
+      "compound": 1,
+      "range": 1
+    }
+  }
+}

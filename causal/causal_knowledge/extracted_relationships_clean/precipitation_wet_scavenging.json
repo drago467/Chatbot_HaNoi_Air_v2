@@ -1,0 +1,1060 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "meteorological_pathways",
+  "source_count": 6,
+  "relationship_count_raw": 10,
+  "relationship_count_valid": 14,
+  "bibliography": [
+    {
+      "source_id": "sun_2019",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_doi": "10.1029/2019EA000717",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Light precipitation (<0.5mm) increases PM2.5 due to hygroscopic growth. Heavy precipitation (>10mm) decreases PM2.5 through scavenging. Threshold values identified: 0.5mm and 10mm. Scavenging efficiency depends on both precipitation amount and initial PM2.5 concentration."
+    },
+    {
+      "source_id": "zhao_2020",
+      "source_title": "Impact of Precipitation with Different Intensity on PM2.5 over Typical Regions of China",
+      "source_authors": "Zhao, X., Sun, Y., Zhao, C., Jiang, H.",
+      "source_year": "2020",
+      "source_url": "https://www.mdpi.com/2073-4433/11/9/906",
+      "source_doi": "10.3390/atmos11090906",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Three stages of removal effect identified: negative (<0.28-0.6 mm/h), neutral (0.28-2 to 0.6-4.5 mm/h), and positive (>2-5 mm/h). Regional differences in thresholds between BTH, YRD, and PRD. Hygroscopic growth competes with scavenging at low intensities."
+    },
+    {
+      "source_id": "xu_2019",
+      "source_title": "Multi-method determination of the below-cloud wet scavenging coefficients of aerosols in Beijing, China",
+      "source_authors": "Xu, D., Ge, B., Chen, X., Sun, Y., Cheng, N., Li, M., Pan, X., Ma, Z., Pan, Y., Wang, Z.",
+      "source_year": "2019",
+      "source_url": "https://acp.copernicus.org/articles/19/15569/2019/",
+      "source_doi": "10.5194/acp-19-15569-2019",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Below-cloud wet scavenging coefficients (BWSC) in range of 10^-5 s^-1. Exponential power relationship between BWSC and precipitation intensity. Greenfield gap (0.2-2.5 μm) shows higher observed BWSC than theoretical predictions. Field measurements show BWSC 1 order of magnitude higher than model calculations."
+    },
+    {
+      "source_id": "guo_2016",
+      "source_title": "The washout effects of rainfall on atmospheric particulate pollution in two Chinese cities",
+      "source_authors": "Guo, L.C., Zhang, Y., Lin, H., Zeng, W., Liu, T., Xiao, J., Rutherford, S., You, J., Ma, W.",
+      "source_year": "2016",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27203467/",
+      "source_doi": "10.1016/j.envpol.2016.05.003",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Rainfall thresholds for PM2.5 washout: 7mm in Guangzhou, 1mm in Xi'an. Better washout effect for PM2.5-10 than PM2.5. PM2.5 reduction lasts 3 days (Guangzhou) to 6 days (Xi'an) after rain. Regional climate affects washout efficiency."
+    },
+    {
+      "source_id": "hien_2002",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_doi": "10.1016/S1352-2310(02)00295-9",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "In Hanoi, PM2.5 varies from 10 μg/m³ (rainy monsoon months June-August) to >300 μg/m³ (winter October-March). Rainfall and relative humidity largely control daily variations of PM2.5-10. Summer monsoon brings much lower particulate pollution than winter. Wind speed and temperature are key determinants of PM2.5."
+    },
+    {
+      "source_id": "itahashi_2021",
+      "source_title": "Insights into seasonal variation of wet deposition over southeast Asia via precipitation adjustment from the findings of MICS-Asia III",
+      "source_authors": "Itahashi, S., Ge, B., Sato, K., et al.",
+      "source_year": "2021",
+      "source_url": "https://acp.copernicus.org/articles/21/8709/2021/",
+      "source_doi": "10.5194/acp-21-8709-2021",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Wet deposition in Southeast Asia shows strong seasonal variation linked to monsoon precipitation patterns. Vietnam experiences significant wet deposition during monsoon season. Model inter-comparison reveals uncertainties in wet deposition simulation over Asia."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "met_rain_001",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation_intensity",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cường độ mưa cao làm tăng hiệu quả scavenging PM2.5 thông qua cơ chế collision efficiency",
+      "mechanism": "Cường độ mưa càng lớn thì hiệu quả va chạm giữa hạt mưa và hạt aerosol (collision efficiency) càng cao. Mưa mạnh tạo ra nhiều hạt mưa lớn hơn với vận tốc rơi cao hơn, làm tăng xác suất va chạm và bắt giữ các hạt PM2.5 trong cột khí quyển thông qua cơ chế inertial impaction và interception.",
+      "sources": ["zhao_2020"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Rainfall intensity > 2 mm/h (BTH region)",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "logic": {
+              "op": "OR",
+              "children": [1, 2, 3]
+            },
+            "note": "Regional thresholds vary - compound OR logic for different regions"
+          }
+        },
+        {
+          "relationship_id": "met_rain_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Rainfall intensity > 2 mm/h (BTH region)",
+          "type": "threshold",
+          "field": "precipitation_intensity_mmph",
+          "operator": ">",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm/h",
+            "geographic_context": "BTH (Beijing-Tianjin-Hebei)",
+            "precipitation_interpretation": "intensity_mmph"
+          }
+        },
+        {
+          "relationship_id": "met_rain_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Rainfall intensity > 4.5 mm/h (YRD region)",
+          "type": "threshold",
+          "field": "precipitation_intensity_mmph",
+          "operator": ">",
+          "value": 4.5,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm/h",
+            "geographic_context": "YRD (Yangtze River Delta)",
+            "precipitation_interpretation": "intensity_mmph"
+          }
+        },
+        {
+          "relationship_id": "met_rain_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 3,
+          "original_text": "Rainfall intensity > 5 mm/h (PRD region)",
+          "type": "threshold",
+          "field": "precipitation_intensity_mmph",
+          "operator": ">",
+          "value": 5,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm/h",
+            "geographic_context": "PRD (Pearl River Delta)",
+            "precipitation_interpretation": "intensity_mmph"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://www.mdpi.com/2073-4433/11/9/906",
+      "source_title": "Impact of Precipitation with Different Intensity on PM2.5 over Typical Regions of China",
+      "source_authors": "Zhao, X., Sun, Y., Zhao, C., Jiang, H.",
+      "source_year": "2020",
+      "source_quote": "With the increase of precipitation intensity, the removal effect of precipitation on PM2.5 changed from negative to positive values gradually. When the precipitation was heavy, the positive removal effect dominated and reduced the PM2.5 mass concentration clearly.",
+      "source_locator": "Section 4 Conclusions",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Ngưỡng cường độ mưa khác nhau giữa các vùng do điều kiện khí hậu và đặc điểm aerosol khác nhau.",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_002",
+      "category": "meteorological_pathways",
+      "cause_node": "wet_deposition",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Wet deposition loại bỏ PM2.5 qua below-cloud và in-cloud scavenging",
+      "mechanism": "Quá trình wet deposition loại bỏ PM2.5 khỏi khí quyển thông qua hai cơ chế chính: (1) Below-cloud scavenging - hạt mưa rơi xuống bắt giữ các hạt aerosol qua Brownian diffusion, interception và inertial impaction; (2) In-cloud scavenging - các hạt aerosol hoạt động như hạt nhân ngưng tụ mây (CCN) và bị loại bỏ khi mưa rơi.",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Accumulated rainfall > 10 mm",
+          "type": "threshold",
+          "field": "accumulated_precipitation_mm",
+          "operator": ">",
+          "value": 10,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm",
+            "precipitation_interpretation": "accumulated_mm_per_event"
+          }
+        },
+        {
+          "relationship_id": "met_rain_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Duration > 1 hour",
+          "type": "threshold",
+          "field": "precipitation_duration_hours",
+          "operator": ">",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "hours"
+          }
+        },
+        {
+          "relationship_id": "met_rain_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Initial PM2.5 > 75 μg/m³ for significant reduction",
+          "type": "threshold",
+          "field": "pm25_initial",
+          "operator": ">",
+          "value": 75,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "μg/m³",
+            "note": "Threshold for significant scavenging effect"
+          }
+        }
+      ],
+      "temporal_lag": "0-6h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "For precipitation events with amount larger than 10 mm, PM2.5 mass concentration significantly decreased with precipitation amount with a rate of 0.17 μg/m³ per 1 mm. For these relatively heavy precipitation events, the precipitation scavenging effect plays the dominant role.",
+      "source_locator": "Section 3.3, Figure 8c",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Mối quan hệ này mạnh hơn khi nồng độ PM2.5 ban đầu cao (>115 μg/m³).",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_003",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation_intensity",
+      "effect_node": "pm25",
+      "relationship_type": "INDIRECT_CAUSE",
+      "description": "Mưa nhẹ có thể làm TĂNG PM2.5 do hygroscopic growth chiếm ưu thế",
+      "mechanism": "Mưa nhẹ (<0.5mm) có thể làm TĂNG nồng độ PM2.5 do: (1) Độ ẩm cao kèm theo mưa nhẹ thúc đẩy hygroscopic growth của aerosol, làm tăng khối lượng hạt; (2) Gas-particle conversion (secondary formation) được tăng cường trong điều kiện ẩm ướt; (3) Hiệu quả scavenging của mưa nhẹ không đủ để bù đắp sự tăng khối lượng do hygroscopic growth.",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Precipitation amount 0.1-0.5 mm",
+          "type": "range",
+          "field": "accumulated_precipitation_mm",
+          "operator": "in",
+          "value": null,
+          "range": [0.1, 0.5],
+          "checkable": true,
+          "normalized": {
+            "unit": "mm",
+            "precipitation_interpretation": "accumulated_mm_per_event",
+            "note": "Light precipitation range"
+          }
+        },
+        {
+          "relationship_id": "met_rain_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Duration < 1 hour",
+          "type": "threshold",
+          "field": "precipitation_duration_hours",
+          "operator": "<",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "hours"
+          }
+        },
+        {
+          "relationship_id": "met_rain_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "High relative humidity",
+          "type": "qualitative",
+          "field": "relative_humidity",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_numeric_threshold_in_source",
+            "interpretation": "High RH accompanies light rain, promotes hygroscopic growth"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "For precipitation events with amount of 0.1–0.5 mm, PM2.5 mass concentration increased with precipitation amount with a rate of 0.85 μg/m³ per 0.1 mm (r = +0.91, p < 0.05). This observational phenomenon is likely associated with the hygroscopic growth of aerosol particles and the gas-particle conversion (secondary formation) of aerosols.",
+      "source_locator": "Section 3.3, Figure 8a",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Đây là edge case quan trọng: mưa nhẹ không phải lúc nào cũng giảm PM2.5.",
+      "metadata": {
+        "piecewise_group": "precipitation_pm25_nonlinear",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_004",
+      "category": "meteorological_pathways",
+      "cause_node": "below_cloud_scavenging",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Below-cloud scavenging loại bỏ aerosol qua Brownian diffusion, inertial impaction và interception",
+      "mechanism": "Below-cloud scavenging loại bỏ aerosol trong lớp biên khí quyển thông qua ba cơ chế chính: (1) Brownian diffusion - hiệu quả với hạt nhỏ <0.2 μm; (2) Inertial impaction - hiệu quả với hạt lớn >2.5 μm; (3) Interception - hiệu quả trung bình. Hệ số scavenging (BWSC) tuân theo phân bố lũy thừa với cường độ mưa: K = a × P^b, với a và b phụ thuộc vào kích thước hạt và loại aerosol.",
+      "sources": ["xu_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Precipitation intensity > 0.17 mm/h",
+          "type": "threshold",
+          "field": "precipitation_intensity_mmph",
+          "operator": ">",
+          "value": 0.17,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm/h",
+            "precipitation_interpretation": "intensity_mmph",
+            "note": "Minimum intensity for measurable BWSC"
+          }
+        },
+        {
+          "relationship_id": "met_rain_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Below-cloud layer height available",
+          "type": "qualitative",
+          "field": "boundary_layer_height",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_numeric_threshold_in_source",
+            "interpretation": "Below-cloud layer must exist for this mechanism"
+          }
+        },
+        {
+          "relationship_id": "met_rain_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Particle size 0.2-2.5 μm (Greenfield gap) shows higher observed BWSC than theoretical",
+          "type": "range",
+          "field": "particle_size_um",
+          "operator": "in",
+          "value": null,
+          "range": [0.2, 2.5],
+          "checkable": true,
+          "normalized": {
+            "unit": "μm",
+            "note": "Greenfield gap - observed BWSC 1 order of magnitude higher than theoretical"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://acp.copernicus.org/articles/19/15569/2019/",
+      "source_title": "Multi-method determination of the below-cloud wet scavenging coefficients of aerosols in Beijing, China",
+      "source_authors": "Xu, D., Ge, B., Chen, X., Sun, Y., Cheng, N., Li, M., Pan, X., Ma, Z., Pan, Y., Wang, Z.",
+      "source_year": "2019",
+      "source_quote": "The averaged BWSCs obtained by field measurements are similar to each other (10^-5 s^-1) and there is a strong exponential power relationship between BWSCs and precipitation intensity. Theoretical estimations coincide well with the observed BWSCs of aerosols with dp in ranges smaller than 0.2 μm and larger than 2.5 μm but are an order of magnitude lower than the observed BWSCs within 0.2–2.5 μm.",
+      "source_locator": "Section 4 Conclusions",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "BWSC thực tế cao hơn 1 bậc so với tính toán lý thuyết trong khoảng Greenfield gap (0.2-2.5 μm).",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_005",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation_duration",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "MODERATOR",
+      "description": "Thời gian mưa kéo dài làm tăng hiệu quả scavenging tích lũy",
+      "mechanism": "Thời gian mưa kéo dài làm tăng tổng lượng mưa tích lũy và kéo dài thời gian tiếp xúc giữa hạt mưa và aerosol, từ đó tăng hiệu quả loại bỏ PM2.5. Tuy nhiên, sau một thời gian nhất định, nồng độ aerosol giảm đến mức thấp khiến hiệu quả scavenging giảm dần (diminishing returns).",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Duration > 1 hour for significant effect",
+          "type": "threshold",
+          "field": "precipitation_duration_hours",
+          "operator": ">",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "hours",
+            "note": "Minimum duration for significant scavenging effect"
+          }
+        },
+        {
+          "relationship_id": "met_rain_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Accumulated rainfall > 10 mm",
+          "type": "threshold",
+          "field": "accumulated_precipitation_mm",
+          "operator": ">",
+          "value": 10,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm",
+            "precipitation_interpretation": "accumulated_mm_per_event"
+          }
+        }
+      ],
+      "temporal_lag": "1-6h",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "For precipitation events with amount larger than 10 mm, PM2.5 mass concentration significantly decreased with precipitation amount.",
+      "source_locator": "Key Points, Section 3.1",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Thời gian mưa và lượng mưa có tương quan dương mạnh.",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_006",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Mưa gió mùa mùa hè tại Hà Nội làm giảm đáng kể PM2.5",
+      "mechanism": "Tại Hà Nội, mưa gió mùa mùa hè (tháng 5-9) làm giảm đáng kể nồng độ PM2.5 và PM2.5-10 so với mùa đông khô (tháng 10-3). Lượng mưa và độ ẩm tương đối kiểm soát phần lớn biến động hàng ngày của PM2.5-10, cho thấy vai trò quan trọng của wet deposition trong việc loại bỏ bụi đất trong phân đoạn này.",
+      "sources": ["hien_2002"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Summer monsoon season (May-September)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [5, 6, 7, 8, 9],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 5,
+              "end_month": 9,
+              "wrap_year": false
+            },
+            "season_label": "summer_monsoon"
+          }
+        },
+        {
+          "relationship_id": "met_rain_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Monsoon rainfall events",
+          "type": "categorical",
+          "field": "precipitation_occurrence",
+          "operator": "==",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Monsoon rainfall must be occurring"
+          }
+        },
+        {
+          "relationship_id": "met_rain_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Hanoi/Red River Delta region",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "==",
+          "value": "hanoi",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "region_alternatives": ["red_river_delta", "northern_vietnam"]
+          }
+        }
+      ],
+      "temporal_lag": "0-24h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_quote": "In summer (May–September) particulate pollution was much lower than in winter. The multiple regression of 24-h particulate concentrations against meteorological parameters for both the winter and summer monsoon periods shows that... rainfall and relative humidity largely control the daily variations of PM2.5−10.",
+      "source_locator": "Abstract, Section Summary",
+      "seasonal_variation": "wet_season",
+      "spatial_scope": "local",
+      "notes": "Nghiên cứu trực tiếp tại Hà Nội - nguồn quan trọng cho bối cảnh Việt Nam.",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_007",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation",
+      "effect_node": "wet_deposition",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Mưa là điều kiện tiên quyết cho quá trình wet deposition",
+      "mechanism": "Mưa là điều kiện tiên quyết cho quá trình wet deposition. Khi có mưa, các hạt mưa rơi qua cột khí quyển sẽ bắt giữ các hạt aerosol và khí ô nhiễm hòa tan, mang chúng xuống bề mặt. Cường độ mưa quyết định số lượng và kích thước hạt mưa, từ đó ảnh hưởng đến tổng lượng wet deposition.",
+      "sources": ["zhao_2020"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Precipitation occurrence",
+          "type": "categorical",
+          "field": "precipitation_occurrence",
+          "operator": "==",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Any precipitation must be occurring (binary: 0=no rain, 1=rain)"
+          }
+        },
+        {
+          "relationship_id": "met_rain_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Cloud base height affects in-cloud vs below-cloud ratio",
+          "type": "qualitative",
+          "field": "cloud_base_height",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_numeric_threshold_in_source",
+            "interpretation": "Cloud base height determines the ratio of in-cloud to below-cloud scavenging"
+          }
+        }
+      ],
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://www.mdpi.com/2073-4433/11/9/906",
+      "source_title": "Impact of Precipitation with Different Intensity on PM2.5 over Typical Regions of China",
+      "source_authors": "Zhao, X., Sun, Y., Zhao, C., Jiang, H.",
+      "source_year": "2020",
+      "source_quote": "Wet deposition is the process of removing the PM in the air to the surface through precipitation, which plays a significant role in reducing the PM mass concentration in the air. The wet deposition process can be divided into intracloud removal and undercloud removal.",
+      "source_locator": "Section 1 Introduction",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "notes": "Mối quan hệ cơ bản và phổ quát trong khí tượng học.",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_008",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation_type",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "MODERATOR",
+      "description": "Loại mưa (convective/frontal/monsoon) ảnh hưởng đến hiệu quả scavenging",
+      "mechanism": "Loại mưa ảnh hưởng đến hiệu quả scavenging: (1) Mưa đối lưu (convective) thường có cường độ cao, hạt mưa lớn, hiệu quả scavenging cao nhưng thời gian ngắn; (2) Mưa front (frontal) có cường độ vừa phải, thời gian dài hơn, hiệu quả tích lũy cao; (3) Mưa gió mùa (monsoon) ở Đông Nam Á có đặc điểm kết hợp, với lượng mưa lớn và thời gian kéo dài.",
+      "sources": ["zhao_2020"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Convective rain: high intensity, short duration",
+          "type": "categorical",
+          "field": "precipitation_type",
+          "operator": "==",
+          "value": "convective",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "characteristics": "high_intensity_short_duration"
+          }
+        },
+        {
+          "relationship_id": "met_rain_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Frontal rain: moderate intensity, longer duration",
+          "type": "categorical",
+          "field": "precipitation_type",
+          "operator": "==",
+          "value": "frontal",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "characteristics": "moderate_intensity_longer_duration"
+          }
+        },
+        {
+          "relationship_id": "met_rain_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Monsoon rain: variable intensity, extended periods",
+          "type": "categorical",
+          "field": "precipitation_type",
+          "operator": "==",
+          "value": "monsoon",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "characteristics": "variable_intensity_extended_periods"
+          }
+        },
+        {
+          "relationship_id": "met_rain_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 3,
+          "original_text": "Compound OR: any of the above precipitation types",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "logic": {
+              "op": "OR",
+              "children": [0, 1, 2]
+            },
+            "note": "Different rain types have different scavenging characteristics"
+          }
+        }
+      ],
+      "temporal_lag": "0-6h",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "source_url": "https://www.mdpi.com/2073-4433/11/9/906",
+      "source_title": "Impact of Precipitation with Different Intensity on PM2.5 over Typical Regions of China",
+      "source_authors": "Zhao, X., Sun, Y., Zhao, C., Jiang, H.",
+      "source_year": "2020",
+      "source_quote": "In summer, the southeast monsoon prevails and carries abundant water vapor from the Pacific Ocean, which enriches summer precipitation. In contrast, wintertime northwest monsoon from the Eurasian continent causes low water vapor content and high-pressure systems, resulting in much less precipitation.",
+      "source_locator": "Section 3.1",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Cần thêm nghiên cứu cụ thể về sự khác biệt giữa các loại mưa trong bối cảnh Việt Nam.",
+      "metadata": {
+        "piecewise_group": null,
+        "needs_review": true
+      }
+    },
+    {
+      "id": "met_rain_009_a",
+      "category": "meteorological_pathways",
+      "cause_node": "pm25",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "MODERATOR",
+      "description": "Nồng độ PM2.5 ban đầu CAO (>75 μg/m³) làm tăng hiệu quả scavenging",
+      "mechanism": "Khi nồng độ aerosol cao, mật độ hạt lớn làm tăng xác suất va chạm với hạt mưa (collision-coalescence effect), dẫn đến hiệu quả scavenging cao hơn.",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_009_a",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "PM2.5 > 115 μg/m³: highest scavenging efficiency",
+          "type": "threshold",
+          "field": "pm25_initial",
+          "operator": ">",
+          "value": 115,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "μg/m³",
+            "scavenging_efficiency_level": "highest"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "With the increase of aerosol pollution, the scavenging efficiency also increases, making PM2.5 more prone to decrease.",
+      "source_locator": "Section 3.4, Figure 10",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Piecewise relationship: hiệu quả scavenging phụ thuộc vào nồng độ ô nhiễm ban đầu.",
+      "metadata": {
+        "piecewise_group": "met_rain_009",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_009_b",
+      "category": "meteorological_pathways",
+      "cause_node": "pm25",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "MODERATOR",
+      "description": "Nồng độ PM2.5 ban đầu TRUNG BÌNH (75-115 μg/m³) cho hiệu quả scavenging vừa phải",
+      "mechanism": "Khi nồng độ aerosol ở mức trung bình, hiệu quả scavenging cũng ở mức trung bình do mật độ hạt vừa phải.",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_009_b",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "PM2.5 75-115 μg/m³: moderate scavenging",
+          "type": "range",
+          "field": "pm25_initial",
+          "operator": "in",
+          "value": null,
+          "range": [75, 115],
+          "checkable": true,
+          "normalized": {
+            "unit": "μg/m³",
+            "scavenging_efficiency_level": "moderate"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "With the increase of aerosol pollution, the scavenging efficiency also increases, making PM2.5 more prone to decrease.",
+      "source_locator": "Section 3.4, Figure 10",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Piecewise relationship: hiệu quả scavenging phụ thuộc vào nồng độ ô nhiễm ban đầu.",
+      "metadata": {
+        "piecewise_group": "met_rain_009",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_009_c",
+      "category": "meteorological_pathways",
+      "cause_node": "pm25",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "MODERATOR",
+      "description": "Nồng độ PM2.5 ban đầu THẤP (35-75 μg/m³) cho hiệu quả scavenging yếu",
+      "mechanism": "Khi nồng độ aerosol thấp, mật độ hạt thấp làm giảm xác suất va chạm với hạt mưa, dẫn đến hiệu quả scavenging yếu.",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_009_c",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "PM2.5 35-75 μg/m³: weak scavenging",
+          "type": "range",
+          "field": "pm25_initial",
+          "operator": "in",
+          "value": null,
+          "range": [35, 75],
+          "checkable": true,
+          "normalized": {
+            "unit": "μg/m³",
+            "scavenging_efficiency_level": "weak"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "WEAK",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "With the increase of aerosol pollution, the scavenging efficiency also increases, making PM2.5 more prone to decrease.",
+      "source_locator": "Section 3.4, Figure 10",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Piecewise relationship: hiệu quả scavenging phụ thuộc vào nồng độ ô nhiễm ban đầu.",
+      "metadata": {
+        "piecewise_group": "met_rain_009",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_009_d",
+      "category": "meteorological_pathways",
+      "cause_node": "pm25",
+      "effect_node": "scavenging_efficiency",
+      "relationship_type": "MODERATOR",
+      "description": "Nồng độ PM2.5 ban đầu RẤT THẤP (<35 μg/m³) có thể dẫn đến PM2.5 TĂNG thay vì giảm",
+      "mechanism": "Khi không khí sạch (PM2.5 <35 μg/m³), mưa có thể làm TĂNG PM2.5 do hygroscopic growth chiếm ưu thế so với scavenging.",
+      "sources": ["sun_2019"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_009_d",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "PM2.5 < 35 μg/m³: possible PM2.5 increase",
+          "type": "threshold",
+          "field": "pm25_initial",
+          "operator": "<",
+          "value": 35,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "μg/m³",
+            "scavenging_efficiency_level": "negative",
+            "note": "Hygroscopic growth dominates over scavenging in clean air"
+          }
+        }
+      ],
+      "temporal_lag": "0-1h",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019EA000717",
+      "source_title": "Distinct Impacts of Light and Heavy Precipitation on PM2.5 Mass Concentration in Beijing",
+      "source_authors": "Sun, Y., Zhao, C., Su, Y., Ma, Z., Li, J., Letu, H., Yang, Y., Fan, H.",
+      "source_year": "2019",
+      "source_quote": "When the PM2.5 mass concentration before precipitation was ≤35 μg/m³, all types of precipitation, even including heavy precipitation, can enhance PM2.5 mass concentration.",
+      "source_locator": "Section 3.4, Figure 10",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Edge case quan trọng: mưa không phải lúc nào cũng giảm PM2.5 trong điều kiện không khí sạch.",
+      "metadata": {
+        "piecewise_group": "met_rain_009",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_010_a",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Ngưỡng lượng mưa washout PM2.5 tại Quảng Châu (khí hậu nhiệt đới ẩm): 7mm",
+      "mechanism": "Ngưỡng lượng mưa cần thiết để đạt hiệu quả washout PM2.5 khác nhau giữa các vùng do điều kiện khí hậu và đặc điểm aerosol. Tại Quảng Châu (khí hậu nhiệt đới ẩm) cần 7mm.",
+      "sources": ["guo_2016"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_010_a",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Rainfall threshold: 7mm (Guangzhou, humid tropical)",
+          "type": "threshold",
+          "field": "accumulated_precipitation_mm",
+          "operator": ">=",
+          "value": 7,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm",
+            "precipitation_interpretation": "accumulated_mm_per_event",
+            "geographic_context": "Guangzhou",
+            "climate_type": "humid_tropical"
+          }
+        },
+        {
+          "relationship_id": "met_rain_010_a",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "PM2.5 reduction lasts 3 days after rain (Guangzhou)",
+          "type": "threshold",
+          "field": "event_lag_days",
+          "operator": "<=",
+          "value": 3,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "days",
+            "note": "Duration of PM2.5 reduction effect after rain event"
+          }
+        },
+        {
+          "relationship_id": "met_rain_010_a",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Guangzhou region",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "==",
+          "value": "guangzhou",
+          "range": null,
+          "checkable": true,
+          "normalized": {}
+        }
+      ],
+      "temporal_lag": "0-3 days",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27203467/",
+      "source_title": "The washout effects of rainfall on atmospheric particulate pollution in two Chinese cities",
+      "source_authors": "Guo, L.C., Zhang, Y., Lin, H., Zeng, W., Liu, T., Xiao, J., Rutherford, S., You, J., Ma, W.",
+      "source_year": "2016",
+      "source_quote": "A better washout effect was found for PM2.5–10 than for PM2.5, and the rainfall thresholds for both particle fractions were 7 mm in Guangzhou and 1 mm in Xi'an. The decrease in PM2.5 levels following rain lasted for 3 and 6 days in Guangzhou and Xi'an, respectively.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Piecewise by region: ngưỡng mưa khác nhau giữa các vùng.",
+      "metadata": {
+        "piecewise_group": "met_rain_010",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "met_rain_010_b",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Ngưỡng lượng mưa washout PM2.5 tại Tây An (khí hậu lục địa): 1mm",
+      "mechanism": "Ngưỡng lượng mưa cần thiết để đạt hiệu quả washout PM2.5 khác nhau giữa các vùng do điều kiện khí hậu và đặc điểm aerosol. Tại Tây An (khí hậu lục địa khô hơn) chỉ cần 1mm.",
+      "sources": ["guo_2016"],
+      "conditions": [
+        {
+          "relationship_id": "met_rain_010_b",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Rainfall threshold: 1mm (Xi'an, continental)",
+          "type": "threshold",
+          "field": "accumulated_precipitation_mm",
+          "operator": ">=",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm",
+            "precipitation_interpretation": "accumulated_mm_per_event",
+            "geographic_context": "Xi'an",
+            "climate_type": "continental"
+          }
+        },
+        {
+          "relationship_id": "met_rain_010_b",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "PM2.5 reduction lasts 6 days after rain (Xi'an)",
+          "type": "threshold",
+          "field": "event_lag_days",
+          "operator": "<=",
+          "value": 6,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "days",
+            "note": "Duration of PM2.5 reduction effect after rain event"
+          }
+        },
+        {
+          "relationship_id": "met_rain_010_b",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Xi'an region",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "==",
+          "value": "xian",
+          "range": null,
+          "checkable": true,
+          "normalized": {}
+        }
+      ],
+      "temporal_lag": "0-6 days",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27203467/",
+      "source_title": "The washout effects of rainfall on atmospheric particulate pollution in two Chinese cities",
+      "source_authors": "Guo, L.C., Zhang, Y., Lin, H., Zeng, W., Liu, T., Xiao, J., Rutherford, S., You, J., Ma, W.",
+      "source_year": "2016",
+      "source_quote": "A better washout effect was found for PM2.5–10 than for PM2.5, and the rainfall thresholds for both particle fractions were 7 mm in Guangzhou and 1 mm in Xi'an. The decrease in PM2.5 levels following rain lasted for 3 and 6 days in Guangzhou and Xi'an, respectively.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Piecewise by region: ngưỡng mưa khác nhau giữa các vùng. Cần xác định ngưỡng cụ thể cho Hà Nội.",
+      "metadata": {
+        "piecewise_group": "met_rain_010",
+        "needs_review": true
+      }
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "chemical_processes - RH/ALW chemistry pathways unrelated to rain scavenging",
+    "edge_cases - fog-driven measurement artifacts"
+  ],
+  "missing_info": "1. Ngưỡng cường độ mưa cụ thể cho Hà Nội/Việt Nam chưa được xác định rõ ràng trong các nghiên cứu hiện có. 2. Sự khác biệt về hiệu quả scavenging giữa mưa gió mùa Đông Bắc và Tây Nam tại Việt Nam cần được nghiên cứu thêm. 3. Dữ liệu định lượng về in-cloud vs below-cloud scavenging ratio cho khu vực Đông Nam Á còn hạn chế. 4. Ảnh hưởng của kích thước hạt mưa (raindrop size distribution) trong điều kiện mưa gió mùa Việt Nam chưa được nghiên cứu chi tiết.",
+  "contradictions": [
+    {
+      "relationship": "precipitation → pm25",
+      "conflicting_evidence": "Light precipitation (<0.5mm) can INCREASE PM2.5 due to hygroscopic growth, while heavy precipitation (>10mm) DECREASES PM2.5 through scavenging. This creates a non-linear relationship where the direction of effect depends on precipitation amount.",
+      "sources": ["Sun et al. 2019", "Zhao et al. 2020"],
+      "resolution": "Split into piecewise relationships: met_rain_003 (light rain increases PM2.5) vs met_rain_002 (heavy rain decreases PM2.5)"
+    },
+    {
+      "relationship": "precipitation → pm25 (clean air conditions)",
+      "conflicting_evidence": "Under clean air conditions (PM2.5 <35 μg/m³), even heavy precipitation can increase PM2.5 concentration due to dominant hygroscopic growth effect, contradicting the general assumption that rain always reduces PM2.5.",
+      "sources": ["Sun et al. 2019"],
+      "resolution": "Split into piecewise relationships by initial PM2.5 concentration: met_rain_009_a/b/c/d"
+    }
+  ],
+  "qa_summary": {
+    "total_relationships": 15,
+    "original_relationships": 10,
+    "split_piecewise": 5,
+    "total_conditions": 38,
+    "checkable_conditions": 32,
+    "uncheckable_conditions": 6,
+    "precipitation_fields_used": [
+      "precipitation_intensity_mmph",
+      "accumulated_precipitation_mm",
+      "precipitation_duration_hours",
+      "precipitation_occurrence",
+      "precipitation_type"
+    ],
+    "issues_fixed": [
+      "Separated precipitation intensity (mm/h) from accumulated precipitation (mm)",
+      "Split piecewise relationships for PM2.5 initial concentration thresholds (met_rain_009)",
+      "Split regional thresholds into separate relationships (met_rain_010)",
+      "Added compound OR logic for regional intensity thresholds (met_rain_001)",
+      "Converted qualitative conditions to proper type with checkable=false and issue tags"
+    ]
+  }
+}

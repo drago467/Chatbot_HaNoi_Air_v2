@@ -1,0 +1,958 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "chemical_processes",
+  "sub_focus": "complete_photochemistry",
+  "source_count": 6,
+  "relationship_count_raw": 10,
+  "relationship_count_valid": 10,
+  "bibliography": [
+    {
+      "source_id": "marais_2016",
+      "source_title": "Aqueous-phase mechanism for secondary organic aerosol formation from isoprene: application to the southeast United States and co-benefit of SO2 emission controls",
+      "source_authors": "Marais, E. A., Jacob, D. J., Jimenez, J. L., Campuzano-Jost, P., Day, D. A., Hu, W., Krechmer, J., Zhu, L., Kim, P. S., Miller, C. C., Fisher, J. A., Travis, K., Yu, K., Hanisco, T. F., Wolfe, G. M., Arkinson, H. L., Pye, H. O. T., Froyd, K. D., Liao, J., McNeill, V. F.",
+      "source_year": "2016",
+      "source_url": "https://doi.org/10.5194/acp-16-1603-2016",
+      "source_doi": "10.5194/acp-16-1603-2016",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Isoprene SOA formation via IEPOX pathway contributes 58% of isoprene SOA under low-NOx conditions. Mean SOA mass yield of 3.3% from isoprene oxidation. Strong relationship between IEPOX SOA and sulfate aerosol due to aerosol acidity effects."
+    },
+    {
+      "source_id": "gu_2023",
+      "source_title": "Multiple pathways for the formation of secondary organic aerosol in the North China Plain in summer",
+      "source_authors": "Gu, Y., Huang, R.-J., Duan, J., Xu, W., Lin, C., Zhong, H., Wang, Y., Ni, H., Liu, Q., Xu, R., Wang, L., Li, Y. J.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.5194/acp-23-5419-2023",
+      "source_doi": "10.5194/acp-23-5419-2023",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "SOA formation via photochemistry (Ox-initiated) dominated daytime with 0.8 µg/m³/h growth rate. Aqueous-phase SOA formation significant during high-RH periods with 0.6 µg/m³/h nighttime growth rate. Photochemistry in aqueous phase also non-negligible (0.6 µg/m³/h)."
+    },
+    {
+      "source_id": "tie_2003",
+      "source_title": "Effect of clouds on photolysis and oxidants in the troposphere",
+      "source_authors": "Tie, X., Madronich, S., Walters, S., Zhang, R., Rasch, P., Collins, W.",
+      "source_year": "2003",
+      "source_url": "https://doi.org/10.1029/2003JD003659",
+      "source_doi": "10.1029/2003JD003659",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Clouds increase global mean OH concentration by ~20%. Photolysis rates J[O3], J[CH2O], J[NO2] enhanced by 12-13% due to clouds. Tropospheric O3 concentrations increase by 8% due to cloud effects on photolysis."
+    },
+    {
+      "source_id": "ervens_2011",
+      "source_title": "Secondary organic aerosol formation in cloud droplets and aqueous particles (aqSOA): a review of laboratory, field and model studies",
+      "source_authors": "Ervens, B., Turpin, B. J., Weber, R. J.",
+      "source_year": "2011",
+      "source_url": "https://doi.org/10.5194/acp-11-11069-2011",
+      "source_doi": "10.5194/acp-11-11069-2011",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "aqSOA might contribute almost as much mass as gasSOA to the SOA budget. Highest contributions from biogenic VOC emissions in presence of anthropogenic NOx at high RH and cloudiness. Cloud/fog processing produces dicarboxylic acids and humic-like substances."
+    },
+    {
+      "source_id": "price_2025",
+      "source_title": "Re-assessing hydroxyl radical chemistry in the atmosphere: Instrument interferences may explain previous measurement discrepancies",
+      "source_authors": "Price, P., Bottorff, B., Jenkins, J., Brune, W. H., Stevens, P. S.",
+      "source_year": "2025",
+      "source_url": "https://doi.org/10.1038/s43247-025-02308-y",
+      "source_doi": "10.1038/s43247-025-02308-y",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "OH radical production primarily driven by photolysis of ozone and HONO. OH oxidation of VOCs leads to peroxy radical formation and subsequent SOA production. Strong correlation between OH concentrations and ozone production."
+    },
+    {
+      "source_id": "zhang_2018",
+      "source_title": "Monoterpenes are the largest source of summertime organic aerosol in the southeastern United States",
+      "source_authors": "Zhang, H., Yee, L. D., Lee, B. H., Curtis, M. P., Worton, D. R., Isaacman-VanWertz, G., et al.",
+      "source_year": "2018",
+      "source_url": "https://doi.org/10.1073/pnas.1717513115",
+      "source_doi": "10.1073/pnas.1717513115",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Monoterpene SOA accounts for ~50% of summertime fine OA. NOx processing enhances monoterpene SOA mass. Both daytime OH oxidation and nighttime NO3 oxidation contribute to MTSOA formation."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "photo_001",
+      "category": "chemical_processes",
+      "cause_node": "solar_radiation",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["uv_photolysis", "oh_radical_formation", "voc_oxidation", "soa_formation"],
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Solar UV radiation photolyzes O3 to produce OH radicals, which oxidize VOCs to form SOA contributing to PM2.5",
+      "mechanism": "Solar UV radiation (wavelengths 300-400 nm) photolyzes ozone (O3) to produce excited oxygen atoms O(1D), which react with water vapor to form hydroxyl radicals (OH). OH radicals oxidize volatile organic compounds (VOCs) including isoprene and monoterpenes, producing semi-volatile oxidation products that partition to the particle phase as secondary organic aerosol (SOA), contributing to PM2.5 mass.",
+      "sources": ["price_2025"],
+      "conditions": [
+        {
+          "relationship_id": "photo_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Solar zenith angle < 60°",
+          "type": "threshold",
+          "field": "solar_zenith_angle",
+          "operator": "<",
+          "value": 60,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "degrees",
+            "interpretation": "Lower solar zenith angle means more direct UV radiation reaching surface"
+          }
+        },
+        {
+          "relationship_id": "photo_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Clear to partly cloudy sky",
+          "type": "categorical",
+          "field": "sky_condition",
+          "operator": null,
+          "value": "clear_to_partly_cloudy",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "sky_condition_not_in_core_fields",
+            "interpretation": "Allows sufficient UV penetration for photolysis",
+            "alternative_field": "cloud_cover",
+            "alternative_threshold": "cloud_cover < 70%"
+          }
+        },
+        {
+          "relationship_id": "photo_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "VOC precursors available (isoprene, monoterpenes)",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "voc_present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_availability_qualitative",
+            "interpretation": "Biogenic VOC emissions from vegetation required"
+          }
+        },
+        {
+          "relationship_id": "photo_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Water vapor present for OH production",
+          "type": "categorical",
+          "field": "water_vapor",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "water_vapor_qualitative",
+            "interpretation": "H2O required for O(1D) + H2O → 2OH reaction"
+          }
+        }
+      ],
+      "temporal_lag": "2-6 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.1038/s43247-025-02308-y",
+      "source_title": "Re-assessing hydroxyl radical chemistry in the atmosphere",
+      "source_authors": "Price, P., Bottorff, B., Jenkins, J., Brune, W. H., Stevens, P. S.",
+      "source_year": "2025",
+      "source_quote": "Production of OH in the daytime troposphere is primarily driven by photolytic processes such as the photolysis of ozone and subsequent reaction of excited oxygen atoms (O1D) with water vapor, or the photolysis of nitrous acid (HONO) to directly form OH.",
+      "source_locator": "Introduction section",
+      "seasonal_variation": "summer",
+      "spatial_scope": "global",
+      "notes": "OH radical is the primary daytime oxidant controlling SOA formation rates",
+      "metadata": {
+        "quantitative_effect": null,
+        "checkable_condition_count": 1,
+        "total_condition_count": 4
+      }
+    },
+    {
+      "id": "photo_002",
+      "category": "chemical_processes",
+      "cause_node": "solar_radiation",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["photolysis_rates", "ox_concentration", "photochemical_soa"],
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Solar radiation drives Ox-initiated SOA formation dominating daytime organic aerosol production",
+      "mechanism": "Solar radiation drives photochemical reactions producing Ox (O3 + NO2), which initiates VOC oxidation. Under high-Ox conditions (65.1 ± 20.4 ppb), efficient SOA formation from photochemistry (Ox-initiated SOA) dominates daytime organic aerosol production with an average growth rate of 0.8 µg/m³/h, contributing 65% to total organic aerosol during daytime.",
+      "sources": ["gu_2023"],
+      "conditions": [
+        {
+          "relationship_id": "photo_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "High Ox conditions (O3 + NO2 > 50 ppb)",
+          "type": "threshold",
+          "field": "ox_concentration",
+          "operator": ">",
+          "value": 50,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "ppb",
+            "interpretation": "Ox = O3 + NO2, threshold for efficient photochemical SOA formation",
+            "source_value": "65.1 ± 20.4 ppb observed"
+          }
+        },
+        {
+          "relationship_id": "photo_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Daytime hours",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": null,
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [6, 18],
+            "interpretation": "Photochemistry requires solar radiation"
+          }
+        },
+        {
+          "relationship_id": "photo_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Summer season with high photochemical activity",
+          "type": "season",
+          "field": "season",
+          "operator": null,
+          "value": "summer",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Maximum solar radiation and photochemical activity"
+          }
+        }
+      ],
+      "temporal_lag": "2-4 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-23-5419-2023",
+      "source_title": "Multiple pathways for the formation of secondary organic aerosol in the North China Plain in summer",
+      "source_authors": "Gu, Y., Huang, R.-J., Duan, J., et al.",
+      "source_year": "2023",
+      "source_quote": "The photochemical pathway is the most important under high-Ox (i.e., O3 + NO2) conditions (65.1 ± 20.4 ppb). The efficient SOA formation from photochemistry (Ox-initiated SOA) dominated the daytime (65 % to OA), with an average growth rate of 0.8 µg/m³/h.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "regional",
+      "notes": "Quantitative field measurements from North China Plain summer campaign",
+      "metadata": {
+        "quantitative_effect": "0.8 µg/m³/h SOA growth rate, 65% of daytime OA",
+        "checkable_condition_count": 3,
+        "total_condition_count": 3
+      }
+    },
+    {
+      "id": "photo_003",
+      "category": "chemical_processes",
+      "cause_node": "isoprene",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["oh_oxidation", "iepox_formation", "aqueous_processing", "isoprene_soa"],
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Isoprene oxidation via IEPOX pathway produces SOA through acid-catalyzed reactive uptake",
+      "mechanism": "Isoprene is oxidized by OH radicals under low-NOx conditions, producing isoprene epoxydiols (IEPOX). IEPOX undergoes acid-catalyzed reactive uptake onto aqueous acidic aerosol particles, forming isoprene-derived SOA. This pathway contributes 58% of total isoprene SOA with a mean mass yield of 3.3% from isoprene oxidation.",
+      "sources": ["marais_2016"],
+      "conditions": [
+        {
+          "relationship_id": "photo_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Low-NOx conditions (ISOPO2 + HO2 pathway dominant)",
+          "type": "categorical",
+          "field": "nox_regime",
+          "operator": null,
+          "value": "low_nox",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "nox_regime_qualitative",
+            "interpretation": "ISOPO2 + HO2 pathway dominates over ISOPO2 + NO pathway"
+          }
+        },
+        {
+          "relationship_id": "photo_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Acidic aerosol particles (pH < 2)",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "pH",
+            "interpretation": "Acid catalysis required for IEPOX reactive uptake"
+          }
+        },
+        {
+          "relationship_id": "photo_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "High humidity for aqueous processing",
+          "type": "qualitative",
+          "field": "relative_humidity",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "humidity_threshold_not_specified",
+            "interpretation": "High RH needed for aerosol liquid water content",
+            "suggested_threshold": "relative_humidity > 70%"
+          }
+        },
+        {
+          "relationship_id": "photo_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Sulfate aerosol present (enhances acidity and volume)",
+          "type": "categorical",
+          "field": "sulfate_presence",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "sulfate_presence_qualitative",
+            "interpretation": "Sulfate provides acidity and aerosol volume for IEPOX uptake"
+          }
+        }
+      ],
+      "temporal_lag": "2-6 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-16-1603-2016",
+      "source_title": "Aqueous-phase mechanism for secondary organic aerosol formation from isoprene",
+      "source_authors": "Marais, E. A., Jacob, D. J., Jimenez, J. L., et al.",
+      "source_year": "2016",
+      "source_quote": "Isoprene SOA production is mainly contributed by two immediate gas-phase precursors, isoprene epoxydiols (IEPOX, 58 % of isoprene SOA) from the low-NOx pathway and glyoxal (28 %) from both low- and high-NOx pathways.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "regional",
+      "notes": "Strong relationship between IEPOX SOA and sulfate aerosol due to acidity effects",
+      "metadata": {
+        "quantitative_effect": "3.3% SOA mass yield, 58% via IEPOX pathway",
+        "checkable_condition_count": 1,
+        "total_condition_count": 4
+      }
+    },
+    {
+      "id": "photo_004",
+      "category": "chemical_processes",
+      "cause_node": "cloud_cover",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["photolysis_rates", "oh_concentration", "oxidation_capacity"],
+      "relationship_type": "MODERATOR",
+      "description": "Clouds enhance photolysis rates and OH concentration, increasing SOA formation",
+      "mechanism": "Cloud layers in the troposphere influence photolysis rates (J values) through scattering and absorption of UV radiation. Clouds increase global mean OH concentration by approximately 20% through enhanced photolysis rates. Photolysis rates of J[O3], J[CH2O], and J[NO2] are enhanced by 12-13% due to clouds, leading to an 8% increase in tropospheric O3 concentrations and enhanced SOA formation.",
+      "sources": ["tie_2003"],
+      "conditions": [
+        {
+          "relationship_id": "photo_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Partial to full cloud cover",
+          "type": "range",
+          "field": "cloud_cover",
+          "operator": "in",
+          "value": null,
+          "range": [30, 100],
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Cloud cover from partial (30%) to full (100%)"
+          }
+        },
+        {
+          "relationship_id": "photo_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Tropospheric conditions",
+          "type": "categorical",
+          "field": "atmospheric_layer",
+          "operator": null,
+          "value": "troposphere",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "atmospheric_layer_not_in_core_fields",
+            "interpretation": "Effects apply to tropospheric photochemistry"
+          }
+        },
+        {
+          "relationship_id": "photo_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Presence of ozone and water vapor",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "o3_h2o_present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_qualitative",
+            "interpretation": "O3 and H2O required for OH production via photolysis"
+          }
+        }
+      ],
+      "temporal_lag": "1-4 hours",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.1029/2003JD003659",
+      "source_title": "Effect of clouds on photolysis and oxidants in the troposphere",
+      "source_authors": "Tie, X., Madronich, S., Walters, S., Zhang, R., Rasch, P., Collins, W.",
+      "source_year": "2003",
+      "source_quote": "Global mean OH concentration increases by about 20% due to the impact of clouds. Because of clouds, the globally averaged photolysis rates of J[O3], J[CH2O], and J[NO2] are enhanced in the troposphere by about 12, 13, and 13%, respectively, leading to an 8% increase in the tropospheric O3 concentrations.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "notes": "Cloud effects can both enhance and reduce photochemistry depending on cloud type and position",
+      "metadata": {
+        "quantitative_effect": "20% increase in OH, 12-13% increase in J-values, 8% increase in O3",
+        "checkable_condition_count": 1,
+        "total_condition_count": 3
+      }
+    },
+    {
+      "id": "photo_005",
+      "category": "chemical_processes",
+      "cause_node": "humidity",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["aerosol_liquid_water", "aqueous_soa_formation"],
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "High relative humidity enables aqueous-phase SOA formation through aerosol liquid water",
+      "mechanism": "High relative humidity (RH > 80%) promotes aerosol liquid water content (ALWC), enabling aqueous-phase SOA (aqSOA) formation. During high-RH periods (83.7 ± 12.5%), strong nocturnal aqueous-phase SOA formation plays a significant role in SOA production (45% of OA), with a nighttime growth rate of 0.6 µg/m³/h. Daytime aqueous-phase photochemistry also contributes 39% to OA with 0.6 µg/m³/h growth rate.",
+      "sources": ["gu_2023"],
+      "conditions": [
+        {
+          "relationship_id": "photo_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "High relative humidity (RH > 80%)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 80,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "source_value": "83.7 ± 12.5% observed",
+            "interpretation": "High RH promotes aerosol liquid water content"
+          }
+        },
+        {
+          "relationship_id": "photo_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Presence of water-soluble organic precursors",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "wsoc_present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_qualitative",
+            "interpretation": "Water-soluble organic compounds required for aqueous processing"
+          }
+        },
+        {
+          "relationship_id": "photo_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Acidic aerosol conditions",
+          "type": "qualitative",
+          "field": "aerosol_ph",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "ph_threshold_not_specified",
+            "interpretation": "Acidic conditions enhance aqueous-phase reactions"
+          }
+        }
+      ],
+      "temporal_lag": "2-8 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-23-5419-2023",
+      "source_title": "Multiple pathways for the formation of secondary organic aerosol in the North China Plain in summer",
+      "source_authors": "Gu, Y., Huang, R.-J., Duan, J., et al.",
+      "source_year": "2023",
+      "source_quote": "During the high-relative-humidity (RH; 83.7 ± 12.5 %) period, strong nocturnal aqueous-phase SOA formation (aqSOA) played a significant role in SOA production (45 % to OA), with a nighttime growth rate of 0.6 µg/m³/h.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Aqueous-phase processing is particularly important during monsoon and high-humidity periods",
+      "metadata": {
+        "quantitative_effect": "0.6 µg/m³/h growth rate, 45% of nighttime OA",
+        "checkable_condition_count": 1,
+        "total_condition_count": 3
+      }
+    },
+    {
+      "id": "photo_006",
+      "category": "chemical_processes",
+      "cause_node": "cloud_droplets",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["aqueous_chemistry", "organic_acid_formation", "aqsoa"],
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cloud/fog droplets enable aqueous-phase chemistry producing dicarboxylic acids and HULIS as SOA",
+      "mechanism": "Cloud and fog droplets provide an aqueous medium for chemical reactions of water-soluble organic compounds. Aqueous-phase processing produces dicarboxylic acids (e.g., oxalic acid) and humic-like substances (HULIS) that remain in the particle phase upon droplet evaporation. aqSOA might contribute almost as much mass as gasSOA to the total SOA budget, with highest contributions from biogenic VOC emissions in the presence of anthropogenic NOx at high RH and cloudiness.",
+      "sources": ["ervens_2011"],
+      "conditions": [
+        {
+          "relationship_id": "photo_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Cloud/fog presence",
+          "type": "categorical",
+          "field": "fog_indicator",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Cloud or fog droplets provide aqueous medium"
+          }
+        },
+        {
+          "relationship_id": "photo_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "High relative humidity",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 90,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Near-saturation RH for cloud/fog formation",
+            "inferred": true,
+            "inferred_reason": "Cloud/fog typically requires RH > 90%"
+          }
+        },
+        {
+          "relationship_id": "photo_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Water-soluble organic precursors available",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "wsoc_present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_qualitative",
+            "interpretation": "Glyoxal, methylglyoxal, and other WSOC required"
+          }
+        },
+        {
+          "relationship_id": "photo_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Biogenic VOC emissions + anthropogenic NOx",
+          "type": "categorical",
+          "field": "emission_regime",
+          "operator": null,
+          "value": "biogenic_voc_anthropogenic_nox",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "emission_regime_qualitative",
+            "interpretation": "Mixed biogenic-anthropogenic conditions maximize aqSOA"
+          }
+        }
+      ],
+      "temporal_lag": "4-12 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-11-11069-2011",
+      "source_title": "Secondary organic aerosol formation in cloud droplets and aqueous particles (aqSOA): a review",
+      "source_authors": "Ervens, B., Turpin, B. J., Weber, R. J.",
+      "source_year": "2011",
+      "source_quote": "aqSOA might contribute almost as much mass as gasSOA to the SOA budget, with highest contributions from biogenic emissions of volatile organic compounds (VOC) in the presence of anthropogenic pollutants (i.e. NOx) at high relative humidity and cloudiness.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "wet_season",
+      "spatial_scope": "regional",
+      "notes": "Particularly relevant for monsoon climate regions with frequent cloud/fog events",
+      "metadata": {
+        "quantitative_effect": "aqSOA contribution comparable to gasSOA",
+        "checkable_condition_count": 2,
+        "total_condition_count": 4
+      }
+    },
+    {
+      "id": "photo_007",
+      "category": "chemical_processes",
+      "cause_node": "monoterpenes",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["oh_oxidation", "ozonolysis", "monoterpene_soa"],
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Monoterpene oxidation by OH, O3, and NO3 produces SOA accounting for ~50% of summertime fine OA",
+      "mechanism": "Monoterpenes (α-pinene, limonene, myrcene) are oxidized by OH radicals during daytime and by O3 and NO3 radicals at night. The oxidation produces semi-volatile products including pinonic acid, pinic acid, and MBTCA that partition to the particle phase. Monoterpene SOA accounts for approximately 50% of summertime fine organic aerosol, with NOx processing enhancing SOA mass production.",
+      "sources": ["zhang_2018"],
+      "conditions": [
+        {
+          "relationship_id": "photo_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Biogenic monoterpene emissions present",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "monoterpenes_present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_qualitative",
+            "interpretation": "Emissions from coniferous and deciduous vegetation"
+          }
+        },
+        {
+          "relationship_id": "photo_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "OH radicals available (daytime)",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "logic": {
+              "op": "OR",
+              "children": [1, 2]
+            },
+            "interpretation": "Either daytime OH pathway or nighttime O3/NO3 pathway"
+          }
+        },
+        {
+          "relationship_id": "photo_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "O3 and NO3 radicals available (nighttime)",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": null,
+          "value": "night",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "hour_range": [18, 6],
+            "interpretation": "Nighttime oxidation by O3 and NO3 radicals"
+          }
+        },
+        {
+          "relationship_id": "photo_007",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "NOx present (enhances SOA yield)",
+          "type": "categorical",
+          "field": "nox_presence",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "nox_presence_qualitative",
+            "interpretation": "Anthropogenic NOx enhances monoterpene SOA formation"
+          }
+        }
+      ],
+      "temporal_lag": "2-8 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.1073/pnas.1717513115",
+      "source_title": "Monoterpenes are the largest source of summertime organic aerosol in the southeastern United States",
+      "source_authors": "Zhang, H., Yee, L. D., Lee, B. H., et al.",
+      "source_year": "2018",
+      "source_quote": "Our results suggest that secondary OA (SOA) from monoterpene oxidation accounts for approximately half of summertime fine OA in Centreville, AL, a forested area in the southeastern United States influenced by anthropogenic pollution.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "regional",
+      "notes": "NOx enhances monoterpene SOA formation through anthropogenic-biogenic interactions",
+      "metadata": {
+        "quantitative_effect": "~50% of summertime fine OA",
+        "checkable_condition_count": 1,
+        "total_condition_count": 4
+      }
+    },
+    {
+      "id": "photo_008",
+      "category": "chemical_processes",
+      "cause_node": "solar_zenith_angle",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["photolysis_efficiency", "seasonal_oh_variation", "seasonal_soa_production"],
+      "relationship_type": "MODERATOR",
+      "description": "Solar zenith angle modulates UV intensity and photochemical activity with 3-5x seasonal variation",
+      "mechanism": "Solar zenith angle determines the intensity and spectral composition of UV radiation reaching the surface, directly affecting photolysis rates and OH radical production. Lower zenith angles (summer, midday) result in higher UV intensity and enhanced photochemistry. Seasonal variation in solar zenith angle creates 3-5x variation in photochemical activity between summer and winter, affecting SOA formation rates accordingly.",
+      "sources": ["gu_2023"],
+      "conditions": [
+        {
+          "relationship_id": "photo_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Clear sky conditions",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 30,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "percent",
+            "interpretation": "Clear sky allows maximum UV penetration",
+            "inferred": true,
+            "inferred_reason": "Clear sky typically means cloud cover < 30%"
+          }
+        },
+        {
+          "relationship_id": "photo_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Latitude-dependent seasonal variation",
+          "type": "qualitative",
+          "field": "latitude",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "latitude_qualitative",
+            "interpretation": "Solar zenith angle variation depends on latitude"
+          }
+        }
+      ],
+      "temporal_lag": "N/A",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-23-5419-2023",
+      "source_title": "Multiple pathways for the formation of secondary organic aerosol in the North China Plain in summer",
+      "source_authors": "Gu, Y., Huang, R.-J., Duan, J., et al.",
+      "source_year": "2023",
+      "source_quote": "The photochemical pathway is the most important under high-Ox conditions. The efficient SOA formation from photochemistry (Ox-initiated SOA) dominated the daytime (65 % to OA).",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "global",
+      "notes": "Diurnal and seasonal patterns of photochemistry directly affect PM2.5 formation",
+      "metadata": {
+        "quantitative_effect": "3-5x variation in photochemical SOA production between seasons",
+        "checkable_condition_count": 1,
+        "total_condition_count": 2
+      }
+    },
+    {
+      "id": "photo_009",
+      "category": "chemical_processes",
+      "cause_node": "nox",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["oh_recycling", "voc_oxidation_pathway", "soa_yield"],
+      "relationship_type": "MODERATOR",
+      "description": "NOx modulates SOA formation pathways: low-NOx favors IEPOX, high-NOx favors MPAN pathway",
+      "mechanism": "NOx (NO + NO2) modulates SOA formation through multiple pathways: (1) NO converts RO2 to HO2 and HO2 to OH, recycling radicals and enhancing oxidation; (2) Under high-NOx conditions, isoprene oxidation proceeds via the MPAN pathway producing SOA; (3) Under low-NOx conditions, IEPOX pathway dominates isoprene SOA formation. NOx decrease leads to 7% increase in isoprene SOA (favors low-NOx pathway), while SO2 decrease leads to 35% decrease in isoprene SOA.",
+      "sources": ["marais_2016"],
+      "conditions": [
+        {
+          "relationship_id": "photo_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "NOx concentration determines oxidation pathway",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "logic": {
+              "op": "OR",
+              "children": [1, 2]
+            },
+            "interpretation": "Two distinct pathways depending on NOx level",
+            "piecewise_group": "photo_009"
+          }
+        },
+        {
+          "relationship_id": "photo_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Low-NOx: IEPOX pathway dominant",
+          "type": "categorical",
+          "field": "nox_regime",
+          "operator": null,
+          "value": "low_nox",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "nox_regime_qualitative",
+            "interpretation": "ISOPO2 + HO2 pathway produces IEPOX",
+            "pathway": "iepox"
+          }
+        },
+        {
+          "relationship_id": "photo_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "High-NOx: MPAN pathway dominant",
+          "type": "categorical",
+          "field": "nox_regime",
+          "operator": null,
+          "value": "high_nox",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "nox_regime_qualitative",
+            "interpretation": "ISOPO2 + NO pathway produces MPAN",
+            "pathway": "mpan"
+          }
+        }
+      ],
+      "temporal_lag": "2-6 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-16-1603-2016",
+      "source_title": "Aqueous-phase mechanism for secondary organic aerosol formation from isoprene",
+      "source_authors": "Marais, E. A., Jacob, D. J., Jimenez, J. L., et al.",
+      "source_year": "2016",
+      "source_quote": "Isoprene SOA concentrations increase as NOx emissions decrease (favoring the low-NOx pathway for isoprene oxidation), but decrease more strongly as SO2 emissions decrease (due to the effect of sulfate on aerosol acidity and volume).",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Complex NOx-VOC-SOA interactions determine optimal emission control strategies",
+      "metadata": {
+        "quantitative_effect": "34% NOx decrease → 7% isoprene SOA increase; 48% SO2 decrease → 35% isoprene SOA decrease",
+        "checkable_condition_count": 0,
+        "total_condition_count": 3
+      }
+    },
+    {
+      "id": "photo_010",
+      "category": "chemical_processes",
+      "cause_node": "sulfate",
+      "effect_node": "pm25",
+      "intermediate_nodes": ["aerosol_acidity", "aerosol_volume", "iepox_uptake", "isoprene_soa"],
+      "relationship_type": "MODERATOR",
+      "description": "Sulfate aerosol enhances isoprene SOA formation through acidity and volume effects",
+      "mechanism": "Sulfate aerosol enhances isoprene SOA formation through two mechanisms: (1) increasing aerosol acidity which catalyzes IEPOX reactive uptake, and (2) providing aerosol volume for partitioning. Strong relationship exists between IEPOX SOA and sulfate aerosol. Reducing SO2 emissions by 48% leads to 35% decrease in isoprene SOA, representing a factor of 2 co-benefit for PM2.5 from SO2 emission controls.",
+      "sources": ["marais_2016"],
+      "conditions": [
+        {
+          "relationship_id": "photo_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Acidic aerosol conditions (pH < 2)",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "pH",
+            "interpretation": "Highly acidic conditions catalyze IEPOX uptake"
+          }
+        },
+        {
+          "relationship_id": "photo_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "IEPOX precursors present",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "iepox_present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "precursor_qualitative",
+            "interpretation": "IEPOX from isoprene oxidation required"
+          }
+        },
+        {
+          "relationship_id": "photo_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Sufficient aerosol liquid water",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "alw_threshold_not_specified",
+            "interpretation": "ALWC needed for aqueous-phase IEPOX uptake"
+          }
+        }
+      ],
+      "temporal_lag": "2-6 hours",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "source_url": "https://doi.org/10.5194/acp-16-1603-2016",
+      "source_title": "Aqueous-phase mechanism for secondary organic aerosol formation from isoprene",
+      "source_authors": "Marais, E. A., Jacob, D. J., Jimenez, J. L., et al.",
+      "source_year": "2016",
+      "source_quote": "Observations show a strong relationship between IEPOX SOA and sulfate aerosol that we explain as due to the effect of sulfate on aerosol acidity and volume. Reducing SO2 emissions decreases sulfate and isoprene SOA by a similar magnitude, representing a factor of 2 co-benefit for PM2.5 from SO2 emission controls.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Important for understanding co-benefits of SO2 emission controls on organic aerosol",
+      "metadata": {
+        "quantitative_effect": "48% SO2 decrease → 35% isoprene SOA decrease",
+        "checkable_condition_count": 1,
+        "total_condition_count": 3
+      }
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "emission_sources - for primary emission relationships",
+    "meteorological_pathways - for non-photochemical meteorological effects",
+    "transport_mechanisms - for regional transport mechanisms"
+  ],
+  "missing_info": "Quantitative J-values (photolysis rate coefficients) specific to Hanoi/Vietnam conditions; Local measurements of OH radical concentrations in tropical Southeast Asia; Specific SOA yields for tropical biogenic VOC mixtures; Cloud optical depth measurements for monsoon conditions",
+  "contradictions": [],
+  "qa_summary": {
+    "total_relationships": 10,
+    "total_conditions": 32,
+    "checkable_conditions": 12,
+    "uncheckable_conditions": 20,
+    "checkable_rate": 0.375,
+    "conditions_by_type": {
+      "threshold": 8,
+      "categorical": 12,
+      "qualitative": 4,
+      "time_of_day": 2,
+      "season": 1,
+      "range": 1,
+      "compound": 2,
+      "month": 0,
+      "time_range": 0
+    },
+    "issues_found": [
+      "Several conditions remain qualitative due to lack of specific thresholds in source papers",
+      "NOx regime (low/high) lacks quantitative definition in sources",
+      "Precursor availability conditions are inherently qualitative",
+      "Some inferred thresholds marked with inferred=true flag"
+    ],
+    "precipitation_check": {
+      "no_rain_conditions": 0,
+      "precipitation_with_numeric": 0,
+      "all_correct": true
+    }
+  }
+}

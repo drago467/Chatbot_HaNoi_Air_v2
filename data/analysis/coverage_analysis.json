@@ -1,0 +1,2965 @@
+{
+  "relationship_coverage": [
+    {
+      "relationship_id": "adv_chem_001",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "adv_chem_002",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_003",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_004",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_005",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_006",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_007",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "adv_chem_008",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "adv_chem_009",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_010",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_011",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "adv_chem_012",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_001",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "particle_type"
+      ]
+    },
+    {
+      "relationship_id": "chem_002",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph",
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_003",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "aerosol_ph",
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_004",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "aerosol_ph",
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_005",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_006",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_007_a",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_007_b",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_008",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_009",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precursor_availability",
+        "compound_meteorological"
+      ]
+    },
+    {
+      "relationship_id": "chem_010",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "aerosol_ph",
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "CC1",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC1_link_00",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC1_link_01",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC1_link_02",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC1_link_03",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC2",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC2_link_00",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC2_link_01",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC2_link_02",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC2_link_03",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC2_link_04",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC3",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC3_link_00",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC3_link_01",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC3_link_02",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC3_link_03",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC4",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 5,
+      "api_available_conditions": 2,
+      "coverage_percentage": 40.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC4_link_00",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 5,
+      "api_available_conditions": 2,
+      "coverage_percentage": 40.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC4_link_01",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 5,
+      "api_available_conditions": 2,
+      "coverage_percentage": 40.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC4_link_02",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 5,
+      "api_available_conditions": 2,
+      "coverage_percentage": 40.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC4_link_03",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 5,
+      "api_available_conditions": 2,
+      "coverage_percentage": 40.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5_link_00",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5_link_01",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5_link_02",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5_link_03",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5_link_04",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC5_link_05",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC6",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC6_link_00",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC6_link_01",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC6_link_02",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC6_link_03",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "CC6_link_04",
+      "category": "transport_mechanisms",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "humidity_pm25_nonlinear_001",
+      "category": "edge_cases",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "drizzle_pm25_increase_001",
+      "category": "edge_cases",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "precipitation_type"
+      ]
+    },
+    {
+      "relationship_id": "cold_surge_delayed_peak_001",
+      "category": "edge_cases",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "event_lag_days",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "wind_transport_increase_001",
+      "category": "edge_cases",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "measurement_artifact_hygroscopic_growth_001",
+      "category": "edge_cases",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "sensor_humidity_control",
+        "sensor_type"
+      ]
+    },
+    {
+      "relationship_id": "photochemical_smog_spike_001",
+      "category": "edge_cases",
+      "total_conditions": 6,
+      "checkable_conditions": 4,
+      "api_available_conditions": 3,
+      "coverage_percentage": 75.0,
+      "missing_fields": [
+        "inversion"
+      ]
+    },
+    {
+      "relationship_id": "traffic_nox_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "traffic_co_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "site_type"
+      ]
+    },
+    {
+      "relationship_id": "traffic_pm25_primary_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "traffic_pm25_002",
+      "category": "emission_sources",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "precursor_availability",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "biomass_burning_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "biomass_burning_vocs_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "burning_type"
+      ]
+    },
+    {
+      "relationship_id": "biomass_burning_co_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "burning_type"
+      ]
+    },
+    {
+      "relationship_id": "industry_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "industry_so2_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "fuel_type",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "industry_nox_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "equipment_type",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "power_plants_so2_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "source_location"
+      ]
+    },
+    {
+      "relationship_id": "power_plants_nox_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "source_type"
+      ]
+    },
+    {
+      "relationship_id": "construction_resuspension_001",
+      "category": "emission_sources",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "site_type"
+      ]
+    },
+    {
+      "relationship_id": "resuspension_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "open_waste_burning_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "burning_type"
+      ]
+    },
+    {
+      "relationship_id": "residential_combustion_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "fuel_type",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "coal_combustion_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "edge_fog_001",
+      "category": "measurement_artifact",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "fog_indicator"
+      ]
+    },
+    {
+      "relationship_id": "edge_fog_002",
+      "category": "measurement_artifact",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_fog_003",
+      "category": "accelerated_chemistry",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "aerosol_ph",
+        "aerosol_liquid_water"
+      ]
+    },
+    {
+      "relationship_id": "edge_fog_004",
+      "category": "accelerated_chemistry",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_liquid_water"
+      ]
+    },
+    {
+      "relationship_id": "edge_fog_005",
+      "category": "accelerated_chemistry",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_photo_001",
+      "category": "photochemical_formation",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_photo_002",
+      "category": "photochemical_formation",
+      "total_conditions": 2,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_photo_003",
+      "category": "photochemical_formation",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_feedback_001",
+      "category": "positive_feedback",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_feedback_002",
+      "category": "positive_feedback",
+      "total_conditions": 2,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_feedback_003",
+      "category": "positive_feedback",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "edge_feedback_004",
+      "category": "positive_feedback",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_003",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_004",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_005",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_006",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_007",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_008",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "inversion_presence"
+      ]
+    },
+    {
+      "relationship_id": "met_solar_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_solar_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_solar_003",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_solar_004",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_solar_005",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_solar_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_cloud_solar_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_hanoi_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 4,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_hanoi_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "synoptic_pattern"
+      ]
+    },
+    {
+      "relationship_id": "met_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 4,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "synoptic_pattern"
+      ]
+    },
+    {
+      "relationship_id": "met_003",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "inversion_type"
+      ]
+    },
+    {
+      "relationship_id": "met_004",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_005",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_006",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_007",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "met_008",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "met_009",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "met_010",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_011",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_012",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_013",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_001",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "solar_zenith_angle"
+      ]
+    },
+    {
+      "relationship_id": "photo_002",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_003",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "photo_004",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_005",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_006",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "fog_indicator"
+      ]
+    },
+    {
+      "relationship_id": "photo_007",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_008",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_009",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "photo_010",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "precip_paradox_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 4,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_003",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_004",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_005",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_006",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "aerosol_liquid_water"
+      ]
+    },
+    {
+      "relationship_id": "precip_paradox_007",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "fog_duration_hours"
+      ]
+    },
+    {
+      "relationship_id": "precip_paradox_008",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "fog_indicator"
+      ]
+    },
+    {
+      "relationship_id": "precip_paradox_009",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_010",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "precip_paradox_011",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_001",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_rain_002",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "precipitation_duration_hours"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_003",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "precipitation_duration_hours"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_004",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "particle_size_um"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_005",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "precipitation_duration_hours"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_006",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_007",
+      "category": "meteorological_pathways",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_rain_008",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precipitation_type"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_009_a",
+      "category": "meteorological_pathways",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_rain_009_b",
+      "category": "meteorological_pathways",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_rain_009_c",
+      "category": "meteorological_pathways",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_rain_009_d",
+      "category": "meteorological_pathways",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "met_rain_010_a",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "event_lag_days",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_010_b",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "event_lag_days",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "SP001",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "SP002",
+      "category": "seasonal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "SP003",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP004",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP005",
+      "category": "seasonal_patterns",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP006",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP007",
+      "category": "diurnal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP008",
+      "category": "diurnal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP009",
+      "category": "diurnal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP010",
+      "category": "diurnal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP011",
+      "category": "event_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "SP012",
+      "category": "event_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP013",
+      "category": "event_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP014",
+      "category": "event_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "event_lag_hours"
+      ]
+    },
+    {
+      "relationship_id": "SP015",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP016",
+      "category": "seasonal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP017",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "year"
+      ]
+    },
+    {
+      "relationship_id": "SP018",
+      "category": "seasonal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP019",
+      "category": "meteorological_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP020",
+      "category": "meteorological_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP021",
+      "category": "meteorological_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP022",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP023",
+      "category": "diurnal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "SP024",
+      "category": "diurnal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "SP025",
+      "category": "diurnal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP026",
+      "category": "seasonal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP027",
+      "category": "meteorological_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP028",
+      "category": "event_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP029",
+      "category": "event_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP030",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP031",
+      "category": "diurnal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "SP032",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "SP033",
+      "category": "seasonal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "geographic_region",
+        "year"
+      ]
+    },
+    {
+      "relationship_id": "SP034",
+      "category": "diurnal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "topography"
+      ]
+    },
+    {
+      "relationship_id": "SP035",
+      "category": "event_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "static_001",
+      "category": "static_factors",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "urban_density_class"
+      ]
+    },
+    {
+      "relationship_id": "static_002",
+      "category": "static_factors",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "land_use_type"
+      ]
+    },
+    {
+      "relationship_id": "static_003",
+      "category": "static_factors",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "vegetation_type"
+      ]
+    },
+    {
+      "relationship_id": "static_004",
+      "category": "static_factors",
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 2,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "topography_type",
+        "cap_event"
+      ]
+    },
+    {
+      "relationship_id": "static_005",
+      "category": "static_factors",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "distance_to_major_road_m",
+        "distance_to_road_m"
+      ]
+    },
+    {
+      "relationship_id": "static_006",
+      "category": "static_factors",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "urban_zone_type",
+        "industrial_zone_presence"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_001",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_002",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_003",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "synoptic_pattern",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_004",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "trans_cold_surge_005",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_006",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "visibility_condition"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_007a",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "inversion_type"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_007b",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "inversion_type",
+        "air_mass_trajectory"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_008",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "trans_cold_surge_009",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "geographic_region",
+        "spatial_scale"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_010",
+      "category": "transport_mechanisms",
+      "total_conditions": 4,
+      "checkable_conditions": 4,
+      "api_available_conditions": 3,
+      "coverage_percentage": 75.0,
+      "missing_fields": [
+        "city_type"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_011",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "synoptic_pattern"
+      ]
+    },
+    {
+      "relationship_id": "trans_cold_surge_012",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "enso_phase"
+      ]
+    },
+    {
+      "relationship_id": "transport_001",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 1,
+      "coverage_percentage": 33.33,
+      "missing_fields": [
+        "monsoon_regime",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "transport_002",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "transport_003",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_004",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "enso_phase"
+      ]
+    },
+    {
+      "relationship_id": "transport_005",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_006",
+      "category": "transport_mechanisms",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_007",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_008",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "enso_phase"
+      ]
+    },
+    {
+      "relationship_id": "transport_009",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "monsoon_regime"
+      ]
+    },
+    {
+      "relationship_id": "transport_010",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_011",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_012",
+      "category": "transport_mechanisms",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_013",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_014",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_015",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_016",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 1,
+      "coverage_percentage": 50.0,
+      "missing_fields": [
+        "monsoon_regime"
+      ]
+    },
+    {
+      "relationship_id": "transport_017",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "transport_018",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "wind_transport_001",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_002",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_003",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_004",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_005",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "event_lag_days",
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "wind_transport_006",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_007",
+      "category": "transport_mechanisms",
+      "total_conditions": 1,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_008",
+      "category": "transport_mechanisms",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_009",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_010",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_011",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "wind_transport_012",
+      "category": "transport_mechanisms",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_001",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2,
+      "coverage_percentage": 66.67,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "chem_winter_002",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_003",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_004_a",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "chem_winter_004_b",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "chem_winter_004_c",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "chem_winter_005",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_006",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "chem_winter_007",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "chem_winter_008",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 0,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_009",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_010",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_011",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    },
+    {
+      "relationship_id": "chem_winter_012",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 1,
+      "coverage_percentage": 100.0,
+      "missing_fields": []
+    }
+  ],
+  "category_stats": {
+    "chemical_processes": {
+      "relationships_count": 47,
+      "avg_coverage": 58.33,
+      "total_conditions": 146,
+      "checkable_conditions": 72,
+      "api_available_conditions": 42
+    },
+    "transport_mechanisms": {
+      "relationships_count": 76,
+      "avg_coverage": 55.3,
+      "total_conditions": 252,
+      "checkable_conditions": 217,
+      "api_available_conditions": 120
+    },
+    "edge_cases": {
+      "relationships_count": 6,
+      "avg_coverage": 56.25,
+      "total_conditions": 22,
+      "checkable_conditions": 16,
+      "api_available_conditions": 9
+    },
+    "emission_sources": {
+      "relationships_count": 17,
+      "avg_coverage": 48.84,
+      "total_conditions": 54,
+      "checkable_conditions": 43,
+      "api_available_conditions": 21
+    },
+    "measurement_artifact": {
+      "relationships_count": 2,
+      "avg_coverage": 66.67,
+      "total_conditions": 5,
+      "checkable_conditions": 3,
+      "api_available_conditions": 2
+    },
+    "accelerated_chemistry": {
+      "relationships_count": 3,
+      "avg_coverage": 40.0,
+      "total_conditions": 7,
+      "checkable_conditions": 5,
+      "api_available_conditions": 2
+    },
+    "photochemical_formation": {
+      "relationships_count": 3,
+      "avg_coverage": 100.0,
+      "total_conditions": 8,
+      "checkable_conditions": 3,
+      "api_available_conditions": 3
+    },
+    "positive_feedback": {
+      "relationships_count": 4,
+      "avg_coverage": 100.0,
+      "total_conditions": 6,
+      "checkable_conditions": 2,
+      "api_available_conditions": 2
+    },
+    "meteorological_pathways": {
+      "relationships_count": 56,
+      "avg_coverage": 80.0,
+      "total_conditions": 162,
+      "checkable_conditions": 115,
+      "api_available_conditions": 92
+    },
+    "seasonal_patterns": {
+      "relationships_count": 15,
+      "avg_coverage": 77.27,
+      "total_conditions": 27,
+      "checkable_conditions": 22,
+      "api_available_conditions": 17
+    },
+    "diurnal_patterns": {
+      "relationships_count": 9,
+      "avg_coverage": 63.64,
+      "total_conditions": 14,
+      "checkable_conditions": 11,
+      "api_available_conditions": 7
+    },
+    "event_patterns": {
+      "relationships_count": 7,
+      "avg_coverage": 60.0,
+      "total_conditions": 10,
+      "checkable_conditions": 5,
+      "api_available_conditions": 3
+    },
+    "meteorological_patterns": {
+      "relationships_count": 4,
+      "avg_coverage": 100.0,
+      "total_conditions": 5,
+      "checkable_conditions": 4,
+      "api_available_conditions": 4
+    },
+    "static_factors": {
+      "relationships_count": 6,
+      "avg_coverage": 18.18,
+      "total_conditions": 14,
+      "checkable_conditions": 11,
+      "api_available_conditions": 2
+    }
+  },
+  "overall_coverage": 61.63,
+  "summary": {
+    "total_relationships": 255,
+    "total_conditions": 732,
+    "total_checkable_conditions": 529,
+    "total_api_available_conditions": 326,
+    "overall_coverage_percentage": 61.63,
+    "low_coverage_count": 61,
+    "low_coverage_threshold": 50.0
+  },
+  "low_coverage_relationships": [
+    {
+      "relationship_id": "adv_chem_007",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "adv_chem_008",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "chem_002",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph",
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_005",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_008",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precursor_availability"
+      ]
+    },
+    {
+      "relationship_id": "chem_009",
+      "category": "chemical_processes",
+      "total_conditions": 2,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precursor_availability",
+        "compound_meteorological"
+      ]
+    },
+    {
+      "relationship_id": "industry_pm25_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "industry_so2_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "fuel_type",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "industry_nox_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 2,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "equipment_type",
+        "geographic_region"
+      ]
+    },
+    {
+      "relationship_id": "power_plants_nox_001",
+      "category": "emission_sources",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "source_type"
+      ]
+    },
+    {
+      "relationship_id": "edge_fog_004",
+      "category": "accelerated_chemistry",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_liquid_water"
+      ]
+    },
+    {
+      "relationship_id": "photo_001",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "solar_zenith_angle"
+      ]
+    },
+    {
+      "relationship_id": "photo_003",
+      "category": "chemical_processes",
+      "total_conditions": 4,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "photo_010",
+      "category": "chemical_processes",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "aerosol_ph"
+      ]
+    },
+    {
+      "relationship_id": "precip_paradox_007",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "fog_duration_hours"
+      ]
+    },
+    {
+      "relationship_id": "precip_paradox_008",
+      "category": "meteorological_pathways",
+      "total_conditions": 3,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "fog_indicator"
+      ]
+    },
+    {
+      "relationship_id": "met_rain_008",
+      "category": "meteorological_pathways",
+      "total_conditions": 4,
+      "checkable_conditions": 3,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "precipitation_type"
+      ]
+    },
+    {
+      "relationship_id": "SP002",
+      "category": "seasonal_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "cold_surge_phase"
+      ]
+    },
+    {
+      "relationship_id": "SP014",
+      "category": "event_patterns",
+      "total_conditions": 1,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "event_lag_hours"
+      ]
+    },
+    {
+      "relationship_id": "SP024",
+      "category": "diurnal_patterns",
+      "total_conditions": 2,
+      "checkable_conditions": 1,
+      "api_available_conditions": 0,
+      "coverage_percentage": 0.0,
+      "missing_fields": [
+        "geographic_region"
+      ]
+    }
+  ]
+}

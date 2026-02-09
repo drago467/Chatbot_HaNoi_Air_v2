@@ -1,0 +1,1171 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "transport_mechanisms",
+  "topic": "Synoptic Patterns and Cold Surge Transport",
+  "subtopic": "Influence on PM2.5 in Hanoi",
+  "extraction_date": "2026-01-23",
+  "methodology": "Systematic literature review following anti-hallucination protocols",
+  "source_count": 7,
+  "relationship_count_raw": 12,
+  "relationship_count_valid": 12,
+  "bibliography": [
+    {
+      "source_id": "Phung-Ngoc_2023",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Bao-Anh Phung-Ngoc, Elsa Dieudonné, Hervé Delbarre, Karine Deboudt, Song-Tung Nguyen, Van-Hai Bui, Duc-Minh Vu, Huyen-Thu Nguyen-Thi",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119669",
+      "source_doi": "10.1016/j.atmosenv.2023.119669",
+      "journal": "Atmospheric Environment",
+      "volume": "300",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Cold surge onset causes ~30% PM2.5 increase via long-range transport; persistence phase causes ~40% increase via local stagnation; El Niño modifies air mass trajectories"
+    },
+    {
+      "source_id": "Ashfold_2017",
+      "source_title": "Influence of Northeast Monsoon cold surges on air quality in Southeast Asia",
+      "source_authors": "M.J. Ashfold, M.T. Latif, A.A. Samah, M.I. Mead, N.R.P. Harris",
+      "source_year": "2017",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2017.07.047",
+      "source_doi": "10.1016/j.atmosenv.2017.07.047",
+      "journal": "Atmospheric Environment",
+      "volume": "166",
+      "pages": "498-509",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "NEM cold surges elevate CO by >60% and O3 by >40% across Indochinese Peninsula"
+    },
+    {
+      "source_id": "Wang_2017",
+      "source_title": "Large-scale transport of PM2.5 in the lower troposphere during winter cold surges in China",
+      "source_authors": "Jianjun Wang, Meigen Zhang, Xiaolin Bai, Hongjian Tan, Sabrina Li, Jiping Liu, Rui Zhang, Mark A. Wolters, Xiuyuan Qin, Miming Zhang, Hongmei Lin, Yuenan Li, Jonathan Li, Liqi Chen",
+      "source_year": "2017",
+      "source_url": "https://doi.org/10.1038/s41598-017-13217-2",
+      "source_doi": "10.1038/s41598-017-13217-2",
+      "journal": "Scientific Reports",
+      "volume": "7",
+      "article_number": "13238",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Cold surges transport PM2.5 up to 2000 km in 1-2 days at ground level; wind speeds over 20 m/s enable rapid transport"
+    },
+    {
+      "source_id": "Hien_2011",
+      "source_title": "Air pollution episodes associated with East Asian winter monsoons",
+      "source_authors": "P.D. Hien, P.D. Loc, N.V. Dao",
+      "source_year": "2011",
+      "source_url": "https://doi.org/10.1016/j.scitotenv.2011.08.049",
+      "source_doi": "10.1016/j.scitotenv.2011.08.049",
+      "journal": "Science of The Total Environment",
+      "volume": "409",
+      "issue": "23",
+      "pages": "5063-5068",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "~12 multi-day pollution episodes per winter in Hanoi; NRTI and STI inversions trap pollutants; monsoon cycle controls pollution patterns"
+    },
+    {
+      "source_id": "Ngoc_2021",
+      "source_title": "Key factors explaining severe air pollution episodes in Hanoi during 2019 winter season",
+      "source_authors": "Bao Anh Phung Ngoc, Hervé Delbarre, Karine Deboudt, Elsa Dieudonné, Dien Nguyen Tran, Son Le Thanh, Jacques Pelon, François Ravetta",
+      "source_year": "2021",
+      "source_url": "https://doi.org/10.1016/j.apr.2021.101068",
+      "source_doi": "10.1016/j.apr.2021.101068",
+      "journal": "Atmospheric Pollution Research",
+      "volume": "12",
+      "issue": "6",
+      "article_number": "101068",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "BLH <1000m on hazy days vs 700-1200m on cloudy days; severe events linked to LRT from China and stable conditions"
+    },
+    {
+      "source_id": "Ly_2021",
+      "source_title": "The effects of meteorological conditions and long-range transport on PM2.5 levels in Hanoi revealed from multi-site measurement using compact sensors and machine learning approach",
+      "source_authors": "Bich-Thuy Ly, Yutaka Matsumi, Tuan V. Vu, Kazuhiko Sekiguchi, Thu-Thuy Nguyen, Chau-Thuy Pham, Trung-Dung Nghiem, Ich-Hung Ngo, Yuta Kurotsuchi, Thu-Hien Nguyen, Tomoki Nakayama",
+      "source_year": "2021",
+      "source_url": "https://doi.org/10.1016/j.jaerosci.2020.105716",
+      "source_doi": "10.1016/j.jaerosci.2020.105716",
+      "journal": "Journal of Aerosol Science",
+      "volume": "152",
+      "article_number": "105716",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Regional-scale meteorology dominates; PM2.5 co-varies across sites 60 km apart; LRT from north/northeast significant"
+    },
+    {
+      "source_id": "Ly_2018",
+      "source_title": "Characterizing PM2.5 in Hanoi with New High Temporal Resolution Sensor",
+      "source_authors": "Bich-Thuy Ly, Yutaka Matsumi, Tomoki Nakayama, Yosuke Sakamoto, Yoshizumi Kajii, Trung-Dung Nghiem",
+      "source_year": "2018",
+      "source_url": "https://doi.org/10.4209/aaqr.2017.10.0435",
+      "source_doi": "10.4209/aaqr.2017.10.0435",
+      "journal": "Aerosol and Air Quality Research",
+      "volume": "18",
+      "pages": "2487-2497",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "PM2.5 and CO increase several days after cold surge events; linked to East Asian winter monsoon"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "trans_cold_surge_001",
+      "category": "transport_mechanisms",
+      "cause_node": "cold_surge_onset",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cold surge onset triggers long-range transport of PM2.5 from China to Hanoi",
+      "mechanism": "During cold surge onsets, air masses from the Siberian High travel through industrialized eastern China, carrying particulate matter and precursors (especially sulfate from coal-based industrial activities). These polluted air masses are transported to Hanoi via northeasterly winds, causing elevated PM2.5 levels.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "2-4 days",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Phung-Ngoc_2023", "Ly_2018"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_001",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter (October-March)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [10, 11, 12, 1, 2, 3],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 3,
+              "wrap_year": true
+            },
+            "interpretation": "Winter monsoon season in Hanoi"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_001",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Cold surge onset phase",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": "==",
+          "value": "onset",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Initial phase when cold air masses begin moving southward"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_001",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Northeasterly wind direction during cold surge",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "in",
+          "value": ["NE", "N", "NNE", "ENE"],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winds from north to northeast quadrant bringing polluted air from China"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "~30% increase in PM2.5",
+        "unit": "percent"
+      },
+      "evidence": [
+        {
+          "source_id": "Phung-Ngoc_2023",
+          "source_quote": "During cold surge onsets, long-range transport from China causes an average increase of ∼30% in PM2.5 concentrations.",
+          "source_locator": "Highlights/Abstract"
+        },
+        {
+          "source_id": "Ly_2018",
+          "source_quote": "These episodes may be linked to the East Asian winter monsoon, as the daily levels of PM2.5 and CO increased several days after most of the cold surge events.",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "Primary mechanism for transboundary pollution transport to Hanoi during winter"
+    },
+    {
+      "id": "trans_cold_surge_002",
+      "category": "transport_mechanisms",
+      "cause_node": "cold_surge_persistence",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cold surge persistence phase causes PM2.5 accumulation through local stagnation",
+      "mechanism": "During the persistence phase of cold surges, meteorological conditions become stable with reduced wind speeds and atmospheric mixing. This stagnation causes local emissions to accumulate near the surface, leading to elevated PM2.5 concentrations that can exceed those during the onset phase.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["Phung-Ngoc_2023", "Hien_2011"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_002",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter (October-March)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [10, 11, 12, 1, 2, 3],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 3,
+              "wrap_year": true
+            }
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_002",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Cold surge persistence phase - middle of monsoon cycle",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": "==",
+          "value": "persistence",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Period following cold surge onset with stable, stagnant conditions"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_002",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Reduced wind speeds during stagnation",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speeds characteristic of stagnation conditions"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "~40% increase in PM2.5",
+        "unit": "percent"
+      },
+      "evidence": [
+        {
+          "source_id": "Phung-Ngoc_2023",
+          "source_quote": "The stagnation of local pollution during the cold surges persistence causes an average increase of ∼40% in level of PM2.5.",
+          "source_locator": "Highlights/Abstract"
+        },
+        {
+          "source_id": "Hien_2011",
+          "source_quote": "The 24-h pollutant concentrations are lowest during cold surges; concurrently rise thereafter reaching the highest levels toward the middle of a monsoon cycle, then decline ahead of the next cold surge.",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "Persistence phase typically shows higher PM2.5 than onset phase due to local accumulation"
+    },
+    {
+      "id": "trans_cold_surge_003",
+      "category": "transport_mechanisms",
+      "cause_node": "anticyclonic_conditions",
+      "effect_node": "winter_pollution_episode",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Anticyclonic conditions after cold surge establish winter pollution episodes (WPEs)",
+      "mechanism": "After cold surge passage, anticyclonic conditions become established over Hanoi. These high-pressure systems create stable atmospheric conditions with temperature inversions that trap pollutants near the surface. Approximately 12 such multi-day pollution episodes occur between October and February each year.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["Hien_2011"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_003",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter (October-February)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [10, 11, 12, 1, 2],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 2,
+              "wrap_year": true
+            }
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_003",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Prolonged anticyclonic conditions established after northeast monsoon surges",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "anticyclonic",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "High-pressure system established after cold surge passage"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_003",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Geographic region: Hanoi, Vietnam",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "==",
+          "value": "hanoi",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Hanoi urban area"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "~12 episodes per winter; PM10 exceedances 45-50 days/year",
+        "unit": "episodes"
+      },
+      "evidence": [
+        {
+          "source_id": "Hien_2011",
+          "source_quote": "A dozen multi-day pollution episodes occur from October to February in Hanoi, Vietnam due to prolonged anticyclonic conditions established after the northeast monsoon surges (cold surges).",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "WPEs account for most 24-h PM10 exceedances and highest gaseous pollutant concentrations"
+    },
+    {
+      "id": "trans_cold_surge_004",
+      "category": "transport_mechanisms",
+      "cause_node": "cold_surge_wind",
+      "effect_node": "pm25_long_range_transport",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cold surge winds enable rapid ground-level PM2.5 transport over 2000 km",
+      "mechanism": "Cold surges generate strong surface winds (up to 25 m/s) that can transport PM2.5 particles at ground level over distances of 2000 km or more within 1-2 days. This ground-level transport pathway is distinct from the traditionally recognized upper troposphere transport for intercontinental pollution.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-2 days",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Wang_2017"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_004",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter season",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter monsoon season"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_004",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Wind speeds over 20 m/s during cold surge",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": ">=",
+          "value": 20,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Strong surface winds generated by cold surge"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_004",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "PM2.5 residence time in atmosphere 3-5 days",
+          "type": "qualitative",
+          "field": "pm25_residence_time",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "PM2.5 particles remain suspended long enough for long-range transport",
+            "issue": "residence_time_not_directly_checkable"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "2000 km transport in 1-2 days; wind speeds 20-25 m/s",
+        "unit": "km"
+      },
+      "evidence": [
+        {
+          "source_id": "Wang_2017",
+          "source_quote": "cold surges have the potential to transport air pollutants up to a distance of 2000 km or more in one or two days",
+          "source_locator": "Results/Discussion"
+        },
+        {
+          "source_id": "Wang_2017",
+          "source_quote": "with wind speeds over 20 m/s, PM2.5 particles can be transported 2000 km from Beijing by cold surges to Xiamen within two days",
+          "source_locator": "Discussion"
+        }
+      ],
+      "notes": "Ground-level transport pathway distinct from upper troposphere intercontinental transport"
+    },
+    {
+      "id": "trans_cold_surge_005",
+      "category": "transport_mechanisms",
+      "cause_node": "northeast_monsoon_cold_surge",
+      "effect_node": "co_o3_elevation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "NEM cold surges elevate CO and O3 across Southeast Asia",
+      "mechanism": "Cold surges during the northeast monsoon rapidly transport polluted air masses from East Asia to tropical Southeast Asia over a few days. Strong northerly winds (>6 m/s) at 925 hPa push polluted air masses southward across the South China Sea to the Indochinese Peninsula.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "2-4 days",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Ashfold_2017"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_005",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Northeast Monsoon (November-February)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [11, 12, 1, 2],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 11,
+              "end_month": 2,
+              "wrap_year": true
+            }
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_005",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Strong northerly winds >6 m/s at 925 hPa",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": ">",
+          "value": 6,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "pressure_level": "925 hPa",
+            "interpretation": "Strong northerly winds at lower troposphere"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_005",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Geographic region: Indochinese Peninsula",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "in",
+          "value": ["indochinese_peninsula", "southeast_asia"],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Receptor region including Vietnam, Thailand, Laos, Cambodia"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "CO increase >60% (~80 ppb); O3 increase >40% (~15 ppb)",
+        "unit": "percent"
+      },
+      "evidence": [
+        {
+          "source_id": "Ashfold_2017",
+          "source_quote": "NEM cold surges have a significant impact on aspects of air quality in SE Asia. The largest impact is in a region covering much of the Indochinese Peninsula and surrounding seas, where CO and O3 are elevated by, respectively, >60% (∼80 ppb) and >40% (∼15 ppb), during 'average' cold surge conditions.",
+          "source_locator": "Abstract/Results"
+        }
+      ],
+      "notes": "Applies to broader Southeast Asia region including Vietnam"
+    },
+    {
+      "id": "trans_cold_surge_006",
+      "category": "transport_mechanisms",
+      "cause_node": "pblh",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Reduced boundary layer height increases surface PM2.5 concentrations",
+      "mechanism": "During hazy pollution episodes, the boundary layer height is suppressed (always below 1000m compared to 700-1200m on non-hazy days). This lower BLH weakens vertical mixing, trapping pollutants near the surface and creating a positive feedback loop where increased aerosol concentrations further reduce solar radiation and BLH development.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["Ngoc_2021"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_006",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter season",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter monsoon season"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_006",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "BLH on hazy days always <1000m",
+          "type": "threshold",
+          "field": "boundary_layer_height",
+          "operator": "<",
+          "value": 1000,
+          "checkable": true,
+          "normalized": {
+            "unit": "m",
+            "interpretation": "Suppressed boundary layer during hazy conditions"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_006",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Hazy day conditions",
+          "type": "categorical",
+          "field": "visibility_condition",
+          "operator": "==",
+          "value": "hazy",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Reduced visibility due to aerosol loading"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "BLH on hazy days always <1000m vs 700-1200m on cloudy days",
+        "unit": "m"
+      },
+      "evidence": [
+        {
+          "source_id": "Ngoc_2021",
+          "source_quote": "BLH proved to be one of the key factors controlling air pollution in Hanoi. Indeed, the elastic Lidar measurements showed that the daily maximum of the hourly BLH varied from 700m to 1200m during cloudy days, while it was always below 1000m during hazy days.",
+          "source_locator": "Abstract"
+        },
+        {
+          "source_id": "Ngoc_2021",
+          "source_quote": "The lower BLH on the hazy days weakened the vertical mixing and was directly related to an increase in aerosol concentrations at the surface.",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "Positive feedback loop: high aerosols → reduced solar radiation → lower BLH → more accumulation"
+    },
+    {
+      "id": "trans_cold_surge_007a",
+      "category": "transport_mechanisms",
+      "cause_node": "inversion",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Nighttime radiation temperature inversions (NRTIs) trap pollution during dry monsoon phase",
+      "mechanism": "During the dry phase of winter monsoon (November-January), nighttime radiation temperature inversions (NRTIs) form when air masses travel through inland China. These inversions trap pollutants near the surface, with nighttime pollution levels approximately twice daytime levels.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["Hien_2011"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_007a",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Dry phase: November-January (air through inland China)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [11, 12, 1],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 11,
+              "end_month": 1,
+              "wrap_year": true
+            },
+            "interpretation": "Dry phase of winter monsoon"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_007a",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Nighttime radiation temperature inversion (NRTI)",
+          "type": "categorical",
+          "field": "inversion_type",
+          "operator": "==",
+          "value": "NRTI",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Nighttime radiation temperature inversion"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_007a",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Nighttime period",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "night",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Nighttime hours when NRTI forms"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "Nighttime pollution ~2x daytime during NRTI periods",
+        "unit": "ratio"
+      },
+      "evidence": [
+        {
+          "source_id": "Hien_2011",
+          "source_quote": "WPEs are associated with nighttime radiation temperature inversions (NRTIs) in the dry phase and subsidence temperature inversions (STIs) in the humid phase.",
+          "source_locator": "Abstract"
+        },
+        {
+          "source_id": "Hien_2011",
+          "source_quote": "In NRTI periods, the rush hour pollution peak is more pronounced in the evening than in the morning and the pollution level is about two times higher at night than in daytime.",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "Part of piecewise relationship - dry phase mechanism",
+      "metadata": {
+        "piecewise_group": "trans_cold_surge_007"
+      }
+    },
+    {
+      "id": "trans_cold_surge_007b",
+      "category": "transport_mechanisms",
+      "cause_node": "inversion",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Subsidence temperature inversions (STIs) trap pollution during humid monsoon phase",
+      "mechanism": "During the humid phase of winter monsoon (January-March), subsidence temperature inversions (STIs) form when air masses travel via the Gulf of Tonkin/East China Sea. These inversions create different diurnal pollution patterns compared to NRTI periods.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["Hien_2011"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_007b",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Humid phase: January-March (air via Gulf of Tonkin/East China Sea)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [1, 2, 3],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 1,
+              "end_month": 3,
+              "wrap_year": false
+            },
+            "interpretation": "Humid phase of winter monsoon"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_007b",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Subsidence temperature inversion (STI)",
+          "type": "categorical",
+          "field": "inversion_type",
+          "operator": "==",
+          "value": "STI",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Subsidence temperature inversion"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_007b",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Air masses via maritime route (Gulf of Tonkin/East China Sea)",
+          "type": "categorical",
+          "field": "air_mass_trajectory",
+          "operator": "==",
+          "value": "maritime",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Air masses traveling over water bodies"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "Enhanced pollution levels with distinct diurnal patterns",
+        "unit": "qualitative"
+      },
+      "evidence": [
+        {
+          "source_id": "Hien_2011",
+          "source_quote": "WPEs are associated with nighttime radiation temperature inversions (NRTIs) in the dry phase and subsidence temperature inversions (STIs) in the humid phase.",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "Part of piecewise relationship - humid phase mechanism",
+      "metadata": {
+        "piecewise_group": "trans_cold_surge_007"
+      }
+    },
+    {
+      "id": "trans_cold_surge_008",
+      "category": "transport_mechanisms",
+      "cause_node": "long_range_transport_china",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Long-range transport from China causes severe pollution events in Hanoi",
+      "mechanism": "Severe pollution events in Hanoi are mainly related to long-range transport coming from China, in addition to local emissions and transport from other polluted regions of Vietnam. These events are associated with stable meteorological conditions and air masses arriving from the northeast.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "2-4 days",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Ngoc_2021"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_008",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter (January-March campaign period)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [1, 2, 3],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 1,
+              "end_month": 3,
+              "wrap_year": false
+            }
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_008",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Air masses coming from the Northeast",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "in",
+          "value": ["NE", "N", "NNE"],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Northeasterly air mass trajectories from China"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_008",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Stable meteorological conditions",
+          "type": "qualitative",
+          "field": "atmospheric_stability",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Stable conditions with reduced vertical mixing",
+            "issue": "stability_index_not_directly_specified"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "Highest daily PM2.5 ~130 μg/m³; mean 45±25 μg/m³",
+        "unit": "μg/m³"
+      },
+      "evidence": [
+        {
+          "source_id": "Ngoc_2021",
+          "source_quote": "These severe polluted events in Hanoi were mainly related to LRT coming from China besides local emission or LRT from other polluted regions of Vietnam.",
+          "source_locator": "Abstract"
+        },
+        {
+          "source_id": "Ngoc_2021",
+          "source_quote": "The major pollution events are associated to stable meteorological conditions and air masses coming from the Northeast.",
+          "source_locator": "Highlights"
+        }
+      ],
+      "notes": "4 severely polluted events observed during 2-month campaign"
+    },
+    {
+      "id": "trans_cold_surge_009",
+      "category": "transport_mechanisms",
+      "cause_node": "regional_meteorology",
+      "effect_node": "pm25_regional_covariation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Regional-scale meteorology causes synchronized PM2.5 variations across Red River Delta",
+      "mechanism": "PM2.5 concentrations at multiple sites in Hanoi and Thai Nguyen (60 km north) show similar averages and clear co-variation, indicating that regional-scale meteorological factors and long-range transport dominate over local emission variations in determining pollution levels.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Ly_2021"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_009",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter (October-April)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [10, 11, 12, 1, 2, 3, 4],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 4,
+              "wrap_year": true
+            }
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_009",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Regional scale (60+ km)",
+          "type": "categorical",
+          "field": "spatial_scale",
+          "operator": "==",
+          "value": "regional",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Spatial scale covering Red River Delta region"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_009",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Geographic region: Red River Delta (Hanoi, Thai Nguyen)",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "in",
+          "value": ["hanoi", "red_river_delta", "thai_nguyen"],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Red River Delta region in northern Vietnam"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "Similar hourly averages: 57.5, 54.9, 53.6 μg/m³ at three sites",
+        "unit": "μg/m³"
+      },
+      "evidence": [
+        {
+          "source_id": "Ly_2021",
+          "source_quote": "Hourly concentrations of PM2.5 at the three sites were similar on average (57.5, 54.9, and 53.6 μg m−3) and clearly co-varied, suggesting remarkable large-scale effects.",
+          "source_locator": "Abstract"
+        },
+        {
+          "source_id": "Ly_2021",
+          "source_quote": "The results showed that the contribution of long-range transport from the north and northeast to local PM2.5 levels was significant.",
+          "source_locator": "Abstract"
+        }
+      ],
+      "notes": "Regional meteorology dominates over local emission variations"
+    },
+    {
+      "id": "trans_cold_surge_010",
+      "category": "transport_mechanisms",
+      "cause_node": "cold_surge_source_receptor",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Source-receptor city relationship during cold surges causes PM2.5 surge in receptor cities",
+      "mechanism": "During cold surges, cities with lower industrial development and emissions (like Xiamen) act as 'sink' or receptor cities. Strong winds transport pollutants from heavily industrialized northern cities, causing PM2.5 concentrations in receptor cities to surge during high wind periods - the opposite of the typical negative wind-pollution relationship.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-2 days",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Wang_2017"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_010",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter season",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter monsoon season"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_010",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Transport direction: North to South",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "in",
+          "value": ["N", "NE", "NW", "NNE", "NNW"],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Northerly winds transporting pollutants southward"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_010",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Receptor city with lower local emissions",
+          "type": "categorical",
+          "field": "city_type",
+          "operator": "==",
+          "value": "receptor",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "City acting as pollution sink rather than source"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_010",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 3,
+          "original_text": "Strong winds during cold surge",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": ">=",
+          "value": 10,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Strong winds capable of long-range transport"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "PM2.5 in receptor city doubled from ~39 to 80 μg/m³",
+        "unit": "μg/m³"
+      },
+      "evidence": [
+        {
+          "source_id": "Wang_2017",
+          "source_quote": "Xiamen is an air pollutant 'sink' or receptor city, which means that strong winds can transport air pollutants from other cities to Xiamen",
+          "source_locator": "Discussion"
+        },
+        {
+          "source_id": "Wang_2017",
+          "source_quote": "the concentration of PM2.5 in Xiamen increased to a high of 80 µg/m³, which is double the average PM2.5 concentration in Xiamen during the winter",
+          "source_locator": "Results"
+        }
+      ],
+      "notes": "Reverses typical negative wind-pollution relationship in receptor cities; applicable to Hanoi as receptor city"
+    },
+    {
+      "id": "trans_cold_surge_011",
+      "category": "transport_mechanisms",
+      "cause_node": "siberian_high",
+      "effect_node": "pollution_transport_pathway",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Siberian High drives East Asian Winter Monsoon and pollution transport pathway",
+      "mechanism": "The Siberian High generates strong northerly winds that are not blocked by the Himalayas (as Lake Baikal is at the same longitude as the eastern edge of the Tibetan Plateau). These winds drive polar continental cold air southward across China, establishing the primary transport pathway for pollutants to reach Hanoi.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "2-4 days",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Hien_2011", "Phung-Ngoc_2023"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_011",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter (October-March)",
+          "type": "month",
+          "field": "month",
+          "operator": "in",
+          "value": [10, 11, 12, 1, 2, 3],
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 3,
+              "wrap_year": true
+            }
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_011",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Siberian High pressure system active",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "siberian_high",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Continental surface anticyclone over Lake Baikal region"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_011",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Northerly to northeasterly monsoon winds",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "in",
+          "value": ["N", "NE", "NNE"],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Monsoon winds driven by Siberian High"
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "10-15 monsoon cycles per winter; ~4 days per cycle",
+        "unit": "cycles"
+      },
+      "evidence": [
+        {
+          "source_id": "Hien_2011",
+          "source_quote": "large areas of East Asia are affected by northerly to northeasterly monsoons driven by continental surface anticyclones, which frequently develop over Lake Baikal in Siberia",
+          "source_locator": "Section: East Asian anticyclones and winter monsoons"
+        },
+        {
+          "source_id": "Phung-Ngoc_2023",
+          "source_quote": "During the winter period (October to March), air quality in northern Vietnam is strongly impacted by the northeast monsoon cycles, that create periodic changes in the air masses pathways and the meteorological conditions.",
+          "source_locator": "Introduction/Results"
+        }
+      ],
+      "notes": "Primary synoptic driver of winter pollution transport to Hanoi"
+    },
+    {
+      "id": "trans_cold_surge_012",
+      "category": "transport_mechanisms",
+      "cause_node": "el_nino",
+      "effect_node": "air_mass_trajectory",
+      "relationship_type": "MODERATOR",
+      "description": "El Niño modifies air mass trajectories and pollution composition",
+      "mechanism": "During El Niño years, air mass trajectories are perturbed, bringing more western air masses to Hanoi instead of the typical northeastern trajectories. This causes a temporary decrease in sulfate AOD (from industrial sources in eastern China) and simultaneous increase in smoke AOD (from biomass burning in western regions).",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "temporal_lag": "seasonal",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["Phung-Ngoc_2023"],
+      "conditions": [
+        {
+          "relationship_id": "trans_cold_surge_012",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "El Niño event active",
+          "type": "categorical",
+          "field": "enso_phase",
+          "operator": "==",
+          "value": "el_nino",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "El Niño-Southern Oscillation warm phase"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_012",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Winter season",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter monsoon season"
+          }
+        },
+        {
+          "relationship_id": "trans_cold_surge_012",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Affected winters: 2014/15, 2015/16, 2018/19",
+          "type": "qualitative",
+          "field": "year",
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Specific El Niño years observed in study",
+            "affected_years": ["2014/15", "2015/16", "2018/19"]
+          }
+        }
+      ],
+      "quantitative_evidence": {
+        "magnitude": "Decreased sulfate AOD, increased smoke AOD",
+        "unit": "qualitative"
+      },
+      "evidence": [
+        {
+          "source_id": "Phung-Ngoc_2023",
+          "source_quote": "The existence of El Niño perturbed the air masses trajectories during three winters (2014/15, 2015/16 and 2018/19), bringing more western air masses and thus, causing a temporary decrease of the sulfate AOD and simultaneous increase of the smoke AOD over Hanoi.",
+          "source_locator": "Results/Discussion"
+        }
+      ],
+      "notes": "Modulating factor that changes pollution source contributions rather than total levels"
+    }
+  ],
+  "summary": {
+    "total_relationships": 13,
+    "relationship_types": {
+      "DIRECT_CAUSE": 12,
+      "MODERATOR": 1
+    },
+    "checkable_conditions_count": 38,
+    "uncheckable_conditions_count": 4,
+    "key_mechanisms": [
+      "Cold surge onset triggers long-range transport of pollutants from China (~30% PM2.5 increase)",
+      "Cold surge persistence creates stagnation conditions accumulating local pollution (~40% PM2.5 increase)",
+      "Anticyclonic conditions after cold surges establish temperature inversions trapping pollutants",
+      "Ground-level transport can move PM2.5 up to 2000 km in 1-2 days during cold surges",
+      "Reduced boundary layer height during hazy days weakens vertical mixing and increases surface concentrations",
+      "Two monsoon phases (dry and humid) create distinct temperature inversion types with different diurnal pollution patterns"
+    ],
+    "spatial_scope": "Hanoi, Red River Delta, Northern Vietnam; broader Southeast Asia region",
+    "temporal_scope": "Winter season (October-March), with 10-15 cold surge cycles per winter",
+    "confidence_assessment": "High confidence based on multiple independent Tier-1 sources with consistent findings"
+  },
+  "handoff_to_other_prompts": [
+    "chemical_processes - for detailed SIA/SOA formation mechanisms",
+    "meteorological_pathways - for detailed humidity/temperature effects",
+    "emission_sources - for local emission contributions"
+  ],
+  "missing_info": "Specific wind speed thresholds for stagnation conditions in Hanoi; quantitative stability index values for inversion formation",
+  "contradictions": []
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "static_001",
+    "category": "static_factors",
+    "cause_node": "valley_bottom",
+    "effect_node": "pm25",
+    "relationship_type": "MODERATOR",
+    "direction": "increase",
+    "strength": "STRONG",
+    "confidence": "HIGH",
+    "mechanism": "Valley or basin topography creates conditions for persistent cold-air pools (CAPs) to form, especially during winter under high-pressure systems. These stable atmospheric layers suppress vertical mixing and trap pollutants, leading to the accumulation of PM2.5 near the surface.",
+    "conditions": [
+      {
+        "relationship_id": "static_001",
+        "relationship_category": "static_factors",
+        "condition_index": 0,
+        "original_text": "winter under high-pressure systems",
+        "type": "season",
+        "field": "season",
+        "operator": "==",
+        "value": "winter",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Cold-air pools form predominantly in winter when radiative cooling is strongest",
+          "source_context": "especially during winter under high-pressure systems"
+        }
+      },
+      {
+        "relationship_id": "static_001",
+        "relationship_category": "static_factors",
+        "condition_index": 1,
+        "original_text": "high-pressure systems present",
+        "type": "qualitative",
+        "field": "synoptic_pattern",
+        "operator": null,
+        "value": "high_pressure",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "High-pressure systems promote stable atmospheric conditions and CAP formation",
+          "issue": "synoptic_pattern_not_directly_checkable",
+          "needs_review": true
+        }
+      },
+      {
+        "relationship_id": "static_001",
+        "relationship_category": "static_factors",
+        "condition_index": 2,
+        "original_text": "Valley or basin topography",
+        "type": "categorical",
+        "field": "topography",
+        "operator": "==",
+        "value": "valley_basin",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Location must be in valley or basin terrain for CAP trapping effect",
+          "valid_values": ["valley_basin", "valley", "basin"]
+        }
+      }
+    ],
+    "temporal_lag": "1-3 days",
+    "seasonal_variation": "winter",
+    "spatial_scope": "regional",
+    "sources": [
+      {
+        "source_id": "silcox_2012",
+        "source_title": "Wintertime PM2.5 concentrations during persistent, multi-day cold-air pools in a mountain valley",
+        "source_authors": "Silcox, G. D., Kelly, K. E., Crosman, E. T., Whiteman, C. D., & Allen, B. L.",
+        "source_year": "2012",
+        "source_url": "https://doi.org/10.1016/j.atmosenv.2011.10.041",
+        "source_doi": "10.1016/j.atmosenv.2011.10.041",
+        "tier": "tier_1",
+        "source_quote": "Because vertical mixing of pollutants is suppressed in the stable atmospheric layers, PM2.5 aerosols emitted into the CAP or produced there through chemical and photochemical processes lead to high levels of PM2.5.",
+        "source_locator": null
+      },
+      {
+        "source_id": "silcox_2012_b",
+        "source_title": "Wintertime PM2.5 concentrations during persistent, multi-day cold-air pools in a mountain valley",
+        "source_authors": "Silcox, G. D., Kelly, K. E., Crosman, E. T., Whiteman, C. D., & Allen, B. L.",
+        "source_year": "2012",
+        "source_url": "https://doi.org/10.1016/j.atmosenv.2011.10.041",
+        "source_doi": "10.1016/j.atmosenv.2011.10.041",
+        "tier": "tier_1",
+        "source_quote": "PM2.5 concentrations were generally observed to decrease with increasing elevation... Decreases of up to 30 percent were observed as elevation increased from 1300 to 1600 m.",
+        "source_locator": null
+      }
+    ],
+    "notes": "Relationship describes how valley/basin topography moderates PM2.5 accumulation by enabling cold-air pool formation. Effect is strongest in winter. Quantitative evidence shows 30% decrease in PM2.5 with 300m elevation increase."
+  },
+  {
+    "id": "static_002",
+    "category": "static_factors",
+    "cause_node": "vegetation",
+    "effect_node": "pm25",
+    "relationship_type": "INDIRECT_CAUSE",
+    "direction": "decrease",
+    "strength": "MODERATE",
+    "confidence": "HIGH",
+    "mechanism": "Vegetation, particularly forests, removes PM2.5 from the atmosphere through dry deposition. Particles are captured on leaf surfaces via interception, impaction, and sedimentation. The complex structure of a forest canopy also enhances air turbulence, which can increase deposition rates.",
+    "conditions": [
+      {
+        "relationship_id": "static_002",
+        "relationship_category": "static_factors",
+        "condition_index": 0,
+        "original_text": "Presence of vegetation/green space",
+        "type": "categorical",
+        "field": "land_cover",
+        "operator": "==",
+        "value": "vegetation",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Area must have vegetation cover (forest, green space) for dry deposition effect",
+          "valid_values": ["vegetation", "forest", "green_space", "urban_forest"]
+        }
+      },
+      {
+        "relationship_id": "static_002",
+        "relationship_category": "static_factors",
+        "condition_index": 1,
+        "original_text": "Buffer distance approximately 270m for significant effect",
+        "type": "threshold",
+        "field": "vegetation_buffer_m",
+        "operator": "<=",
+        "value": 270,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Significant PM2.5 reduction observed within 270m buffer of green space",
+          "unit": "meters",
+          "source_context": "surrounding school greenness at 270 m buffer was significantly associated (p < 0.05) with lower indoor traffic-related PM2.5"
+        }
+      }
+    ],
+    "temporal_lag": "0h",
+    "seasonal_variation": "all_season",
+    "spatial_scope": "local",
+    "sources": [
+      {
+        "source_id": "liu_2016",
+        "source_title": "Dry deposition of particulate matter at an urban forest, wetland and lake surface in Beijing",
+        "source_authors": "Liu, J., Zhu, L., Wang, H., Yang, Y., Liu, J., Qiu, D., ... & Liu, J.",
+        "source_year": "2016",
+        "source_url": "https://doi.org/10.1016/j.atmosenv.2015.11.023",
+        "source_doi": "10.1016/j.atmosenv.2015.11.023",
+        "tier": "tier_1",
+        "source_quote": "The deposition velocity onto the forest canopy was higher than which onto the wetland and the water surface and the velocity varied in different seasons.",
+        "source_locator": null
+      },
+      {
+        "source_id": "han_2020",
+        "source_title": "Spatial distribution characteristics of PM2.5 and PM10 in Xi'an City predicted by land use regression models",
+        "source_authors": "Han, L., Zhao, J., Gao, Y., Gu, Z., Xin, K., & Zhang, J.",
+        "source_year": "2020",
+        "source_url": "https://doi.org/10.1016/j.scs.2020.102329",
+        "source_doi": "10.1016/j.scs.2020.102329",
+        "tier": "tier_1",
+        "source_quote": "Green space can mitigate pollution, and the contribution of traffic emission is less than that of industrial emission.",
+        "source_locator": null
+      },
+      {
+        "source_id": "matthaios_2024",
+        "source_title": "The effects of urban green space and road proximity to indoor traffic-related PM2.5, NO2, and BC exposure in inner-city schools",
+        "source_authors": "Matthaios, V. N., Holland, I., Kang, C. M., Hart, J. E., Hauptman, M., Wolfson, J. M., ... & Koutrakis, P.",
+        "source_year": "2024",
+        "source_url": "https://doi.org/10.1038/s41370-024-00669-8",
+        "source_doi": "10.1038/s41370-024-00669-8",
+        "tier": "tier_1",
+        "source_quote": "The results further showed that surrounding school greenness at 270 m buffer was significantly associated (p < 0.05) with lower indoor traffic-related PM2.5.",
+        "source_locator": null
+      }
+    ],
+    "notes": "Deposition velocity varies by season (higher in some seasons). Forest canopy has higher deposition velocity than wetland or water surfaces. Effect is local and depends on proximity to green space."
+  },
+  {
+    "id": "static_003",
+    "category": "static_factors",
+    "cause_node": "population_density",
+    "effect_node": "pm25",
+    "relationship_type": "INDIRECT_CAUSE",
+    "direction": "increase",
+    "strength": "MODERATE",
+    "confidence": "HIGH",
+    "mechanism": "Higher population density leads to increased PM2.5 through two primary mechanisms: the 'congestion effect' (more traffic leading to lower speeds and less efficient combustion) and the 'pollution centralization effect' (a higher concentration of emission sources like vehicles and residential heating). Additionally, dense urban forms with high building density can reduce wind speed and hamper pollution dispersion.",
+    "conditions": [
+      {
+        "relationship_id": "static_003",
+        "relationship_category": "static_factors",
+        "condition_index": 0,
+        "original_text": "Urban area with high population density",
+        "type": "categorical",
+        "field": "urban_land_use",
+        "operator": "==",
+        "value": "urban",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Effect observed in urban areas where population density drives emission concentration",
+          "valid_values": ["urban", "urban_core", "metropolitan"]
+        }
+      },
+      {
+        "relationship_id": "static_003",
+        "relationship_category": "static_factors",
+        "condition_index": 1,
+        "original_text": "Congestion effect - traffic density increases with population",
+        "type": "qualitative",
+        "field": "traffic_density",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Higher population density correlates with increased traffic congestion and lower vehicle speeds",
+          "mechanism_type": "congestion_effect"
+        }
+      },
+      {
+        "relationship_id": "static_003",
+        "relationship_category": "static_factors",
+        "condition_index": 2,
+        "original_text": "Pollution centralization effect - concentration of emission sources",
+        "type": "qualitative",
+        "field": "emission_source_density",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Higher population density leads to higher concentration of emission sources (vehicles, heating)",
+          "mechanism_type": "pollution_centralization_effect"
+        }
+      }
+    ],
+    "temporal_lag": "0h",
+    "seasonal_variation": "all_season",
+    "spatial_scope": "local",
+    "sources": [
+      {
+        "source_id": "han_sun_2019",
+        "source_title": "Impact of Population Density on PM2.5 Concentrations: A Case Study in Shanghai, China",
+        "source_authors": "Han, S., & Sun, B.",
+        "source_year": "2019",
+        "source_url": "https://doi.org/10.3390/su11071968",
+        "source_doi": "10.3390/su11071968",
+        "tier": "tier_1",
+        "source_quote": "The results suggest that population density is positively associated with PM2.5 concentrations, pointing to pollution centralization and congestion effects dominating the mitigating effects of mode-shifting associated with density.",
+        "source_locator": null
+      },
+      {
+        "source_id": "hien_2020",
+        "source_title": "Impact of urban expansion on the air pollution landscape: A case study of Hanoi, Vietnam",
+        "source_authors": "Hien, P. D., Men, N. T., Tan, P. M., & Hangartner, M.",
+        "source_year": "2020",
+        "source_url": "https://doi.org/10.1016/j.scitotenv.2019.134635",
+        "source_doi": "10.1016/j.scitotenv.2019.134635",
+        "tier": "tier_1",
+        "source_quote": "As revealed by the land use regression models, the factors driving the spatial variations of pollutant concentrations across the city include the population density, the road density, and the distances of the monitoring site to the urban center and the nearest roadway.",
+        "source_locator": null
+      }
+    ],
+    "notes": "Hanoi-specific evidence confirms population density as a driver of PM2.5 spatial variation. Two competing effects: congestion (more emissions) vs mode-shifting (public transport). In most cases, congestion and centralization effects dominate."
+  },
+  {
+    "id": "static_004",
+    "category": "static_factors",
+    "cause_node": "distance_to_roads",
+    "effect_node": "pm25",
+    "relationship_type": "INDIRECT_CAUSE",
+    "direction": "increase",
+    "strength": "STRONG",
+    "confidence": "HIGH",
+    "mechanism": "Road networks are a primary source of PM2.5 emissions from vehicle exhaust and non-exhaust sources (brake wear, tire wear, road dust). Concentrations are highest near roadways and decrease with distance, following a distance-decay pattern.",
+    "conditions": [
+      {
+        "relationship_id": "static_004",
+        "relationship_category": "static_factors",
+        "condition_index": 0,
+        "original_text": "Distance from roadway - exponential decay pattern",
+        "type": "threshold",
+        "field": "distance_to_roads",
+        "operator": "<",
+        "value": 300,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "PM2.5 concentrations approach background levels at approximately 300m from roadway",
+          "unit": "meters",
+          "decay_pattern": "exponential",
+          "source_context": "concentrations approaching background levels at approximately 300 m from the roadway"
+        }
+      },
+      {
+        "relationship_id": "static_004",
+        "relationship_category": "static_factors",
+        "condition_index": 1,
+        "original_text": "75% decrease between 5m and 30m from roadway",
+        "type": "range",
+        "field": "distance_to_roads",
+        "operator": "in",
+        "value": null,
+        "range": [5, 30],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Steepest concentration gradient occurs in first 30m from roadway",
+          "unit": "meters",
+          "pm25_reduction_percent": 75,
+          "source_context": "Incremental PM2.5 decreased 75% between 5 m and 30 m from the roadway"
+        }
+      },
+      {
+        "relationship_id": "static_004",
+        "relationship_category": "static_factors",
+        "condition_index": 2,
+        "original_text": "63% decrease for schools more than 3km from major roadways",
+        "type": "threshold",
+        "field": "distance_to_roads",
+        "operator": ">",
+        "value": 3000,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Schools >3km from roadways experience 63% lower traffic-related PM2.5",
+          "unit": "meters",
+          "pm25_reduction_percent": 63,
+          "source_context": "Schools that are more than 3 km away from roadways experience (on average) a 63% decrease in T-PM2.5"
+        }
+      }
+    ],
+    "temporal_lag": "0h",
+    "seasonal_variation": "all_season",
+    "spatial_scope": "local",
+    "sources": [
+      {
+        "source_id": "mukherjee_2020",
+        "source_title": "Influence of roadway emissions on near-road PM2.5: Monitoring data analysis and implications",
+        "source_authors": "Mukherjee, A., McCarthy, M. C., Brown, S. G., & Hiler, D.",
+        "source_year": "2020",
+        "source_url": "https://doi.org/10.1016/j.trd.2020.102481",
+        "source_doi": "10.1016/j.trd.2020.102481",
+        "tier": "tier_1",
+        "source_quote": "Incremental PM2.5 decreased 75% between 5 m and 30 m from the roadway. The distance-decay relationship was best fit by an exponential function, with concentrations approaching background levels at approximately 300 m from the roadway.",
+        "source_locator": null
+      },
+      {
+        "source_id": "matthaios_2024_b",
+        "source_title": "The effects of urban green space and road proximity to indoor traffic-related PM2.5, NO2, and BC exposure in inner-city schools",
+        "source_authors": "Matthaios, V. N., et al.",
+        "source_year": "2024",
+        "source_url": "https://doi.org/10.1038/s41370-024-00669-8",
+        "source_doi": "10.1038/s41370-024-00669-8",
+        "tier": "tier_1",
+        "source_quote": "It is evident that all traffic-related pollutants follow a linear decay with distance... Schools that are more than 3 km away from roadways experience (on average) a 63% decrease in T-PM2.5 compared to those that are close to major roadways.",
+        "source_locator": null
+      }
+    ],
+    "notes": "Distance-decay relationship is well-established. Exponential decay within 300m, linear decay at larger distances. Key thresholds: 30m (75% reduction), 300m (background levels), 3km (63% reduction for traffic-related PM2.5). Inverse relationship: closer distance = higher PM2.5."
+  },
+  {
+    "id": "static_005",
+    "category": "static_factors",
+    "cause_node": "industrial_zones",
+    "effect_node": "pm25",
+    "relationship_type": "INDIRECT_CAUSE",
+    "direction": "increase",
+    "strength": "STRONG",
+    "confidence": "HIGH",
+    "mechanism": "Industrial zones contain a high density of factories and industrial processes that are major point sources of PM2.5 and its precursors. Emissions from stacks and fugitive emissions lead to significantly elevated PM2.5 concentrations in and around these areas.",
+    "conditions": [
+      {
+        "relationship_id": "static_005",
+        "relationship_category": "static_factors",
+        "condition_index": 0,
+        "original_text": "Proximity to industrial zones/high-pollution factories",
+        "type": "categorical",
+        "field": "land_use",
+        "operator": "==",
+        "value": "industrial",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Area is within or near industrial land use zone",
+          "valid_values": ["industrial", "industrial_zone", "factory_area"]
+        }
+      },
+      {
+        "relationship_id": "static_005",
+        "relationship_category": "static_factors",
+        "condition_index": 1,
+        "original_text": "Spatial agglomeration of high-pollution factories",
+        "type": "qualitative",
+        "field": "industrial_agglomeration",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Clustering of high-pollution industries amplifies PM2.5 impact",
+          "source_context": "The spatial agglomeration of high-pollution factories in China aggravated PM2.5 pollution"
+        }
+      },
+      {
+        "relationship_id": "static_005",
+        "relationship_category": "static_factors",
+        "condition_index": 2,
+        "original_text": "Industrial sector accounts for ~30% of PM2.5, >90% from high-pollution industries",
+        "type": "qualitative",
+        "field": "emission_contribution",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Quantitative contribution of industrial sector to PM2.5 pollution",
+          "industrial_contribution_percent": 30,
+          "high_pollution_industry_share_percent": 90,
+          "source_context": "The industrial sector accounts for roughly 30% of total PM2.5 pollution in China, and more than 90% of the industrial sector pollution comes from high-pollution industries"
+        }
+      }
+    ],
+    "temporal_lag": "0h",
+    "seasonal_variation": "all_season",
+    "spatial_scope": "local",
+    "sources": [
+      {
+        "source_id": "han_2020_b",
+        "source_title": "Spatial distribution characteristics of PM2.5 and PM10 in Xi'an City predicted by land use regression models",
+        "source_authors": "Han, L., et al.",
+        "source_year": "2020",
+        "source_url": "https://doi.org/10.1016/j.scs.2020.102329",
+        "source_doi": "10.1016/j.scs.2020.102329",
+        "tier": "tier_1",
+        "source_quote": "The spatial distribution of pollutants is closely related to the layout of industrial land and the location of enterprises that generate air pollution emissions.",
+        "source_locator": null
+      },
+      {
+        "source_id": "zheng_2022",
+        "source_title": "Spatial agglomeration of high-pollution factories and PM2.5 pollution: Evidence from prefecture-level cities in China from 1998 to 2013",
+        "source_authors": "Zheng, Y., Xu, W., Huang, J., & Lv, A.",
+        "source_year": "2022",
+        "source_url": "https://doi.org/10.1016/j.jclepro.2022.132904",
+        "source_doi": "10.1016/j.jclepro.2022.132904",
+        "tier": "tier_1",
+        "source_quote": "The spatial agglomeration of high-pollution factories in China aggravated PM2.5 pollution... The industrial sector accounts for roughly 30% of total PM2.5 pollution in China, and more than 90% of the industrial sector pollution comes from high-pollution industries.",
+        "source_locator": null
+      }
+    ],
+    "notes": "Industrial contribution varies by region. China data shows ~30% of PM2.5 from industrial sector. Spatial clustering of factories amplifies local pollution. Effect is strongest in areas with high industrial land use density."
+  }
+]

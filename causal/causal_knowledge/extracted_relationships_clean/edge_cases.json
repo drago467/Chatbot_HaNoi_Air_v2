@@ -1,0 +1,625 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "edge_cases",
+  "source_count": 6,
+  "relationship_count_raw": 6,
+  "relationship_count_valid": 6,
+  "bibliography": [
+    {
+      "source_id": "lou_2017",
+      "source_title": "Relationships of relative humidity with PM2.5 and PM10 in the Yangtze River Delta, China",
+      "source_authors": "Cairong Lou, Hongyu Liu, Yufeng Li, Yan Peng, Juan Wang & Lingjun Dai",
+      "source_year": "2017",
+      "source_url": "https://link.springer.com/article/10.1007/s10661-017-6281-z",
+      "source_doi": "10.1007/s10661-017-6281-z",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Identified an inverted U-shaped relationship between RH and PM2.5, with a peak at 45-70% RH. Above 70% RH, the effect turns into reduction. This establishes a critical non-linear relationship and threshold."
+    },
+    {
+      "source_id": "zheng_2019",
+      "source_title": "Effect of precipitation on reducing atmospheric pollutant over Beijing",
+      "source_authors": "Zuofang Zheng, Guirong Xu, Qingchun Li, Conglan Chen, Jiangbo Li",
+      "source_year": "2019",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1309104218307049",
+      "source_doi": "10.1016/j.apr.2019.04.001",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Explicitly states that drizzle has a negative removal effect on PM2.5 (i.e., it can increase concentrations), which is a direct exception to the general rule that rain cleans the air."
+    },
+    {
+      "source_id": "ly_2018",
+      "source_title": "Characterizing PM2.5 in Hanoi with New High Temporal Resolution Sensor",
+      "source_authors": "Bich-Thuy Ly, Yutaka Matsumi, Tomoki Nakayama, Yosuke Sakamoto, Yoshizumi Kajii, Trung-Dung Nghiem",
+      "source_year": "2018",
+      "source_url": "https://aaqr.org/articles/aaqr-17-10-maps-0435.pdf",
+      "source_doi": "10.4209/aaqr.2017.10.0435",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Observed in Hanoi that large increases in PM2.5 frequently occur several days (4-5 days) after a cold surge, demonstrating a delayed, non-linear effect."
+    },
+    {
+      "source_id": "liu_2022",
+      "source_title": "Rapid reappearance of air pollution after cold air outbreaks in northern and eastern China",
+      "source_authors": "Qian Liu, Guixing Chen, Lifang Sheng, and Toshiki Iwasaki",
+      "source_year": "2022",
+      "source_url": "https://acp.copernicus.org/articles/22/13371/2022/",
+      "source_doi": "10.5194/acp-22-13371-2022",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Explains the mechanism for the post-cold surge pollution spike, attributing it to stable stratification in the lower troposphere forced by the residual cold air mass."
+    },
+    {
+      "source_id": "sun_2022",
+      "source_title": "Effect of Vertical Wind Shear on PM2.5 Changes over a Receptor Region in Central China",
+      "source_authors": "Xiaoyun Sun, Yue Zhou, Tianliang Zhao, Yongqing Bai, Tao Huo, Liang Leng, Huan He, Jing Sun",
+      "source_year": "2022",
+      "source_url": "https://www.mdpi.com/2072-4292/14/14/3333",
+      "source_doi": "10.3390/rs14143333",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Shows that the correlation between wind speed and PM2.5 can be positive under polluted conditions, indicating that strong winds can increase pollution at a receptor site via long-range transport."
+    },
+    {
+      "source_id": "won_2021",
+      "source_title": "Hygroscopic properties of particulate matter and effects of their interactions with weather on visibility",
+      "source_authors": "Wan-Sik Won, Rosy Oh, Woojoo Lee, Sungkwan Ku, Pei-Chen Su, Yong-Jin Yoon",
+      "source_year": "2021",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361198/",
+      "source_doi": "10.1038/s41598-021-95834-6",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Explains the mechanism of hygroscopic growth, where particles absorb water at high RH, increasing their size and causing light-scattering-based sensors to overestimate PM2.5 mass. This is a key measurement artifact."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "humidity_pm25_nonlinear_001",
+      "category": "edge_cases",
+      "cause_node": "humidity",
+      "effect_node": "pm25",
+      "relationship_type": "MODERATOR",
+      "description": "Non-linear (inverted U-shaped) relationship between RH and PM2.5: accumulation at RH<70%, removal at RH>70%",
+      "mechanism": "Mối quan hệ giữa độ ẩm và PM2.5 có dạng chữ U ngược. Ở độ ẩm thấp đến trung bình (RH < 70%), độ ẩm thúc đẩy các phản ứng hóa học thứ cấp (ví dụ: chuyển đổi SO2 và NO2 thành sulfate và nitrate), làm tăng nồng độ PM2.5. Tuy nhiên, ở độ ẩm rất cao (RH > 70%), các quá trình lắng đọng ướt (wet deposition) trở nên chiếm ưu thế, dẫn đến việc loại bỏ các hạt khỏi khí quyển và làm giảm nồng độ PM2.5.",
+      "conditions": [
+        {
+          "relationship_id": "humidity_pm25_nonlinear_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 0,
+          "original_text": "RH < 70% (tích lũy)",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "logic": {
+              "op": "OR",
+              "children": [0, 1]
+            },
+            "description": "Piecewise relationship: accumulation regime (RH<70%) OR removal regime (RH>70%)",
+            "piecewise_group": "humidity_pm25_nonlinear_001"
+          }
+        },
+        {
+          "relationship_id": "humidity_pm25_nonlinear_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 1,
+          "original_text": "RH < 70% (tích lũy)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": "<",
+          "value": 70,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "effect_direction": "accumulation",
+            "regime": "low_to_moderate_humidity",
+            "piecewise_branch": "a"
+          }
+        },
+        {
+          "relationship_id": "humidity_pm25_nonlinear_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 2,
+          "original_text": "RH > 70% (loại bỏ)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 70,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "effect_direction": "removal",
+            "regime": "high_humidity",
+            "piecewise_branch": "b"
+          }
+        },
+        {
+          "relationship_id": "humidity_pm25_nonlinear_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 3,
+          "original_text": "Có sự hiện diện của các tiền chất như SO2 và NO2",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "so2_no2_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "precursors": ["so2", "no2"],
+            "description": "Requires presence of SO2 and NO2 precursors for secondary aerosol formation"
+          }
+        }
+      ],
+      "temporal_lag": "N/A",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "sources": ["lou_2017"],
+      "source_url": "https://link.springer.com/article/10.1007/s10661-017-6281-z",
+      "source_title": "Relationships of relative humidity with PM2.5 and PM10 in the Yangtze River Delta, China",
+      "source_authors": "Cairong Lou, Hongyu Liu, Yufeng Li, Yan Peng, Juan Wang & Lingjun Dai",
+      "source_year": "2017",
+      "source_quote": "Our results revealed that RH had an inverted U-shaped relationship with PM2.5 concentrations (peaking at RH = 45–70%)... The very-dry (RH < 45%), dry (RH = 45–60%) and low-humidity (RH = 60–70%) conditions positively affected PM2.5 and exerted an accumulation effect, while the mid-humidity (RH = 70–80%), high-humidity (RH = 80–90%), and extreme-humidity (RH = 90–100%) conditions played a significant role in reducing particle concentrations.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "EDGE CASE: Non-linear relationship (Inverted U-shaped). Phá vỡ quy tắc chung rằng độ ẩm cao luôn làm giảm PM2.5. Hiệu ứng đảo ngược tại ngưỡng RH khoảng 70%.",
+      "metadata": {
+        "edge_case_type": "non_linear",
+        "threshold_value": 70,
+        "threshold_unit": "%"
+      }
+    },
+    {
+      "id": "drizzle_pm25_increase_001",
+      "category": "edge_cases",
+      "cause_node": "precipitation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "description": "Drizzle has negative removal effect on PM2.5, potentially increasing concentrations",
+      "mechanism": "Mưa phùn (drizzle) có hiệu ứng loại bỏ âm (negative removal effect) đối với PM2.5, nghĩa là nó có thể làm tăng nồng độ. Điều này xảy ra do các giọt mưa phùn nhỏ không đủ lớn để gây ra sự lắng đọng hiệu quả (washout) mà thay vào đó, chúng có thể làm tăng độ ẩm gần bề mặt, thúc đẩy sự hình thành aerosol thứ cấp và sự phát triển hút ẩm (hygroscopic growth) của các hạt hiện có, dẫn đến nồng độ khối lượng cao hơn.",
+      "conditions": [
+        {
+          "relationship_id": "drizzle_pm25_increase_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 0,
+          "original_text": "Loại mưa: Mưa phùn (Drizzle)",
+          "type": "categorical",
+          "field": "precipitation_type",
+          "operator": null,
+          "value": "drizzle",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "precipitation_interpretation": "type",
+            "description": "Precipitation type must be drizzle (light, fine droplets)"
+          }
+        },
+        {
+          "relationship_id": "drizzle_pm25_increase_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 1,
+          "original_text": "Cường độ mưa thấp",
+          "type": "threshold",
+          "field": "precipitation_intensity_mmph",
+          "operator": "<",
+          "value": 2.5,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "mm/h",
+            "precipitation_interpretation": "intensity_mmph",
+            "description": "Low precipitation intensity typical of drizzle (<2.5 mm/h based on WMO classification)",
+            "reference": "WMO drizzle classification"
+          }
+        }
+      ],
+      "temporal_lag": "short_term",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "sources": ["zheng_2019"],
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1309104218307049",
+      "source_title": "Effect of precipitation on reducing atmospheric pollutant over Beijing",
+      "source_authors": "Zuofang Zheng, Guirong Xu, Qingchun Li, Conglan Chen, Jiangbo Li",
+      "source_year": "2019",
+      "source_quote": "The removal effect of drizzle on PM2.5 and PM10 was negative, and the removal effect of moderate rain and heavy rain was significantly higher than that of light rain.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "EDGE CASE: Exception. Phá vỡ quy tắc chung rằng mưa luôn làm sạch không khí. Mưa phùn có thể làm tăng PM2.5.",
+      "metadata": {
+        "edge_case_type": "exception",
+        "contradicts_rule": "precipitation_always_reduces_pm25"
+      }
+    },
+    {
+      "id": "cold_surge_delayed_peak_001",
+      "category": "edge_cases",
+      "cause_node": "cold_surge",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "description": "Cold surge causes delayed PM2.5 peak 2-5 days after passage due to post-surge stable stratification",
+      "mechanism": "Một đợt không khí lạnh (cold surge) ban đầu làm sạch không khí do gió mạnh. Tuy nhiên, sau khi đợt không khí lạnh đi qua, khối không khí lạnh còn sót lại tạo ra một lớp nghịch nhiệt ổn định ở tầng thấp. Lớp này bẫy các chất ô nhiễm phát thải sau đó, kết hợp với điều kiện gió yếu, dẫn đến sự tích tụ nhanh chóng và một đỉnh nồng độ PM2.5 mới, thường xảy ra vài ngày sau sự kiện không khí lạnh ban đầu.",
+      "conditions": [
+        {
+          "relationship_id": "cold_surge_delayed_peak_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 0,
+          "original_text": "Sau khi một đợt không khí lạnh đi qua (giai đoạn suy yếu)",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": null,
+          "value": "decay",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "phase_description": "Post-cold surge decay phase, after initial passage",
+            "valid_values": ["decay", "post_passage"]
+          }
+        },
+        {
+          "relationship_id": "cold_surge_delayed_peak_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 1,
+          "original_text": "Điều kiện gió yếu sau đợt không khí lạnh",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "description": "Weak wind conditions following cold surge passage",
+            "typical_threshold": "< 2 m/s for stagnant conditions"
+          }
+        },
+        {
+          "relationship_id": "cold_surge_delayed_peak_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 2,
+          "original_text": "Có nguồn phát thải ô nhiễm tại địa phương",
+          "type": "categorical",
+          "field": "local_emission_source",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "description": "Local emission sources must be present for accumulation",
+            "issue": "qualitative_condition_not_directly_checkable"
+          }
+        },
+        {
+          "relationship_id": "cold_surge_delayed_peak_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 3,
+          "original_text": "Temporal lag: 2-5 days after cold surge",
+          "type": "range",
+          "field": "event_lag_days",
+          "operator": null,
+          "value": null,
+          "range": [2, 5],
+          "checkable": true,
+          "normalized": {
+            "unit": "days",
+            "description": "PM2.5 peak typically occurs 2-5 days after cold surge passage"
+          }
+        }
+      ],
+      "temporal_lag": "2-5 days",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "sources": ["ly_2018", "liu_2022"],
+      "source_url": "https://aaqr.org/articles/aaqr-17-10-maps-0435.pdf",
+      "source_title": "Characterizing PM2.5 in Hanoi with New High Temporal Resolution Sensor",
+      "source_authors": "Bich-Thuy Ly, et al.",
+      "source_year": "2018",
+      "source_quote": "Large increases in both PM2.5 and CO were frequently observed several days after cold surges... During five days after the cold surges, peaks of PM2.5 were appeared at night. High hourly levels of PM2.5 (higher than 120 μg m⁻³) appeared at the fourth day after the cold surge and a level higher than 160 μg m⁻³ were observed at the fifth day after the cold surge.",
+      "source_locator": "Page 7",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "EDGE CASE: Non-linear relationship (Delayed effect). Phá vỡ quy tắc chung rằng không khí lạnh và gió mạnh luôn làm giảm ô nhiễm. Hiệu ứng làm sạch ban đầu bị đảo ngược sau vài ngày.",
+      "metadata": {
+        "edge_case_type": "delayed_effect",
+        "initial_effect": "cleaning",
+        "delayed_effect": "accumulation"
+      }
+    },
+    {
+      "id": "wind_transport_increase_001",
+      "category": "edge_cases",
+      "cause_node": "wind_speed",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "description": "Strong winds can increase PM2.5 at receptor sites via long-range transport from polluted source regions",
+      "mechanism": "Trong điều kiện ô nhiễm, gió mạnh không phải lúc nào cũng làm phân tán ô nhiễm. Nếu gió thổi từ một khu vực nguồn ô nhiễm nặng, nó có thể vận chuyển một lượng lớn PM2.5 đến một khu vực tiếp nhận (receptor region), dẫn đến sự gia tăng đột ngột nồng độ PM2.5 tại địa phương. Hiệu ứng này đặc biệt rõ rệt khi có sự vận chuyển tầm xa (long-range transport).",
+      "conditions": [
+        {
+          "relationship_id": "wind_transport_increase_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 0,
+          "original_text": "Tốc độ gió cao",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": ">",
+          "value": 4,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "description": "High wind speed enabling long-range transport",
+            "note": "Threshold approximate; varies by region and source distance"
+          }
+        },
+        {
+          "relationship_id": "wind_transport_increase_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 1,
+          "original_text": "Hướng gió từ khu vực nguồn ô nhiễm",
+          "type": "categorical",
+          "field": "wind_direction_source",
+          "operator": null,
+          "value": "from_polluted_region",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "description": "Wind direction must be from a polluted source region (e.g., industrial areas, urban centers upwind)",
+            "issue": "requires_spatial_context",
+            "example_hanoi": "Northerly winds from China industrial regions"
+          }
+        },
+        {
+          "relationship_id": "wind_transport_increase_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 2,
+          "original_text": "Khu vực đang trong tình trạng ô nhiễm (polluted conditions)",
+          "type": "categorical",
+          "field": "regional_pollution_status",
+          "operator": null,
+          "value": "polluted",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "description": "Regional background must be polluted for transport effect to dominate over dispersion",
+            "issue": "qualitative_regional_assessment"
+          }
+        }
+      ],
+      "temporal_lag": "short_term",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "sources": ["sun_2022"],
+      "source_url": "https://www.mdpi.com/2072-4292/14/14/3333",
+      "source_title": "Effect of Vertical Wind Shear on PM2.5 Changes over a Receptor Region in Central China",
+      "source_authors": "Xiaoyun Sun, et al.",
+      "source_year": "2022",
+      "source_quote": "The correlation between wind speed and PM2.5 was negative for clean conditions and positive for polluted conditions in both two sites... Prevailed northerly wind disrupted the local circulation and enhanced the surface PM2.5 concentrations under polluted conditions, which tend to be an indicator of regional transport of air pollutants.",
+      "source_locator": "Abstract & Section 3.2",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "EDGE CASE: Exception. Phá vỡ quy tắc chung rằng gió mạnh luôn làm sạch không khí. Trong trường hợp vận chuyển từ nguồn ô nhiễm, gió mạnh có thể làm tăng PM2.5.",
+      "metadata": {
+        "edge_case_type": "exception",
+        "contradicts_rule": "high_wind_always_disperses_pollution",
+        "condition_dependent": true
+      }
+    },
+    {
+      "id": "measurement_artifact_hygroscopic_growth_001",
+      "category": "edge_cases",
+      "cause_node": "humidity",
+      "effect_node": "pm25_measurement",
+      "relationship_type": "ARTIFACT",
+      "description": "High RH causes hygroscopic growth of particles, leading to overestimation by light-scattering sensors",
+      "mechanism": "Các cảm biến PM2.5 chi phí thấp dựa trên phương pháp tán xạ ánh sáng (light scattering) thường không có chức năng kiểm soát độ ẩm. Ở độ ẩm cao, các hạt PM2.5 có tính hút ẩm (hygroscopic) sẽ hấp thụ hơi nước, làm tăng kích thước và thay đổi chỉ số khúc xạ của chúng. Điều này khiến chúng tán xạ nhiều ánh sáng hơn, và cảm biến sẽ diễn giải sai điều này thành một nồng độ khối lượng (mass concentration) cao hơn thực tế. Đây là một sai số đo lường (measurement artifact), không phải là sự gia tăng thực sự của khối lượng hạt khô.",
+      "conditions": [
+        {
+          "relationship_id": "measurement_artifact_hygroscopic_growth_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 0,
+          "original_text": "Sử dụng cảm biến PM2.5 dựa trên tán xạ ánh sáng",
+          "type": "categorical",
+          "field": "sensor_type",
+          "operator": null,
+          "value": "light_scattering",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "description": "Sensor must use light scattering principle (optical sensors)",
+            "examples": ["PMS5003", "SDS011", "PurpleAir"]
+          }
+        },
+        {
+          "relationship_id": "measurement_artifact_hygroscopic_growth_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 1,
+          "original_text": "Cảm biến không có bộ phận làm khô hoặc kiểm soát độ ẩm",
+          "type": "categorical",
+          "field": "sensor_humidity_control",
+          "operator": null,
+          "value": "none",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "description": "Sensor lacks RH control or drying mechanism",
+            "valid_values": ["none", "absent"]
+          }
+        },
+        {
+          "relationship_id": "measurement_artifact_hygroscopic_growth_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 2,
+          "original_text": "Độ ẩm tương đối (RH) cao",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 75,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "description": "High relative humidity where hygroscopic growth becomes significant",
+            "typical_threshold": "> 75% RH"
+          }
+        }
+      ],
+      "temporal_lag": "instantaneous",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "sources": ["won_2021"],
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361198/",
+      "source_title": "Hygroscopic properties of particulate matter and effects of their interactions with weather on visibility",
+      "source_authors": "Wan-Sik Won, et al.",
+      "source_year": "2021",
+      "source_quote": "An important reason for the lower accuracies is that low-cost sensors lack the RH and temperature control functions; therefore, light scattering sensors overestimate the PM concentration affected by humidity.",
+      "source_locator": "Introduction",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "EDGE CASE: Measurement Artifact. Các cảm biến quang học đánh giá quá cao nồng độ PM2.5 ở độ ẩm cao do sự phát triển hút ẩm của hạt, không phải do sự gia tăng thực tế về khối lượng.",
+      "metadata": {
+        "edge_case_type": "measurement_artifact",
+        "artifact_direction": "overestimation",
+        "correction_method": "RH-based correction factor"
+      }
+    },
+    {
+      "id": "photochemical_smog_spike_001",
+      "category": "edge_cases",
+      "cause_node": "solar_radiation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT",
+      "description": "Strong sunlight with high precursors causes photochemical smog and secondary PM2.5 formation",
+      "mechanism": "Bức xạ mặt trời mạnh trong điều kiện có nồng độ cao các tiền chất (NOx, VOCs, SO2) thúc đẩy các phản ứng quang hóa tạo ra ozone và aerosol hữu cơ thứ cấp (SOA). Các phản ứng này dẫn đến sự hình thành PM2.5 thứ cấp, gây ra các đợt ô nhiễm sương mù quang hóa (photochemical smog) với nồng độ PM2.5 và O3 cao đồng thời.",
+      "conditions": [
+        {
+          "relationship_id": "photochemical_smog_spike_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 0,
+          "original_text": "Bức xạ mặt trời mạnh",
+          "type": "threshold",
+          "field": "solar_radiation",
+          "operator": ">",
+          "value": 600,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "W/m²",
+            "description": "Strong solar radiation enabling photochemical reactions",
+            "note": "Threshold approximate; photochemistry significant above ~400-600 W/m²"
+          }
+        },
+        {
+          "relationship_id": "photochemical_smog_spike_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 1,
+          "original_text": "Nhiệt độ cao",
+          "type": "threshold",
+          "field": "temperature",
+          "operator": ">",
+          "value": 25,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "°C",
+            "description": "High temperature accelerating photochemical reaction rates",
+            "note": "Threshold approximate; reactions faster at higher temperatures"
+          }
+        },
+        {
+          "relationship_id": "photochemical_smog_spike_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 2,
+          "original_text": "Nồng độ cao của các tiền chất (NOx, VOCs, SO2)",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "nox_vocs_so2_high",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "precursors": ["nox", "vocs", "so2"],
+            "description": "High concentrations of photochemical precursors required",
+            "issue": "requires_multiple_pollutant_measurements"
+          }
+        },
+        {
+          "relationship_id": "photochemical_smog_spike_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 3,
+          "original_text": "Điều kiện khí quyển ổn định (gió yếu, nghịch nhiệt)",
+          "type": "compound",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "logic": {
+              "op": "AND",
+              "children": [4, 5]
+            },
+            "description": "Stable atmospheric conditions combining weak wind and inversion"
+          }
+        },
+        {
+          "relationship_id": "photochemical_smog_spike_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 4,
+          "original_text": "Gió yếu",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "description": "Weak wind allowing pollutant accumulation"
+          }
+        },
+        {
+          "relationship_id": "photochemical_smog_spike_001",
+          "relationship_category": "edge_cases",
+          "condition_index": 5,
+          "original_text": "Nghịch nhiệt",
+          "type": "categorical",
+          "field": "inversion",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "description": "Temperature inversion present, trapping pollutants",
+            "valid_values": ["present", "true", "1"]
+          }
+        }
+      ],
+      "temporal_lag": "intra-day",
+      "strength": "HIGH",
+      "confidence": "HIGH",
+      "sources": ["wang_2020"],
+      "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019jd032033",
+      "source_title": "Estimation of Secondary Organic Aerosol Formation During a Photochemical Smog Episode in Shanghai, China",
+      "source_authors": "Hongli Wang, et al.",
+      "source_year": "2020",
+      "source_quote": "This study focuses on a pollution episode of PM2.5 that occurred simultaneously with an O3 episode in Shanghai in the summer of 2013... This suggests the importance of the photochemical formation of PM2.5 during a pollution episode. OC accounted for 28.9% of PM2.5, making it the most abundant component, and its concentration was well correlated with O3 (R2 = 0.72). The concentration of secondary OC (SOC) was estimated by the elemental carbon-tracer method, and the result showed that SOC accounted for 48.7% of OC on average, indicating that secondary formation was the main source of OC.",
+      "source_locator": "Abstract",
+      "seasonal_variation": "summer",
+      "spatial_scope": "urban",
+      "notes": "EDGE CASE: Exception. Phá vỡ quy tắc chung rằng thời tiết nắng, quang đãng đồng nghĩa với không khí trong lành. Trong điều kiện có nhiều tiền chất, nắng nóng lại là tác nhân chính gây ra ô nhiễm PM2.5 nghiêm trọng.",
+      "metadata": {
+        "edge_case_type": "exception",
+        "contradicts_rule": "sunny_weather_means_clean_air",
+        "co_pollutant": "o3"
+      }
+    }
+  ],
+  "handoff_to_other_prompts": [],
+  "missing_info": "More quantitative data is needed to define the precise wind speed threshold for the wind transport exception, and the specific temperature/precursor thresholds for the photochemical exception.",
+  "contradictions": []
+}

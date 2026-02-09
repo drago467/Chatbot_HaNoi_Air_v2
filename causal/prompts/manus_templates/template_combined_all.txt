@@ -1,0 +1,108 @@
+# COMBINED EXTRACTION PROMPT
+# Extract tất cả causal relationships từ một document
+
+## ROLE
+Bạn là chuyên gia về ô nhiễm không khí và khí tượng học, có kiến thức sâu về:
+- Cơ chế hình thành và biến đổi của các chất ô nhiễm (PM2.5, PM10, SO2, NO2, O3, CO, NOx, NH3)
+- Các quá trình khí tượng ảnh hưởng đến ô nhiễm (nghịch nhiệt, khuếch tán, vận chuyển)
+- Các phản ứng hóa học khí quyển (SIA formation, photochemistry, SOA formation)
+- Đặc thù ô nhiễm tại khu vực Đông Nam Á và Hà Nội
+
+## TASK
+Từ đoạn văn bản được cung cấp, hãy extract TẤT CẢ các mối quan hệ nhân quả liên quan đến ô nhiễm không khí, bao gồm:
+
+### Task 1: Meteorological Pathways
+- Temperature → Inversion → PBLH → PM2.5
+- Wind Speed → Dispersion → PM2.5
+- Wind Direction → Transport → PM2.5
+- Humidity → Chemical Processes → PM2.5
+- Precipitation → Wet Deposition → PM2.5
+- Cloud Cover → Solar Radiation → PBLH → PM2.5
+- Pressure → Atmospheric Stability → PM2.5
+
+### Task 2: Chemical Processes
+- SO2 + NO2 + Humidity → SIA Formation → PM2.5
+- NO2 + O3 + Solar Radiation → Nitrate Formation → PM2.5
+- VOCs + NOx + Solar Radiation → O3 Formation → Secondary Aerosols
+- NH3 + HNO3 → Ammonium Nitrate → PM2.5
+
+### Task 3: Transport Mechanisms
+- Wind Direction + Emission Sources → Regional Transport → PM2.5
+- Wind Speed → Transport Distance → PM2.5
+- Cold Surge → Wind Pattern → PM2.5
+
+### Task 4: Emission Sources
+- Traffic → NOx/PM2.5 Primary → PM2.5
+- Industry → SO2/NOx → Secondary Aerosols → PM2.5
+- Biomass Burning → PM2.5 Primary + VOCs → PM2.5
+
+### Task 5: Static Factors
+- Urban Density → Emission Sources → PM2.5
+- Topography → Air Flow → PM2.5 Accumulation
+- Distance to Roads → Traffic Exposure → PM2.5
+
+### Task 6: Seasonal Patterns
+- Season → Weather Pattern → PM2.5
+- Time of Day → PBLH Variation → PM2.5
+- Month → Agricultural Activity → Biomass Burning → PM2.5
+
+### Task 7: Edge Cases
+- Non-linear relationships
+- Measurement artifacts
+- Exceptions to general rules
+
+## OUTPUT FORMAT (JSON)
+{
+  "meteorological_relationships": [
+    {
+      "id": "met_001",
+      "cause_node": "temperature",
+      "effect_node": "inversion",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "...",
+      "conditions": [...],
+      "temporal_lag": "...",
+      "strength": "...",
+      "confidence": "...",
+      "evidence_text": "...",
+      "seasonal_variation": "...",
+      "spatial_scope": "...",
+      "notes": "..."
+    }
+  ],
+  "chemical_relationships": [...],
+  "transport_relationships": [...],
+  "emission_relationships": [...],
+  "static_factor_relationships": [...],
+  "seasonal_pattern_relationships": [...],
+  "edge_case_relationships": [...],
+  "entities_mentioned": ["pm25", "temperature", ...],
+  "missing_info": "..."
+}
+
+## CRITICAL REQUIREMENTS
+1. CHỈ extract các mối quan hệ NHÂN QUẢ thực sự, KHÔNG phải tương quan đơn thuần
+2. Mỗi relationship phải có cơ chế (mechanism) rõ ràng - giải thích TẠI SAO và NHƯ THẾ NÀO
+3. Phân biệt rõ DIRECT_CAUSE vs INDIRECT_CAUSE vs MODERATOR
+4. Ghi rõ điều kiện (conditions) khi nào relationship đúng
+5. Đánh giá confidence dựa trên evidence trong text
+
+## NAMING CONVENTIONS
+Nodes phải dùng tiếng Anh, snake_case:
+- PM2.5 → pm25
+- Temperature → temperature
+- Humidity → humidity
+- Wind Speed → wind_speed
+- SO2 → so2
+- NO2 → no2
+- VOCs → vocs
+- etc.
+
+---
+
+DOCUMENT TEXT:
+[Paste đoạn văn bản từ paper cần extract ở đây]
+
+---
+
+Hãy extract TẤT CẢ causal relationships từ đoạn văn trên, phân loại theo các tasks đã định nghĩa, theo format JSON đã định nghĩa. Output MUST be valid JSON.

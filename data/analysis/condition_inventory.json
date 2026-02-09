@@ -1,0 +1,3283 @@
+{
+  "total_conditions": 732,
+  "checkable_count": 529,
+  "non_checkable_count": 203,
+  "checkable_percentage": 72.27,
+  "by_type": {
+    "range": 18,
+    "threshold": 164,
+    "categorical": 265,
+    "qualitative": 125,
+    "compound": 17,
+    "month": 71,
+    "time_of_day": 29,
+    "season": 37,
+    "time_range": 6
+  },
+  "by_field": {
+    "aerosol_ph": 20,
+    "relative_humidity": 45,
+    "so2_concentration": 3,
+    "temperature": 12,
+    "precursor_availability": 60,
+    "particle_type": 6,
+    "dust_event": 1,
+    "nh3_concentration": 1,
+    "aerosol_liquid_water": 14,
+    "catalysis": 2,
+    "compound_meteorological": 1,
+    "cold_surge_phase": 49,
+    "month": 74,
+    "geographic_region": 60,
+    "wind_direction": 24,
+    "wind_speed": 38,
+    "boundary_layer_height": 14,
+    "inversion_type": 8,
+    "time_of_day": 29,
+    "monsoon_cycle_duration": 7,
+    "transport_distance": 6,
+    "precipitation_type": 4,
+    "precipitation_intensity_mmph": 7,
+    "local_emission_source": 1,
+    "event_lag_days": 4,
+    "wind_direction_source": 1,
+    "regional_pollution_status": 1,
+    "sensor_type": 2,
+    "sensor_humidity_control": 1,
+    "solar_radiation": 4,
+    "inversion": 1,
+    "hour": 9,
+    "site_type": 2,
+    "precipitation_occurrence": 14,
+    "burning_type": 3,
+    "fuel_type": 2,
+    "equipment_type": 1,
+    "source_location": 1,
+    "source_type": 1,
+    "season": 37,
+    "fog_indicator": 4,
+    "visibility": 1,
+    "cloud_cover": 13,
+    "uv_index": 1,
+    "stability_index": 1,
+    "secondary_aerosol_production": 1,
+    "cloud_liquid_water": 1,
+    "surface_heating": 1,
+    "atmospheric_stability": 3,
+    "turbulence": 1,
+    "emissions": 2,
+    "vertical_mixing": 1,
+    "surface_cooling_rate": 1,
+    "inversion_presence": 1,
+    "uv_wavelength": 1,
+    "oh_radical_concentration": 1,
+    "voc_concentration": 1,
+    "oxidation_products": 1,
+    "oc_ratio": 1,
+    "condensation_sink": 1,
+    "soa_formation_rate": 1,
+    "uv_radiation": 1,
+    "photolysis_rate": 1,
+    "synoptic_pattern": 8,
+    "vertical_motion": 1,
+    "pm25_concentration": 5,
+    "upwind_air_quality": 1,
+    "solar_zenith_angle": 1,
+    "sky_condition": 1,
+    "water_vapor": 1,
+    "ox_concentration": 1,
+    "nox_regime": 3,
+    "sulfate_presence": 1,
+    "atmospheric_layer": 1,
+    "emission_regime": 1,
+    "nox_presence": 1,
+    "latitude": 1,
+    "fog_duration_hours": 1,
+    "cloud_water_content": 1,
+    "oh_radical_availability": 1,
+    "accumulated_precipitation_mm": 8,
+    "precipitation_duration_hours": 3,
+    "pm25_initial": 5,
+    "particle_size_um": 1,
+    "cloud_base_height": 1,
+    "air_mass_origin": 2,
+    "event_type": 3,
+    "event_lag_hours": 1,
+    "year": 3,
+    "enso_phase": 5,
+    "circulation_pattern": 2,
+    "pollution_level": 1,
+    "temporal_scale": 1,
+    "burning_practice": 1,
+    "topography": 2,
+    "urban_density_class": 1,
+    "land_use_type": 1,
+    "vegetation_type": 1,
+    "dry_deposition_efficiency": 1,
+    "topography_type": 1,
+    "cap_event": 1,
+    "elevation_gradient": 1,
+    "distance_to_road_m": 1,
+    "pm25_reduction_near_road": 1,
+    "distance_to_major_road_m": 1,
+    "industrial_zone_presence": 1,
+    "urban_zone_type": 1,
+    "pm25_residence_time": 1,
+    "visibility_condition": 1,
+    "air_mass_trajectory": 1,
+    "spatial_scale": 1,
+    "city_type": 1,
+    "monsoon_regime": 3,
+    "wind_direction_source_alignment": 1,
+    "emission_source": 2,
+    "upwind_source": 1,
+    "no2_concentration": 1
+  },
+  "by_operator": {
+    "in": 99,
+    ">": 79,
+    "==": 213,
+    ">=": 8,
+    "<": 65,
+    "<=": 6
+  },
+  "field_frequency": [
+    {
+      "field": "month",
+      "frequency": 74,
+      "checkable_count": 74,
+      "non_checkable_count": 0,
+      "types": [
+        "month",
+        "compound"
+      ]
+    },
+    {
+      "field": "precursor_availability",
+      "frequency": 60,
+      "checkable_count": 15,
+      "non_checkable_count": 45,
+      "types": [
+        "qualitative",
+        "categorical"
+      ]
+    },
+    {
+      "field": "geographic_region",
+      "frequency": 60,
+      "checkable_count": 58,
+      "non_checkable_count": 2,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "cold_surge_phase",
+      "frequency": 49,
+      "checkable_count": 49,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "relative_humidity",
+      "frequency": 45,
+      "checkable_count": 39,
+      "non_checkable_count": 6,
+      "types": [
+        "range",
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "wind_speed",
+      "frequency": 38,
+      "checkable_count": 38,
+      "non_checkable_count": 0,
+      "types": [
+        "range",
+        "threshold"
+      ]
+    },
+    {
+      "field": "season",
+      "frequency": 37,
+      "checkable_count": 37,
+      "non_checkable_count": 0,
+      "types": [
+        "season"
+      ]
+    },
+    {
+      "field": "time_of_day",
+      "frequency": 29,
+      "checkable_count": 29,
+      "non_checkable_count": 0,
+      "types": [
+        "time_of_day"
+      ]
+    },
+    {
+      "field": "wind_direction",
+      "frequency": 24,
+      "checkable_count": 23,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative",
+        "categorical"
+      ]
+    },
+    {
+      "field": "aerosol_ph",
+      "frequency": 20,
+      "checkable_count": 15,
+      "non_checkable_count": 5,
+      "types": [
+        "range",
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "aerosol_liquid_water",
+      "frequency": 14,
+      "checkable_count": 3,
+      "non_checkable_count": 11,
+      "types": [
+        "range",
+        "qualitative",
+        "threshold",
+        "categorical"
+      ]
+    },
+    {
+      "field": "boundary_layer_height",
+      "frequency": 14,
+      "checkable_count": 11,
+      "non_checkable_count": 3,
+      "types": [
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "precipitation_occurrence",
+      "frequency": 14,
+      "checkable_count": 14,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold",
+        "categorical"
+      ]
+    },
+    {
+      "field": "cloud_cover",
+      "frequency": 13,
+      "checkable_count": 13,
+      "non_checkable_count": 0,
+      "types": [
+        "range",
+        "threshold",
+        "categorical"
+      ]
+    },
+    {
+      "field": "temperature",
+      "frequency": 12,
+      "checkable_count": 9,
+      "non_checkable_count": 3,
+      "types": [
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "hour",
+      "frequency": 9,
+      "checkable_count": 9,
+      "non_checkable_count": 0,
+      "types": [
+        "time_range",
+        "compound"
+      ]
+    },
+    {
+      "field": "inversion_type",
+      "frequency": 8,
+      "checkable_count": 3,
+      "non_checkable_count": 5,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "synoptic_pattern",
+      "frequency": 8,
+      "checkable_count": 4,
+      "non_checkable_count": 4,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "accumulated_precipitation_mm",
+      "frequency": 8,
+      "checkable_count": 7,
+      "non_checkable_count": 1,
+      "types": [
+        "range",
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "monsoon_cycle_duration",
+      "frequency": 7,
+      "checkable_count": 0,
+      "non_checkable_count": 7,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "precipitation_intensity_mmph",
+      "frequency": 7,
+      "checkable_count": 6,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "particle_type",
+      "frequency": 6,
+      "checkable_count": 1,
+      "non_checkable_count": 5,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "transport_distance",
+      "frequency": 6,
+      "checkable_count": 0,
+      "non_checkable_count": 6,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "pm25_concentration",
+      "frequency": 5,
+      "checkable_count": 4,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "pm25_initial",
+      "frequency": 5,
+      "checkable_count": 5,
+      "non_checkable_count": 0,
+      "types": [
+        "range",
+        "threshold"
+      ]
+    },
+    {
+      "field": "enso_phase",
+      "frequency": 5,
+      "checkable_count": 3,
+      "non_checkable_count": 2,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "precipitation_type",
+      "frequency": 4,
+      "checkable_count": 4,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "event_lag_days",
+      "frequency": 4,
+      "checkable_count": 4,
+      "non_checkable_count": 0,
+      "types": [
+        "range",
+        "threshold"
+      ]
+    },
+    {
+      "field": "solar_radiation",
+      "frequency": 4,
+      "checkable_count": 3,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "fog_indicator",
+      "frequency": 4,
+      "checkable_count": 3,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative",
+        "categorical"
+      ]
+    },
+    {
+      "field": "so2_concentration",
+      "frequency": 3,
+      "checkable_count": 2,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative",
+        "threshold"
+      ]
+    },
+    {
+      "field": "burning_type",
+      "frequency": 3,
+      "checkable_count": 3,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "atmospheric_stability",
+      "frequency": 3,
+      "checkable_count": 0,
+      "non_checkable_count": 3,
+      "types": [
+        "qualitative",
+        "categorical"
+      ]
+    },
+    {
+      "field": "nox_regime",
+      "frequency": 3,
+      "checkable_count": 0,
+      "non_checkable_count": 3,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "precipitation_duration_hours",
+      "frequency": 3,
+      "checkable_count": 3,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "event_type",
+      "frequency": 3,
+      "checkable_count": 0,
+      "non_checkable_count": 3,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "year",
+      "frequency": 3,
+      "checkable_count": 2,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "monsoon_regime",
+      "frequency": 3,
+      "checkable_count": 3,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "catalysis",
+      "frequency": 2,
+      "checkable_count": 0,
+      "non_checkable_count": 2,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "sensor_type",
+      "frequency": 2,
+      "checkable_count": 1,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "site_type",
+      "frequency": 2,
+      "checkable_count": 2,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "fuel_type",
+      "frequency": 2,
+      "checkable_count": 2,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "emissions",
+      "frequency": 2,
+      "checkable_count": 0,
+      "non_checkable_count": 2,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "air_mass_origin",
+      "frequency": 2,
+      "checkable_count": 0,
+      "non_checkable_count": 2,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "circulation_pattern",
+      "frequency": 2,
+      "checkable_count": 0,
+      "non_checkable_count": 2,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "topography",
+      "frequency": 2,
+      "checkable_count": 1,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "emission_source",
+      "frequency": 2,
+      "checkable_count": 0,
+      "non_checkable_count": 2,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "dust_event",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "nh3_concentration",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "compound_meteorological",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "compound"
+      ]
+    },
+    {
+      "field": "local_emission_source",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "wind_direction_source",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "regional_pollution_status",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "sensor_humidity_control",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "inversion",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "equipment_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "source_location",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "source_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "visibility",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "uv_index",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "stability_index",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "secondary_aerosol_production",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "cloud_liquid_water",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "surface_heating",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "turbulence",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "vertical_mixing",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "surface_cooling_rate",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "inversion_presence",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "uv_wavelength",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "range"
+      ]
+    },
+    {
+      "field": "oh_radical_concentration",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "voc_concentration",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "oxidation_products",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "oc_ratio",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "condensation_sink",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "soa_formation_rate",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "uv_radiation",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "photolysis_rate",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "vertical_motion",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "upwind_air_quality",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "solar_zenith_angle",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "sky_condition",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "water_vapor",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "ox_concentration",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "sulfate_presence",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "atmospheric_layer",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "emission_regime",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "nox_presence",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "latitude",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "fog_duration_hours",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "cloud_water_content",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "oh_radical_availability",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "particle_size_um",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "range"
+      ]
+    },
+    {
+      "field": "cloud_base_height",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "event_lag_hours",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "pollution_level",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "temporal_scale",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "burning_practice",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "urban_density_class",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "land_use_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "vegetation_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "dry_deposition_efficiency",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "topography_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "cap_event",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "elevation_gradient",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "distance_to_road_m",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "range"
+      ]
+    },
+    {
+      "field": "pm25_reduction_near_road",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "distance_to_major_road_m",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "threshold"
+      ]
+    },
+    {
+      "field": "industrial_zone_presence",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "urban_zone_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "pm25_residence_time",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "visibility_condition",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "air_mass_trajectory",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "spatial_scale",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "city_type",
+      "frequency": 1,
+      "checkable_count": 1,
+      "non_checkable_count": 0,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "wind_direction_source_alignment",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    },
+    {
+      "field": "upwind_source",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "categorical"
+      ]
+    },
+    {
+      "field": "no2_concentration",
+      "frequency": 1,
+      "checkable_count": 0,
+      "non_checkable_count": 1,
+      "types": [
+        "qualitative"
+      ]
+    }
+  ],
+  "condition_details_by_type": {
+    "range": [
+      {
+        "relationship_id": "adv_chem_001",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "pH range: 4.2-5.7 for rapid sulfate production",
+        "type": "range",
+        "field": "aerosol_ph",
+        "operator": "in",
+        "value": null,
+        "range": [
+          4.2,
+          5.7
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Optimal pH range for rapid sulfate production with pathway transitions",
+          "unit": "pH units"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_002",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "RH: 80-89%",
+        "type": "range",
+        "field": "relative_humidity",
+        "operator": "in",
+        "value": null,
+        "range": [
+          80,
+          89
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Optimal RH range for Mn-catalyzed surface oxidation",
+          "unit": "%"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_008",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "pH 4-5",
+        "type": "range",
+        "field": "aerosol_ph",
+        "operator": "in",
+        "value": null,
+        "range": [
+          4,
+          5
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Moderately acidic pH range favoring TMI pathway",
+          "unit": "pH units"
+        }
+      },
+      {
+        "relationship_id": "chem_010",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "pH 3-5 (tối ưu)",
+        "type": "range",
+        "field": "aerosol_ph",
+        "operator": null,
+        "value": null,
+        "range": [
+          3,
+          5
+        ],
+        "checkable": true,
+        "normalized": {
+          "unit": "pH",
+          "interpretation": "Optimal pH range for H2O2 oxidation pathway"
+        }
+      },
+      {
+        "relationship_id": "cold_surge_delayed_peak_001",
+        "relationship_category": "edge_cases",
+        "condition_index": 3,
+        "original_text": "Temporal lag: 2-5 days after cold surge",
+        "type": "range",
+        "field": "event_lag_days",
+        "operator": null,
+        "value": null,
+        "range": [
+          2,
+          5
+        ],
+        "checkable": true,
+        "normalized": {
+          "unit": "days",
+          "description": "PM2.5 peak typically occurs 2-5 days after cold surge passage"
+        }
+      }
+    ],
+    "threshold": [
+      {
+        "relationship_id": "adv_chem_001",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "RH > 50% for aerosol water presence",
+        "type": "threshold",
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 50,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Minimum RH required for aerosol liquid water to be present",
+          "unit": "%"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_001",
+        "relationship_category": "chemical_processes",
+        "condition_index": 2,
+        "original_text": "SO2 concentration > 10 ppb",
+        "type": "threshold",
+        "field": "so2_concentration",
+        "operator": ">",
+        "value": 10,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Sufficient SO2 precursor for sulfate formation",
+          "unit": "ppb"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_002",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "Temperature: ~298 K",
+        "type": "threshold",
+        "field": "temperature",
+        "operator": "==",
+        "value": 298,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Experimental temperature condition, approximately 25°C",
+          "unit": "K",
+          "approximate": true
+        }
+      },
+      {
+        "relationship_id": "adv_chem_003",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "RH > 85% for significant enhancement",
+        "type": "threshold",
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Threshold RH for significant aqueous-phase chemistry enhancement",
+          "unit": "%"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_005",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "High ammonia environment (~30 μg/m³)",
+        "type": "threshold",
+        "field": "nh3_concentration",
+        "operator": ">=",
+        "value": 30,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "High ammonia concentration environment",
+          "unit": "μg/m³",
+          "approximate": true
+        }
+      }
+    ],
+    "categorical": [
+      {
+        "relationship_id": "adv_chem_002",
+        "relationship_category": "chemical_processes",
+        "condition_index": 2,
+        "original_text": "Mn2+ present in aerosol",
+        "type": "categorical",
+        "field": "precursor_availability",
+        "operator": null,
+        "value": "mn2+_present",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires manganese ions in aerosol phase",
+          "issue": "qualitative_precursor_condition"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_002",
+        "relationship_category": "chemical_processes",
+        "condition_index": 3,
+        "original_text": "NH3 available for neutralization",
+        "type": "categorical",
+        "field": "precursor_availability",
+        "operator": null,
+        "value": "nh3_available",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires ammonia for neutralization step",
+          "issue": "qualitative_precursor_condition"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_003",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "Hygroscopic particles present",
+        "type": "categorical",
+        "field": "particle_type",
+        "operator": null,
+        "value": "hygroscopic",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires particles capable of water uptake (sulfate, nitrate, ammonium)",
+          "issue": "qualitative_particle_condition"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_003",
+        "relationship_category": "chemical_processes",
+        "condition_index": 2,
+        "original_text": "Oxidants available (NO2, HONO)",
+        "type": "categorical",
+        "field": "precursor_availability",
+        "operator": null,
+        "value": "oxidants_no2_hono",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires NO2 or HONO as oxidants",
+          "issue": "qualitative_precursor_condition"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_004",
+        "relationship_category": "chemical_processes",
+        "condition_index": 0,
+        "original_text": "Dust events present",
+        "type": "categorical",
+        "field": "dust_event",
+        "operator": null,
+        "value": "present",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires mineral dust particles in atmosphere",
+          "issue": "qualitative_event_condition"
+        }
+      }
+    ],
+    "qualitative": [
+      {
+        "relationship_id": "adv_chem_004",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "NO2 coexisting with SO2",
+        "type": "qualitative",
+        "field": "precursor_availability",
+        "operator": null,
+        "value": "no2_so2_coexisting",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Synergistic effect requires both NO2 and SO2 present",
+          "issue": "qualitative_precursor_condition"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_004",
+        "relationship_category": "chemical_processes",
+        "condition_index": 2,
+        "original_text": "O2 available in atmosphere",
+        "type": "qualitative",
+        "field": "precursor_availability",
+        "operator": null,
+        "value": "o2_available",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "O2 is always available in atmosphere - implicit condition",
+          "issue": "trivially_true_condition"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_005",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "RH sufficient for aerosol water formation",
+        "type": "qualitative",
+        "field": "relative_humidity",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires sufficient RH for AWC, but no specific threshold given in source",
+          "issue": "missing_threshold"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_005",
+        "relationship_category": "chemical_processes",
+        "condition_index": 2,
+        "original_text": "Temperature affects equilibrium",
+        "type": "qualitative",
+        "field": "temperature",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Temperature influences NH4NO3 equilibrium but AWC is dominant factor",
+          "issue": "qualitative_modifier"
+        }
+      },
+      {
+        "relationship_id": "adv_chem_007",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "High LWC",
+        "type": "qualitative",
+        "field": "aerosol_liquid_water",
+        "operator": null,
+        "value": "high",
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "interpretation": "Requires high liquid water content, no specific threshold given",
+          "issue": "missing_threshold"
+        }
+      }
+    ],
+    "compound": [
+      {
+        "relationship_id": "chem_009",
+        "relationship_category": "chemical_processes",
+        "condition_index": 1,
+        "original_text": "Điều kiện khí tượng thuận lợi (RH cao, nhiệt độ thấp, gió yếu)",
+        "type": "compound",
+        "field": "compound_meteorological",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "logic": {
+            "op": "AND",
+            "children": [
+              {
+                "field": "relative_humidity",
+                "operator": ">",
+                "value": 75,
+                "unit": "%"
+              },
+              {
+                "field": "temperature",
+                "operator": "<",
+                "value": 20,
+                "unit": "°C"
+              },
+              {
+                "field": "wind_speed",
+                "operator": "<",
+                "value": 2,
+                "unit": "m/s"
+              }
+            ]
+          },
+          "interpretation": "Favorable meteorological conditions: high RH, low temperature, weak wind"
+        }
+      },
+      {
+        "relationship_id": "humidity_pm25_nonlinear_001",
+        "relationship_category": "edge_cases",
+        "condition_index": 0,
+        "original_text": "RH < 70% (tích lũy)",
+        "type": "compound",
+        "field": null,
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "logic": {
+            "op": "OR",
+            "children": [
+              0,
+              1
+            ]
+          },
+          "description": "Piecewise relationship: accumulation regime (RH<70%) OR removal regime (RH>70%)",
+          "piecewise_group": "humidity_pm25_nonlinear_001",
+          "fix_applied": "checkable_empty_field",
+          "fix_reason": "Compound condition referencing piecewise children; individual children are checkable, not the compound wrapper"
+        }
+      },
+      {
+        "relationship_id": "photochemical_smog_spike_001",
+        "relationship_category": "edge_cases",
+        "condition_index": 3,
+        "original_text": "Điều kiện khí quyển ổn định (gió yếu, nghịch nhiệt)",
+        "type": "compound",
+        "field": null,
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": false,
+        "normalized": {
+          "logic": {
+            "op": "AND",
+            "children": [
+              4,
+              5
+            ]
+          },
+          "description": "Stable atmospheric conditions combining weak wind and inversion",
+          "fix_applied": "checkable_empty_field",
+          "fix_reason": "Compound AND condition; individual children (wind_speed, inversion) are checkable"
+        }
+      },
+      {
+        "relationship_id": "traffic_nox_001",
+        "relationship_category": "emission_sources",
+        "condition_index": 0,
+        "original_text": "Rush hour (7-9h, 17-19h)",
+        "type": "compound",
+        "field": "hour",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "logic": {
+            "op": "OR",
+            "children": [
+              {
+                "type": "time_range",
+                "field": "hour",
+                "range": [
+                  7,
+                  9
+                ]
+              },
+              {
+                "type": "time_range",
+                "field": "hour",
+                "range": [
+                  17,
+                  19
+                ]
+              }
+            ]
+          },
+          "interpretation": "Morning rush hour 7-9h OR evening rush hour 17-19h"
+        }
+      },
+      {
+        "relationship_id": "traffic_co_001",
+        "relationship_category": "emission_sources",
+        "condition_index": 0,
+        "original_text": "Rush hour (7-9h, 17-19h)",
+        "type": "compound",
+        "field": "hour",
+        "operator": null,
+        "value": null,
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "logic": {
+            "op": "OR",
+            "children": [
+              {
+                "type": "time_range",
+                "field": "hour",
+                "range": [
+                  7,
+                  9
+                ]
+              },
+              {
+                "type": "time_range",
+                "field": "hour",
+                "range": [
+                  17,
+                  19
+                ]
+              }
+            ]
+          },
+          "interpretation": "Morning rush hour 7-9h OR evening rush hour 17-19h"
+        }
+      }
+    ],
+    "month": [
+      {
+        "relationship_id": "CC1",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 1,
+        "original_text": "Winter monsoon season (October-February)",
+        "type": "month",
+        "field": "month",
+        "operator": "in",
+        "value": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "month_range": {
+            "start_month": 10,
+            "end_month": 2,
+            "wrap_year": true
+          },
+          "interpretation": "Cold surge events occur during winter monsoon season"
+        }
+      },
+      {
+        "relationship_id": "CC1_link_00",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 1,
+        "original_text": "Winter monsoon season (October-February)",
+        "type": "month",
+        "field": "month",
+        "operator": "in",
+        "value": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "month_range": {
+            "start_month": 10,
+            "end_month": 2,
+            "wrap_year": true
+          },
+          "interpretation": "Cold surge events occur during winter monsoon season"
+        }
+      },
+      {
+        "relationship_id": "CC1_link_01",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 1,
+        "original_text": "Winter monsoon season (October-February)",
+        "type": "month",
+        "field": "month",
+        "operator": "in",
+        "value": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "month_range": {
+            "start_month": 10,
+            "end_month": 2,
+            "wrap_year": true
+          },
+          "interpretation": "Cold surge events occur during winter monsoon season"
+        }
+      },
+      {
+        "relationship_id": "CC1_link_02",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 1,
+        "original_text": "Winter monsoon season (October-February)",
+        "type": "month",
+        "field": "month",
+        "operator": "in",
+        "value": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "month_range": {
+            "start_month": 10,
+            "end_month": 2,
+            "wrap_year": true
+          },
+          "interpretation": "Cold surge events occur during winter monsoon season"
+        }
+      },
+      {
+        "relationship_id": "CC1_link_03",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 1,
+        "original_text": "Winter monsoon season (October-February)",
+        "type": "month",
+        "field": "month",
+        "operator": "in",
+        "value": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "month_range": {
+            "start_month": 10,
+            "end_month": 2,
+            "wrap_year": true
+          },
+          "interpretation": "Cold surge events occur during winter monsoon season"
+        }
+      }
+    ],
+    "time_of_day": [
+      {
+        "relationship_id": "CC4",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 4,
+        "original_text": "Nighttime PM2.5 peaks",
+        "type": "time_of_day",
+        "field": "time_of_day",
+        "operator": "==",
+        "value": "night",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "hour_range": [
+            18,
+            6
+          ],
+          "wrap_midnight": true,
+          "interpretation": "Secondary aerosol formation peaks at night"
+        }
+      },
+      {
+        "relationship_id": "CC4_link_00",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 4,
+        "original_text": "Nighttime PM2.5 peaks",
+        "type": "time_of_day",
+        "field": "time_of_day",
+        "operator": "==",
+        "value": "night",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "hour_range": [
+            18,
+            6
+          ],
+          "wrap_midnight": true,
+          "interpretation": "Secondary aerosol formation peaks at night"
+        }
+      },
+      {
+        "relationship_id": "CC4_link_01",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 4,
+        "original_text": "Nighttime PM2.5 peaks",
+        "type": "time_of_day",
+        "field": "time_of_day",
+        "operator": "==",
+        "value": "night",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "hour_range": [
+            18,
+            6
+          ],
+          "wrap_midnight": true,
+          "interpretation": "Secondary aerosol formation peaks at night"
+        }
+      },
+      {
+        "relationship_id": "CC4_link_02",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 4,
+        "original_text": "Nighttime PM2.5 peaks",
+        "type": "time_of_day",
+        "field": "time_of_day",
+        "operator": "==",
+        "value": "night",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "hour_range": [
+            18,
+            6
+          ],
+          "wrap_midnight": true,
+          "interpretation": "Secondary aerosol formation peaks at night"
+        }
+      },
+      {
+        "relationship_id": "CC4_link_03",
+        "relationship_category": "transport_mechanisms",
+        "condition_index": 4,
+        "original_text": "Nighttime PM2.5 peaks",
+        "type": "time_of_day",
+        "field": "time_of_day",
+        "operator": "==",
+        "value": "night",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "hour_range": [
+            18,
+            6
+          ],
+          "wrap_midnight": true,
+          "interpretation": "Secondary aerosol formation peaks at night"
+        }
+      }
+    ],
+    "season": [
+      {
+        "relationship_id": "residential_combustion_pm25_001",
+        "relationship_category": "emission_sources",
+        "condition_index": 0,
+        "original_text": "Mùa đông (nhiệt độ thấp)",
+        "type": "season",
+        "field": "season",
+        "operator": null,
+        "value": "winter",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Winter season with low temperatures increasing heating demand",
+          "month_range": {
+            "start_month": 11,
+            "end_month": 2,
+            "wrap_year": true
+          }
+        }
+      },
+      {
+        "relationship_id": "met_004",
+        "relationship_category": "meteorological_pathways",
+        "condition_index": 2,
+        "original_text": "Mùa đông (wintertime)",
+        "type": "season",
+        "field": "season",
+        "operator": "==",
+        "value": "winter",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Winter conditions when PBLH-PM interactions are strongest"
+        }
+      },
+      {
+        "relationship_id": "met_006",
+        "relationship_category": "meteorological_pathways",
+        "condition_index": 0,
+        "original_text": "Mùa đông và mùa hè monsoon",
+        "type": "season",
+        "field": "season",
+        "operator": "in",
+        "value": [
+          "winter_monsoon",
+          "summer_monsoon"
+        ],
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Applies to both winter and summer monsoon seasons in Hanoi"
+        }
+      },
+      {
+        "relationship_id": "met_012",
+        "relationship_category": "meteorological_pathways",
+        "condition_index": 0,
+        "original_text": "Mùa monsoon",
+        "type": "season",
+        "field": "season",
+        "operator": "==",
+        "value": "monsoon",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Monsoon season when humidity effects are most pronounced"
+        }
+      },
+      {
+        "relationship_id": "photo_002",
+        "relationship_category": "chemical_processes",
+        "condition_index": 2,
+        "original_text": "Summer season with high photochemical activity",
+        "type": "season",
+        "field": "season",
+        "operator": null,
+        "value": "summer",
+        "range": null,
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Maximum solar radiation and photochemical activity"
+        }
+      }
+    ],
+    "time_range": [
+      {
+        "relationship_id": "edge_photo_001",
+        "relationship_category": "photochemical_formation",
+        "condition_index": 2,
+        "original_text": "daytime (10:00-16:00)",
+        "type": "time_range",
+        "field": "hour",
+        "range": [
+          10,
+          16
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Peak solar radiation hours"
+        }
+      },
+      {
+        "relationship_id": "met_013",
+        "relationship_category": "meteorological_pathways",
+        "condition_index": 2,
+        "original_text": "Thời gian đỉnh: 13:00-15:00",
+        "type": "time_range",
+        "field": "hour",
+        "operator": null,
+        "value": null,
+        "range": [
+          13,
+          15
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Peak PBL development occurs between 13:00-15:00 local time"
+        }
+      },
+      {
+        "relationship_id": "SP007",
+        "relationship_category": "diurnal_patterns",
+        "condition_index": 0,
+        "original_text": "7:00-8:00 AM daily",
+        "type": "time_range",
+        "field": "hour",
+        "operator": "in",
+        "value": null,
+        "range": [
+          7,
+          8
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Morning rush hour period"
+        }
+      },
+      {
+        "relationship_id": "SP008",
+        "relationship_category": "diurnal_patterns",
+        "condition_index": 0,
+        "original_text": "7:00-11:00 PM daily",
+        "type": "time_range",
+        "field": "hour",
+        "operator": "in",
+        "value": null,
+        "range": [
+          19,
+          23
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Evening hours with collapsed boundary layer and rush hour traffic"
+        }
+      },
+      {
+        "relationship_id": "SP009",
+        "relationship_category": "diurnal_patterns",
+        "condition_index": 0,
+        "original_text": "Around noon daily",
+        "type": "time_range",
+        "field": "hour",
+        "operator": "in",
+        "value": null,
+        "range": [
+          11,
+          14
+        ],
+        "checkable": true,
+        "normalized": {
+          "interpretation": "Midday period with maximum boundary layer height"
+        }
+      }
+    ]
+  },
+  "value_analysis": {
+    "threshold_values": [
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 50,
+        "unit": "%"
+      },
+      {
+        "field": "so2_concentration",
+        "operator": ">",
+        "value": 10,
+        "unit": "ppb"
+      },
+      {
+        "field": "temperature",
+        "operator": "==",
+        "value": 298,
+        "unit": "K"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "nh3_concentration",
+        "operator": ">=",
+        "value": 30,
+        "unit": "μg/m³"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">=",
+        "value": 71,
+        "unit": "%"
+      },
+      {
+        "field": "temperature",
+        "operator": "==",
+        "value": 274,
+        "unit": "K"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 5.5,
+        "unit": "pH units"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 50,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "temperature",
+        "operator": "<",
+        "value": 298,
+        "unit": "K"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 75,
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 4.5,
+        "unit": "pH"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 75,
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 5.5,
+        "unit": "pH"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 5.5,
+        "unit": "pH"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 75,
+        "unit": "%"
+      },
+      {
+        "field": "temperature",
+        "operator": "<",
+        "value": 15,
+        "unit": "°C"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      },
+      {
+        "field": "temperature",
+        "operator": "<",
+        "value": 15,
+        "unit": "°C"
+      },
+      {
+        "field": "temperature",
+        "operator": ">",
+        "value": 25,
+        "unit": "°C"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 75,
+        "unit": "%"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2.0,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2.0,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2.0,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2.0,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2.0,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2.0,
+        "unit": "m/s"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": "<",
+        "value": 70,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 70,
+        "unit": "%"
+      },
+      {
+        "field": "precipitation_intensity_mmph",
+        "operator": "<",
+        "value": 2.5,
+        "unit": "mm/h"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 4,
+        "unit": "m/s"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 75,
+        "unit": "%"
+      },
+      {
+        "field": "solar_radiation",
+        "operator": ">",
+        "value": 600,
+        "unit": "W/m²"
+      },
+      {
+        "field": "temperature",
+        "operator": ">",
+        "value": 25,
+        "unit": "°C"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": "==",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      },
+      {
+        "field": "visibility",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_liquid_water",
+        "operator": ">",
+        "value": 0.1,
+        "unit": "g/m³"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 5.5,
+        "unit": ""
+      },
+      {
+        "field": "so2_concentration",
+        "operator": ">",
+        "value": 10,
+        "unit": "ppb"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 40,
+        "unit": "%"
+      },
+      {
+        "field": "uv_index",
+        "operator": ">",
+        "value": 6,
+        "unit": ""
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 20,
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_liquid_water",
+        "operator": ">",
+        "value": 15,
+        "unit": "% of dry mass"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 40,
+        "unit": "%"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": ">",
+        "value": 70,
+        "unit": "percent"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 500,
+        "unit": "m"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 30,
+        "unit": "percent"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": "<",
+        "value": 60,
+        "unit": "percent"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 30,
+        "unit": "percent"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "solar_radiation",
+        "operator": ">",
+        "value": 0,
+        "unit": "W/m²"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 70,
+        "unit": "percent"
+      },
+      {
+        "field": "solar_radiation",
+        "operator": ">",
+        "value": 0,
+        "unit": "W/m²"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": ">",
+        "value": 70,
+        "unit": "percent"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 30,
+        "unit": "percent"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 0.3,
+        "unit": "fraction (0-1)"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 500,
+        "unit": "m"
+      },
+      {
+        "field": "pm25_concentration",
+        "operator": ">",
+        "value": 35,
+        "unit": "µg/m³"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 4,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": ">",
+        "value": 0,
+        "unit": "binary (0/1) or mm"
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": ">",
+        "value": 0,
+        "unit": "binary (0/1) or mm"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 70,
+        "unit": "%"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 0.3,
+        "unit": "fraction (0-1)"
+      },
+      {
+        "field": "solar_zenith_angle",
+        "operator": "<",
+        "value": 60,
+        "unit": "degrees"
+      },
+      {
+        "field": "ox_concentration",
+        "operator": ">",
+        "value": 50,
+        "unit": "ppb"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": "<",
+        "value": 2,
+        "unit": "pH"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 80,
+        "unit": "percent"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 90,
+        "unit": "percent"
+      },
+      {
+        "field": "cloud_cover",
+        "operator": "<",
+        "value": 30,
+        "unit": "percent"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": "<",
+        "value": 2,
+        "unit": "pH"
+      },
+      {
+        "field": "pm25_concentration",
+        "operator": "<=",
+        "value": 35,
+        "unit": "µg/m³"
+      },
+      {
+        "field": "precipitation_intensity_mmph",
+        "operator": "<",
+        "value": 2,
+        "unit": "mm/h"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 80,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 80,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 50,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 85,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 80,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 50,
+        "unit": "%"
+      },
+      {
+        "field": "fog_duration_hours",
+        "operator": ">",
+        "value": 3,
+        "unit": "hours"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "operator": "<",
+        "value": 2,
+        "unit": "mm/d"
+      },
+      {
+        "field": "precipitation_intensity_mmph",
+        "operator": ">",
+        "value": 2,
+        "unit": "mm/h"
+      },
+      {
+        "field": "precipitation_intensity_mmph",
+        "operator": ">",
+        "value": 4.5,
+        "unit": "mm/h"
+      },
+      {
+        "field": "precipitation_intensity_mmph",
+        "operator": ">",
+        "value": 5,
+        "unit": "mm/h"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "operator": ">",
+        "value": 10,
+        "unit": "mm"
+      },
+      {
+        "field": "precipitation_duration_hours",
+        "operator": ">",
+        "value": 1,
+        "unit": "hours"
+      },
+      {
+        "field": "pm25_initial",
+        "operator": ">",
+        "value": 75,
+        "unit": "μg/m³"
+      },
+      {
+        "field": "precipitation_duration_hours",
+        "operator": "<",
+        "value": 1,
+        "unit": "hours"
+      },
+      {
+        "field": "precipitation_intensity_mmph",
+        "operator": ">",
+        "value": 0.17,
+        "unit": "mm/h"
+      },
+      {
+        "field": "precipitation_duration_hours",
+        "operator": ">",
+        "value": 1,
+        "unit": "hours"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "operator": ">",
+        "value": 10,
+        "unit": "mm"
+      },
+      {
+        "field": "pm25_initial",
+        "operator": ">",
+        "value": 115,
+        "unit": "μg/m³"
+      },
+      {
+        "field": "pm25_initial",
+        "operator": "<",
+        "value": 35,
+        "unit": "μg/m³"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "operator": ">=",
+        "value": 7,
+        "unit": "mm"
+      },
+      {
+        "field": "event_lag_days",
+        "operator": "<=",
+        "value": 3,
+        "unit": "days"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "operator": ">=",
+        "value": 1,
+        "unit": "mm"
+      },
+      {
+        "field": "event_lag_days",
+        "operator": "<=",
+        "value": 6,
+        "unit": "days"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "precipitation_occurrence",
+        "operator": ">",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "field": "pm25_concentration",
+        "operator": ">",
+        "value": 75,
+        "unit": "µg/m³"
+      },
+      {
+        "field": "pm25_concentration",
+        "operator": "<=",
+        "value": 100,
+        "unit": "µg/m³"
+      },
+      {
+        "field": "distance_to_major_road_m",
+        "operator": "<",
+        "value": 300,
+        "unit": "m"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">=",
+        "value": 20,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">",
+        "value": 6,
+        "unit": "m/s"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 1000,
+        "unit": "m"
+      },
+      {
+        "field": "wind_speed",
+        "operator": ">=",
+        "value": 10,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 500,
+        "unit": "m"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 50,
+        "unit": "m"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 1,
+        "unit": "m/s"
+      },
+      {
+        "field": "event_lag_days",
+        "operator": "<=",
+        "value": 3,
+        "unit": ""
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "wind_speed",
+        "operator": "<",
+        "value": 2,
+        "unit": "m/s"
+      },
+      {
+        "field": "boundary_layer_height",
+        "operator": "<",
+        "value": 500,
+        "unit": "m"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 75,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 5.5,
+        "unit": ""
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": "<",
+        "value": 4.5,
+        "unit": ""
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": "<",
+        "value": 4.5,
+        "unit": ""
+      },
+      {
+        "field": "aerosol_ph",
+        "operator": ">",
+        "value": 5.5,
+        "unit": ""
+      },
+      {
+        "field": "temperature",
+        "operator": "<",
+        "value": 15,
+        "unit": "°C"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      },
+      {
+        "field": "temperature",
+        "operator": "<",
+        "value": 15,
+        "unit": "°C"
+      },
+      {
+        "field": "relative_humidity",
+        "operator": ">",
+        "value": 60,
+        "unit": "%"
+      }
+    ],
+    "range_values": [
+      {
+        "field": "aerosol_ph",
+        "range": [
+          4.2,
+          5.7
+        ],
+        "unit": "pH units"
+      },
+      {
+        "field": "relative_humidity",
+        "range": [
+          80,
+          89
+        ],
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_ph",
+        "range": [
+          4,
+          5
+        ],
+        "unit": "pH units"
+      },
+      {
+        "field": "aerosol_ph",
+        "range": [
+          3,
+          5
+        ],
+        "unit": "pH"
+      },
+      {
+        "field": "event_lag_days",
+        "range": [
+          2,
+          5
+        ],
+        "unit": "days"
+      },
+      {
+        "field": "wind_speed",
+        "range": [
+          0,
+          5
+        ],
+        "unit": "m/s"
+      },
+      {
+        "field": "relative_humidity",
+        "range": [
+          40,
+          60
+        ],
+        "unit": "%"
+      },
+      {
+        "field": "uv_wavelength",
+        "range": [
+          290,
+          400
+        ],
+        "unit": "nm"
+      },
+      {
+        "field": "cloud_cover",
+        "range": [
+          30,
+          100
+        ],
+        "unit": "percent"
+      },
+      {
+        "field": "relative_humidity",
+        "range": [
+          10,
+          70
+        ],
+        "unit": "%"
+      },
+      {
+        "field": "aerosol_liquid_water",
+        "range": [
+          1,
+          75
+        ],
+        "unit": "µg/m³"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "range": [
+          7,
+          12
+        ],
+        "unit": "mm/d"
+      },
+      {
+        "field": "accumulated_precipitation_mm",
+        "range": [
+          0.1,
+          0.5
+        ],
+        "unit": "mm"
+      },
+      {
+        "field": "particle_size_um",
+        "range": [
+          0.2,
+          2.5
+        ],
+        "unit": "μm"
+      },
+      {
+        "field": "pm25_initial",
+        "range": [
+          75,
+          115
+        ],
+        "unit": "μg/m³"
+      },
+      {
+        "field": "pm25_initial",
+        "range": [
+          35,
+          75
+        ],
+        "unit": "μg/m³"
+      },
+      {
+        "field": "distance_to_road_m",
+        "range": [
+          5,
+          300
+        ],
+        "unit": "m"
+      },
+      {
+        "field": "aerosol_ph",
+        "range": [
+          4,
+          5
+        ],
+        "unit": ""
+      }
+    ]
+  },
+  "summary": {
+    "total_relationships": 255,
+    "relationships_with_conditions": 255,
+    "unique_fields": 117,
+    "unique_types": 9
+  }
+}

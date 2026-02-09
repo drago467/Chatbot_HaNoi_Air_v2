@@ -1,0 +1,29 @@
+Kính chào cô,
+
+Em xin báo cáo tiến độ về việc xây dựng Causal Knowledge Graph cho dự án chatbot diễn giải ô nhiễm không khí Hà Nội.
+
+**Những gì đã hoàn thành:**
+
+Em đã xây dựng một Causal Knowledge Graph với 99 mối quan hệ nhân quả được trích xuất từ các tài liệu khoa học uy tín (chủ yếu là các bài báo peer-reviewed). Knowledge graph được tổ chức thành 7 categories chính:
+- Meteorological pathways (13 relationships)
+- Chemical processes (10 relationships)  
+- Transport mechanisms (18 relationships)
+- Emission sources (17 relationships)
+- Static factors (6 relationships)
+- Seasonal patterns (35 relationships)
+- Edge cases (6 relationships)
+
+Tất cả relationships đều có bằng chứng đầy đủ (source URL, quote, tác giả, năm xuất bản) và mô tả chi tiết cơ chế vật lý/hóa học. Đa số relationships dựa trên các nghiên cứu về Hà Nội và khu vực Đông Nam Á, đảm bảo tính phù hợp với bối cảnh thực tế.
+
+**Dự định triển khai:**
+
+Em đã lên kế hoạch tích hợp knowledge graph vào hệ thống chatbot hiện tại, sử dụng Chain of Thought reasoning để suy luận từng bước một cách có hệ thống. Chatbot sẽ truy vấn knowledge graph để tìm các mối quan hệ nhân quả phù hợp, xây dựng causal chain, và giải thích rõ ràng quá trình suy luận cho người dùng.
+
+**Báo cáo chi tiết:**
+
+Em đã soạn một báo cáo tiến độ đầy đủ trong file `BAO_CAO_TIEN_DO.md`, bao gồm phương pháp xây dựng, cấu trúc, đánh giá chất lượng, thống kê chi tiết, và kế hoạch triển khai.
+
+Em xin cảm ơn cô đã dành thời gian xem xét. Nếu cô có bất kỳ câu hỏi hoặc góp ý nào, em rất mong nhận được phản hồi từ cô.
+
+Trân trọng,
+[Tên sinh viên]

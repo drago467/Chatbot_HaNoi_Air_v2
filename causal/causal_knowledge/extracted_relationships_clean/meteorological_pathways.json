@@ -1,0 +1,992 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "meteorological_pathways",
+  "source_count": 6,
+  "relationship_count_raw": 13,
+  "relationship_count_valid": 13,
+  "bibliography": [
+    {
+      "source_id": "bib_001",
+      "source_title": "Temperature inversion and air pollution relationship, and its effects on human health in Hanoi City, Vietnam",
+      "source_authors": "Trinh, T.T., Trinh, T.T., Le, T.T., Nguyen, T.D.H., Tu, B.M.",
+      "source_year": "2019",
+      "source_url": "https://link.springer.com/article/10.1007/s10653-018-0190-0",
+      "source_doi": "10.1007/s10653-018-0190-0",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Temperature inversions in Hanoi occur most frequently from November to March. Levels of NO2, SO2, PM10 and PM2.5 increased when inversions strengthened. Statistical analysis showed temperature inversions correlated with concentration of air pollutants over 5 years (2011-2015)."
+    },
+    {
+      "source_id": "bib_002",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc, B.A., Dieudonné, E., Delbarre, H., Deboudt, K., Nguyen, S.T., Bui, V.H., Vu, D.M., Nguyen-Thi, H.T.",
+      "source_year": "2023",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S135223102300095X",
+      "source_doi": "10.1016/j.atmosenv.2023.119669",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Long-range transport from China during cold surge onset causes ~30% increase in PM2.5 in Hanoi. Stagnation of local pollution during cold surge persistence causes ~40% increase in PM2.5. Dominant sources switched from biomass burning to industrial activities."
+    },
+    {
+      "source_id": "bib_003",
+      "source_title": "Relationships between the planetary boundary layer height and surface pollutants derived from lidar observations over China: regional pattern and influencing factors",
+      "source_authors": "Su, T., Li, Z., Kahn, R.",
+      "source_year": "2018",
+      "source_url": "https://acp.copernicus.org/articles/18/15921/2018/",
+      "source_doi": "10.5194/acp-18-15921-2018",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "PBLH-PM correlations are roughly negative for most cases. Nonlinearly negative responses of PM to PBLH evolution found over polluted regions. Relatively strong PBLH-PM interactions when PBLH is shallow and PM concentration is high (wintertime). Strong wind with clean upwind air plays dominant role in removing pollutants."
+    },
+    {
+      "source_id": "bib_004",
+      "source_title": "Influence of Northeast Monsoon cold surges on air quality in Southeast Asia",
+      "source_authors": "Ashfold, M.J., Latif, M.T., Samah, A.A., Mead, M.I., Harris, N.R.P.",
+      "source_year": "2017",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S135223101730496X",
+      "source_doi": "10.1016/j.atmosenv.2017.07.047",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Cold surges in November-February transport East Asian pollution to Southeast Asia. CO and O3 elevated by >60% (~80 ppb) and >40% (~15 ppb) respectively during cold surges. Regional exceedances of WHO's O3 guideline often occur during cold surges."
+    },
+    {
+      "source_id": "bib_005",
+      "source_title": "Comparison of dry and wet deposition of particulate matter in near-surface waters during summer",
+      "source_authors": "Wu, Y., Liu, J., Zhai, J., Cong, L., Wang, Y., Ma, W., Zhang, Z., Li, C.",
+      "source_year": "2018",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013115/",
+      "source_doi": "10.1371/journal.pone.0199241",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Wet deposition was more effective in scavenging PM2.5 (92% efficiency). Dry deposition more effective for PM10 (63%). Rain scavenging takes place via Brownian diffusion, inertial impaction, diffusiophoresis, thermophoresis."
+    },
+    {
+      "source_id": "bib_006",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_doi": "10.1016/S1352-2310(02)00295-9",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "Very high PM2.5 and PM2.5-10 concentrations observed with nocturnal radiation inversions (October-December) and subsidence temperature inversions (January-March). Wind speed and air temperature are most important determinants of PM2.5. Meteorological parameters explain 60-74% of day-to-day variations."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "met_001",
+      "category": "meteorological_pathways",
+      "cause_node": "temperature",
+      "effect_node": "inversion",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Nocturnal surface cooling creates radiation temperature inversion",
+      "mechanism": "Nhiệt độ giảm vào ban đêm dẫn đến mặt đất mất nhiệt nhanh hơn không khí phía trên. Lớp không khí sát đất trở nên lạnh hơn lớp trên, tạo ra nghịch nhiệt bức xạ (radiation inversion). Hiện tượng này xảy ra phổ biến nhất từ tháng 10 đến tháng 12 tại Hà Nội.",
+      "temporal_lag": "2-6h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["bib_006"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_quote": "Very high PM2.5 and PM2.5−10 concentrations were observed in conjunction with the occurrence of nocturnal radiation inversions from October to December",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Ban đêm (nocturnal)",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "night",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Nocturnal conditions required for surface radiative cooling",
+            "alternative_encoding": {
+              "field": "hour",
+              "range": [18, 6],
+              "wrap_midnight": true
+            }
+          }
+        },
+        {
+          "relationship_id": "met_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Trời quang mây (clear sky)",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 0.3,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "fraction (0-1)",
+            "interpretation": "Clear sky allows maximum radiative heat loss from surface"
+          }
+        },
+        {
+          "relationship_id": "met_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Mùa đông (October-December)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [10, 11, 12],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 12,
+              "wrap_year": false
+            },
+            "interpretation": "Early winter period when radiation inversions are most common in Hanoi"
+          }
+        },
+        {
+          "relationship_id": "met_001",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 3,
+          "original_text": "Gió yếu",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed prevents mechanical mixing that would destroy inversion"
+          }
+        }
+      ],
+      "notes": "Radiation inversions are the most common type in Hanoi during early winter (October-December)"
+    },
+    {
+      "id": "met_002",
+      "category": "meteorological_pathways",
+      "cause_node": "pressure",
+      "effect_node": "inversion",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Anticyclonic high pressure causes subsidence temperature inversion",
+      "mechanism": "Điều kiện áp cao (anticyclonic conditions) gây ra hiện tượng lún khí (subsidence) trong khí quyển. Không khí lún xuống bị nén và ấm lên, tạo ra nghịch nhiệt lún (subsidence temperature inversion - STI) ở độ cao thấp. Hiện tượng này phổ biến từ tháng 1 đến tháng 3 tại Hà Nội.",
+      "temporal_lag": "1-2d",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["bib_006"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_quote": "subsidence temperature inversions (STI) from January to March. During the occurence of STIs particulate mass was almost evenly distributed among the two fractions and no significant diurnal variations in concentrations were observed.",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Áp cao (anticyclonic conditions)",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "anticyclonic",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "High pressure system causing subsidence",
+            "proxy_field": "pressure",
+            "proxy_condition": "above regional average"
+          }
+        },
+        {
+          "relationship_id": "met_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Mùa đông muộn (January-March)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [1, 2, 3],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 1,
+              "end_month": 3,
+              "wrap_year": false
+            },
+            "interpretation": "Late winter period when STIs are most common in Hanoi"
+          }
+        },
+        {
+          "relationship_id": "met_002",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Không khí ẩm từ biển",
+          "type": "qualitative",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Moist air from Pacific Ocean trajectories under anticyclonic conditions",
+            "issue": "qualitative_no_threshold"
+          }
+        }
+      ],
+      "notes": "STIs are associated with moist air from Pacific Ocean trajectories under anticyclonic conditions"
+    },
+    {
+      "id": "met_003",
+      "category": "meteorological_pathways",
+      "cause_node": "inversion",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Temperature inversion traps pollutants near surface, increasing PM2.5",
+      "mechanism": "Nghịch nhiệt tạo ra một lớp không khí ổn định ngăn cản sự khuếch tán thẳng đứng của các chất ô nhiễm. Các hạt PM2.5 bị giữ lại trong lớp khí quyển thấp, không thể phân tán lên cao, dẫn đến tích tụ và tăng nồng độ tại bề mặt.",
+      "temporal_lag": "0-6h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["bib_001"],
+      "source_url": "https://link.springer.com/article/10.1007/s10653-018-0190-0",
+      "source_title": "Temperature inversion and air pollution relationship, and its effects on human health in Hanoi City, Vietnam",
+      "source_authors": "Trinh, T.T., Trinh, T.T., Le, T.T., Nguyen, T.D.H., Tu, B.M.",
+      "source_year": "2019",
+      "source_quote": "The data showed that levels of NO2, SO2, PM10 and PM2.5 increased when the inversions strengthened.",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Nghịch nhiệt bức xạ hoặc nghịch nhiệt lún",
+          "type": "categorical",
+          "field": "inversion_type",
+          "operator": "in",
+          "value": ["radiation", "subsidence"],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Either radiation inversion or subsidence inversion present"
+          }
+        },
+        {
+          "relationship_id": "met_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Mùa đông (November-March)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [11, 12, 1, 2, 3],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 11,
+              "end_month": 3,
+              "wrap_year": true
+            },
+            "interpretation": "Winter period when inversions most frequently occur in Hanoi"
+          }
+        },
+        {
+          "relationship_id": "met_003",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Gió yếu",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed prevents horizontal dispersion"
+          }
+        }
+      ],
+      "notes": "Temperature inversions most frequently occur from November to March in Hanoi"
+    },
+    {
+      "id": "met_004",
+      "category": "meteorological_pathways",
+      "cause_node": "pblh",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Low planetary boundary layer height concentrates pollutants, increasing PM2.5",
+      "mechanism": "Chiều cao lớp biên hành tinh (PBLH) xác định thể tích không khí có sẵn để pha loãng các chất ô nhiễm phát thải gần mặt đất. Khi PBLH thấp, thể tích pha loãng giảm, dẫn đến nồng độ PM2.5 tăng. Mối quan hệ này phi tuyến tính - tác động mạnh nhất khi PBLH thấp và nồng độ PM cao.",
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["bib_003"],
+      "source_url": "https://acp.copernicus.org/articles/18/15921/2018/",
+      "source_title": "Relationships between the planetary boundary layer height and surface pollutants derived from lidar observations over China",
+      "source_authors": "Su, T., Li, Z., Kahn, R.",
+      "source_year": "2018",
+      "source_quote": "Relatively strong PBLH–PM interactions are found when the PBLH is shallow and PM concentration is high, which typically corresponds to wintertime cases.",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "PBLH thấp (shallow boundary layer)",
+          "type": "threshold",
+          "field": "boundary_layer_height",
+          "operator": "<",
+          "value": 500,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m",
+            "interpretation": "Shallow boundary layer limits vertical mixing volume",
+            "note": "Threshold inferred from typical shallow PBL definition; source does not specify exact value"
+          }
+        },
+        {
+          "relationship_id": "met_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Nồng độ PM cao (polluted conditions)",
+          "type": "threshold",
+          "field": "pm25_concentration",
+          "operator": ">",
+          "value": 35,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "µg/m³",
+            "interpretation": "Polluted conditions where PBLH-PM interaction is strongest",
+            "note": "Threshold based on WHO interim target; source indicates 'high PM' without specific value"
+          }
+        },
+        {
+          "relationship_id": "met_004",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Mùa đông (wintertime)",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter conditions when PBLH-PM interactions are strongest"
+          }
+        }
+      ],
+      "notes": "Nonlinearly negative responses of PM to PBLH evolution found over polluted regions like North China Plain"
+    },
+    {
+      "id": "met_005",
+      "category": "meteorological_pathways",
+      "cause_node": "wind_speed",
+      "effect_node": "dispersion",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "High wind speed enhances horizontal dispersion and pollutant removal",
+      "mechanism": "Tốc độ gió cao tăng cường khuếch tán ngang (horizontal dispersion) và xáo trộn rối (turbulent mixing) trong khí quyển. Gió mạnh mang không khí sạch từ thượng nguồn đóng vai trò chủ đạo trong việc loại bỏ các chất ô nhiễm, làm giảm nồng độ PM2.5 tại bề mặt.",
+      "temporal_lag": "0-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "sources": ["bib_003"],
+      "source_url": "https://acp.copernicus.org/articles/18/15921/2018/",
+      "source_title": "Relationships between the planetary boundary layer height and surface pollutants derived from lidar observations over China",
+      "source_authors": "Su, T., Li, Z., Kahn, R.",
+      "source_year": "2018",
+      "source_quote": "Strong wind with clean upwind air plays a dominant role in removing pollutants, and leads to obscure PBLH–PM relationships.",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Tốc độ gió > 4 m/s (strong wind)",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": ">",
+          "value": 4,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Strong wind threshold for effective pollutant dispersion"
+          }
+        },
+        {
+          "relationship_id": "met_005",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Không khí sạch từ thượng nguồn (clean upwind air)",
+          "type": "categorical",
+          "field": "upwind_air_quality",
+          "operator": "==",
+          "value": "clean",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Upwind air must be clean for wind to effectively reduce pollution",
+            "issue": "requires_trajectory_analysis",
+            "note": "Cannot be directly checked without back-trajectory analysis"
+          }
+        }
+      ],
+      "notes": "Negative correlation between surface PM and wind speed observed over the whole nation"
+    },
+    {
+      "id": "met_006",
+      "category": "meteorological_pathways",
+      "cause_node": "wind_speed",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Wind speed is a primary determinant of PM2.5 concentration",
+      "mechanism": "Tốc độ gió và nhiệt độ không khí là hai yếu tố khí tượng quan trọng nhất quyết định nồng độ PM2.5 tại Hà Nội. Các thông số khí tượng có thể giải thích từ 60% đến 74% biến động hàng ngày của nồng độ hạt.",
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["bib_006"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_quote": "The multiple regression of 24-h particulate concentrations against meteorological parameters for both the winter and summer monsoon periods shows that the most important determinants of PM2.5 are wind speed and air temperature",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Mùa đông và mùa hè monsoon",
+          "type": "season",
+          "field": "season",
+          "operator": "in",
+          "value": ["winter_monsoon", "summer_monsoon"],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Applies to both winter and summer monsoon seasons in Hanoi"
+          }
+        },
+        {
+          "relationship_id": "met_006",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Gió yếu (low wind speed)",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed leads to higher PM2.5 accumulation"
+          }
+        }
+      ],
+      "notes": "Meteorological parameters could explain from 60% to 74% of the day-to-day variations of particulate concentrations"
+    },
+    {
+      "id": "met_007",
+      "category": "meteorological_pathways",
+      "cause_node": "cold_surge",
+      "effect_node": "transport",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cold surge onset phase transports pollution from East Asia to Southeast Asia",
+      "mechanism": "Cold surge (đợt lạnh) trong mùa gió mùa đông bắc tạo ra luồng gió mạnh từ phía bắc, vận chuyển ô nhiễm từ Đông Á (Trung Quốc) xuống Đông Nam Á. Trong giai đoạn onset của cold surge, vận chuyển tầm xa từ Trung Quốc gây tăng ~30% nồng độ PM2.5 tại Hà Nội.",
+      "temporal_lag": "1-3d",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["bib_002"],
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S135223102300095X",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc, B.A., Dieudonné, E., Delbarre, H., Deboudt, K., et al.",
+      "source_year": "2023",
+      "source_quote": "This classification allowed to estimate that long-range transport from China during the onset of cold surges caused an average increase of around 30% of the PM2.5 level in Hanoi.",
+      "source_locator": "Abstract/Highlights",
+      "conditions": [
+        {
+          "relationship_id": "met_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Mùa gió mùa đông bắc (November-February)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [11, 12, 1, 2],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 11,
+              "end_month": 2,
+              "wrap_year": true
+            },
+            "interpretation": "Northeast monsoon season when cold surges occur"
+          }
+        },
+        {
+          "relationship_id": "met_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Giai đoạn onset của cold surge",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": "==",
+          "value": "onset",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Initial phase of cold surge when long-range transport dominates"
+          }
+        },
+        {
+          "relationship_id": "met_007",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Gió bắc mạnh (northerly winds at 925 hPa)",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "==",
+          "value": "north",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Strong northerly winds at 925 hPa level",
+            "wind_direction_range": [315, 45],
+            "note": "North defined as 315°-45° azimuth"
+          }
+        }
+      ],
+      "notes": "Non-linear effect: initial transport phase followed by stagnation phase"
+    },
+    {
+      "id": "met_008",
+      "category": "meteorological_pathways",
+      "cause_node": "cold_surge",
+      "effect_node": "pm25",
+      "relationship_type": "INDIRECT_CAUSE",
+      "description": "Cold surge persistence phase causes local pollution stagnation and PM2.5 increase",
+      "mechanism": "Trong giai đoạn persistence của cold surge, điều kiện khí tượng ổn định (stagnant conditions) ngăn cản sự khuếch tán của ô nhiễm địa phương. Sự ứ đọng ô nhiễm địa phương trong giai đoạn này gây tăng trung bình ~40% nồng độ PM2.5, tạo ra các đợt ô nhiễm nghiêm trọng nhất.",
+      "temporal_lag": "2-4d",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["bib_002"],
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S135223102300095X",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc, B.A., Dieudonné, E., Delbarre, H., Deboudt, K., et al.",
+      "source_year": "2023",
+      "source_quote": "The stagnation of local pollution during the cold surges persistence causes an average increase of ∼40% in level of PM2.5.",
+      "source_locator": "Highlights",
+      "conditions": [
+        {
+          "relationship_id": "met_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Giai đoạn persistence của cold surge",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": "==",
+          "value": "persistence",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Persistence phase of cold surge when stagnation dominates"
+          }
+        },
+        {
+          "relationship_id": "met_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Điều kiện ứ đọng (stagnant conditions)",
+          "type": "categorical",
+          "field": "atmospheric_stability",
+          "operator": "==",
+          "value": "stagnant",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Stagnant atmospheric conditions preventing dispersion",
+            "issue": "requires_composite_index",
+            "note": "Stagnation typically defined by combination of low wind speed, high stability, low mixing height"
+          }
+        },
+        {
+          "relationship_id": "met_008",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Gió yếu",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed during stagnation phase"
+          }
+        }
+      ],
+      "notes": "Most severe pollution episodes occur during cold surge persistence phase"
+    },
+    {
+      "id": "met_009",
+      "category": "meteorological_pathways",
+      "cause_node": "cold_surge",
+      "effect_node": "o3",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Cold surge transports O3 and CO from East Asia to Southeast Asia",
+      "mechanism": "Cold surge vận chuyển ô nhiễm từ Đông Á xuống Đông Nam Á, làm tăng đáng kể nồng độ O3 và CO. Trong điều kiện cold surge trung bình, O3 tăng >40% (~15 ppb) và CO tăng >60% (~80 ppb) tại khu vực bán đảo Đông Dương và vùng biển xung quanh.",
+      "temporal_lag": "1-3d",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "sources": ["bib_004"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S135223101730496X",
+      "source_title": "Influence of Northeast Monsoon cold surges on air quality in Southeast Asia",
+      "source_authors": "Ashfold, M.J., Latif, M.T., Samah, A.A., Mead, M.I., Harris, N.R.P.",
+      "source_year": "2017",
+      "source_quote": "CO and O3 are elevated by, respectively, >60% (∼80 ppb) and >40% (∼15 ppb), during 'average' cold surge conditions",
+      "source_locator": "Discussion and conclusions",
+      "conditions": [
+        {
+          "relationship_id": "met_009",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Cold surge (November-February)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [11, 12, 1, 2],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 11,
+              "end_month": 2,
+              "wrap_year": true
+            },
+            "interpretation": "Cold surge season from November to February"
+          }
+        },
+        {
+          "relationship_id": "met_009",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Khu vực bán đảo Đông Dương và vùng biển xung quanh",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "in",
+          "value": ["indochina_peninsula", "south_china_sea"],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Indochina Peninsula and surrounding maritime areas"
+          }
+        }
+      ],
+      "notes": "Regional exceedances of WHO's O3 guideline often occur during cold surges"
+    },
+    {
+      "id": "met_010",
+      "category": "meteorological_pathways",
+      "cause_node": "precipitation",
+      "effect_node": "wet_deposition",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Precipitation causes wet deposition through rainout and washout processes",
+      "mechanism": "Mưa loại bỏ các hạt PM từ khí quyển thông qua hai quá trình: rainout (hạt làm nhân ngưng tụ mây hoặc bị bắt giữ bởi nước mây) và washout (loại bỏ hạt dưới mây bởi giọt mưa rơi). Quá trình scavenging xảy ra qua khuếch tán Brownian, va chạm quán tính, diffusiophoresis, thermophoresis.",
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "wet_season",
+      "spatial_scope": "global",
+      "sources": ["bib_005"],
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013115/",
+      "source_title": "Comparison of dry and wet deposition of particulate matter in near-surface waters during summer",
+      "source_authors": "Wu, Y., Liu, J., Zhai, J., Cong, L., Wang, Y., Ma, W., Zhang, Z., Li, C.",
+      "source_year": "2018",
+      "source_quote": "Rain scavenging generally takes place via Brownian diffusion, inertial impaction, diffusiophoresis, thermophoresis and electrical charge effects",
+      "source_locator": "Results section",
+      "conditions": [
+        {
+          "relationship_id": "met_010",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Có mưa (precipitation event)",
+          "type": "threshold",
+          "field": "precipitation_occurrence",
+          "operator": ">",
+          "value": 0,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Precipitation must be occurring (any amount > 0)",
+            "unit": "binary (0/1) or mm"
+          }
+        },
+        {
+          "relationship_id": "met_010",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Cường độ mưa ảnh hưởng đến hiệu quả",
+          "type": "qualitative",
+          "field": "precipitation_intensity_mmph",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Higher rainfall intensity increases wet deposition efficiency",
+            "issue": "qualitative_no_threshold",
+            "note": "Source indicates intensity affects efficiency but does not provide specific thresholds"
+          }
+        }
+      ],
+      "notes": "Rainfall intensity and PM diameter influence wet deposition efficiency"
+    },
+    {
+      "id": "met_011",
+      "category": "meteorological_pathways",
+      "cause_node": "wet_deposition",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Wet deposition is the most effective mechanism for removing PM2.5 (92% efficiency)",
+      "mechanism": "Wet deposition (lắng đọng ướt) là cơ chế hiệu quả nhất để loại bỏ PM2.5 khỏi khí quyển, với hiệu suất 92%. Mưa scavenging chiếm 54-71% tổng lắng đọng PM. So với dry deposition, wet deposition hiệu quả hơn đáng kể trong việc làm sạch PM2.5.",
+      "temporal_lag": "0h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "wet_season",
+      "spatial_scope": "global",
+      "sources": ["bib_005"],
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013115/",
+      "source_title": "Comparison of dry and wet deposition of particulate matter in near-surface waters during summer",
+      "source_authors": "Wu, Y., Liu, J., Zhai, J., Cong, L., Wang, Y., Ma, W., Zhang, Z., Li, C.",
+      "source_year": "2018",
+      "source_quote": "Compared to dry deposition, wet deposition was more effective in scavenging PM2.5, a result that was supported by a previous study. In terms of PM2.5 removal, wet deposition (92%) was found to be more efficient.",
+      "source_locator": "Abstract and Results",
+      "conditions": [
+        {
+          "relationship_id": "met_011",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Có mưa",
+          "type": "threshold",
+          "field": "precipitation_occurrence",
+          "operator": ">",
+          "value": 0,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Precipitation must be occurring for wet deposition to happen",
+            "unit": "binary (0/1) or mm"
+          }
+        },
+        {
+          "relationship_id": "met_011",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Hiệu quả phụ thuộc vào cường độ mưa và kích thước hạt",
+          "type": "qualitative",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Efficiency depends on rainfall intensity and particle size",
+            "issue": "qualitative_multiple_factors",
+            "factors": ["precipitation_intensity_mmph", "particle_diameter"]
+          }
+        }
+      ],
+      "notes": "Wet deposition accounted for 54-71% of PM1-20 deposition"
+    },
+    {
+      "id": "met_012",
+      "category": "meteorological_pathways",
+      "cause_node": "humidity",
+      "effect_node": "pm25",
+      "relationship_type": "MODERATOR",
+      "description": "Relative humidity moderates PM2.5-10 concentrations through deposition and resuspension",
+      "mechanism": "Độ ẩm tương đối và lượng mưa kiểm soát phần lớn biến động hàng ngày của PM2.5-10 (phần thô), cho thấy sự phong phú của bụi đất trong phần này. Độ ẩm cao có thể ảnh hưởng đến quá trình lắng đọng và tái lơ lửng của các hạt.",
+      "temporal_lag": "0h",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["bib_006"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231002002959",
+      "source_title": "Influence of meteorological conditions on PM2.5 and PM2.5−10 concentrations during the monsoon season in Hanoi, Vietnam",
+      "source_authors": "Hien, P.D., Bac, V.T., Tham, H.C., Nhan, D.D., Vinh, L.D.",
+      "source_year": "2002",
+      "source_quote": "rainfall and relative humidity largely control the daily variations of PM2.5−10, indicating the high abundance of soil dust in this fraction",
+      "source_locator": "Abstract",
+      "conditions": [
+        {
+          "relationship_id": "met_012",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Mùa monsoon",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "monsoon",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Monsoon season when humidity effects are most pronounced"
+          }
+        },
+        {
+          "relationship_id": "met_012",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Độ ẩm cao",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 70,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "High humidity conditions",
+            "note": "Threshold of 70% is commonly used for 'high humidity'; source does not specify exact value"
+          }
+        }
+      ],
+      "notes": "Effect more pronounced for coarse particles (PM2.5-10) than fine particles (PM2.5)"
+    },
+    {
+      "id": "met_013",
+      "category": "meteorological_pathways",
+      "cause_node": "solar_radiation",
+      "effect_node": "pblh",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Solar radiation drives daytime PBL development through surface heating",
+      "mechanism": "Bức xạ mặt trời vào ban ngày làm nóng bề mặt đất, tạo ra đối lưu nhiệt và phát triển lớp biên hành tinh. PBLH tăng vào buổi chiều (well-developed PBL) cho phép xáo trộn thẳng đứng mạnh hơn, pha loãng các chất ô nhiễm phát thải gần mặt đất.",
+      "temporal_lag": "2-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "sources": ["bib_003"],
+      "source_url": "https://acp.copernicus.org/articles/18/15921/2018/",
+      "source_title": "Relationships between the planetary boundary layer height and surface pollutants derived from lidar observations over China",
+      "source_authors": "Su, T., Li, Z., Kahn, R.",
+      "source_year": "2018",
+      "source_quote": "During this period, the PBL is well developed with relatively strong vertical mixing, which is a favorable condition for investigating aerosol–PBL interactions.",
+      "source_locator": "Section 2.1.2",
+      "conditions": [
+        {
+          "relationship_id": "met_013",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 0,
+          "original_text": "Ban ngày (daytime)",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "day",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Daytime when solar radiation heats surface",
+            "alternative_encoding": {
+              "field": "hour",
+              "range": [6, 18]
+            }
+          }
+        },
+        {
+          "relationship_id": "met_013",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 1,
+          "original_text": "Trời nắng (clear sky)",
+          "type": "threshold",
+          "field": "cloud_cover",
+          "operator": "<",
+          "value": 0.3,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "fraction (0-1)",
+            "interpretation": "Clear sky allows maximum solar radiation to reach surface"
+          }
+        },
+        {
+          "relationship_id": "met_013",
+          "relationship_category": "meteorological_pathways",
+          "condition_index": 2,
+          "original_text": "Thời gian đỉnh: 13:00-15:00",
+          "type": "time_range",
+          "field": "hour",
+          "operator": null,
+          "value": null,
+          "range": [13, 15],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Peak PBL development occurs between 13:00-15:00 local time"
+          }
+        }
+      ],
+      "notes": "CALIPSO data matched with surface data at 13:00-15:00 when PBL is well developed"
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "chemical_processes",
+    "emission_sources",
+    "static_factors"
+  ],
+  "missing_info": "Mechanism for frontal inversion in Hanoi needs more specific research. Quantitative thresholds for PBLH-PM2.5 relationship specific to Hanoi/Vietnam are not available in current sources. Detailed back-trajectory analysis with source attribution should be handled by transport prompt.",
+  "contradictions": [],
+  "qa_summary": {
+    "total_relationships": 13,
+    "total_conditions": 35,
+    "checkable_conditions": 28,
+    "uncheckable_conditions": 7,
+    "condition_types": {
+      "threshold": 14,
+      "categorical": 7,
+      "month": 5,
+      "season": 4,
+      "time_of_day": 2,
+      "time_range": 1,
+      "qualitative": 3
+    },
+    "issues_found": [
+      "met_002_cond_2: qualitative_no_threshold (moist air from sea)",
+      "met_005_cond_1: requires_trajectory_analysis (clean upwind air)",
+      "met_008_cond_1: requires_composite_index (stagnant conditions)",
+      "met_010_cond_1: qualitative_no_threshold (intensity affects efficiency)",
+      "met_011_cond_1: qualitative_multiple_factors (intensity and particle size)"
+    ],
+    "precipitation_handling": "All precipitation conditions properly encoded with precipitation_occurrence or precipitation_intensity_mmph fields. No incorrect 'không mưa' → '> 0.1' encoding.",
+    "or_logic_check": "No conflicting thresholds on same field within single relationship requiring OR logic split."
+  }
+}

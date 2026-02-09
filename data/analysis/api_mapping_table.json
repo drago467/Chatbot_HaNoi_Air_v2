@@ -1,0 +1,1168 @@
+{
+  "mappings": [
+    {
+      "api_source": "openweathermap",
+      "api_field": "rain",
+      "mapping_type": "derived",
+      "confidence": 0.7,
+      "unit_conversion": null,
+      "notes": "Can be derived from daily precipitation or sum of hourly rain",
+      "condition_field": "accumulated_precipitation_mm"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": true,
+      "estimation_method": "alw_estimation",
+      "notes": "Can estimate from RH, temperature, and PM2.5 composition",
+      "condition_field": "aerosol_liquid_water"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": true,
+      "estimation_method": "ph_estimation",
+      "notes": "Can estimate from SO2, NO2, NH3 concentrations and RH",
+      "condition_field": "aerosol_ph"
+    },
+    {
+      "condition_field": "air_mass_origin",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "air_mass_trajectory",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "atmospheric_layer",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo_weather",
+      "api_field": "cape",
+      "mapping_type": "mapped",
+      "confidence": 0.9,
+      "unit_conversion": null,
+      "notes": "Mapped to CAPE (Convective Available Potential Energy) from Open-Meteo. Can also use lifted_index as alternative.",
+      "condition_field": "atmospheric_stability"
+    },
+    {
+      "api_source": "open_meteo_weather",
+      "api_field": "boundary_layer_height",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping from Open-Meteo Weather API (hourly variable), unit: meters, verified for Vietnam",
+      "condition_field": "boundary_layer_height"
+    },
+    {
+      "condition_field": "burning_practice",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "burning_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "cap_event",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "catalysis",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "circulation_pattern",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "city_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "cloud_base_height",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "clouds",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "clouds is cloud cover percentage (0-100)",
+      "condition_field": "cloud_cover"
+    },
+    {
+      "condition_field": "cloud_liquid_water",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "cloud_water_content",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": true,
+      "estimation_method": "meteorological_pattern",
+      "notes": "Can estimate from wind direction, temperature, pressure patterns",
+      "condition_field": "cold_surge_phase"
+    },
+    {
+      "condition_field": "compound_meteorological",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "condensation_sink",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "distance_to_major_road_m",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "distance_to_road_m",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "dry_deposition_efficiency",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo_air_quality",
+      "api_field": "dust",
+      "mapping_type": "mapped",
+      "confidence": 0.9,
+      "unit_conversion": {
+        "from": "µg/m³",
+        "to": "boolean",
+        "method": "threshold",
+        "threshold": 0
+      },
+      "notes": "Mapped to dust concentration. Can convert to boolean event: >0 µg/m³ = dust event",
+      "condition_field": "dust_event"
+    },
+    {
+      "condition_field": "elevation_gradient",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "emission_regime",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "emission_source",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "emissions",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "enso_phase",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "equipment_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "event_lag_days",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "event_lag_hours",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "event_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "fog_duration_hours",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "fog_indicator",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "fuel_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": false,
+      "estimation_method": null,
+      "notes": "Static field, determined by location",
+      "condition_field": "geographic_region"
+    },
+    {
+      "api_source": "derived",
+      "api_field": "dt",
+      "mapping_type": "derived",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Derived from timestamp (dt field in API response)",
+      "condition_field": "hour"
+    },
+    {
+      "condition_field": "industrial_zone_presence",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": true,
+      "estimation_method": "stability_index",
+      "notes": "Can estimate from temperature gradient, wind speed, cloud cover",
+      "condition_field": "inversion"
+    },
+    {
+      "condition_field": "inversion_presence",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "inversion_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "land_use_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "latitude",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "local_emission_source",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "monsoon_cycle_duration",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "monsoon_regime",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "derived",
+      "api_field": "dt",
+      "mapping_type": "derived",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Derived from timestamp",
+      "condition_field": "month"
+    },
+    {
+      "api_source": "openweathermap_air_pollution",
+      "api_field": "nh3",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping to NH3 (Ammonia) from OpenWeatherMap Air Pollution API, unit: µg/m³. Only available in OpenWeatherMap, not in Open-Meteo.",
+      "condition_field": "nh3_concentration"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "nitrogen_dioxide",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Mapped to nitrogen_dioxide, unit: µg/m³",
+      "condition_field": "no2_concentration"
+    },
+    {
+      "api_source": "openweathermap_air_pollution",
+      "api_field": "no",
+      "mapping_type": "mapped",
+      "confidence": 0.8,
+      "notes": "Inferred from field name pattern - NO (Nitrogen Monoxide) is component of NOx, only available in OpenWeatherMap Air Pollution API",
+      "condition_field": "nox_presence"
+    },
+    {
+      "api_source": "openweathermap_air_pollution",
+      "api_field": "no",
+      "mapping_type": "mapped",
+      "confidence": 0.8,
+      "notes": "Inferred from field name pattern - NO (Nitrogen Monoxide) is component of NOx, only available in OpenWeatherMap Air Pollution API",
+      "condition_field": "nox_regime"
+    },
+    {
+      "condition_field": "oc_ratio",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "oh_radical_availability",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "carbon_monoxide",
+      "mapping_type": "mapped",
+      "confidence": 0.8,
+      "notes": "Inferred from field name pattern",
+      "condition_field": "oh_radical_concentration"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "carbon_monoxide",
+      "mapping_type": "mapped",
+      "confidence": 0.8,
+      "notes": "Inferred from field name pattern",
+      "condition_field": "ox_concentration"
+    },
+    {
+      "condition_field": "oxidation_products",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "particle_size_um",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": false,
+      "estimation_method": null,
+      "notes": "Qualitative field, cannot be directly measured",
+      "condition_field": "particle_type"
+    },
+    {
+      "condition_field": "photolysis_rate",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "pm2_5",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Mapped to pm2_5, unit: µg/m³",
+      "condition_field": "pm25_concentration"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "pm2_5",
+      "mapping_type": "mapped",
+      "confidence": 0.9,
+      "notes": "Inferred from field name pattern",
+      "condition_field": "pm25_initial"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "pm2_5",
+      "mapping_type": "mapped",
+      "confidence": 0.9,
+      "notes": "Inferred from field name pattern",
+      "condition_field": "pm25_reduction_near_road"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "pm2_5",
+      "mapping_type": "mapped",
+      "confidence": 0.9,
+      "notes": "Inferred from field name pattern",
+      "condition_field": "pm25_residence_time"
+    },
+    {
+      "condition_field": "pollution_level",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "precipitation_duration_hours",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "rain",
+      "mapping_type": "derived",
+      "confidence": 0.8,
+      "unit_conversion": {
+        "from": "mm",
+        "to": "mm/h",
+        "factor": 1.0
+      },
+      "notes": "Derived from rain.1h (mm) or snow.1h (mm), represents intensity",
+      "condition_field": "precipitation_intensity_mmph"
+    },
+    {
+      "api_source": "open_meteo_weather",
+      "api_field": "precipitation_probability",
+      "mapping_type": "mapped",
+      "confidence": 0.9,
+      "unit_conversion": {
+        "from": "%",
+        "to": "boolean",
+        "method": "threshold",
+        "threshold": 0
+      },
+      "notes": "Mapped to precipitation_probability (%). Can convert to boolean: >0% = occurrence. More accurate than derived from rain.1h > 0.",
+      "condition_field": "precipitation_occurrence"
+    },
+    {
+      "condition_field": "precipitation_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": false,
+      "estimation_method": null,
+      "notes": "Qualitative field, cannot be directly measured or estimated",
+      "condition_field": "precursor_availability"
+    },
+    {
+      "condition_field": "regional_pollution_status",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "humidity",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping, unit: %",
+      "condition_field": "relative_humidity"
+    },
+    {
+      "api_source": "derived",
+      "api_field": "dt",
+      "mapping_type": "derived",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Derived from month and location (Hanoi: Nov-Feb = winter, Mar-May = spring, etc.)",
+      "condition_field": "season"
+    },
+    {
+      "condition_field": "secondary_aerosol_production",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "sensor_humidity_control",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "sensor_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "site_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "sky_condition",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "sulphur_dioxide",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Mapped to sulphur_dioxide, unit: µg/m³",
+      "condition_field": "so2_concentration"
+    },
+    {
+      "condition_field": "soa_formation_rate",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo_weather",
+      "api_field": "shortwave_radiation",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Mapped to shortwave_radiation from Open-Meteo (free, verified for Vietnam). OpenWeatherMap solar_radiation requires subscription.",
+      "condition_field": "solar_radiation"
+    },
+    {
+      "condition_field": "solar_zenith_angle",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "source_location",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "source_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "spatial_scale",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo_weather",
+      "api_field": "lifted_index",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping to Lifted Index from Open-Meteo, unit: K",
+      "condition_field": "stability_index"
+    },
+    {
+      "condition_field": "sulfate_presence",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "surface_cooling_rate",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "surface_heating",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "synoptic_pattern",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "temp",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping, unit: Celsius (metric) or Kelvin (standard)",
+      "condition_field": "temperature"
+    },
+    {
+      "condition_field": "temporal_scale",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo_weather",
+      "api_field": "is_day",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Mapped to is_day (0/1) from Open-Meteo. More accurate than derived from timestamp.",
+      "condition_field": "time_of_day"
+    },
+    {
+      "condition_field": "topography",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "topography_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "transport_distance",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "turbulence",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "upwind_air_quality",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "upwind_source",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "urban_density_class",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "urban_zone_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "uvi",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping, unit: UV index (0-11+)",
+      "condition_field": "uv_index"
+    },
+    {
+      "condition_field": "uv_radiation",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "uv_wavelength",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "vegetation_type",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "vertical_mixing",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "vertical_motion",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "visibility",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping, unit: meters",
+      "condition_field": "visibility"
+    },
+    {
+      "condition_field": "visibility_condition",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "open_meteo",
+      "api_field": "carbon_monoxide",
+      "mapping_type": "mapped",
+      "confidence": 0.8,
+      "notes": "Inferred from field name pattern",
+      "condition_field": "voc_concentration"
+    },
+    {
+      "condition_field": "water_vapor",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "wind_deg",
+      "mapping_type": "mapped",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "wind_deg is in degrees (0-360)",
+      "condition_field": "wind_direction"
+    },
+    {
+      "condition_field": "wind_direction_source",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "condition_field": "wind_direction_source_alignment",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    },
+    {
+      "api_source": "openweathermap",
+      "api_field": "wind_speed",
+      "mapping_type": "direct",
+      "confidence": 1.0,
+      "unit_conversion": null,
+      "notes": "Direct mapping, unit: m/s (metric)",
+      "condition_field": "wind_speed"
+    },
+    {
+      "condition_field": "year",
+      "api_source": null,
+      "api_field": null,
+      "mapping_type": "missing",
+      "confidence": 0.0,
+      "estimation_feasible": null,
+      "notes": "Field not found in mapping rules, needs manual review"
+    }
+  ],
+  "coverage_stats": {
+    "direct_mapping": 7,
+    "mapped": 19,
+    "derived": 5,
+    "missing": 86,
+    "total_fields": 117,
+    "coverage_percentage": 26.5
+  },
+  "unmapped_fields": [
+    "air_mass_origin",
+    "air_mass_trajectory",
+    "atmospheric_layer",
+    "burning_practice",
+    "burning_type",
+    "cap_event",
+    "catalysis",
+    "circulation_pattern",
+    "city_type",
+    "cloud_base_height",
+    "cloud_liquid_water",
+    "cloud_water_content",
+    "compound_meteorological",
+    "condensation_sink",
+    "distance_to_major_road_m",
+    "distance_to_road_m",
+    "dry_deposition_efficiency",
+    "elevation_gradient",
+    "emission_regime",
+    "emission_source",
+    "emissions",
+    "enso_phase",
+    "equipment_type",
+    "event_lag_days",
+    "event_lag_hours",
+    "event_type",
+    "fog_duration_hours",
+    "fog_indicator",
+    "fuel_type",
+    "industrial_zone_presence",
+    "inversion_presence",
+    "inversion_type",
+    "land_use_type",
+    "latitude",
+    "local_emission_source",
+    "monsoon_cycle_duration",
+    "monsoon_regime",
+    "oc_ratio",
+    "oh_radical_availability",
+    "oxidation_products",
+    "particle_size_um",
+    "photolysis_rate",
+    "pollution_level",
+    "precipitation_duration_hours",
+    "precipitation_type",
+    "regional_pollution_status",
+    "secondary_aerosol_production",
+    "sensor_humidity_control",
+    "sensor_type",
+    "site_type",
+    "sky_condition",
+    "soa_formation_rate",
+    "solar_zenith_angle",
+    "source_location",
+    "source_type",
+    "spatial_scale",
+    "sulfate_presence",
+    "surface_cooling_rate",
+    "surface_heating",
+    "synoptic_pattern",
+    "temporal_scale",
+    "topography",
+    "topography_type",
+    "transport_distance",
+    "turbulence",
+    "upwind_air_quality",
+    "upwind_source",
+    "urban_density_class",
+    "urban_zone_type",
+    "uv_radiation",
+    "uv_wavelength",
+    "vegetation_type",
+    "vertical_mixing",
+    "vertical_motion",
+    "visibility_condition",
+    "water_vapor",
+    "wind_direction_source",
+    "wind_direction_source_alignment",
+    "year"
+  ],
+  "api_sources": {
+    "openweathermap": 9,
+    "openweathermap_air_pollution": 3,
+    "open_meteo": 9,
+    "open_meteo_air_quality": 1,
+    "open_meteo_weather": 6,
+    "derived": 3,
+    "missing": 86
+  }
+}

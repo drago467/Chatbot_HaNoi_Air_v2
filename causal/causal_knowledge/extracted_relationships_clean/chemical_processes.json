@@ -1,0 +1,933 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "chemical_processes",
+  "source_count": 7,
+  "relationship_count_raw": 10,
+  "relationship_count_valid": 11,
+  "bibliography": [
+    {
+      "source_id": "nguyen2024_sia_hanoi",
+      "source_title": "Influence of Secondary Inorganic Aerosol on the Concentrations of PM2.5 and PM0.1 during Air Pollution Episodes in Hanoi, Vietnam",
+      "source_authors": "Nguyen-Quoc Dat, Bich-Thuy Ly, Trung-Dung Nghiem, Thu-Thi Hien Nguyen, Kazuhiko Sekiguchi, Truong-Thi Huyen, Thai-Ha Vinh, Le-Quang Tien",
+      "source_year": "2024",
+      "source_url": "https://doi.org/10.4209/aaqr.220446",
+      "source_doi": "10.4209/aaqr.220446",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "SIA contributed on average 29.0% and 14.1% to PM2.5 and PM0.1 concentrations during air pollution episodes in Hanoi. Relative humidity, pressure, temperature, and radiation had good correlation with SIA of PM0.1."
+    },
+    {
+      "source_id": "makkonen2023_pm25_hanoi",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Ulla Makkonen, Mika Vestenius, L.N. Huy, N.T.N. Anh, P.T.V. Linh, P.T. Thuy, H.T.M. Phuong, Huyen Nguyen, L.T. Thuy, Minna Aurela, Heidi Hellén, Katja Loven, Rostislav Kouznetsov, Katriina Kyllönen, Kimmo Teinilä, N.T. Kim Oanh",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_doi": "10.1016/j.atmosenv.2023.119650",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "One third of PM2.5 mass was secondary inorganic aerosol dominated by sulphates. PMF analysis identified six source factors including local SIA (18%) and long-range transported SIA (25%)."
+    },
+    {
+      "source_id": "wang2020_sulfate_beijing",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Junfeng Wang, Jingyi Li, Jianhuai Ye, et al.",
+      "source_year": "2020",
+      "source_url": "https://doi.org/10.1038/s41467-020-16683-x",
+      "source_doi": "10.1038/s41467-020-16683-x",
+      "tier": "tier_1",
+      "relevance_score": 10,
+      "key_findings": "High relative humidity conditions enable fast aqueous-phase oxidation of SO2 by NO2 with pH > 5.5. HONO can oxidize SO2 to yield N2O and sulfate."
+    },
+    {
+      "source_id": "liu2021_multiphase_so2",
+      "source_title": "Multiphase Oxidation of Sulfur Dioxide in Aerosol Particles: Implications for Sulfate Formation in Polluted Environments",
+      "source_authors": "Tengyu Liu, Arthur W. H. Chan, Jonathan P. D. Abbatt",
+      "source_year": "2021",
+      "source_url": "https://doi.org/10.1021/acs.est.0c06496",
+      "source_doi": "10.1021/acs.est.0c06496",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Multiphase oxidation of SO2 in aerosol particles involves H2O2, O3, NO2, and transition metal ion catalyzed reactions. Aerosol liquid water content and pH are critical factors."
+    },
+    {
+      "source_id": "stelson2007_nh4no3",
+      "source_title": "Relative humidity and temperature dependence of the ammonium nitrate dissociation constant",
+      "source_authors": "A.W. Stelson, J.H. Seinfeld",
+      "source_year": "2007",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2007.10.063",
+      "source_doi": "10.1016/j.atmosenv.2007.10.063",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "NH4NO3 dissociation constant depends on temperature and relative humidity. Lower temperature and higher RH favor particle phase NH4NO3 formation."
+    },
+    {
+      "source_id": "huyen2021_pm25_hanoi",
+      "source_title": "Characteristics of Chemical Components in Fine Particles (PM2.5) and Ultrafine Particles (PM0.1) in Hanoi, Vietnam",
+      "source_authors": "Truong-Thi Huyen, Ryosuke Yamaguchi, Yuta Kurotsuchi, Kazuhiko Sekiguchi, Nguyen-Thi Dung, Nguyen-Thi Thu Thuy, Le-Bich Thuy",
+      "source_year": "2021",
+      "source_url": "https://doi.org/10.1007/s11270-021-05108-0",
+      "source_doi": "10.1007/s11270-021-05108-0",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "The correlations between relative humidity and chemical components suggest that PM2.5 collected in Hanoi was formed through secondary formation processes. High humidity promotes aqueous-phase reactions."
+    },
+    {
+      "source_id": "marvin2020_photochem_sea",
+      "source_title": "Photochemical environment over Southeast Asia primed for hazardous ozone levels with influx of nitrogen oxides from seasonal biomass burning",
+      "source_authors": "M.R. Marvin, P.I. Palmer, B.G. Latter, et al.",
+      "source_year": "2020",
+      "source_url": "https://doi.org/10.5194/acp-21-1917-2021",
+      "source_doi": "10.5194/acp-21-1917-2021",
+      "tier": "tier_1",
+      "relevance_score": 7,
+      "key_findings": "Pyrogenic emissions of NOx play a key role in photochemistry in Southeast Asia, shifting towards more VOC-limited ozone production and contributing about 30% to O3 formation."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "chem_001",
+      "category": "chemical_processes",
+      "cause_node": "humidity",
+      "effect_node": "aerosol_liquid_water",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "High relative humidity (>75%) causes water vapor condensation on aerosol particles through deliquescence, forming Aerosol Liquid Water (ALW)",
+      "mechanism": "Khi độ ẩm tương đối (RH) tăng cao (>75%), hơi nước trong không khí ngưng tụ trên bề mặt các hạt aerosol thông qua quá trình deliquescence, tạo thành lớp nước bao quanh hạt (Aerosol Liquid Water - ALW). ALW cung cấp môi trường pha nước cho các phản ứng hóa học xảy ra.",
+      "sources": ["nguyen2024_sia_hanoi"],
+      "source_url": "https://doi.org/10.4209/aaqr.220446",
+      "source_title": "Influence of Secondary Inorganic Aerosol on the Concentrations of PM2.5 and PM0.1 during Air Pollution Episodes in Hanoi, Vietnam",
+      "source_authors": "Nguyen-Quoc Dat et al.",
+      "source_year": "2024",
+      "source_quote": "Relative humidity, pressure, temperature, and radiation had a good correlation with SIA of PM0.1 and a moderate correlation with PM0.1.",
+      "source_locator": "Abstract",
+      "temporal_lag": "0-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Mối quan hệ phi tuyến: RH > 75% thúc đẩy mạnh, nhưng RH > 90% với sương mù có thể gây ra hiện tượng đo lường artifact.",
+      "conditions": [
+        {
+          "relationship_id": "chem_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "RH > 75%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 75,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Deliquescence threshold for hygroscopic aerosols"
+          }
+        },
+        {
+          "relationship_id": "chem_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Có sự hiện diện của các hạt aerosol hygroscopic (sulfate, nitrate, ammonium)",
+          "type": "categorical",
+          "field": "particle_type",
+          "operator": null,
+          "value": "hygroscopic",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "particle_types": ["sulfate", "nitrate", "ammonium"],
+            "interpretation": "Requires presence of hygroscopic aerosol particles"
+          }
+        },
+        {
+          "relationship_id": "chem_001",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Nhiệt độ môi trường xung quanh",
+          "type": "qualitative",
+          "field": "temperature",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_specific_threshold",
+            "interpretation": "Ambient temperature conditions, no specific threshold given"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 3,
+        "checkable_conditions_count": 2
+      }
+    },
+    {
+      "id": "chem_002",
+      "category": "chemical_processes",
+      "cause_node": "aerosol_liquid_water",
+      "effect_node": "aqueous_phase_reaction",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Aerosol Liquid Water provides aqueous medium for SO2 and NO2 oxidation to form sulfate and nitrate",
+      "mechanism": "Aerosol Liquid Water (ALW) cung cấp môi trường pha nước cho các phản ứng hóa học xảy ra. SO2 và NO2 hòa tan vào ALW, sau đó bị oxy hóa bởi các chất oxy hóa như H2O2, O3, hoặc NO2 để tạo thành sulfate và nitrate. Tốc độ phản ứng phụ thuộc vào pH của dung dịch và nồng độ các chất phản ứng.",
+      "sources": ["wang2020_sulfate_beijing"],
+      "source_url": "https://doi.org/10.1038/s41467-020-16683-x",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Junfeng Wang et al.",
+      "source_year": "2020",
+      "source_quote": "Fog and cloud readily form under winter haze conditions, leading to high liquid water contents with high pH (>5.5) from elevated ammonia. Such conditions enable fast aqueous-phase oxidation of SO2 by NO2.",
+      "source_locator": "Abstract",
+      "temporal_lag": "2-12h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "Áp dụng cho điều kiện tương tự Hà Nội với độ ẩm cao và nồng độ ammonia cao trong mùa đông.",
+      "conditions": [
+        {
+          "relationship_id": "chem_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "ALW đủ lớn để cung cấp môi trường phản ứng",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_specific_threshold",
+            "interpretation": "Sufficient ALW required, but no quantitative threshold specified"
+          }
+        },
+        {
+          "relationship_id": "chem_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "pH > 4.5 cho phản ứng oxy hóa SO2 bởi NO2",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": ">",
+          "value": 4.5,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "pH",
+            "interpretation": "Minimum pH for SO2 oxidation by NO2"
+          }
+        },
+        {
+          "relationship_id": "chem_002",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Có sự hiện diện của SO2, NO2 và các chất oxy hóa",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "so2_no2_oxidants",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["SO2", "NO2", "oxidants"],
+            "interpretation": "Requires presence of SO2, NO2 and oxidants (H2O2, O3)"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 3,
+        "checkable_conditions_count": 2
+      }
+    },
+    {
+      "id": "chem_003",
+      "category": "chemical_processes",
+      "cause_node": "so2",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "SO2 is oxidized in aqueous phase by H2O2, O3, or NO2 to form sulfate",
+      "mechanism": "SO2 bị oxy hóa trong pha nước (aqueous-phase oxidation) bởi các chất oxy hóa như H2O2, O3, hoặc NO2. Phản ứng chính: SO2 + H2O → H2SO3 → HSO3- + H+. HSO3- sau đó bị oxy hóa thành SO4^2- (sulfate). Tốc độ phản ứng với H2O2 nhanh nhất ở pH thấp, trong khi phản ứng với O3 và NO2 nhanh hơn ở pH cao (>5.5).",
+      "sources": ["liu2021_multiphase_so2"],
+      "source_url": "https://doi.org/10.1021/acs.est.0c06496",
+      "source_title": "Multiphase Oxidation of Sulfur Dioxide in Aerosol Particles: Implications for Sulfate Formation in Polluted Environments",
+      "source_authors": "Tengyu Liu, Arthur W. H. Chan, Jonathan P. D. Abbatt",
+      "source_year": "2021",
+      "source_quote": "Atmospheric oxidation of sulfur dioxide (SO2) forms sulfate-containing aerosol particles that impact air quality, climate, and human and ecosystem health. It is well-known that in-cloud oxidation of SO2 frequently dominates over gas-phase oxidation on regional and global scales.",
+      "source_locator": "Abstract",
+      "temporal_lag": "4-12h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "global",
+      "notes": "Cơ chế này áp dụng toàn cầu nhưng đặc biệt quan trọng ở các khu vực có độ ẩm cao như Hà Nội.",
+      "conditions": [
+        {
+          "relationship_id": "chem_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "RH > 75% để có đủ ALW",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 75,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Required for sufficient aerosol liquid water"
+          }
+        },
+        {
+          "relationship_id": "chem_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "pH > 5.5 cho phản ứng với NO2",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": ">",
+          "value": 5.5,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "pH",
+            "interpretation": "Required for fast SO2 oxidation by NO2 pathway"
+          }
+        },
+        {
+          "relationship_id": "chem_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Có sự hiện diện của H2O2, O3 hoặc NO2",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "oxidants_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["H2O2", "O3", "NO2"],
+            "logic": "OR",
+            "interpretation": "At least one oxidant must be present"
+          }
+        },
+        {
+          "relationship_id": "chem_003",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Kim loại chuyển tiếp (Mn2+, Fe3+) có thể xúc tác phản ứng",
+          "type": "categorical",
+          "field": "catalysis",
+          "operator": null,
+          "value": "transition_metal_ions",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "catalyst_types": ["Mn2+", "Fe3+"],
+            "interpretation": "Optional catalytic enhancement, not required"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 4,
+        "checkable_conditions_count": 3
+      }
+    },
+    {
+      "id": "chem_004",
+      "category": "chemical_processes",
+      "cause_node": "no2",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "NO2 oxidizes dissolved SO2 (S(IV)) to sulfate (S(VI)) in aqueous phase, producing HONO as byproduct",
+      "mechanism": "NO2 hòa tan vào pha nước và oxy hóa SO2 (dạng S(IV)) thành sulfate (S(VI)) theo phản ứng: S(IV) + 2NO2(aq) + H2O → S(VI) + 2H+ + 2NO2-. Phản ứng này tạo ra HONO (nitrous acid) như sản phẩm phụ. Tốc độ phản ứng tăng mạnh khi pH > 5.5 do nồng độ S(IV) (chủ yếu là SO3^2-) tăng.",
+      "sources": ["wang2020_sulfate_beijing"],
+      "source_url": "https://doi.org/10.1038/s41467-020-16683-x",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Junfeng Wang et al.",
+      "source_year": "2020",
+      "source_quote": "Aqueous-phase oxidation of S(IV) by NO2 (aq) in fog is an alternative explanation for the depletion of NO2 and produces both HONO and sulfate. We find an SO2 e-folding lifetime of 1–7 min against loss by reaction (R2).",
+      "source_locator": "Results section",
+      "temporal_lag": "1-7 min",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "notes": "Phản ứng này đặc biệt quan trọng trong điều kiện sương mù mùa đông với pH cao do nồng độ ammonia cao.",
+      "conditions": [
+        {
+          "relationship_id": "chem_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "pH > 5.5",
+          "type": "threshold",
+          "field": "aerosol_ph",
+          "operator": ">",
+          "value": 5.5,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "pH",
+            "interpretation": "High pH required for fast reaction rate"
+          }
+        },
+        {
+          "relationship_id": "chem_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "RH > 75%",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 75,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Required for sufficient liquid water content"
+          }
+        },
+        {
+          "relationship_id": "chem_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Có sự hiện diện của NH3 để duy trì pH cao",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "nh3_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["NH3"],
+            "interpretation": "Ammonia required to maintain high pH"
+          }
+        },
+        {
+          "relationship_id": "chem_004",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Liquid water content đủ lớn (fog/cloud conditions)",
+          "type": "qualitative",
+          "field": "aerosol_liquid_water",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_specific_threshold",
+            "interpretation": "Fog or cloud conditions with high LWC"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 4,
+        "checkable_conditions_count": 3
+      }
+    },
+    {
+      "id": "chem_005",
+      "category": "chemical_processes",
+      "cause_node": "sulfate_formation",
+      "effect_node": "sia_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Sulfate combines with ammonium to form ammonium sulfate, a major component of Secondary Inorganic Aerosol",
+      "mechanism": "Sulfate (SO4^2-) là thành phần chính của Secondary Inorganic Aerosol (SIA). Sulfate kết hợp với ammonium (NH4+) tạo thành ammonium sulfate ((NH4)2SO4) hoặc ammonium bisulfate (NH4HSO4), là các hợp chất ổn định trong pha hạt và đóng góp đáng kể vào khối lượng PM2.5.",
+      "sources": ["makkonen2023_pm25_hanoi"],
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Ulla Makkonen et al.",
+      "source_year": "2023",
+      "source_quote": "One third of PM2.5 mass was secondary inorganic aerosol which was dominated by sulphate hence indicating a high contribution of stationary sources like coal combustion.",
+      "source_locator": "Abstract",
+      "temporal_lag": "0-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "notes": "Tại Hà Nội, sulfate chiếm ưu thế trong SIA, chủ yếu từ đốt than.",
+      "conditions": [
+        {
+          "relationship_id": "chem_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Có sự hiện diện của NH3 để trung hòa sulfate",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "nh3_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["NH3"],
+            "interpretation": "Ammonia required to neutralize sulfate"
+          }
+        },
+        {
+          "relationship_id": "chem_005",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Điều kiện khí quyển cho phép hình thành hạt",
+          "type": "qualitative",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "too_vague",
+            "interpretation": "General atmospheric conditions favorable for particle formation"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 2,
+        "checkable_conditions_count": 1
+      }
+    },
+    {
+      "id": "chem_006",
+      "category": "chemical_processes",
+      "cause_node": "hno3",
+      "effect_node": "ammonium_nitrate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "HNO3 reacts with NH3 to form NH4NO3 (ammonium nitrate), a reversible equilibrium dependent on temperature and humidity",
+      "mechanism": "HNO3 (nitric acid) phản ứng với NH3 (ammonia) trong pha khí hoặc trên bề mặt hạt để tạo thành NH4NO3 (ammonium nitrate): HNO3(g) + NH3(g) ⇌ NH4NO3(s,aq). Đây là phản ứng thuận nghịch, cân bằng phụ thuộc mạnh vào nhiệt độ và độ ẩm.",
+      "sources": ["stelson2007_nh4no3"],
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2007.10.063",
+      "source_title": "Relative humidity and temperature dependence of the ammonium nitrate dissociation constant",
+      "source_authors": "A.W. Stelson, J.H. Seinfeld",
+      "source_year": "2007",
+      "source_quote": "Expressions for predicting the temperature and relative humidity dependence of the NH4NO3 dissociation constant are derived from fundamental thermodynamic principles.",
+      "source_locator": "Abstract",
+      "temporal_lag": "0-2h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "global",
+      "notes": "NH4NO3 dễ bay hơi ở nhiệt độ cao, do đó nồng độ nitrate trong PM2.5 cao hơn vào mùa đông.",
+      "conditions": [
+        {
+          "relationship_id": "chem_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Nhiệt độ thấp (< 15°C) thuận lợi cho pha hạt",
+          "type": "threshold",
+          "field": "temperature",
+          "operator": "<",
+          "value": 15,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "°C",
+            "interpretation": "Low temperature favors particle phase NH4NO3"
+          }
+        },
+        {
+          "relationship_id": "chem_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "RH > 60% (deliquescence point của NH4NO3)",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Above deliquescence point of NH4NO3"
+          }
+        },
+        {
+          "relationship_id": "chem_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "Có đủ NH3 để trung hòa HNO3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "nh3_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["NH3"],
+            "interpretation": "Sufficient ammonia to neutralize HNO3"
+          }
+        },
+        {
+          "relationship_id": "chem_006",
+          "relationship_category": "chemical_processes",
+          "condition_index": 3,
+          "original_text": "Sulfate đã được trung hòa hoàn toàn (excess NH3)",
+          "type": "qualitative",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "issue": "no_specific_threshold",
+            "interpretation": "Excess NH3 after sulfate neutralization required for nitrate formation"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 4,
+        "checkable_conditions_count": 3
+      }
+    },
+    {
+      "id": "chem_007_a",
+      "category": "chemical_processes",
+      "cause_node": "temperature",
+      "effect_node": "ammonium_nitrate_formation",
+      "relationship_type": "MODERATOR",
+      "description": "Low temperature (<15°C) favors particle phase NH4NO3 formation by shifting equilibrium",
+      "mechanism": "Nhiệt độ ảnh hưởng đến hằng số phân ly của NH4NO3. Ở nhiệt độ thấp, cân bằng dịch chuyển về phía pha hạt (NH4NO3 solid/aqueous). Hằng số phân ly tăng theo hàm mũ với nhiệt độ.",
+      "sources": ["stelson2007_nh4no3"],
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2007.10.063",
+      "source_title": "Relative humidity and temperature dependence of the ammonium nitrate dissociation constant",
+      "source_authors": "A.W. Stelson, J.H. Seinfeld",
+      "source_year": "2007",
+      "source_quote": "The general trends predicted by the theory agree with the atmospheric data. Lower temperature and higher relative humidity favor the particle phase formation of NH4NO3.",
+      "source_locator": "Abstract and cited papers",
+      "temporal_lag": "N/A",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "global",
+      "notes": "Đây là lý do chính tại sao nồng độ nitrate trong PM2.5 cao hơn vào mùa đông tại Hà Nội. Relationship này là nhánh LOW TEMPERATURE của chem_007 gốc.",
+      "conditions": [
+        {
+          "relationship_id": "chem_007_a",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Nhiệt độ < 15°C thuận lợi cho hình thành NH4NO3",
+          "type": "threshold",
+          "field": "temperature",
+          "operator": "<",
+          "value": 15,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "°C",
+            "interpretation": "Low temperature favors particle phase",
+            "piecewise_group": "chem_007",
+            "piecewise_branch": "low_temp"
+          }
+        },
+        {
+          "relationship_id": "chem_007_a",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Có đủ HNO3 và NH3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "hno3_nh3_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["HNO3", "NH3"],
+            "interpretation": "Both precursors must be present"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 3,
+        "checkable_conditions_count": 2,
+        "piecewise_group": "chem_007",
+        "piecewise_branch": "low_temperature_formation"
+      }
+    },
+    {
+      "id": "chem_007_b",
+      "category": "chemical_processes",
+      "cause_node": "temperature",
+      "effect_node": "ammonium_nitrate_formation",
+      "relationship_type": "MODERATOR",
+      "description": "High temperature (>25°C) causes significant NH4NO3 volatilization, shifting equilibrium to gas phase",
+      "mechanism": "Ở nhiệt độ cao (>25°C), cân bằng dịch chuyển về phía pha khí, thúc đẩy sự bay hơi NH4NO3 thành HNO3 và NH3. Hằng số phân ly tăng theo hàm mũ với nhiệt độ.",
+      "sources": ["stelson2007_nh4no3"],
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2007.10.063",
+      "source_title": "Relative humidity and temperature dependence of the ammonium nitrate dissociation constant",
+      "source_authors": "A.W. Stelson, J.H. Seinfeld",
+      "source_year": "2007",
+      "source_quote": "The general trends predicted by the theory agree with the atmospheric data. Lower temperature and higher relative humidity favor the particle phase formation of NH4NO3.",
+      "source_locator": "Abstract and cited papers",
+      "temporal_lag": "N/A",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "summer",
+      "spatial_scope": "global",
+      "notes": "Đây là lý do tại sao nồng độ nitrate trong PM2.5 thấp hơn vào mùa hè. Relationship này là nhánh HIGH TEMPERATURE của chem_007 gốc.",
+      "conditions": [
+        {
+          "relationship_id": "chem_007_b",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Nhiệt độ > 25°C gây bay hơi đáng kể",
+          "type": "threshold",
+          "field": "temperature",
+          "operator": ">",
+          "value": 25,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "°C",
+            "interpretation": "High temperature causes volatilization",
+            "piecewise_group": "chem_007",
+            "piecewise_branch": "high_temp"
+          }
+        },
+        {
+          "relationship_id": "chem_007_b",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Có đủ HNO3 và NH3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "hno3_nh3_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["HNO3", "NH3"],
+            "interpretation": "Both precursors must be present"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 3,
+        "checkable_conditions_count": 2,
+        "piecewise_group": "chem_007",
+        "piecewise_branch": "high_temperature_volatilization"
+      }
+    },
+    {
+      "id": "chem_008",
+      "category": "chemical_processes",
+      "cause_node": "nh3",
+      "effect_node": "sia_formation",
+      "relationship_type": "MODERATOR",
+      "description": "NH3 neutralizes acids (H2SO4, HNO3) and maintains high aerosol pH (>5.5), enabling fast aqueous-phase SO2 oxidation by NO2",
+      "mechanism": "NH3 (ammonia) đóng vai trò trung hòa các acid (H2SO4, HNO3) trong khí quyển, tạo điều kiện cho sự hình thành các muối ammonium (ammonium sulfate, ammonium nitrate). NH3 cũng ảnh hưởng đến pH của aerosol liquid water, từ đó ảnh hưởng đến tốc độ các phản ứng aqueous-phase. Nồng độ NH3 cao duy trì pH > 5.5, thúc đẩy phản ứng oxy hóa SO2 bởi NO2.",
+      "sources": ["wang2020_sulfate_beijing"],
+      "source_url": "https://doi.org/10.1038/s41467-020-16683-x",
+      "source_title": "Fast sulfate formation from oxidation of SO2 by NO2 and HONO observed in Beijing haze",
+      "source_authors": "Junfeng Wang et al.",
+      "source_year": "2020",
+      "source_quote": "The mean gaseous ammonia concentration observed during Stage II was 14 ppb. Fog has a much higher pH than haze under high-ammonia conditions because of efficient scavenging of ammonia at high LWC. Whereas ammonia volatility limits the pH of haze aqueous solutions to a 4–5 range even with ammonia in large excess, the corresponding pH range in fog is 6–7.",
+      "source_locator": "Results section - Importance of fog and cloud",
+      "temporal_lag": "0-4h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "notes": "Tại Hà Nội, nguồn NH3 chủ yếu từ đốt nhiên liệu và hoạt động nông nghiệp xung quanh.",
+      "conditions": [
+        {
+          "relationship_id": "chem_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Có nguồn phát thải NH3 (nông nghiệp, đốt nhiên liệu)",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "nh3_emission_sources",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "emission_sources": ["agriculture", "fuel_combustion"],
+            "interpretation": "NH3 emission sources must be present"
+          }
+        },
+        {
+          "relationship_id": "chem_008",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Có sự hiện diện của H2SO4 và HNO3",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "acids_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["H2SO4", "HNO3"],
+            "interpretation": "Acids must be present for neutralization"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 2,
+        "checkable_conditions_count": 2
+      }
+    },
+    {
+      "id": "chem_009",
+      "category": "chemical_processes",
+      "cause_node": "sia_formation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Secondary Inorganic Aerosol (sulfate, nitrate, ammonium) contributes 25-43% of PM2.5 mass during pollution episodes in Hanoi",
+      "mechanism": "Secondary Inorganic Aerosol (SIA) bao gồm sulfate, nitrate và ammonium là thành phần chính của PM2.5, đặc biệt trong các đợt ô nhiễm không khí. SIA đóng góp 25-43% khối lượng PM2.5 tại Hà Nội trong các đợt ô nhiễm. SIA được hình thành từ các phản ứng hóa học của các tiền chất khí (SO2, NOx, NH3) trong khí quyển.",
+      "sources": ["nguyen2024_sia_hanoi"],
+      "source_url": "https://doi.org/10.4209/aaqr.220446",
+      "source_title": "Influence of Secondary Inorganic Aerosol on the Concentrations of PM2.5 and PM0.1 during Air Pollution Episodes in Hanoi, Vietnam",
+      "source_authors": "Nguyen-Quoc Dat et al.",
+      "source_year": "2024",
+      "source_quote": "The results showed that SIA contributed on average 29.0% and 14.1%, respectively, to PM2.5 and PM0.1 concentrations during air pollution episodes at HUST. Those were higher than the average contribution percentages of total SIA to PM concentrations in non-episode periods for PM2.5 (25.6%) and PM0.1 (10.6%) at HUST.",
+      "source_locator": "Abstract",
+      "temporal_lag": "4-24h",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "notes": "Đóng góp của SIA cao hơn trong các đợt ô nhiễm so với các ngày bình thường.",
+      "conditions": [
+        {
+          "relationship_id": "chem_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "Có sự hiện diện của các tiền chất khí (SO2, NOx, NH3)",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "sia_precursors_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["SO2", "NOx", "NH3"],
+            "interpretation": "All SIA precursor gases must be present"
+          }
+        },
+        {
+          "relationship_id": "chem_009",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Điều kiện khí tượng thuận lợi (RH cao, nhiệt độ thấp, gió yếu)",
+          "type": "compound",
+          "field": "compound_meteorological",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "logic": {
+              "op": "AND",
+              "children": [
+                {"field": "relative_humidity", "operator": ">", "value": 75, "unit": "%"},
+                {"field": "temperature", "operator": "<", "value": 20, "unit": "°C"},
+                {"field": "wind_speed", "operator": "<", "value": 2, "unit": "m/s"}
+              ]
+            },
+            "interpretation": "Favorable meteorological conditions: high RH, low temperature, weak wind"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 2,
+        "checkable_conditions_count": 2
+      }
+    },
+    {
+      "id": "chem_010",
+      "category": "chemical_processes",
+      "cause_node": "h2o2",
+      "effect_node": "sulfate_formation",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "H2O2 oxidizes dissolved SO2 (HSO3-) to sulfate in aqueous phase, fastest at pH 3-5",
+      "mechanism": "H2O2 (hydrogen peroxide) là chất oxy hóa mạnh trong pha nước, oxy hóa SO2 (dạng HSO3-) thành sulfate theo phản ứng: HSO3- + H2O2 → SO4^2- + H2O + H+. Phản ứng này nhanh ở pH thấp (3-5) và không phụ thuộc nhiều vào pH trong khoảng này, khác với phản ứng với O3 và NO2.",
+      "sources": ["liu2021_multiphase_so2"],
+      "source_url": "https://doi.org/10.1021/acs.est.0c06496",
+      "source_title": "Multiphase Oxidation of Sulfur Dioxide in Aerosol Particles: Implications for Sulfate Formation in Polluted Environments",
+      "source_authors": "Tengyu Liu, Arthur W. H. Chan, Jonathan P. D. Abbatt",
+      "source_year": "2021",
+      "source_quote": "Multiphase oxidation involving aerosol particles, fog, and cloud droplets has been generally thought to scale with liquid water content (LWC). The major oxidation pathways which are considered to contribute to sulphate formation in the aqueous phase are oxidation by H2O2 and oxidation by O3.",
+      "source_locator": "Abstract and Introduction",
+      "temporal_lag": "2-6h",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "global",
+      "notes": "H2O2 là chất oxy hóa quan trọng trong mây và sương mù, nhưng nồng độ có thể bị giới hạn trong điều kiện ô nhiễm nặng.",
+      "conditions": [
+        {
+          "relationship_id": "chem_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 0,
+          "original_text": "pH 3-5 (tối ưu)",
+          "type": "range",
+          "field": "aerosol_ph",
+          "operator": null,
+          "value": null,
+          "range": [3, 5],
+          "checkable": true,
+          "normalized": {
+            "unit": "pH",
+            "interpretation": "Optimal pH range for H2O2 oxidation pathway"
+          }
+        },
+        {
+          "relationship_id": "chem_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 1,
+          "original_text": "Có sự hiện diện của H2O2 trong khí quyển",
+          "type": "categorical",
+          "field": "precursor_availability",
+          "operator": null,
+          "value": "h2o2_present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "required_species": ["H2O2"],
+            "interpretation": "Hydrogen peroxide must be present"
+          }
+        },
+        {
+          "relationship_id": "chem_010",
+          "relationship_category": "chemical_processes",
+          "condition_index": 2,
+          "original_text": "RH > 75% để có đủ ALW",
+          "type": "threshold",
+          "field": "relative_humidity",
+          "operator": ">",
+          "value": 75,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "%",
+            "interpretation": "Required for sufficient aerosol liquid water"
+          }
+        }
+      ],
+      "metadata": {
+        "original_conditions_count": 3,
+        "checkable_conditions_count": 3
+      }
+    }
+  ],
+  "handoff_to_other_prompts": [
+    "meteorological_pathways",
+    "emission_sources",
+    "transport_mechanisms"
+  ],
+  "missing_info": "Cơ chế hình thành SOA từ các VOCs cụ thể tại Hà Nội cần được nghiên cứu thêm. Dữ liệu về nồng độ H2O2 và vai trò của kim loại chuyển tiếp (Mn2+, Fe3+) trong xúc tác phản ứng oxy hóa SO2 tại Hà Nội còn hạn chế. Cần thêm nghiên cứu về sự tương tác giữa các phản ứng hóa học và điều kiện khí tượng cục bộ.",
+  "contradictions": [],
+  "qa_summary": {
+    "total_conditions": 32,
+    "checkable_conditions": 25,
+    "uncheckable_conditions": 7,
+    "piecewise_splits": 1,
+    "piecewise_details": "chem_007 split into chem_007_a (low temp) and chem_007_b (high temp) to handle conflicting temperature thresholds",
+    "field_standardization": {
+      "humidity": "relative_humidity",
+      "RH": "relative_humidity"
+    },
+    "issues_fixed": [
+      "Converted text conditions to structured format with proper type/field/operator/value",
+      "Split chem_007 into two relationships (chem_007_a, chem_007_b) to handle piecewise temperature logic",
+      "Standardized field names (humidity → relative_humidity)",
+      "Added proper checkable flags based on condition specificity",
+      "Created compound condition for chem_009 meteorological requirements"
+    ]
+  }
+}

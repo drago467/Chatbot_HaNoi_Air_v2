@@ -1,0 +1,450 @@
+{
+  "schema_version": "canonical_v1",
+  "category": "static_factors",
+  "source_count": 4,
+  "relationship_count_raw": 6,
+  "relationship_count_valid": 6,
+  "bibliography": [
+    {
+      "source_id": "src_001",
+      "source_title": "Impact of urban expansion on the air pollution landscape: A case study of Hanoi, Vietnam",
+      "source_authors": null,
+      "source_year": "2019",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0048969719346261",
+      "source_doi": "10.1016/j.scitotenv.2019.134635",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Mật độ dân số, mật độ đường và khoảng cách từ địa điểm giám sát đến trung tâm đô thị và tuyến đường gần nhất là các yếu tố thúc đẩy sự thay đổi nồng độ chất ô nhiễm tại Hà Nội."
+    },
+    {
+      "source_id": "src_002",
+      "source_title": "Evaluating the influence of land use and land cover change on fine particulate matter",
+      "source_authors": null,
+      "source_year": "2021",
+      "source_url": "https://www.nature.com/articles/s41598-021-97088-8",
+      "source_doi": "10.1038/s41598-021-97088-8",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Thứ tự nồng độ PM2.5 đối với các loại hình sử dụng đất: đất xây dựng > đất không sử dụng > mặt nước > đất nông nghiệp > đồng cỏ > rừng."
+    },
+    {
+      "source_id": "src_003",
+      "source_title": "Dry deposition effect of urban green spaces on ambient particulate matter pollution in China",
+      "source_authors": null,
+      "source_year": "2023",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0048969723044558",
+      "source_doi": "10.1016/j.scitotenv.2023.165830",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Rừng lá rộng chiếm 89.22% hiệu quả lắng đọng khô trong không gian đô thị."
+    },
+    {
+      "source_id": "src_004",
+      "source_title": "Wintertime PM2.5 concentrations during persistent, multi-day cold-air pools in a mountain valley",
+      "source_authors": null,
+      "source_year": "2011",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231011011204",
+      "source_doi": "10.1016/j.atmosenv.2011.10.041",
+      "tier": "tier_1",
+      "relevance_score": 8,
+      "key_findings": "Trong các sự kiện CAP, nồng độ PM2.5 có thể đạt tới 100 µg/m³. Nồng độ PM2.5 giảm tới 30% khi độ cao tăng từ 1300m lên 1600m."
+    },
+    {
+      "source_id": "src_005",
+      "source_title": "Influence of roadway emissions on near-road PM2.5: Monitoring data analysis and implications",
+      "source_authors": null,
+      "source_year": "2020",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1361920920306295",
+      "source_doi": "10.1016/j.trd.2020.102442",
+      "tier": "tier_1",
+      "relevance_score": 9,
+      "key_findings": "Nồng độ PM2.5 gia tăng giảm 75% trong khoảng từ 5m đến 30m tính từ đường. Tác động tiêu cực đến sức khỏe đối với những người sống trong phạm vi 300m từ các tuyến đường chính."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "static_001",
+      "category": "static_factors",
+      "cause_node": "population_density",
+      "effect_node": "pm25",
+      "relationship_type": "INDIRECT_CAUSE",
+      "description": "Mật độ dân số cao dẫn đến gia tăng nguồn phát thải từ giao thông, công nghiệp và dân sinh, từ đó làm tăng nồng độ PM2.5",
+      "mechanism": "Mật độ dân số cao dẫn đến sự gia tăng các nguồn phát thải từ giao thông, công nghiệp và dân sinh, từ đó làm tăng nồng độ PM2.5. Các khu vực có mật độ dân số cao thường tương quan với mật độ đường xá và hoạt động kinh tế cao, góp phần vào việc phát thải các chất ô nhiễm.",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "temporal_lag": "N/A",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["src_001"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0048969719346261",
+      "source_title": "Impact of urban expansion on the air pollution landscape: A case study of Hanoi, Vietnam",
+      "source_doi": "10.1016/j.scitotenv.2019.134635",
+      "source_year": "2019",
+      "source_quote": "Nghiên cứu tại Hà Nội cho thấy các yếu tố thúc đẩy sự thay đổi trong nồng độ chất ô nhiễm bao gồm mật độ dân số, mật độ đường và khoảng cách từ địa điểm giám sát đến trung tâm đô thị và tuyến đường gần nhất. Nồng độ NO2 và SO2 giảm dần từ trung tâm thành phố ra ngoài.",
+      "conditions": [
+        {
+          "relationship_id": "static_001",
+          "relationship_category": "static_factors",
+          "condition_index": 0,
+          "original_text": "Khu vực có mật độ dân số cao (đô thị, trung tâm thành phố)",
+          "type": "categorical",
+          "field": "urban_density_class",
+          "operator": null,
+          "value": "high",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Điều kiện áp dụng cho các khu vực đô thị có mật độ dân số cao",
+            "value_options": ["low", "medium", "high"],
+            "issue": null
+          }
+        }
+      ],
+      "notes": "Relationship là INDIRECT_CAUSE vì population_density tác động qua các nguồn phát thải trung gian (traffic, industry, residential). Không có ngưỡng số cụ thể trong source."
+    },
+    {
+      "id": "static_002",
+      "category": "static_factors",
+      "cause_node": "urban_land_use",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Đất xây dựng có cường độ hoạt động con người cao nhất, dẫn đến nồng độ PM2.5 cao nhất so với các loại hình sử dụng đất khác",
+      "mechanism": "Đất xây dựng có cường độ hoạt động của con người cao nhất, bao gồm mật độ dân số, luồng giao thông, hoạt động công nghiệp và thương mại. Tất cả những hoạt động này tạo ra một lượng lớn các chất ô nhiễm không khí, dẫn đến nồng độ PM2.5 cao nhất so với các loại hình sử dụng đất khác.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "N/A",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["src_002"],
+      "source_url": "https://www.nature.com/articles/s41598-021-97088-8",
+      "source_title": "Evaluating the influence of land use and land cover change on fine particulate matter",
+      "source_doi": "10.1038/s41598-021-97088-8",
+      "source_year": "2021",
+      "source_quote": "Thứ tự nồng độ PM2.5 đối với các loại hình sử dụng đất khác nhau là: đất xây dựng > đất không sử dụng > mặt nước > đất nông nghiệp > đồng cỏ > rừng.",
+      "conditions": [
+        {
+          "relationship_id": "static_002",
+          "relationship_category": "static_factors",
+          "condition_index": 0,
+          "original_text": "Loại hình sử dụng đất là đất xây dựng (construction land)",
+          "type": "categorical",
+          "field": "land_use_type",
+          "operator": null,
+          "value": "construction_land",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Áp dụng cho khu vực có loại hình sử dụng đất là đất xây dựng",
+            "value_options": ["construction_land", "unused_land", "water_surface", "agricultural_land", "grassland", "forest"],
+            "issue": null
+          }
+        }
+      ],
+      "notes": "Source cung cấp thứ tự định lượng rõ ràng về mối quan hệ giữa loại hình sử dụng đất và PM2.5."
+    },
+    {
+      "id": "static_003",
+      "category": "static_factors",
+      "cause_node": "vegetation",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Thảm thực vật, đặc biệt là rừng, có tác dụng điều tiết tiêu cực (giảm) nồng độ PM2.5 thông qua quá trình lắng đọng khô",
+      "mechanism": "Thảm thực vật, đặc biệt là rừng, có tác dụng điều tiết tiêu cực đối với nồng độ PM2.5. Cây cối loại bỏ các hạt vật chất khỏi không khí thông qua quá trình lắng đọng khô, trong đó các hạt bị giữ lại, bám dính và hấp thụ trực tiếp trên bề mặt lá. Rừng lá rộng cho thấy hiệu quả lắng đọng khô cao nhất.",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "temporal_lag": "N/A",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["src_002", "src_003"],
+      "source_url": "https://www.nature.com/articles/s41598-021-97088-8",
+      "source_title": "Evaluating the influence of land use and land cover change on fine particulate matter",
+      "source_doi": "10.1038/s41598-021-97088-8",
+      "source_year": "2021",
+      "source_quote": "Rừng có nồng độ PM2.5 trung bình thấp nhất trong số các loại hình sử dụng đất. Rừng lá rộng chiếm 89,22% hiệu quả lắng đọng khô trong không gian đô thị.",
+      "conditions": [
+        {
+          "relationship_id": "static_003",
+          "relationship_category": "static_factors",
+          "condition_index": 0,
+          "original_text": "Có thảm thực vật, đặc biệt là rừng lá rộng",
+          "type": "categorical",
+          "field": "vegetation_type",
+          "operator": null,
+          "value": "forest",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Hiệu quả cao nhất với rừng lá rộng (broadleaf forest)",
+            "value_options": ["forest", "grassland", "shrubland", "urban_green_space"],
+            "preferred_value": "broadleaf_forest",
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_003",
+          "relationship_category": "static_factors",
+          "condition_index": 1,
+          "original_text": "Rừng lá rộng chiếm 89.22% hiệu quả lắng đọng khô",
+          "type": "qualitative",
+          "field": "dry_deposition_efficiency",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Rừng lá rộng có hiệu quả lắng đọng khô cao nhất (89.22%)",
+            "quantitative_note": "89.22% efficiency for broadleaf forest",
+            "issue": null
+          }
+        }
+      ],
+      "notes": "Relationship có hướng negative (vegetation tăng → PM2.5 giảm). Được hỗ trợ bởi 2 sources độc lập."
+    },
+    {
+      "id": "static_004",
+      "category": "static_factors",
+      "cause_node": "topography",
+      "effect_node": "pm25",
+      "relationship_type": "MODERATOR",
+      "description": "Địa hình thung lũng/lòng chảo bẫy không khí lạnh và chất ô nhiễm trong các đợt nghịch nhiệt mùa đông, dẫn đến tích tụ PM2.5 cao",
+      "mechanism": "Địa hình thung lũng hoặc lòng chảo có thể bẫy không khí lạnh và các chất ô nhiễm trong các đợt nghịch nhiệt mùa đông. Các lớp không khí ổn định, tồn tại nhiều ngày (còn gọi là vũng không khí lạnh - CAPs) ngăn chặn sự pha trộn dọc của các chất ô nhiễm, dẫn đến sự tích tụ nồng độ PM2.5 cao gần mặt đất.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "sources": ["src_004"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1352231011011204",
+      "source_title": "Wintertime PM2.5 concentrations during persistent, multi-day cold-air pools in a mountain valley",
+      "source_doi": "10.1016/j.atmosenv.2011.10.041",
+      "source_year": "2011",
+      "source_quote": "Trong các sự kiện CAP, nồng độ PM2.5 có thể đạt tới 100 µg/m³. Nồng độ PM2.5 giảm tới 30% khi độ cao tăng từ 1300m lên 1600m trong một thung lũng.",
+      "conditions": [
+        {
+          "relationship_id": "static_004",
+          "relationship_category": "static_factors",
+          "condition_index": 0,
+          "original_text": "Địa hình thung lũng hoặc lòng chảo (valley/basin topography)",
+          "type": "categorical",
+          "field": "topography_type",
+          "operator": null,
+          "value": "valley_basin",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Áp dụng cho địa hình thung lũng hoặc lòng chảo",
+            "value_options": ["valley_basin", "plain", "coastal", "mountainous"],
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_004",
+          "relationship_category": "static_factors",
+          "condition_index": 1,
+          "original_text": "Mùa đông với các đợt nghịch nhiệt (wintertime inversion events)",
+          "type": "season",
+          "field": "season",
+          "operator": null,
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Hiện tượng xảy ra chủ yếu vào mùa đông khi có nghịch nhiệt",
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_004",
+          "relationship_category": "static_factors",
+          "condition_index": 2,
+          "original_text": "Có sự kiện vũng không khí lạnh (Cold Air Pool - CAP) tồn tại nhiều ngày",
+          "type": "categorical",
+          "field": "cap_event",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Sự kiện CAP (Cold Air Pool) đang xảy ra",
+            "value_options": ["present", "absent"],
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_004",
+          "relationship_category": "static_factors",
+          "condition_index": 3,
+          "original_text": "Nồng độ PM2.5 có thể đạt tới 100 µg/m³ trong các sự kiện CAP",
+          "type": "threshold",
+          "field": "pm25_concentration",
+          "operator": "<=",
+          "value": 100,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "PM2.5 có thể đạt tới 100 µg/m³ trong điều kiện CAP",
+            "unit": "µg/m³",
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_004",
+          "relationship_category": "static_factors",
+          "condition_index": 4,
+          "original_text": "Nồng độ PM2.5 giảm tới 30% khi độ cao tăng từ 1300m lên 1600m",
+          "type": "qualitative",
+          "field": "elevation_gradient",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "PM2.5 giảm ~30% khi độ cao tăng 300m (từ 1300m lên 1600m)",
+            "elevation_range_m": [1300, 1600],
+            "pm25_reduction_percent": 30,
+            "issue": null
+          }
+        }
+      ],
+      "notes": "Relationship type là MODERATOR vì topography không trực tiếp tạo ra PM2.5 mà điều tiết sự tích tụ. Source từ nghiên cứu tại thung lũng núi, có thể áp dụng cho địa hình tương tự tại Hà Nội (Red River Delta basin)."
+    },
+    {
+      "id": "static_005",
+      "category": "static_factors",
+      "cause_node": "distance_to_roads",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Nồng độ PM2.5 giảm nhanh chóng theo hàm mũ khi khoảng cách từ đường giao thông tăng lên",
+      "mechanism": "Nồng độ PM2.5 giảm nhanh chóng khi khoảng cách từ đường giao thông tăng lên. Điều này là do sự phân tán và pha loãng của các chất ô nhiễm phát ra từ xe cộ (cả khí thải và không phải khí thải như mài mòn phanh, lốp xe và bụi đường tái bay) với khoảng cách.",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["src_005"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1361920920306295",
+      "source_title": "Influence of roadway emissions on near-road PM2.5: Monitoring data analysis and implications",
+      "source_doi": "10.1016/j.trd.2020.102442",
+      "source_year": "2020",
+      "source_quote": "Nồng độ PM2.5 gia tăng giảm 75% trong khoảng từ 5m đến 30m tính từ đường. Các nghiên cứu đã tìm thấy các tác động tiêu cực đến sức khỏe đối với những người sống trong phạm vi 300m từ các tuyến đường chính.",
+      "conditions": [
+        {
+          "relationship_id": "static_005",
+          "relationship_category": "static_factors",
+          "condition_index": 0,
+          "original_text": "Khoảng cách từ đường giao thông (distance to roadway)",
+          "type": "range",
+          "field": "distance_to_road_m",
+          "operator": "in",
+          "value": null,
+          "range": [5, 300],
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Hiệu ứng rõ rệt nhất trong phạm vi 5-300m từ đường",
+            "unit": "m",
+            "decay_type": "exponential",
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_005",
+          "relationship_category": "static_factors",
+          "condition_index": 1,
+          "original_text": "PM2.5 gia tăng giảm 75% trong khoảng từ 5m đến 30m",
+          "type": "qualitative",
+          "field": "pm25_reduction_near_road",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "PM2.5 enhancement giảm 75% từ 5m đến 30m tính từ đường",
+            "distance_range_m": [5, 30],
+            "pm25_reduction_percent": 75,
+            "decay_type": "exponential",
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_005",
+          "relationship_category": "static_factors",
+          "condition_index": 2,
+          "original_text": "Tác động sức khỏe trong phạm vi 300m từ tuyến đường chính",
+          "type": "threshold",
+          "field": "distance_to_major_road_m",
+          "operator": "<",
+          "value": 300,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Vùng ảnh hưởng sức khỏe: trong phạm vi 300m từ tuyến đường chính",
+            "unit": "m",
+            "health_impact_zone": true,
+            "issue": null
+          }
+        }
+      ],
+      "notes": "Relationship có hướng negative_exponential_decay (distance tăng → PM2.5 giảm theo hàm mũ). Ngưỡng 300m là quan trọng cho đánh giá tác động sức khỏe."
+    },
+    {
+      "id": "static_006",
+      "category": "static_factors",
+      "cause_node": "industrial_zones",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "description": "Các khu công nghiệp là nguồn phát thải điểm chính của PM2.5 và các tiền chất (SO2, NOx)",
+      "mechanism": "Các khu công nghiệp là nguồn phát thải điểm chính của PM2.5 và các tiền chất của nó (SO2, NOx) thông qua các quy trình công nghiệp và đốt cháy nhiên liệu tại các nguồn tĩnh. Sự hiện diện của các khu công nghiệp, đặc biệt là ở các khu vực ven đô, tạo ra các điểm nóng ô nhiễm.",
+      "strength": "MODERATE",
+      "confidence": "HIGH",
+      "temporal_lag": "N/A",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "sources": ["src_001"],
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0048969719346261",
+      "source_title": "Impact of urban expansion on the air pollution landscape: A case study of Hanoi, Vietnam",
+      "source_doi": "10.1016/j.scitotenv.2019.134635",
+      "source_year": "2019",
+      "source_quote": "Nhiều điểm nóng phát thải công nghiệp và giao thông xảy ra ở khu vực ven đô của Hà Nội.",
+      "conditions": [
+        {
+          "relationship_id": "static_006",
+          "relationship_category": "static_factors",
+          "condition_index": 0,
+          "original_text": "Có sự hiện diện của khu công nghiệp (industrial zone presence)",
+          "type": "categorical",
+          "field": "industrial_zone_presence",
+          "operator": null,
+          "value": "present",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Khu vực có sự hiện diện của khu công nghiệp",
+            "value_options": ["present", "absent"],
+            "issue": null
+          }
+        },
+        {
+          "relationship_id": "static_006",
+          "relationship_category": "static_factors",
+          "condition_index": 1,
+          "original_text": "Khu vực ven đô (peri-urban areas)",
+          "type": "categorical",
+          "field": "urban_zone_type",
+          "operator": null,
+          "value": "peri_urban",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Điểm nóng công nghiệp thường tập trung ở khu vực ven đô",
+            "value_options": ["urban_core", "peri_urban", "suburban", "rural"],
+            "issue": null
+          }
+        }
+      ],
+      "notes": "Source cung cấp bằng chứng định tính về điểm nóng ô nhiễm công nghiệp tại Hà Nội. Không có ngưỡng khoảng cách cụ thể từ khu công nghiệp trong source này."
+    }
+  ],
+  "handoff_to_other_prompts": [],
+  "missing_info": "Các sources không cung cấp ngưỡng số cụ thể cho population_density (người/km²) và khoảng cách từ khu công nghiệp. Cần thêm sources để định lượng hóa các điều kiện này.",
+  "contradictions": []
+}

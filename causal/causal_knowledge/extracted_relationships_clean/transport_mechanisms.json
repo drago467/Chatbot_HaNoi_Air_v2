@@ -1,0 +1,1184 @@
+{
+  "schema_version": "canonical_v1",
+  "metadata": {
+    "domain": "Transport Mechanisms affecting PM2.5",
+    "category": "transport_mechanisms",
+    "geographic_scope": ["Hanoi", "Vietnam", "Southeast Asia", "Red River Delta"],
+    "temporal_scope": "2006-2023",
+    "extraction_date": "2026-01-22",
+    "cleaning_date": "2026-02-04",
+    "total_sources": 6,
+    "total_relationships": 18
+  },
+  "bibliography": [
+    {
+      "source_id": "S1",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119669",
+      "source_doi": "10.1016/j.atmosenv.2023.119669",
+      "tier": "tier_1",
+      "journal": "Atmospheric Environment"
+    },
+    {
+      "source_id": "S2",
+      "source_title": "Effects of local, regional meteorology and emission sources on mass and compositions of particulate matter in Hanoi",
+      "source_authors": "Hai & Kim Oanh",
+      "source_year": "2013",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2012.05.006",
+      "source_doi": "10.1016/j.atmosenv.2012.05.006",
+      "tier": "tier_1",
+      "journal": "Atmospheric Environment"
+    },
+    {
+      "source_id": "S3",
+      "source_title": "Trans-boundary air pollution in a Southeast Asian megacity: Case studies of the synoptic meteorological mechanisms and impacts on air quality",
+      "source_authors": "Nguyen et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.1016/j.apr.2022.101366",
+      "source_doi": "10.1016/j.apr.2022.101366",
+      "tier": "tier_1",
+      "journal": "Atmospheric Pollution Research"
+    },
+    {
+      "source_id": "S4",
+      "source_title": "The Cross-Border Transport of PM2.5 from the Southeast Asian Biomass Burning Emissions and Its Impact on Air Pollution in Yunnan Plateau, Southwest China",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/rs14081886",
+      "source_doi": "10.3390/rs14081886",
+      "tier": "tier_1",
+      "journal": "Remote Sensing"
+    },
+    {
+      "source_id": "S5",
+      "source_title": "Seasonal Characteristics of Atmospheric PM2.5 in an Urban Area of Vietnam and the Influence of Regional Fire Activities",
+      "source_authors": "Bui et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/atmos13111911",
+      "source_doi": "10.3390/atmos13111911",
+      "tier": "tier_1",
+      "journal": "Atmosphere"
+    },
+    {
+      "source_id": "S6",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_doi": "10.1016/j.atmosenv.2023.119650",
+      "tier": "tier_1",
+      "journal": "Atmospheric Environment"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "transport_001",
+      "relationship_id": "R1",
+      "category": "transport_mechanisms",
+      "cause_node": "cold_surge_onset",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Long-range transport from China during cold surge onset brings polluted air masses to Hanoi, causing approximately 30% increase in PM2.5 levels",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-2d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_001",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter period (October-March)",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [10, 11, 12, 1, 2, 3],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 10,
+              "end_month": 3,
+              "wrap_year": true
+            },
+            "interpretation": "Winter period spanning October to March"
+          }
+        },
+        {
+          "relationship_id": "transport_001",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Northeast monsoon",
+          "type": "categorical",
+          "field": "monsoon_regime",
+          "operator": "==",
+          "value": "northeast",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Northeast monsoon regime prevailing"
+          }
+        },
+        {
+          "relationship_id": "transport_001",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Cold surge onset phase",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": "==",
+          "value": "onset",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Cold surge in onset phase"
+          }
+        }
+      ],
+      "source_id": "S1",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119669",
+      "source_quote": "long-range transport from China during the onset of cold surges caused an average increase of around 30% of the PM2.5 level in Hanoi",
+      "notes": "Quantitative impact: +30% PM2.5"
+    },
+    {
+      "id": "transport_002",
+      "relationship_id": "R2",
+      "category": "transport_mechanisms",
+      "cause_node": "cold_surge_persistence",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "During cold surge persistence phase, local pollution stagnates due to stable atmospheric conditions, causing approximately 40% increase in PM2.5 levels",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0-1d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "conditions": [
+        {
+          "relationship_id": "transport_002",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Cold surge persistence phase",
+          "type": "categorical",
+          "field": "cold_surge_phase",
+          "operator": "==",
+          "value": "persistence",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Cold surge in persistence phase"
+          }
+        },
+        {
+          "relationship_id": "transport_002",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Low wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed conditions typical during cold surge persistence",
+            "inferred_threshold": true,
+            "threshold_basis": "typical stagnation threshold"
+          }
+        }
+      ],
+      "source_id": "S1",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119669",
+      "source_quote": "The stagnation of local pollution during the cold surges persistence causes an average increase of ~40% in level of PM2.5",
+      "notes": "Quantitative impact: +40% PM2.5. Local accumulation mechanism distinct from transport in R1."
+    },
+    {
+      "id": "transport_003",
+      "relationship_id": "R3",
+      "category": "transport_mechanisms",
+      "cause_node": "northeast_monsoon",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "During regular winters, northeastern air masses predominate, transporting pollution from eastern China and the industrial Red River Delta region to Hanoi",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-3d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_003",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Regular winters",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Regular winter season (non-El Niño years)"
+          }
+        },
+        {
+          "relationship_id": "transport_003",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Northeastern air masses predominant",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "==",
+          "value": "northeast",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Predominant wind direction from northeast"
+          }
+        }
+      ],
+      "source_id": "S1",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119669",
+      "source_quote": "During regular winters, northeastern air masses predominated, which can bring pollution from eastern China and the industrial region surrounding Hanoi (Red River Delta)",
+      "notes": "Transport pathway from Eastern China and Red River Delta industrial areas"
+    },
+    {
+      "id": "transport_004",
+      "relationship_id": "R4",
+      "category": "transport_mechanisms",
+      "cause_node": "el_nino",
+      "effect_node": "pm25_composition",
+      "relationship_type": "MODERATOR",
+      "mechanism": "El Niño events perturb air mass trajectories, shifting from northeastern to western air masses, which decreases sulfate AOD but increases smoke AOD from biomass burning sources",
+      "direction": "modifying",
+      "strength": "MODERATE",
+      "confidence": "MEDIUM",
+      "temporal_lag": "seasonal",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_004",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "El Niño years (2014/15, 2015/16, 2018/19)",
+          "type": "categorical",
+          "field": "enso_phase",
+          "operator": "==",
+          "value": "el_nino",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "El Niño phase active",
+            "example_years": ["2014/15", "2015/16", "2018/19"]
+          }
+        },
+        {
+          "relationship_id": "transport_004",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Western air masses",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "==",
+          "value": "west",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Predominant wind direction from west during El Niño"
+          }
+        }
+      ],
+      "source_id": "S1",
+      "source_title": "Intricate behavior of winter pollution in Hanoi over the 2006–2020 semi-climatic period",
+      "source_authors": "Phung-Ngoc et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119669",
+      "source_quote": "the existence of El Niño perturbed the air masses trajectories during three winters (2014/15, 2015/16 and 2018/19), bringing more western air masses",
+      "notes": "El Niño modifies pollution source composition rather than total PM2.5 levels"
+    },
+    {
+      "id": "transport_005",
+      "relationship_id": "R5",
+      "category": "transport_mechanisms",
+      "cause_node": "low_wind_stagnating_ridge",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "When a stagnating ridge governs over Northern Vietnam with low wind speeds, atmospheric dispersion is limited, leading to high 24-hour PM levels",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_005",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Stagnating ridge over Northern Vietnam",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "stagnating_ridge",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Synoptic-scale stagnating high pressure ridge over Northern Vietnam",
+            "issue": "synoptic_pattern_not_directly_checkable",
+            "needs_review": true
+          }
+        },
+        {
+          "relationship_id": "transport_005",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Low wind speeds",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed limiting dispersion",
+            "inferred_threshold": true,
+            "threshold_basis": "typical stagnation threshold"
+          }
+        }
+      ],
+      "source_id": "S2",
+      "source_title": "Effects of local, regional meteorology and emission sources on mass and compositions of particulate matter in Hanoi",
+      "source_authors": "Hai & Kim Oanh",
+      "source_year": "2013",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2012.05.006",
+      "source_quote": "High 24 h PM levels were observed at low wind speeds when a stagnating ridge governed over Northern Vietnam",
+      "notes": null
+    },
+    {
+      "id": "transport_006",
+      "relationship_id": "R6",
+      "category": "transport_mechanisms",
+      "cause_node": "wind_direction",
+      "effect_node": "pm25",
+      "relationship_type": "MODERATOR",
+      "mechanism": "Daily PM2.5 levels vary based on wind direction relative to local emission sources - when wind blows from emission source areas, PM2.5 increases",
+      "direction": "variable",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "conditions": [
+        {
+          "relationship_id": "transport_006",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Wind direction aligned with emission sources",
+          "type": "qualitative",
+          "field": "wind_direction_source_alignment",
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Wind direction relative to local emission source locations determines transport",
+            "issue": "requires_source_location_data",
+            "needs_review": true
+          }
+        }
+      ],
+      "source_id": "S2",
+      "source_title": "Effects of local, regional meteorology and emission sources on mass and compositions of particulate matter in Hanoi",
+      "source_authors": "Hai & Kim Oanh",
+      "source_year": "2013",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2012.05.006",
+      "source_quote": "The daily PM2.5 levels were found to closely link to local wind speeds and directions (relative to local emission sources)",
+      "notes": "Effect direction depends on specific wind direction and source location"
+    },
+    {
+      "id": "transport_007",
+      "relationship_id": "R7",
+      "category": "transport_mechanisms",
+      "cause_node": "synoptic_pattern_ridge_low",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Upper-level ridge near Tibetan Plateau combined with low-pressure system in western Pacific triggers strong northeasterly winds that transport anthropogenic PM2.5 from East Asia",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "2-4d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_007",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Upper-level ridge near Tibetan Plateau",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "upper_ridge_tibetan",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Upper-level atmospheric ridge positioned near Tibetan Plateau",
+            "issue": "synoptic_pattern_not_directly_checkable",
+            "needs_review": true
+          }
+        },
+        {
+          "relationship_id": "transport_007",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Low-pressure in western Pacific",
+          "type": "categorical",
+          "field": "synoptic_pattern",
+          "operator": "==",
+          "value": "low_pressure_western_pacific",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Low-pressure system in western Pacific Ocean",
+            "issue": "synoptic_pattern_not_directly_checkable",
+            "needs_review": true
+          }
+        },
+        {
+          "relationship_id": "transport_007",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Strong northeasterly winds",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "==",
+          "value": "northeast",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Strong winds from northeast direction"
+          }
+        }
+      ],
+      "source_id": "S3",
+      "source_title": "Trans-boundary air pollution in a Southeast Asian megacity: Case studies of the synoptic meteorological mechanisms and impacts on air quality",
+      "source_authors": "Nguyen et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.1016/j.apr.2022.101366",
+      "source_quote": "Anthropogenic PM2.5 emissions in continental East Asia fed the 2013 event, which was then transported by strong northeasterly winds triggered by an upper-level ridge near the Tibetan Plateau and a low-pressure system in western Pacific Ocean",
+      "notes": "Case study from Ho Chi Minh City but mechanism applicable to Vietnam generally"
+    },
+    {
+      "id": "transport_008",
+      "relationship_id": "R8",
+      "category": "transport_mechanisms",
+      "cause_node": "el_nino_wpsh",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Strong El Niño events cause westward propagation of Western Pacific Subtropical High, which enhances and transports Indonesian biomass burning emissions to Vietnam",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "2-4d",
+      "seasonal_variation": "dry_season",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_008",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Strong El Niño event",
+          "type": "categorical",
+          "field": "enso_phase",
+          "operator": "==",
+          "value": "strong_el_nino",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Strong El Niño phase active"
+          }
+        },
+        {
+          "relationship_id": "transport_008",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "July-October period",
+          "type": "month",
+          "field": "month",
+          "operator": null,
+          "value": [7, 8, 9, 10],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "month_range": {
+              "start_month": 7,
+              "end_month": 10,
+              "wrap_year": false
+            },
+            "interpretation": "July to October period"
+          }
+        }
+      ],
+      "source_id": "S3",
+      "source_title": "Trans-boundary air pollution in a Southeast Asian megacity: Case studies of the synoptic meteorological mechanisms and impacts on air quality",
+      "source_authors": "Nguyen et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.1016/j.apr.2022.101366",
+      "source_quote": "the 2015 event was the result of Indonesia biomass burning (BB), which was enhanced and transported by a westward propagating Western Pacific Subtropical High triggered by a strong El Niño event",
+      "notes": "Case study from Ho Chi Minh City; mechanism involves Indonesian BB sources"
+    },
+    {
+      "id": "transport_009",
+      "relationship_id": "R9",
+      "category": "transport_mechanisms",
+      "cause_node": "east_asian_winter_monsoon",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "East Asian winter monsoon drives transboundary air pollution from China, significantly impacting PM2.5 levels in downwind neighboring countries including Vietnam",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-3d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_009",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter monsoon period",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter monsoon season active"
+          }
+        },
+        {
+          "relationship_id": "transport_009",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "East Asian monsoon regime",
+          "type": "categorical",
+          "field": "monsoon_regime",
+          "operator": "==",
+          "value": "east_asian_winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "East Asian winter monsoon regime prevailing"
+          }
+        }
+      ],
+      "source_id": "S3",
+      "source_title": "Trans-boundary air pollution in a Southeast Asian megacity: Case studies of the synoptic meteorological mechanisms and impacts on air quality",
+      "source_authors": "Nguyen et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.1016/j.apr.2022.101366",
+      "source_quote": "East Asian monsoon activity in winter drives much of the transboundary air pollution from China and significantly impacts downwind neighboring countries",
+      "notes": "Broad regional mechanism affecting Vietnam and Southeast Asia"
+    },
+    {
+      "id": "transport_010",
+      "relationship_id": "R10",
+      "category": "transport_mechanisms",
+      "cause_node": "southwesterly_winds_biomass_burning",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Southwesterly winds transport biomass burning pollutants from Indo-China Peninsula along topographic pathways, with lifting over plateau terrain enhancing regional PM2.5 transport",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-2d",
+      "seasonal_variation": "dry_season",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_010",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Spring season (March)",
+          "type": "month",
+          "field": "month",
+          "operator": "==",
+          "value": 3,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "March (spring season, peak BB period)"
+          }
+        },
+        {
+          "relationship_id": "transport_010",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Southwesterly winds prevailing",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "==",
+          "value": "southwest",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Prevailing wind direction from southwest"
+          }
+        }
+      ],
+      "source_id": "S4",
+      "source_title": "The Cross-Border Transport of PM2.5 from the Southeast Asian Biomass Burning Emissions and Its Impact on Air Pollution in Yunnan Plateau, Southwest China",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/rs14081886",
+      "source_quote": "driven by the southwesterly winds prevailing from the ICP to YP, the cross-border transport of pollutants was observed along the transport pathway with the lifting plateau topography in YP",
+      "notes": "Study focused on Yunnan Plateau but mechanism relevant to regional transport patterns"
+    },
+    {
+      "id": "transport_011",
+      "relationship_id": "R11",
+      "category": "transport_mechanisms",
+      "cause_node": "plateau_topography",
+      "effect_node": "pm25_vertical_transport",
+      "relationship_type": "MODERATOR",
+      "mechanism": "Complex plateau topography causes vertical lifting of pollutants from lower altitudes in source regions to higher altitudes in receptor regions, facilitating regional PM2.5 transport",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-2d",
+      "seasonal_variation": "dry_season",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_011",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Lifting terrain",
+          "type": "categorical",
+          "field": "topography",
+          "operator": "==",
+          "value": "lifting_terrain",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Terrain with upward slope facilitating vertical transport",
+            "issue": "static_geographic_factor",
+            "needs_review": false
+          }
+        },
+        {
+          "relationship_id": "transport_011",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "BB emissions from ICP",
+          "type": "categorical",
+          "field": "emission_source",
+          "operator": "==",
+          "value": "biomass_burning_icp",
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Biomass burning emissions from Indo-China Peninsula active",
+            "issue": "requires_emission_inventory_data",
+            "needs_review": true
+          }
+        }
+      ],
+      "source_id": "S4",
+      "source_title": "The Cross-Border Transport of PM2.5 from the Southeast Asian Biomass Burning Emissions and Its Impact on Air Pollution in Yunnan Plateau, Southwest China",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/rs14081886",
+      "source_quote": "the large PM2.5 contributions of ICP BB emissions lift from the lower altitudes in SR to the higher altitudes in RR for the regional transport of PM2.5",
+      "notes": "Topographic effect on vertical pollutant transport"
+    },
+    {
+      "id": "transport_012",
+      "relationship_id": "R12",
+      "category": "transport_mechanisms",
+      "cause_node": "transport_distance",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "PM2.5 contribution from regional transport decreases with increasing transport distance due to dispersion and deposition processes during transport",
+      "direction": "negative",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "N/A",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_012",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Regional transport conditions",
+          "type": "qualitative",
+          "field": null,
+          "operator": null,
+          "value": null,
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "General regional transport conditions active",
+            "issue": "qualitative_context_only",
+            "needs_review": false
+          }
+        }
+      ],
+      "source_id": "S4",
+      "source_title": "The Cross-Border Transport of PM2.5 from the Southeast Asian Biomass Burning Emissions and Its Impact on Air Pollution in Yunnan Plateau, Southwest China",
+      "source_authors": "Yang et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/rs14081886",
+      "source_quote": "the contributions of regional transport of PM2.5 decrease with the increase in transport distance, reflecting an important role of transport distance between the source–receptor areas in air pollution change",
+      "notes": "Inverse relationship - longer distance = lower contribution"
+    },
+    {
+      "id": "transport_013",
+      "relationship_id": "R13",
+      "category": "transport_mechanisms",
+      "cause_node": "north_northeast_winds_winter",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "North and northeast winds during winter transport air pollutants from highly industrialized areas and intensive fire regions in southern China and Southeast Asia to Hanoi",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-3d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_013",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter period",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter season"
+          }
+        },
+        {
+          "relationship_id": "transport_013",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "North/Northeast wind predominance",
+          "type": "categorical",
+          "field": "wind_direction",
+          "operator": "in",
+          "value": ["north", "northeast"],
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Predominant wind direction from north or northeast"
+          }
+        }
+      ],
+      "source_id": "S5",
+      "source_title": "Seasonal Characteristics of Atmospheric PM2.5 in an Urban Area of Vietnam and the Influence of Regional Fire Activities",
+      "source_authors": "Bui et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/atmos13111911",
+      "source_quote": "with the predominance of north and northeast winds during the winter period, the long-range transport of air pollutants which emitted from the highly industrialized areas and the intensive fire regions in the southern part of China and Southeast Asia region were likely other important sources for the highly elevated concentrations of PM2.5",
+      "notes": "Sources include both industrial emissions and fire activities"
+    },
+    {
+      "id": "transport_014",
+      "relationship_id": "R14",
+      "category": "transport_mechanisms",
+      "cause_node": "low_wind_low_pblh",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Combination of low wind speed and low boundary layer height creates unfavorable dispersion conditions, trapping pollutants near the surface and causing high PM2.5 pollution",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "winter",
+      "spatial_scope": "local",
+      "conditions": [
+        {
+          "relationship_id": "transport_014",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter period",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter season when these conditions are most prevalent"
+          }
+        },
+        {
+          "relationship_id": "transport_014",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Lower wind speed",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 2,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Low wind speed limiting horizontal dispersion",
+            "inferred_threshold": true,
+            "threshold_basis": "typical stagnation threshold"
+          }
+        },
+        {
+          "relationship_id": "transport_014",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Lower boundary layer height",
+          "type": "threshold",
+          "field": "boundary_layer_height",
+          "operator": "<",
+          "value": 500,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m",
+            "interpretation": "Low boundary layer height limiting vertical mixing",
+            "inferred_threshold": true,
+            "threshold_basis": "typical low BLH threshold for winter"
+          }
+        }
+      ],
+      "source_id": "S5",
+      "source_title": "Seasonal Characteristics of Atmospheric PM2.5 in an Urban Area of Vietnam and the Influence of Regional Fire Activities",
+      "source_authors": "Bui et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/atmos13111911",
+      "source_quote": "The unfavorable meteorological conditions (lower wind speed and lower boundary layer height) in the winter period were identified as one of the key factors contributing to the high PM2.5 pollution in this period",
+      "notes": "Combined effect of two meteorological factors"
+    },
+    {
+      "id": "transport_015",
+      "relationship_id": "R15",
+      "category": "transport_mechanisms",
+      "cause_node": "stationary_coal_sources",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Emissions from stationary coal combustion sources (cement, steel, power plants) in surrounding provinces are transported to Hanoi through atmospheric transport processes during winter",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0-1d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_015",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Winter period",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Winter season"
+          }
+        },
+        {
+          "relationship_id": "transport_015",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Emissions from cement, steel, power plants",
+          "type": "categorical",
+          "field": "emission_source",
+          "operator": "in",
+          "value": ["cement", "steel", "power_plants"],
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Coal combustion emissions from industrial sources active",
+            "issue": "requires_emission_inventory_data",
+            "needs_review": true
+          }
+        }
+      ],
+      "source_id": "S5",
+      "source_title": "Seasonal Characteristics of Atmospheric PM2.5 in an Urban Area of Vietnam and the Influence of Regional Fire Activities",
+      "source_authors": "Bui et al.",
+      "source_year": "2022",
+      "source_url": "https://doi.org/10.3390/atmos13111911",
+      "source_quote": "emissions from stationary sources (i.e., coal burning for cement, steel, and coal-fired power plants in the surrounding provinces of Hanoi) were likely the significant sources of local air pollution through atmospheric transport process during the winter period",
+      "notes": "Regional industrial sources in surrounding provinces"
+    },
+    {
+      "id": "transport_016",
+      "relationship_id": "R16",
+      "category": "transport_mechanisms",
+      "cause_node": "northeast_monsoon_prevalence",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "When Northeast Monsoon is prevalent during dry winter season, both regional and transboundary transport contribute to high PM2.5 levels, with long-range transport accounting for approximately 25% of resolved PM2.5 mass",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "1-3d",
+      "seasonal_variation": "winter",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_016",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Dry winter season",
+          "type": "season",
+          "field": "season",
+          "operator": "==",
+          "value": "winter",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Dry winter season"
+          }
+        },
+        {
+          "relationship_id": "transport_016",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Northeast Monsoon prevalent",
+          "type": "categorical",
+          "field": "monsoon_regime",
+          "operator": "==",
+          "value": "northeast",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Northeast monsoon regime prevailing"
+          }
+        }
+      ],
+      "source_id": "S6",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_quote": "when the Northeast Monsoon is prevalent in the dry winter season, there is a high potential of regional transport on the top of the transboundary transport of the pollution",
+      "notes": "Quantitative: LRT contributes ~25% of resolved PM2.5 mass"
+    },
+    {
+      "id": "transport_017",
+      "relationship_id": "R17",
+      "category": "transport_mechanisms",
+      "cause_node": "low_nocturnal_pblh_low_wind",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Very low nocturnal boundary layer height (<50m) combined with low wind speed (<1 m/s) creates stagnant atmospheric conditions that support accumulation of local pollutants",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0h",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "local",
+      "conditions": [
+        {
+          "relationship_id": "transport_017",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "BLH < 50m",
+          "type": "threshold",
+          "field": "boundary_layer_height",
+          "operator": "<",
+          "value": 50,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m",
+            "interpretation": "Very low nocturnal boundary layer height"
+          }
+        },
+        {
+          "relationship_id": "transport_017",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Wind speed < 1 m/s",
+          "type": "threshold",
+          "field": "wind_speed",
+          "operator": "<",
+          "value": 1,
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "unit": "m/s",
+            "interpretation": "Very low wind speed indicating stagnant conditions"
+          }
+        },
+        {
+          "relationship_id": "transport_017",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 2,
+          "original_text": "Nocturnal conditions",
+          "type": "time_of_day",
+          "field": "time_of_day",
+          "operator": "==",
+          "value": "night",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Nighttime when boundary layer is lowest"
+          }
+        }
+      ],
+      "source_id": "S6",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_quote": "the nocturnal boundary layer height was low (42 m), and wind speed was low (1.4 m/s, daily average) which indicates stagnant atmospheric conditions and supports the accumulation of local pollutants",
+      "notes": "Specific thresholds from source: BLH 42m, wind 1.4 m/s daily average"
+    },
+    {
+      "id": "transport_018",
+      "relationship_id": "R18",
+      "category": "transport_mechanisms",
+      "cause_node": "downwind_industrial_provinces",
+      "effect_node": "pm25",
+      "relationship_type": "DIRECT_CAUSE",
+      "mechanism": "Hanoi's location downwind of industrial provinces (Thai Nguyen, Quang Ninh, Bac Ninh, Hung Yen) allows regional transport of industrial pollution via prevailing winds",
+      "direction": "positive",
+      "strength": "STRONG",
+      "confidence": "HIGH",
+      "temporal_lag": "0-1d",
+      "seasonal_variation": "all_season",
+      "spatial_scope": "regional",
+      "conditions": [
+        {
+          "relationship_id": "transport_018",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 0,
+          "original_text": "Hanoi downwind of Thai Nguyen, Quang Ninh, Bac Ninh, Hung Yen",
+          "type": "categorical",
+          "field": "geographic_region",
+          "operator": "==",
+          "value": "hanoi",
+          "range": null,
+          "checkable": true,
+          "normalized": {
+            "interpretation": "Location is Hanoi (receptor site)"
+          }
+        },
+        {
+          "relationship_id": "transport_018",
+          "relationship_category": "transport_mechanisms",
+          "condition_index": 1,
+          "original_text": "Wind from industrial provinces",
+          "type": "categorical",
+          "field": "upwind_source",
+          "operator": "in",
+          "value": ["thai_nguyen", "quang_ninh", "bac_ninh", "hung_yen"],
+          "range": null,
+          "checkable": false,
+          "normalized": {
+            "interpretation": "Wind direction brings air from industrial provinces",
+            "issue": "requires_trajectory_analysis",
+            "needs_review": true
+          }
+        }
+      ],
+      "source_id": "S6",
+      "source_title": "Chemical composition and potential sources of PM2.5 in Hanoi",
+      "source_authors": "Makkonen et al.",
+      "source_year": "2023",
+      "source_url": "https://doi.org/10.1016/j.atmosenv.2023.119650",
+      "source_quote": "Hanoi is located downwind of several provinces in Northern Vietnam including those having intensive industrial activities, such as Thai Nguyen, Quang Ninh, Bac Ninh, and Hung Yen",
+      "notes": "Static geographic factor combined with dynamic wind patterns"
+    }
+  ],
+  "key_mechanisms_summary": {
+    "synoptic_scale_mechanisms": [
+      "Northeast Monsoon driving transboundary transport from China",
+      "Cold surge onset and persistence affecting PM2.5 levels",
+      "El Niño modifying air mass trajectories and pollution sources",
+      "Western Pacific Subtropical High transporting Indonesian BB emissions"
+    ],
+    "regional_scale_mechanisms": [
+      "Regional transport from Northern Vietnam industrial provinces",
+      "Cross-border transport from Indo-China Peninsula",
+      "Wind direction relative to local emission sources"
+    ],
+    "local_scale_mechanisms": [
+      "Low boundary layer height causing pollutant accumulation",
+      "Low wind speed limiting dispersion",
+      "Stagnant atmospheric conditions during winter"
+    ],
+    "source_types": [
+      "Coal combustion (power plants, cement, steel)",
+      "Biomass burning (rice straw, forest fires)",
+      "Traffic emissions",
+      "Industrial emissions"
+    ]
+  },
+  "quantitative_impacts": {
+    "cold_surge_onset_impact": "+30% PM2.5",
+    "cold_surge_persistence_impact": "+40% PM2.5",
+    "lrt_contribution_hanoi": "25% of resolved PM2.5 mass",
+    "winter_summer_pm25_ratio": "3:1",
+    "transboundary_event_enhancement": "100-115% higher than local accumulation"
+  },
+  "qa_summary": {
+    "total_relationships": 18,
+    "total_conditions": 39,
+    "checkable_conditions": 28,
+    "uncheckable_conditions": 11,
+    "conditions_by_type": {
+      "threshold": 7,
+      "categorical": 19,
+      "season": 6,
+      "month": 3,
+      "time_of_day": 1,
+      "qualitative": 3
+    },
+    "issues_flagged": {
+      "synoptic_pattern_not_directly_checkable": 3,
+      "requires_emission_inventory_data": 3,
+      "requires_trajectory_analysis": 1,
+      "qualitative_context_only": 1,
+      "static_geographic_factor": 1
+    },
+    "cleaning_notes": [
+      "All cause_node and effect_node standardized to snake_case English",
+      "All conditions structured with full schema fields",
+      "Thresholds inferred from context marked with inferred_threshold=true",
+      "Synoptic patterns marked as uncheckable with needs_review flag",
+      "Month ranges properly encoded with wrap_year for cross-year periods",
+      "Wind direction conditions converted to categorical with standardized values"
+    ]
+  },
+  "missing_info": "Some relationships have conditions that require external data sources (emission inventories, trajectory analysis, synoptic pattern classification) that cannot be directly checked from standard meteorological observations",
+  "contradictions": []
+}

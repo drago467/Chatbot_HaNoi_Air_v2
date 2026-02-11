@@ -133,8 +133,8 @@
       "api_available_conditions": 0,
       "coverage_percentage": 0.0,
       "missing_fields": [
-        "aerosol_ph",
-        "precursor_availability"
+        "precursor_availability",
+        "aerosol_ph"
       ]
     },
     {
@@ -145,8 +145,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "aerosol_ph",
-        "precursor_availability"
+        "precursor_availability",
+        "aerosol_ph"
       ]
     },
     {
@@ -157,8 +157,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "aerosol_ph",
-        "precursor_availability"
+        "precursor_availability",
+        "aerosol_ph"
       ]
     },
     {
@@ -236,8 +236,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "aerosol_ph",
-        "precursor_availability"
+        "precursor_availability",
+        "aerosol_ph"
       ]
     },
     {
@@ -248,8 +248,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -260,8 +260,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -272,8 +272,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -284,8 +284,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -296,8 +296,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -308,8 +308,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -320,8 +320,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -332,8 +332,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -344,8 +344,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -356,8 +356,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -368,8 +368,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -380,8 +380,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -392,8 +392,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -404,8 +404,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -416,8 +416,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -428,8 +428,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -440,8 +440,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 40.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -452,8 +452,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 40.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -464,8 +464,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 40.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -476,8 +476,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 40.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -488,8 +488,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 40.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -500,8 +500,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -512,8 +512,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -524,8 +524,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -536,8 +536,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -548,8 +548,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -560,8 +560,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -572,8 +572,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -584,8 +584,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -596,8 +596,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -608,8 +608,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -620,8 +620,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -632,8 +632,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -644,8 +644,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "geographic_region",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "geographic_region"
       ]
     },
     {
@@ -699,8 +699,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "sensor_humidity_control",
-        "sensor_type"
+        "sensor_type",
+        "sensor_humidity_control"
       ]
     },
     {
@@ -877,8 +877,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "burning_type"
+        "burning_type",
+        "geographic_region"
       ]
     },
     {
@@ -1964,8 +1964,8 @@
       "api_available_conditions": 0,
       "coverage_percentage": 0.0,
       "missing_fields": [
-        "geographic_region",
-        "year"
+        "year",
+        "geographic_region"
       ]
     },
     {
@@ -2029,8 +2029,8 @@
       "api_available_conditions": 2,
       "coverage_percentage": 50.0,
       "missing_fields": [
-        "topography_type",
-        "cap_event"
+        "cap_event",
+        "topography_type"
       ]
     },
     {
@@ -2162,8 +2162,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "geographic_region",
-        "spatial_scale"
+        "spatial_scale",
+        "geographic_region"
       ]
     },
     {
@@ -2207,8 +2207,8 @@
       "api_available_conditions": 1,
       "coverage_percentage": 33.33,
       "missing_fields": [
-        "monsoon_regime",
-        "cold_surge_phase"
+        "cold_surge_phase",
+        "monsoon_regime"
       ]
     },
     {
@@ -2767,8 +2767,8 @@
       "api_available_conditions": 0,
       "coverage_percentage": 0.0,
       "missing_fields": [
-        "aerosol_ph",
-        "precursor_availability"
+        "precursor_availability",
+        "aerosol_ph"
       ]
     },
     {

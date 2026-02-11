@@ -1205,12 +1205,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_ph",
-      "canonical_effect_node": "sulfate_formation_rate",
-      "canonical_intermediate_nodes": [
-        "aqueous_phase_reaction"
-      ]
+      }
     },
     {
       "id": "adv_chem_002",
@@ -1324,13 +1319,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "transition_metals",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "surface_catalysis",
-        "sulfate_formation"
-      ]
+      }
     },
     {
       "id": "adv_chem_003",
@@ -1424,13 +1413,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "aqueous_phase_reaction",
-        "sia_formation"
-      ]
+      }
     },
     {
       "id": "adv_chem_004",
@@ -1525,18 +1508,12 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "mineral_dust",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "surface_catalysis",
-        "sulfate_formation"
-      ]
+      }
     },
     {
       "id": "adv_chem_005",
       "category": "chemical_processes",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "pm25",
       "intermediate_nodes": [
         "nh4no3_partitioning",
@@ -1626,13 +1603,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "nh4no3_partitioning",
-        "sia_formation"
-      ]
+      }
     },
     {
       "id": "adv_chem_006",
@@ -1729,12 +1700,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "soa_formation",
-      "canonical_intermediate_nodes": [
-        "aqueous_phase_reactions"
-      ]
+      }
     },
     {
       "id": "adv_chem_007",
@@ -1829,12 +1795,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_ph",
-      "canonical_effect_node": "sulfate_formation",
-      "canonical_intermediate_nodes": [
-        "no2_oxidation_pathway"
-      ]
+      }
     },
     {
       "id": "adv_chem_008",
@@ -1932,17 +1893,12 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_ph",
-      "canonical_effect_node": "sulfate_formation",
-      "canonical_intermediate_nodes": [
-        "tmi_oxidation_pathway"
-      ]
+      }
     },
     {
       "id": "adv_chem_009",
       "category": "chemical_processes",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "aerosol_liquid_water",
       "intermediate_nodes": [],
       "relationship_type": "DIRECT_CAUSE",
@@ -2029,9 +1985,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "aerosol_liquid_water"
+        }
     },
     {
       "id": "adv_chem_010",
@@ -2126,12 +2080,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "temperature",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "nh4no3_partitioning"
-      ]
+      }
     },
     {
       "id": "adv_chem_011",
@@ -2224,12 +2173,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "sulfate_formation",
-      "canonical_intermediate_nodes": [
-        "hms_formation"
-      ]
+      }
     },
     {
       "id": "adv_chem_012",
@@ -2323,17 +2267,12 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "iron_rich_particles",
-      "canonical_effect_node": "sulfate_formation",
-      "canonical_intermediate_nodes": [
-        "catalytic_oxidation"
-      ]
+      }
     },
     {
       "id": "chem_001",
       "category": "chemical_processes",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "aerosol_liquid_water",
       "relationship_type": "DIRECT_CAUSE",
       "description": "High relative humidity (>75%) causes water vapor condensation on aerosol particles through deliquescence, forming Aerosol Liquid Water (ALW)",
@@ -2421,9 +2360,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "aerosol_liquid_water"
+        }
     },
     {
       "id": "chem_002",
@@ -2516,9 +2453,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "aqueous_phase_reaction"
+        }
     },
     {
       "id": "chem_003",
@@ -2631,9 +2566,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "so2",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_004",
@@ -2740,9 +2673,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "no2",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_005",
@@ -2817,9 +2748,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "sulfate_formation",
-      "canonical_effect_node": "sia_formation"
+        }
     },
     {
       "id": "chem_006",
@@ -2926,9 +2855,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "hno3",
-      "canonical_effect_node": "ammonium_nitrate_formation"
+        }
     },
     {
       "id": "chem_007_a",
@@ -3010,9 +2937,7 @@
             "chem_007"
           ]
         }
-      },
-      "canonical_cause_node": "temperature",
-      "canonical_effect_node": "ammonium_nitrate_formation"
+        }
     },
     {
       "id": "chem_007_b",
@@ -3094,9 +3019,7 @@
             "chem_007"
           ]
         }
-      },
-      "canonical_cause_node": "temperature",
-      "canonical_effect_node": "ammonium_nitrate_formation"
+        }
     },
     {
       "id": "chem_008",
@@ -3175,9 +3098,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "nh3",
-      "canonical_effect_node": "sia_formation"
+        }
     },
     {
       "id": "chem_009",
@@ -3276,9 +3197,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "sia_formation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "chem_010",
@@ -3372,9 +3291,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "h2o2",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "CC1",
@@ -3556,9 +3473,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "siberian_high_intensification",
-      "canonical_effect_node": "pm25_increase"
+        }
     },
     {
       "id": "CC1_link_00",
@@ -3710,9 +3625,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "siberian_high_intensification",
-      "canonical_effect_node": "cold_surge_onset"
+        }
     },
     {
       "id": "CC1_link_01",
@@ -3864,9 +3777,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_onset",
-      "canonical_effect_node": "air_mass_trajectory_shift"
+        }
     },
     {
       "id": "CC1_link_02",
@@ -4022,9 +3933,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "air_mass_trajectory_shift",
-      "canonical_effect_node": "regional_pollution_advection"
+        }
     },
     {
       "id": "CC1_link_03",
@@ -4172,9 +4081,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "regional_pollution_advection",
-      "canonical_effect_node": "pm25_increase"
+        }
     },
     {
       "id": "CC2",
@@ -4332,7 +4239,7 @@
         "intermediate_nodes": [
           "anticyclonic_conditions",
           "synoptic_stagnation",
-          "reduced_dispersion",
+          "dispersion",
           "local_pollution_accumulation"
         ],
         "file_origin": "cold_surge_chain",
@@ -4346,9 +4253,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_persistence",
-      "canonical_effect_node": "pm25_increase"
+        }
     },
     {
       "id": "CC2_link_00",
@@ -4427,6 +4332,7 @@
             },
             "interpretation": "Cold surge events occur during winter monsoon season"
           }
+
         },
         {
           "relationship_id": "CC2",
@@ -4485,9 +4391,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_persistence",
-      "canonical_effect_node": "anticyclonic_conditions"
+        }
     },
     {
       "id": "CC2_link_01",
@@ -4636,15 +4540,13 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "anticyclonic_conditions",
-      "canonical_effect_node": "synoptic_stagnation"
+        }
     },
     {
       "id": "CC2_link_02",
       "category": "transport_mechanisms",
       "cause_node": "synoptic_stagnation",
-      "effect_node": "reduced_dispersion",
+      "effect_node": "dispersion",
       "relationship_type": "DIRECT_CAUSE",
       "mechanism": "Weak winds limit horizontal dispersion",
       "description": "Weak winds and stable atmospheric conditions → Limited horizontal and vertical mixing of pollutants",
@@ -4787,14 +4689,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "synoptic_stagnation",
-      "canonical_effect_node": "reduced_dispersion"
+        }
     },
     {
       "id": "CC2_link_03",
       "category": "transport_mechanisms",
-      "cause_node": "reduced_dispersion",
+      "cause_node": "dispersion",
       "effect_node": "local_pollution_accumulation",
       "relationship_type": "DIRECT_CAUSE",
       "mechanism": "Local emissions accumulate without removal",
@@ -4934,9 +4834,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "reduced_dispersion",
-      "canonical_effect_node": "local_pollution_accumulation"
+        }
     },
     {
       "id": "CC2_link_04",
@@ -5073,9 +4971,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "local_pollution_accumulation",
-      "canonical_effect_node": "pm25_increase"
+        }
     },
     {
       "id": "CC3",
@@ -5250,9 +5146,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_phase",
-      "canonical_effect_node": "pm25_accumulation"
+        }
     },
     {
       "id": "CC3_link_00",
@@ -5413,9 +5307,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_phase",
-      "canonical_effect_node": "temperature_inversion_formation"
+        }
     },
     {
       "id": "CC3_link_01",
@@ -5572,9 +5464,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "temperature_inversion_formation",
-      "canonical_effect_node": "boundary_layer_height_decrease"
+        }
     },
     {
       "id": "CC3_link_02",
@@ -5731,9 +5621,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "boundary_layer_height_decrease",
-      "canonical_effect_node": "vertical_mixing_suppression"
+        }
     },
     {
       "id": "CC3_link_03",
@@ -5906,9 +5794,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "vertical_mixing_suppression",
-      "canonical_effect_node": "pm25_accumulation"
+        }
     },
     {
       "id": "CC4",
@@ -6090,9 +5976,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_passage",
-      "canonical_effect_node": "nighttime_pm25_peak"
+        }
     },
     {
       "id": "CC4_link_00",
@@ -6264,9 +6148,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_passage",
-      "canonical_effect_node": "post_surge_stagnation"
+        }
     },
     {
       "id": "CC4_link_01",
@@ -6426,9 +6308,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "post_surge_stagnation",
-      "canonical_effect_node": "precursor_accumulation"
+        }
     },
     {
       "id": "CC4_link_02",
@@ -6596,9 +6476,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "precursor_accumulation",
-      "canonical_effect_node": "secondary_aerosol_formation"
+        }
     },
     {
       "id": "CC4_link_03",
@@ -6758,9 +6636,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "secondary_aerosol_formation",
-      "canonical_effect_node": "nighttime_pm25_peak"
+        }
     },
     {
       "id": "CC5",
@@ -6896,7 +6772,7 @@
         "temporal_phase": "full_cycle",
         "pm25_impact": "Lowest during surge → Peak at mid-cycle",
         "intermediate_nodes": [
-          "high_wind_dispersion",
+        "dispersion",
           "pollution_minimum",
           "post_surge_stagnation",
           "pollution_rise",
@@ -6913,15 +6789,13 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_onset",
-      "canonical_effect_node": "pre_surge_decline"
+        }
     },
     {
       "id": "CC5_link_00",
       "category": "transport_mechanisms",
       "cause_node": "cold_surge_onset",
-      "effect_node": "high_wind_dispersion",
+      "effect_node": "dispersion",
       "relationship_type": "DIRECT_CAUSE",
       "mechanism": "Strong surge winds enhance dispersion",
       "description": "Initial cold air intrusion with high winds → Strong winds disperse existing pollution",
@@ -7056,14 +6930,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_onset",
-      "canonical_effect_node": "high_wind_dispersion"
+        }
     },
     {
       "id": "CC5_link_01",
       "category": "transport_mechanisms",
-      "cause_node": "high_wind_dispersion",
+      "cause_node": "dispersion",
       "effect_node": "pollution_minimum",
       "relationship_type": "DIRECT_CAUSE",
       "mechanism": "Dispersion clears existing pollution",
@@ -7199,9 +7071,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "high_wind_dispersion",
-      "canonical_effect_node": "pollution_minimum"
+        }
     },
     {
       "id": "CC5_link_02",
@@ -7342,9 +7212,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "pollution_minimum",
-      "canonical_effect_node": "post_surge_stagnation"
+        }
     },
     {
       "id": "CC5_link_03",
@@ -7493,9 +7361,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "post_surge_stagnation",
-      "canonical_effect_node": "pollution_rise"
+        }
     },
     {
       "id": "CC5_link_04",
@@ -7636,9 +7502,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "pollution_rise",
-      "canonical_effect_node": "mid_cycle_peak"
+        }
     },
     {
       "id": "CC5_link_05",
@@ -7779,9 +7643,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "mid_cycle_peak",
-      "canonical_effect_node": "pre_surge_decline"
+        }
     },
     {
       "id": "CC6",
@@ -7946,9 +7808,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "siberian_high",
-      "canonical_effect_node": "receptor_pm25_increase"
+        }
     },
     {
       "id": "CC6_link_00",
@@ -8110,9 +7970,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "siberian_high",
-      "canonical_effect_node": "strong_northwesterly_winds"
+        }
     },
     {
       "id": "CC6_link_01",
@@ -8274,9 +8132,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "strong_northwesterly_winds",
-      "canonical_effect_node": "cold_surge_development"
+        }
     },
     {
       "id": "CC6_link_02",
@@ -8438,9 +8294,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_development",
-      "canonical_effect_node": "lower_troposphere_transport"
+        }
     },
     {
       "id": "CC6_link_03",
@@ -8602,9 +8456,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "lower_troposphere_transport",
-      "canonical_effect_node": "rapid_southward_advection"
+        }
     },
     {
       "id": "CC6_link_04",
@@ -8766,14 +8618,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "rapid_southward_advection",
-      "canonical_effect_node": "receptor_pm25_increase"
+        }
     },
     {
       "id": "humidity_pm25_nonlinear_001",
       "category": "edge_cases",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "pm25",
       "relationship_type": "MODERATOR",
       "description": "Non-linear (inverted U-shaped) relationship between RH and PM2.5: accumulation at RH<70%, removal at RH>70%",
@@ -8892,9 +8742,7 @@
             "humidity_pm25_nonlinear_001"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "drizzle_pm25_increase_001",
@@ -8969,9 +8817,7 @@
             "edge_cases"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "cold_surge_delayed_peak_001",
@@ -9085,9 +8931,7 @@
             "edge_cases"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_increase_001",
@@ -9179,14 +9023,12 @@
             "edge_cases"
           ]
         }
-      },
-      "canonical_cause_node": "wind_speed",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "measurement_artifact_hygroscopic_growth_001",
       "category": "edge_cases",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "pm25_measurement",
       "relationship_type": "ARTIFACT",
       "description": "High RH causes hygroscopic growth of particles, leading to overestimation by light-scattering sensors",
@@ -9279,9 +9121,7 @@
             "edge_cases"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "pm25_measurement"
+        }
     },
     {
       "id": "photochemical_smog_spike_001",
@@ -9438,9 +9278,7 @@
             "edge_cases"
           ]
         }
-      },
-      "canonical_cause_node": "solar_radiation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "traffic_nox_001",
@@ -9546,9 +9384,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "traffic",
-      "canonical_effect_node": "nox"
+        }
     },
     {
       "id": "traffic_co_001",
@@ -9654,9 +9490,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "traffic",
-      "canonical_effect_node": "co"
+        }
     },
     {
       "id": "traffic_pm25_primary_001",
@@ -9744,9 +9578,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "traffic",
-      "canonical_effect_node": "pm25_primary"
+        }
     },
     {
       "id": "traffic_pm25_002",
@@ -9867,9 +9699,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "traffic",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "biomass_burning_pm25_001",
@@ -9995,9 +9825,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "biomass_burning_vocs_001",
@@ -10105,9 +9933,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "vocs"
+        }
     },
     {
       "id": "biomass_burning_co_001",
@@ -10215,9 +10041,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "co"
+        }
     },
     {
       "id": "industry_pm25_001",
@@ -10305,9 +10129,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "industry",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "industry_so2_001",
@@ -10392,9 +10214,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "industry",
-      "canonical_effect_node": "so2"
+        }
     },
     {
       "id": "industry_nox_001",
@@ -10479,9 +10299,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "industry",
-      "canonical_effect_node": "nox"
+        }
     },
     {
       "id": "power_plants_so2_001",
@@ -10570,9 +10388,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "power_plants",
-      "canonical_effect_node": "so2"
+        }
     },
     {
       "id": "power_plants_nox_001",
@@ -10659,9 +10475,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "power_plants",
-      "canonical_effect_node": "nox"
+        }
     },
     {
       "id": "construction_resuspension_001",
@@ -10767,9 +10581,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "construction",
-      "canonical_effect_node": "resuspension"
+        }
     },
     {
       "id": "resuspension_pm25_001",
@@ -10874,9 +10686,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "resuspension",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "open_waste_burning_pm25_001",
@@ -10961,9 +10771,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "residential_combustion_pm25_001",
@@ -11052,9 +10860,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "residential_heating",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "coal_combustion_pm25_001",
@@ -11139,9 +10945,7 @@
             "emission_sources"
           ]
         }
-      },
-      "canonical_cause_node": "industry",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "edge_fog_001",
@@ -11229,15 +11033,13 @@
             "measurement_artifact"
           ]
         }
-      },
-      "canonical_cause_node": "fog",
-      "canonical_effect_node": "measurement_artifact_pm25"
+        }
     },
     {
       "id": "edge_fog_002",
       "original_id": "R002",
       "category": "measurement_artifact",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "sensor_overestimation_pm25",
       "relationship_type": "INDIRECT_CAUSE",
       "description": "High RH causes hygroscopic particle growth, leading to sensor overestimation of PM2.5",
@@ -11304,9 +11106,7 @@
             "measurement_artifact"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "sensor_overestimation_pm25"
+        }
     },
     {
       "id": "edge_fog_003",
@@ -11411,9 +11211,7 @@
             "accelerated_chemistry"
           ]
         }
-      },
-      "canonical_cause_node": "fog",
-      "canonical_effect_node": "accelerated_aqueous_phase_reaction"
+        }
     },
     {
       "id": "edge_fog_004",
@@ -11488,9 +11286,7 @@
             "accelerated_chemistry"
           ]
         }
-      },
-      "canonical_cause_node": "accelerated_aqueous_phase_reaction",
-      "canonical_effect_node": "sia_formation"
+        }
     },
     {
       "id": "edge_fog_005",
@@ -11546,9 +11342,7 @@
             "accelerated_chemistry"
           ]
         }
-      },
-      "canonical_cause_node": "sia_formation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "edge_photo_001",
@@ -11632,9 +11426,7 @@
             "photochemical_formation"
           ]
         }
-      },
-      "canonical_cause_node": "solar_radiation",
-      "canonical_effect_node": "photochemistry"
+        }
     },
     {
       "id": "edge_photo_002",
@@ -11711,9 +11503,7 @@
             "photochemical_formation"
           ]
         }
-      },
-      "canonical_cause_node": "photochemistry",
-      "canonical_effect_node": "soa_formation"
+        }
     },
     {
       "id": "edge_photo_003",
@@ -11794,15 +11584,13 @@
             "photochemical_formation"
           ]
         }
-      },
-      "canonical_cause_node": "cloud_cover",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "edge_feedback_001",
       "original_id": "R009",
       "category": "positive_feedback",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "particle_phase_transition",
       "relationship_type": "DIRECT_CAUSE",
       "description": "High RH triggers particle phase transition from semi-solid to liquid",
@@ -11868,9 +11656,7 @@
             "positive_feedback"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "particle_phase_transition"
+        }
     },
     {
       "id": "edge_feedback_002",
@@ -11942,9 +11728,7 @@
             "positive_feedback"
           ]
         }
-      },
-      "canonical_cause_node": "particle_phase_transition",
-      "canonical_effect_node": "accelerated_heterogeneous_chemistry"
+        }
     },
     {
       "id": "edge_feedback_003",
@@ -11996,9 +11780,7 @@
             "positive_feedback"
           ]
         }
-      },
-      "canonical_cause_node": "accelerated_heterogeneous_chemistry",
-      "canonical_effect_node": "hygroscopicity_enhancement"
+        }
     },
     {
       "id": "edge_feedback_004",
@@ -12051,15 +11833,13 @@
             "positive_feedback"
           ]
         }
-      },
-      "canonical_cause_node": "hygroscopicity_enhancement",
-      "canonical_effect_node": "aerosol_liquid_water"
+        }
     },
     {
       "id": "met_cloud_001",
       "category": "meteorological_pathways",
       "cause_node": "cloud_cover",
-      "effect_node": "reduced_solar_radiation",
+      "effect_node": "solar_radiation",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Cloud cover reduces solar radiation reaching surface through reflection and scattering",
       "mechanism": "Cloud cover (đặc biệt là overcast conditions với cloud fraction >70%) làm giảm lượng solar radiation đến bề mặt thông qua hai cơ chế: (1) phản xạ (reflection) ánh sáng mặt trời trở lại không gian, và (2) tán xạ (scattering) ánh sáng trong các hạt nước của mây. Quá trình này làm giảm cả shortwave radiation ban ngày và thay đổi longwave radiation balance ban đêm.",
@@ -12157,14 +11937,12 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "cloud_cover",
-      "canonical_effect_node": "reduced_solar_radiation"
+        }
     },
     {
       "id": "met_cloud_002",
       "category": "meteorological_pathways",
-      "cause_node": "reduced_solar_radiation",
+      "cause_node": "solar_radiation",
       "effect_node": "reduced_surface_heating",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Reduced solar radiation leads to decreased surface temperature",
@@ -12234,9 +12012,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "reduced_solar_radiation",
-      "canonical_effect_node": "reduced_surface_heating"
+        }
     },
     {
       "id": "met_cloud_003",
@@ -12329,15 +12105,13 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "reduced_surface_heating",
-      "canonical_effect_node": "atmospheric_stability"
+        }
     },
     {
       "id": "met_cloud_004",
       "category": "meteorological_pathways",
       "cause_node": "atmospheric_stability",
-      "effect_node": "pblh_decrease",
+      "effect_node": "boundary_layer_height",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Stable atmospheric conditions suppress boundary layer growth",
       "mechanism": "Điều kiện khí quyển ổn định (stable atmospheric conditions) ức chế sự phát triển của convective boundary layer, dẫn đến giảm planetary boundary layer height (PBLH). PBLH thấp hơn có nghĩa là thể tích không khí có sẵn để pha loãng chất ô nhiễm bị giảm đáng kể.",
@@ -12421,14 +12195,12 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "atmospheric_stability",
-      "canonical_effect_node": "pblh_decrease"
+        }
     },
     {
       "id": "met_cloud_005",
       "category": "meteorological_pathways",
-      "cause_node": "pblh_decrease",
+      "cause_node": "boundary_layer_height",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Decreased PBLH concentrates pollutants in smaller volume",
@@ -12511,14 +12283,12 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "pblh_decrease",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_cloud_006",
       "category": "meteorological_pathways",
-      "cause_node": "decreased_cloud_cover",
+      "cause_node": "cloud_cover",
       "effect_node": "enhanced_surface_radiation_cooling",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Decreased cloud cover at night enhances surface longwave radiation loss",
@@ -12607,9 +12377,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "decreased_cloud_cover",
-      "canonical_effect_node": "enhanced_surface_radiation_cooling"
+        }
     },
     {
       "id": "met_cloud_007",
@@ -12719,9 +12487,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "enhanced_surface_radiation_cooling",
-      "canonical_effect_node": "inversion"
+        }
     },
     {
       "id": "met_cloud_008",
@@ -12810,9 +12576,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_solar_001",
@@ -12904,9 +12668,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "solar_radiation",
-      "canonical_effect_node": "photolysis"
+        }
     },
     {
       "id": "met_solar_002",
@@ -12997,9 +12759,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "photolysis",
-      "canonical_effect_node": "oh_radical_formation"
+        }
     },
     {
       "id": "met_solar_003",
@@ -13090,9 +12850,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "oh_radical_formation",
-      "canonical_effect_node": "voc_oxidation"
+        }
     },
     {
       "id": "met_solar_004",
@@ -13199,9 +12957,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "voc_oxidation",
-      "canonical_effect_node": "soa_formation"
+        }
     },
     {
       "id": "met_solar_005",
@@ -13273,15 +13029,13 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "soa_formation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_cloud_solar_001",
       "category": "meteorological_pathways",
       "cause_node": "cloud_cover",
-      "effect_node": "reduced_photolysis",
+      "effect_node": "photolysis",
       "relationship_type": "MODERATOR",
       "description": "Cloud cover reduces UV radiation and photolysis rates",
       "mechanism": "Cloud cover làm giảm solar radiation (đặc biệt là UV) đến bề mặt, từ đó giảm photolysis rates của các phân tử như NO2 (J[NO2]) và O3 (J[O1D]). Điều này làm chậm toàn bộ chuỗi phản ứng photochemistry, giảm tốc độ hình thành OH radicals và các sản phẩm oxy hóa.",
@@ -13366,15 +13120,13 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "cloud_cover",
-      "canonical_effect_node": "reduced_photolysis"
+        }
     },
     {
       "id": "met_cloud_solar_002",
       "category": "meteorological_pathways",
-      "cause_node": "reduced_photolysis",
-      "effect_node": "reduced_soa_formation",
+      "cause_node": "photolysis",
+      "effect_node": "soa_formation",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Reduced photolysis decreases OH production and SOA formation",
       "mechanism": "Khi photolysis rates giảm, sản xuất OH radicals giảm, dẫn đến giảm tốc độ oxy hóa VOCs và giảm hình thành SOA. Điều này làm giảm thành phần secondary organic trong PM2.5, nhưng có thể bị offset bởi các hiệu ứng khác như tăng tích tụ do giảm PBLH.",
@@ -13459,9 +13211,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "reduced_photolysis",
-      "canonical_effect_node": "reduced_soa_formation"
+        }
     },
     {
       "id": "met_hanoi_001",
@@ -13579,9 +13329,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "nocturnal_radiation_inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_hanoi_002",
@@ -13676,9 +13424,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "subsidence_temperature_inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_001",
@@ -13796,9 +13542,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "temperature",
-      "canonical_effect_node": "inversion"
+        }
     },
     {
       "id": "met_002",
@@ -13894,9 +13638,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "pressure",
-      "canonical_effect_node": "inversion"
+        }
     },
     {
       "id": "met_003",
@@ -13995,14 +13737,12 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_004",
       "category": "meteorological_pathways",
-      "cause_node": "pblh",
+      "cause_node": "boundary_layer_height",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Low planetary boundary layer height concentrates pollutants, increasing PM2.5",
@@ -14085,9 +13825,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "boundary_layer_height",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_005",
@@ -14159,9 +13897,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "wind_speed",
-      "canonical_effect_node": "dispersion"
+        }
     },
     {
       "id": "met_006",
@@ -14234,9 +13970,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "wind_speed",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_007",
@@ -14335,9 +14069,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge",
-      "canonical_effect_node": "transport"
+        }
     },
     {
       "id": "met_008",
@@ -14424,9 +14156,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_009",
@@ -14508,9 +14238,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge",
-      "canonical_effect_node": "o3"
+        }
     },
     {
       "id": "met_010",
@@ -14582,9 +14310,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "wet_deposition"
+        }
     },
     {
       "id": "met_011",
@@ -14659,14 +14385,12 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "wet_deposition",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_012",
       "category": "meteorological_pathways",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "pm25",
       "relationship_type": "MODERATOR",
       "description": "Relative humidity moderates PM2.5-10 concentrations through deposition and resuspension",
@@ -14732,15 +14456,13 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_013",
       "category": "meteorological_pathways",
       "cause_node": "solar_radiation",
-      "effect_node": "pblh",
+      "effect_node": "boundary_layer_height",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Solar radiation drives daytime PBL development through surface heating",
       "mechanism": "Bức xạ mặt trời vào ban ngày làm nóng bề mặt đất, tạo ra đối lưu nhiệt và phát triển lớp biên hành tinh. PBLH tăng vào buổi chiều (well-developed PBL) cho phép xáo trộn thẳng đứng mạnh hơn, pha loãng các chất ô nhiễm phát thải gần mặt đất.",
@@ -14829,9 +14551,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "solar_radiation",
-      "canonical_effect_node": "boundary_layer_height"
+        }
     },
     {
       "id": "photo_001",
@@ -14945,15 +14665,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "solar_radiation",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "uv_photolysis",
-        "oh_radical_formation",
-        "voc_oxidation",
-        "soa_formation"
-      ]
+      }
     },
     {
       "id": "photo_002",
@@ -15051,14 +14763,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "solar_radiation",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "photolysis_rates",
-        "ox_concentration",
-        "photochemical_soa"
-      ]
+      }
     },
     {
       "id": "photo_003",
@@ -15171,15 +14876,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "isoprene",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "oh_oxidation",
-        "iepox_formation",
-        "aqueous_processing",
-        "isoprene_soa"
-      ]
+      }
     },
     {
       "id": "photo_004",
@@ -15277,19 +14974,12 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "cloud_cover",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "photolysis_rates",
-        "oh_concentration",
-        "oxidation_capacity"
-      ]
+      }
     },
     {
       "id": "photo_005",
       "category": "chemical_processes",
-      "cause_node": "humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "pm25",
       "intermediate_nodes": [
         "aerosol_liquid_water",
@@ -15379,13 +15069,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "aerosol_liquid_water",
-        "aqueous_soa_formation"
-      ]
+      }
     },
     {
       "id": "photo_006",
@@ -15393,7 +15077,7 @@
       "cause_node": "cloud_droplets",
       "effect_node": "pm25",
       "intermediate_nodes": [
-        "aqueous_chemistry",
+        "aqueous_phase_reaction",
         "organic_acid_formation",
         "aqsoa"
       ],
@@ -15497,14 +15181,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "cloud_droplets",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "aqueous_phase_reaction",
-        "organic_acid_formation",
-        "aqsoa"
-      ]
+      }
     },
     {
       "id": "photo_007",
@@ -15624,14 +15301,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "monoterpenes",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "oh_oxidation",
-        "ozonolysis",
-        "monoterpene_soa"
-      ]
+      }
     },
     {
       "id": "photo_008",
@@ -15712,14 +15382,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "solar_zenith_angle",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "photolysis_efficiency",
-        "seasonal_oh_variation",
-        "seasonal_soa_production"
-      ]
+      }
     },
     {
       "id": "photo_009",
@@ -15825,14 +15488,7 @@
             "photo_009"
           ]
         }
-      },
-      "canonical_cause_node": "nox",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "oh_recycling",
-        "voc_oxidation_pathway",
-        "soa_yield"
-      ]
+      }
     },
     {
       "id": "photo_010",
@@ -15928,15 +15584,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "sulfate",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "aerosol_ph",
-        "aerosol_volume",
-        "iepox_uptake",
-        "isoprene_soa"
-      ]
+      }
     },
     {
       "id": "precip_paradox_001",
@@ -16032,8 +15680,6 @@
           ]
         }
       },
-      "canonical_cause_node": "drizzle",
-      "canonical_effect_node": "pm25",
       "category": "meteorological_pathways"
     },
     {
@@ -16041,7 +15687,7 @@
       "cause_node": "drizzle",
       "effect_node": "soa_formation",
       "intermediate_nodes": [
-        "high_humidity",
+        "relative_humidity",
         "aerosol_ph"
       ],
       "relationship_type": "INDIRECT_CAUSE",
@@ -16132,12 +15778,6 @@
           ]
         }
       },
-      "canonical_cause_node": "drizzle",
-      "canonical_effect_node": "soa_formation",
-      "canonical_intermediate_nodes": [
-        "high_humidity",
-        "aerosol_ph"
-      ],
       "category": "meteorological_pathways"
     },
     {
@@ -16238,17 +15878,11 @@
           ]
         }
       },
-      "canonical_cause_node": "light_precipitation",
-      "canonical_effect_node": "nitrate",
-      "canonical_intermediate_nodes": [
-        "high_humidity",
-        "gas_particle_partitioning"
-      ],
       "category": "meteorological_pathways"
     },
     {
       "id": "precip_paradox_004",
-      "cause_node": "high_humidity",
+      "cause_node": "relative_humidity",
       "effect_node": "aerosol_liquid_water",
       "relationship_type": "DIRECT_CAUSE",
       "mechanism": "Khi RH vượt quá ngưỡng deliquescence của các muối hygroscopic (thường >75-80%), aerosol hấp thụ nước từ không khí và hình thành aerosol liquid water (ALW). ALW tăng theo hàm mũ với RH, đặc biệt khi RH > 85%. ALW cung cấp môi trường cho các phản ứng aqueous-phase chemistry.",
@@ -16346,8 +15980,6 @@
           ]
         }
       },
-      "canonical_cause_node": "high_humidity",
-      "canonical_effect_node": "aerosol_liquid_water",
       "category": "meteorological_pathways"
     },
     {
@@ -16427,8 +16059,6 @@
           ]
         }
       },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "sia_formation",
       "category": "meteorological_pathways"
     },
     {
@@ -16517,11 +16147,6 @@
           ]
         }
       },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "nitrate",
-      "canonical_intermediate_nodes": [
-        "n2o5_uptake"
-      ],
       "category": "meteorological_pathways"
     },
     {
@@ -16603,12 +16228,6 @@
           ]
         }
       },
-      "canonical_cause_node": "fog",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "aqueous_phase_oxidation",
-        "sulfate"
-      ],
       "category": "meteorological_pathways"
     },
     {
@@ -16689,12 +16308,6 @@
           ]
         }
       },
-      "canonical_cause_node": "fog",
-      "canonical_effect_node": "soa_formation",
-      "canonical_intermediate_nodes": [
-        "aqueous_phase_reaction",
-        "oh_concentration"
-      ],
       "category": "meteorological_pathways"
     },
     {
@@ -16801,8 +16414,6 @@
           ]
         }
       },
-      "canonical_cause_node": "precipitation_intensity_threshold",
-      "canonical_effect_node": "scavenging_efficiency",
       "category": "meteorological_pathways"
     },
     {
@@ -16882,12 +16493,6 @@
           ]
         }
       },
-      "canonical_cause_node": "aerosol_cloud_interactions",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "reduced_wet_scavenging",
-        "enhanced_in_cloud_chemistry"
-      ],
       "category": "meteorological_pathways"
     },
     {
@@ -16896,7 +16501,7 @@
       "effect_node": "pm25",
       "intermediate_nodes": [
         "aerosol_liquid_water",
-        "aqueous_chemistry"
+        "aqueous_phase_reaction"
       ],
       "relationship_type": "INDIRECT_CAUSE",
       "mechanism": "Trong điều kiện gió mùa (monsoon) ở Đông Nam Á, độ ẩm cao kéo dài tạo điều kiện cho sự hình thành aerosol liquid water và các phản ứng aqueous-phase. Gió mùa Đông Bắc mang aerosol acid từ Trung Quốc, trong khi gió mùa Tây Nam mang aerosol kiềm từ Thái Lan và Campuchia. Sự tương tác giữa các nguồn này với độ ẩm cao có thể dẫn đến enhanced secondary aerosol formation.",
@@ -16967,12 +16572,6 @@
           ]
         }
       },
-      "canonical_cause_node": "monsoon_humidity",
-      "canonical_effect_node": "pm25",
-      "canonical_intermediate_nodes": [
-        "aerosol_liquid_water",
-        "aqueous_phase_reaction"
-      ],
       "category": "meteorological_pathways"
     },
     {
@@ -17090,9 +16689,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation_intensity",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_002",
@@ -17180,9 +16777,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "wet_deposition",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_rain_003",
@@ -17274,9 +16869,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation_intensity",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_rain_004",
@@ -17369,9 +16962,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "below_cloud_scavenging",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_rain_005",
@@ -17444,9 +17035,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation_duration",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_006",
@@ -17546,9 +17135,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_rain_007",
@@ -17620,9 +17207,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "wet_deposition"
+        }
     },
     {
       "id": "met_rain_008",
@@ -17733,9 +17318,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation_type",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_009_a",
@@ -17792,9 +17375,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "pm25",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_009_b",
@@ -17854,9 +17435,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "pm25",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_009_c",
@@ -17916,9 +17495,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "pm25",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_009_d",
@@ -17976,9 +17553,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "pm25",
-      "canonical_effect_node": "scavenging_efficiency"
+        }
     },
     {
       "id": "met_rain_010_a",
@@ -18066,9 +17641,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "met_rain_010_b",
@@ -18156,9 +17729,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP001",
@@ -18240,9 +17811,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_onset",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP002",
@@ -18297,9 +17866,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_persistence",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP003",
@@ -18381,9 +17948,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "season_winter",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP004",
@@ -18464,9 +18029,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "season_summer",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP005",
@@ -18561,9 +18124,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP006",
@@ -18643,9 +18204,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP007",
@@ -18703,15 +18262,13 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "traffic",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP008",
       "category": "diurnal_patterns",
       "subcategory": "evening_peak",
-      "cause_node": "pblh",
+      "cause_node": "boundary_layer_height",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Decreases of boundary layer height and wind speed in afternoon, combined with increased source activity during evening rush hour",
@@ -18763,15 +18320,13 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "boundary_layer_height",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP009",
       "category": "diurnal_patterns",
       "subcategory": "midday_minimum",
-      "cause_node": "pblh",
+      "cause_node": "boundary_layer_height",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Maximum boundary layer height and strongest vertical mixing around noon",
@@ -18823,15 +18378,13 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "boundary_layer_height",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP010",
       "category": "diurnal_patterns",
       "subcategory": "boundary_layer_height",
-      "cause_node": "pblh",
+      "cause_node": "boundary_layer_height",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Lower PBL height reduces dilution volume for pollutants, higher PBL height increases dispersion",
@@ -18881,9 +18434,7 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "boundary_layer_height",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP011",
@@ -18956,9 +18507,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP012",
@@ -19033,9 +18582,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP013",
@@ -19091,9 +18638,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "fireworks",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP014",
@@ -19149,9 +18694,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "fireworks",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP015",
@@ -19232,9 +18775,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP016",
@@ -19289,9 +18830,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP017",
@@ -19362,9 +18901,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "industry",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP018",
@@ -19420,9 +18957,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "enso",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP019",
@@ -19479,9 +19014,7 @@
             "meteorological_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "wind_speed",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP020",
@@ -19540,9 +19073,7 @@
             "meteorological_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP021",
@@ -19624,9 +19155,7 @@
             "meteorological_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "precipitation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP022",
@@ -19708,9 +19237,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "season_winter",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP023",
@@ -19780,9 +19307,7 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "urban_heat_island",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP024",
@@ -19853,16 +19378,14 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "sea_land_breeze",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP025",
       "category": "diurnal_patterns",
       "subcategory": "aerosol_radiative_feedback",
       "cause_node": "pm25",
-      "effect_node": "pblh",
+      "effect_node": "boundary_layer_height",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Aerosols heat upper atmospheric layers and reduce surface heat flux, suppressing PBL development",
       "mechanism": "Aerosol radiative effects modify PBL by heating upper atmospheric layers and reducing surface heat flux, suppressing PBL development and creating positive feedback that exacerbates pollution",
@@ -19927,9 +19450,7 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "pm25",
-      "canonical_effect_node": "boundary_layer_height"
+        }
     },
     {
       "id": "SP026",
@@ -19985,9 +19506,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "pm25",
-      "canonical_effect_node": "source_attribution"
+        }
     },
     {
       "id": "SP027",
@@ -20043,9 +19562,7 @@
             "meteorological_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "meteorology",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP028",
@@ -20119,9 +19636,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP029",
@@ -20177,9 +19692,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "fireworks",
-      "canonical_effect_node": "aerosol_properties"
+        }
     },
     {
       "id": "SP030",
@@ -20250,9 +19763,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "enso",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP031",
@@ -20325,9 +19836,7 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "regional_transport",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP032",
@@ -20406,9 +19915,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "dust_transport",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP033",
@@ -20479,9 +19986,7 @@
             "seasonal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "power_plants",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP034",
@@ -20552,9 +20057,7 @@
             "diurnal_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "topography",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "SP035",
@@ -20610,9 +20113,7 @@
             "event_patterns"
           ]
         }
-      },
-      "canonical_cause_node": "fireworks",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "static_001",
@@ -20671,9 +20172,7 @@
             "static_factors"
           ]
         }
-      },
-      "canonical_cause_node": "population_density",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "static_002",
@@ -20735,9 +20234,7 @@
             "static_factors"
           ]
         }
-      },
-      "canonical_cause_node": "urban_land_use",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "static_003",
@@ -20816,9 +20313,7 @@
             "static_factors"
           ]
         }
-      },
-      "canonical_cause_node": "vegetation",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "static_004",
@@ -20952,9 +20447,7 @@
             "static_factors"
           ]
         }
-      },
-      "canonical_cause_node": "topography",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "static_005",
@@ -21053,9 +20546,7 @@
             "static_factors"
           ]
         }
-      },
-      "canonical_cause_node": "distance_to_roads",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "static_006",
@@ -21135,9 +20626,7 @@
             "static_factors"
           ]
         }
-      },
-      "canonical_cause_node": "industrial_zones",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_001",
@@ -21246,9 +20735,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_onset",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_002",
@@ -21352,9 +20839,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_persistence",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_003",
@@ -21450,9 +20935,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "anticyclonic_conditions",
-      "canonical_effect_node": "winter_pollution_episode"
+        }
     },
     {
       "id": "trans_cold_surge_004",
@@ -21543,9 +21026,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_wind",
-      "canonical_effect_node": "pm25_long_range_transport"
+        }
     },
     {
       "id": "trans_cold_surge_005",
@@ -21645,14 +21126,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "northeast_monsoon_cold_surge",
-      "canonical_effect_node": "co_o3_elevation"
+        }
     },
     {
       "id": "trans_cold_surge_006",
       "category": "transport_mechanisms",
-      "cause_node": "pblh",
+      "cause_node": "boundary_layer_height",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Reduced boundary layer height increases surface PM2.5 concentrations",
@@ -21739,9 +21218,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "boundary_layer_height",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_007a",
@@ -21842,9 +21319,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_007b",
@@ -21940,9 +21415,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "inversion",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_008",
@@ -22044,9 +21517,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "long_range_transport_china",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_009",
@@ -22153,9 +21624,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "regional_meteorology",
-      "canonical_effect_node": "pm25_regional_covariation"
+        }
     },
     {
       "id": "trans_cold_surge_010",
@@ -22267,9 +21736,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_source_receptor",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "trans_cold_surge_011",
@@ -22376,9 +21843,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "siberian_high",
-      "canonical_effect_node": "pollution_transport_pathway"
+        }
     },
     {
       "id": "trans_cold_surge_012",
@@ -22467,9 +21932,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "el_nino",
-      "canonical_effect_node": "air_mass_trajectory"
+        }
     },
     {
       "id": "transport_001",
@@ -22563,9 +22026,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_onset",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_002",
@@ -22635,9 +22096,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge_persistence",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_003",
@@ -22704,9 +22163,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "northeast_monsoon",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_004",
@@ -22778,9 +22235,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "el_nino",
-      "canonical_effect_node": "pm25_composition"
+        }
     },
     {
       "id": "transport_005",
@@ -22852,9 +22307,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "low_wind_stagnating_ridge",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_006",
@@ -22908,9 +22361,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_007",
@@ -22996,9 +22447,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "synoptic_pattern_ridge_low",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_008",
@@ -23075,9 +22524,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "el_nino_wpsh",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_009",
@@ -23144,9 +22591,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "east_asian_winter_monsoon",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_010",
@@ -23213,9 +22658,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "southwesterly_winds_biomass_burning",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_011",
@@ -23286,9 +22729,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "plateau_topography",
-      "canonical_effect_node": "pm25_vertical_transport"
+        }
     },
     {
       "id": "transport_012",
@@ -23342,9 +22783,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "transport_distance",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_013",
@@ -23414,9 +22853,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "north_northeast_winds_winter",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_014",
@@ -23504,9 +22941,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "low_wind_low_pblh",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_015",
@@ -23579,9 +23014,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "stationary_coal_sources",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_016",
@@ -23648,9 +23081,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "northeast_monsoon_prevalence",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_017",
@@ -23734,9 +23165,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "low_nocturnal_pblh_low_wind",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "transport_018",
@@ -23810,14 +23239,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "downwind_industrial_provinces",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_001",
       "category": "transport_mechanisms",
-      "cause_node": "wind_direction_north_northeast",
+      "cause_node": "wind_direction",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "North and northeast winds during winter transport air pollutants from industrialized areas and fire regions in southern China and Southeast Asia to Hanoi",
@@ -23894,14 +23321,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction_north_northeast",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_002",
       "category": "transport_mechanisms",
-      "cause_node": "wind_direction_north",
+      "cause_node": "wind_direction",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Northeast monsoon carries industrial and urban pollutants from South China megacities to Hanoi during October-March",
@@ -23974,14 +23399,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction_north",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_003",
       "category": "transport_mechanisms",
-      "cause_node": "wind_direction_south_southeast",
+      "cause_node": "wind_direction",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "South and southeasterly winds transport biomass burning aerosols from Laos and Southern Vietnam to Hanoi during April-August",
@@ -24057,9 +23480,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction_south_southeast",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_004",
@@ -24121,9 +23542,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "long_range_transport_north",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_005",
@@ -24191,14 +23610,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "cold_surge",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_006",
       "category": "transport_mechanisms",
-      "cause_node": "wind_speed_low",
+      "cause_node": "wind_speed",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Low wind speeds with stagnating ridge over Northern Vietnam lead to high 24-hour PM levels in Hanoi",
@@ -24256,9 +23673,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_speed_low",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_007",
@@ -24306,9 +23721,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction_relative_to_sources",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_008",
@@ -24395,14 +23808,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "air_mass_trajectory_pearl_river_delta",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_009",
       "category": "transport_mechanisms",
-      "cause_node": "wind_direction_southeast",
+      "cause_node": "wind_direction",
       "effect_node": "pm25_chemical_species",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Southeast wind during summer transports pollutants from industrial sources, resulting in highest concentrations of Cl−, NO3−, Na+, K+, Ca2+, and EC",
@@ -24461,14 +23872,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction_southeast",
-      "canonical_effect_node": "pm25_chemical_species"
+        }
     },
     {
       "id": "wind_transport_010",
       "category": "transport_mechanisms",
-      "cause_node": "wind_direction_north",
+      "cause_node": "wind_direction",
       "effect_node": "pm25_chemical_species",
       "relationship_type": "DIRECT_CAUSE",
       "description": "North wind during winter transports pollutants resulting in high concentrations of Cl−, NH4+, and Ca2+ in PM2.5",
@@ -24527,14 +23936,12 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "wind_direction_north",
-      "canonical_effect_node": "pm25_chemical_species"
+        }
     },
     {
       "id": "wind_transport_011",
       "category": "meteorological_pathways",
-      "cause_node": "wind_speed_low",
+      "cause_node": "wind_speed",
       "effect_node": "pm25",
       "relationship_type": "DIRECT_CAUSE",
       "description": "Lower wind speed during winter reduces atmospheric dispersion, increasing PM2.5 concentrations",
@@ -24623,9 +24030,7 @@
             "meteorological_pathways"
           ]
         }
-      },
-      "canonical_cause_node": "wind_speed_low",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "wind_transport_012",
@@ -24699,9 +24104,7 @@
             "transport_mechanisms"
           ]
         }
-      },
-      "canonical_cause_node": "biomass_burning_regional",
-      "canonical_effect_node": "pm25"
+        }
     },
     {
       "id": "chem_winter_001",
@@ -24795,9 +24198,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "relative_humidity",
-      "canonical_effect_node": "aerosol_liquid_water"
+        }
     },
     {
       "id": "chem_winter_002",
@@ -24891,9 +24292,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_liquid_water",
-      "canonical_effect_node": "aqueous_phase_reaction"
+        }
     },
     {
       "id": "chem_winter_003",
@@ -24972,9 +24371,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "nh3",
-      "canonical_effect_node": "aerosol_ph"
+        }
     },
     {
       "id": "chem_winter_004_a",
@@ -25044,9 +24441,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_ph",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_winter_004_b",
@@ -25118,9 +24513,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_ph",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_winter_004_c",
@@ -25190,9 +24583,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "aerosol_ph",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_winter_005",
@@ -25286,9 +24677,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "so2",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_winter_006",
@@ -25384,9 +24773,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "h2o2",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_winter_007",
@@ -25479,9 +24866,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "no2",
-      "canonical_effect_node": "sulfate_formation"
+        }
     },
     {
       "id": "chem_winter_008",
@@ -25560,9 +24945,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "sulfate_formation",
-      "canonical_effect_node": "sia_formation"
+        }
     },
     {
       "id": "chem_winter_009",
@@ -25645,9 +25028,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "temperature",
-      "canonical_effect_node": "ammonium_nitrate_formation"
+        }
     },
     {
       "id": "chem_winter_010",
@@ -25743,9 +25124,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "nox",
-      "canonical_effect_node": "nitrate_formation"
+        }
     },
     {
       "id": "chem_winter_011",
@@ -25828,9 +25207,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "ammonium_nitrate_formation",
-      "canonical_effect_node": "sia_formation"
+        }
     },
     {
       "id": "chem_winter_012",
@@ -25909,9 +25286,7 @@
             "chemical_processes"
           ]
         }
-      },
-      "canonical_cause_node": "sia_formation",
-      "canonical_effect_node": "pm25"
+      }
     }
   ],
   "nodes": [
@@ -26281,15 +25656,6 @@
       ]
     },
     {
-      "node": "decreased_cloud_cover",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Reduction in cloudiness, increasing solar radiation and photochemistry.",
-      "unit": "%",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
       "node": "dispersion",
       "canonical": true,
       "category": "processes",
@@ -26434,24 +25800,6 @@
       "aliases": [
         "hydrogen_peroxide"
       ]
-    },
-    {
-      "node": "high_humidity",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Elevated relative humidity (typically >70-80%) promoting aqueous-phase chemistry.",
-      "unit": "%",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "high_wind_dispersion",
-      "canonical": true,
-      "category": "processes",
-      "description": "Enhanced pollutant dispersion due to strong winds.",
-      "unit": "qualitative",
-      "typical_range": "varies",
-      "aliases": []
     },
     {
       "node": "hms_formation",
@@ -26604,15 +25952,6 @@
       "category": "meteorology",
       "description": "Nighttime conditions with shallow boundary layer and calm winds favoring pollution accumulation.",
       "unit": "qualitative",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "low_ph",
-      "canonical": true,
-      "category": "chemical_parameters",
-      "description": "Acidic aerosol conditions (pH < 4) favoring H2O2 and TMI oxidation pathways for sulfate.",
-      "unit": "pH units",
       "typical_range": "varies",
       "aliases": []
     },
@@ -26943,15 +26282,6 @@
       "aliases": []
     },
     {
-      "node": "pblh_decrease",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Reduction in planetary boundary layer height, reducing mixing volume.",
-      "unit": "m",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
       "node": "photochemical_soa",
       "canonical": true,
       "category": "pollutants",
@@ -27260,42 +26590,6 @@
       "category": "processes",
       "description": "Increase in PM2.5 at receptor location due to transported pollution.",
       "unit": "μg/m³",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "reduced_dispersion",
-      "canonical": true,
-      "category": "processes",
-      "description": "Decreased atmospheric mixing and dilution of pollutants.",
-      "unit": "qualitative",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "reduced_photolysis",
-      "canonical": true,
-      "category": "processes",
-      "description": "Decreased photolysis rates due to cloud cover, aerosol extinction, or low sun angle.",
-      "unit": "qualitative",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "reduced_soa_formation",
-      "canonical": true,
-      "category": "processes",
-      "description": "Decreased secondary organic aerosol production due to reduced photochemistry or precursors.",
-      "unit": "qualitative",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "reduced_solar_radiation",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Decreased incoming solar radiation due to clouds or aerosol extinction.",
-      "unit": "W/m²",
       "typical_range": "varies",
       "aliases": []
     },
@@ -27832,51 +27126,6 @@
       ]
     },
     {
-      "node": "wind_direction_north",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Northerly wind direction, often bringing continental pollution.",
-      "unit": "degrees",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "wind_direction_north_northeast",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "North-northeasterly wind direction, typical winter pattern in Hanoi.",
-      "unit": "degrees",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "wind_direction_relative_to_sources",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Wind direction relative to emission source locations.",
-      "unit": "degrees",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "wind_direction_south_southeast",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "South-southeasterly wind direction, bringing marine or southern air.",
-      "unit": "degrees",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
-      "node": "wind_direction_southeast",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Southeasterly wind direction, typical summer monsoon pattern.",
-      "unit": "degrees",
-      "typical_range": "varies",
-      "aliases": []
-    },
-    {
       "node": "wind_speed",
       "canonical": true,
       "category": "meteorology",
@@ -27887,15 +27136,6 @@
         "ws",
         "wind"
       ]
-    },
-    {
-      "node": "wind_speed_low",
-      "canonical": true,
-      "category": "meteorology",
-      "description": "Weak wind conditions (typically <2 m/s) favoring pollution accumulation.",
-      "unit": "m/s",
-      "typical_range": "varies",
-      "aliases": []
     },
     {
       "node": "winter_pollution_episode",

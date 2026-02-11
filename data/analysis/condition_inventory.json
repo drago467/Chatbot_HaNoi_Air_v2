@@ -148,8 +148,8 @@
       "checkable_count": 74,
       "non_checkable_count": 0,
       "types": [
-        "month",
-        "compound"
+        "compound",
+        "month"
       ]
     },
     {
@@ -186,9 +186,9 @@
       "checkable_count": 39,
       "non_checkable_count": 6,
       "types": [
+        "threshold",
         "range",
-        "qualitative",
-        "threshold"
+        "qualitative"
       ]
     },
     {
@@ -197,8 +197,8 @@
       "checkable_count": 38,
       "non_checkable_count": 0,
       "types": [
-        "range",
-        "threshold"
+        "threshold",
+        "range"
       ]
     },
     {
@@ -235,9 +235,9 @@
       "checkable_count": 15,
       "non_checkable_count": 5,
       "types": [
+        "threshold",
         "range",
-        "qualitative",
-        "threshold"
+        "qualitative"
       ]
     },
     {
@@ -246,9 +246,9 @@
       "checkable_count": 3,
       "non_checkable_count": 11,
       "types": [
-        "range",
-        "qualitative",
         "threshold",
+        "qualitative",
+        "range",
         "categorical"
       ]
     },
@@ -258,8 +258,8 @@
       "checkable_count": 11,
       "non_checkable_count": 3,
       "types": [
-        "qualitative",
-        "threshold"
+        "threshold",
+        "qualitative"
       ]
     },
     {
@@ -278,8 +278,8 @@
       "checkable_count": 13,
       "non_checkable_count": 0,
       "types": [
-        "range",
         "threshold",
+        "range",
         "categorical"
       ]
     },
@@ -289,8 +289,8 @@
       "checkable_count": 9,
       "non_checkable_count": 3,
       "types": [
-        "qualitative",
-        "threshold"
+        "threshold",
+        "qualitative"
       ]
     },
     {
@@ -327,9 +327,9 @@
       "checkable_count": 7,
       "non_checkable_count": 1,
       "types": [
+        "threshold",
         "range",
-        "qualitative",
-        "threshold"
+        "qualitative"
       ]
     },
     {
@@ -347,8 +347,8 @@
       "checkable_count": 6,
       "non_checkable_count": 1,
       "types": [
-        "qualitative",
-        "threshold"
+        "threshold",
+        "qualitative"
       ]
     },
     {
@@ -375,8 +375,8 @@
       "checkable_count": 4,
       "non_checkable_count": 1,
       "types": [
-        "qualitative",
-        "threshold"
+        "threshold",
+        "qualitative"
       ]
     },
     {
@@ -385,8 +385,8 @@
       "checkable_count": 5,
       "non_checkable_count": 0,
       "types": [
-        "range",
-        "threshold"
+        "threshold",
+        "range"
       ]
     },
     {
@@ -413,8 +413,8 @@
       "checkable_count": 4,
       "non_checkable_count": 0,
       "types": [
-        "range",
-        "threshold"
+        "threshold",
+        "range"
       ]
     },
     {
@@ -423,8 +423,8 @@
       "checkable_count": 3,
       "non_checkable_count": 1,
       "types": [
-        "qualitative",
-        "threshold"
+        "threshold",
+        "qualitative"
       ]
     },
     {
@@ -443,8 +443,8 @@
       "checkable_count": 2,
       "non_checkable_count": 1,
       "types": [
-        "qualitative",
-        "threshold"
+        "threshold",
+        "qualitative"
       ]
     },
     {

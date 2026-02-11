@@ -32,8 +32,10 @@
       "aliases": [],
       "category": "aerosol_properties",
       "unit": "pH units",
-      "api_mapping": null,
-      "mapping_type": "missing",
+      "api_mapping": {
+        "open_meteo_weather": "cape"
+      },
+      "mapping_type": "mapped",
       "description": "Field: atmospheric_stability"
     },
     {
@@ -104,8 +106,10 @@
       "aliases": [],
       "category": "atmospheric_structure",
       "unit": "m",
-      "api_mapping": null,
-      "mapping_type": "missing",
+      "api_mapping": {
+        "open_meteo_weather": "boundary_layer_height"
+      },
+      "mapping_type": "direct",
       "description": "Height of planetary boundary layer, affecting vertical mixing"
     },
     {
@@ -140,8 +144,10 @@
       "aliases": [],
       "category": "atmospheric_structure",
       "unit": "varies",
-      "api_mapping": null,
-      "mapping_type": "missing",
+      "api_mapping": {
+        "open_meteo_weather": "lifted_index"
+      },
+      "mapping_type": "direct",
       "description": "Field: stability_index"
     },
     {
@@ -158,8 +164,10 @@
       "aliases": [],
       "category": "events",
       "unit": "varies",
-      "api_mapping": null,
-      "mapping_type": "missing",
+      "api_mapping": {
+        "open_meteo_air_quality": "dust"
+      },
+      "mapping_type": "mapped",
       "description": "Field: dust_event"
     },
     {
@@ -244,9 +252,9 @@
       "category": "meteorology",
       "unit": "mm",
       "api_mapping": {
-        "openweathermap": "rain"
+        "open_meteo_weather": "precipitation_probability"
       },
-      "mapping_type": "derived",
+      "mapping_type": "mapped",
       "description": "Amount of precipitation (rain, snow, etc.)"
     },
     {
@@ -275,9 +283,9 @@
       "category": "meteorology",
       "unit": "varies",
       "api_mapping": {
-        "openweathermap": "solar_radiation"
+        "open_meteo_weather": "shortwave_radiation"
       },
-      "mapping_type": "direct",
+      "mapping_type": "mapped",
       "description": "Field: solar_radiation"
     },
     {
@@ -667,9 +675,9 @@
       "category": "pollutants",
       "unit": "µg/m³",
       "api_mapping": {
-        "open_meteo": "carbon_monoxide"
+        "openweathermap_air_pollution": "nh3"
       },
-      "mapping_type": "mapped",
+      "mapping_type": "direct",
       "description": "Field: nh3_concentration"
     },
     {
@@ -688,8 +696,10 @@
       "aliases": [],
       "category": "pollutants",
       "unit": "varies",
-      "api_mapping": null,
-      "mapping_type": "missing",
+      "api_mapping": {
+        "openweathermap_air_pollution": "no"
+      },
+      "mapping_type": "mapped",
       "description": "Field: nox_presence"
     },
     {
@@ -697,8 +707,10 @@
       "aliases": [],
       "category": "pollutants",
       "unit": "varies",
-      "api_mapping": null,
-      "mapping_type": "missing",
+      "api_mapping": {
+        "openweathermap_air_pollution": "no"
+      },
+      "mapping_type": "mapped",
       "description": "Field: nox_regime"
     },
     {
@@ -1098,380 +1110,380 @@
       "category": "temporal",
       "unit": "hour",
       "api_mapping": {
-        "derived": "dt"
+        "open_meteo_weather": "is_day"
       },
-      "mapping_type": "derived",
+      "mapping_type": "mapped",
       "description": "Field: time_of_day"
     }
   ],
   "synonym_groups": {
-    "pm25": [
-      "pm25_concentration"
-    ],
-    "enso_phase": [
-      "enso_phase"
-    ],
-    "cloud_cover": [
-      "cloud_cover"
-    ],
-    "event_lag_hours": [
-      "event_lag_hours"
-    ],
-    "cloud_water_content": [
-      "cloud_water_content"
-    ],
-    "dust_event": [
-      "dust_event"
-    ],
-    "nox_presence": [
-      "nox_presence"
-    ],
-    "catalysis": [
-      "catalysis"
-    ],
-    "accumulated_precipitation_mm": [
-      "accumulated_precipitation_mm"
-    ],
-    "equipment_type": [
-      "equipment_type"
-    ],
-    "atmospheric_layer": [
-      "atmospheric_layer"
-    ],
-    "oc_ratio": [
-      "oc_ratio"
-    ],
-    "ox_concentration": [
-      "ox_concentration"
-    ],
-    "burning_practice": [
-      "burning_practice"
-    ],
-    "sulfate_presence": [
-      "sulfate_presence"
-    ],
-    "topography": [
-      "topography"
-    ],
-    "sensor_type": [
-      "sensor_type"
-    ],
-    "wind_direction_source": [
-      "wind_direction_source"
-    ],
-    "regional_pollution_status": [
-      "regional_pollution_status"
-    ],
-    "oxidation_products": [
-      "oxidation_products"
-    ],
-    "upwind_air_quality": [
-      "upwind_air_quality"
-    ],
-    "solar_radiation": [
-      "solar_radiation"
-    ],
-    "event_lag_days": [
-      "event_lag_days"
-    ],
-    "emission_source": [
-      "emission_source"
-    ],
-    "precursor_availability": [
-      "precursor_availability"
-    ],
-    "aerosol_ph": [
-      "aerosol_ph"
-    ],
-    "source_type": [
-      "source_type"
-    ],
-    "land_use_type": [
-      "land_use_type"
-    ],
-    "cloud_base_height": [
-      "cloud_base_height"
-    ],
-    "compound_meteorological": [
-      "compound_meteorological"
-    ],
-    "cap_event": [
-      "cap_event"
-    ],
-    "so2": [
-      "so2_concentration"
-    ],
-    "stability_index": [
-      "stability_index"
-    ],
-    "vertical_motion": [
-      "vertical_motion"
-    ],
-    "voc_concentration": [
-      "voc_concentration"
-    ],
-    "uv_wavelength": [
-      "uv_wavelength"
-    ],
-    "geographic_region": [
-      "geographic_region"
-    ],
-    "visibility": [
-      "visibility"
-    ],
-    "urban_density_class": [
-      "urban_density_class"
-    ],
-    "urban_zone_type": [
-      "urban_zone_type"
-    ],
-    "precipitation_duration_hours": [
-      "precipitation_duration_hours"
-    ],
-    "cloud_liquid_water": [
-      "cloud_liquid_water"
-    ],
-    "cold_surge_phase": [
-      "cold_surge_phase"
-    ],
-    "uv_radiation": [
-      "uv_radiation"
-    ],
-    "upwind_source": [
-      "upwind_source"
-    ],
-    "burning_type": [
-      "burning_type"
-    ],
-    "inversion": [
-      "inversion"
-    ],
-    "no2": [
-      "no2_concentration"
-    ],
-    "pm25_initial": [
-      "pm25_initial"
-    ],
-    "inversion_presence": [
-      "inversion_presence"
-    ],
-    "event_type": [
-      "event_type"
-    ],
-    "oh_radical_availability": [
-      "oh_radical_availability"
-    ],
-    "latitude": [
-      "latitude"
-    ],
-    "wind_direction": [
-      "wind_direction"
-    ],
-    "local_emission_source": [
-      "local_emission_source"
-    ],
-    "particle_size_um": [
-      "particle_size_um"
-    ],
-    "distance_to_major_road_m": [
-      "distance_to_major_road_m"
-    ],
-    "photolysis_rate": [
-      "photolysis_rate"
-    ],
-    "solar_zenith_angle": [
-      "solar_zenith_angle"
-    ],
-    "temperature": [
-      "temperature"
-    ],
-    "oh_radical_concentration": [
-      "oh_radical_concentration"
-    ],
-    "pm25_reduction_near_road": [
-      "pm25_reduction_near_road"
-    ],
-    "circulation_pattern": [
-      "circulation_pattern"
-    ],
-    "emission_regime": [
-      "emission_regime"
-    ],
-    "emissions": [
-      "emissions"
-    ],
-    "temporal_scale": [
-      "temporal_scale"
-    ],
-    "vegetation_type": [
-      "vegetation_type"
-    ],
-    "topography_type": [
-      "topography_type"
-    ],
-    "city_type": [
-      "city_type"
-    ],
-    "uv_index": [
-      "uv_index"
-    ],
-    "season": [
-      "season"
-    ],
-    "relative_humidity": [
-      "relative_humidity"
-    ],
-    "site_type": [
-      "site_type"
-    ],
-    "surface_cooling_rate": [
-      "surface_cooling_rate"
-    ],
-    "surface_heating": [
-      "surface_heating"
-    ],
-    "visibility_condition": [
-      "visibility_condition"
-    ],
-    "transport_distance": [
-      "transport_distance"
-    ],
-    "time_of_day": [
-      "time_of_day"
-    ],
-    "precipitation_intensity_mmph": [
-      "precipitation_intensity_mmph"
-    ],
-    "pollution_level": [
-      "pollution_level"
-    ],
-    "synoptic_pattern": [
-      "synoptic_pattern"
-    ],
-    "atmospheric_stability": [
-      "atmospheric_stability"
-    ],
-    "aerosol_liquid_water": [
-      "aerosol_liquid_water"
-    ],
-    "distance_to_road_m": [
-      "distance_to_road_m"
-    ],
-    "fuel_type": [
-      "fuel_type"
-    ],
-    "vertical_mixing": [
-      "vertical_mixing"
-    ],
-    "hour": [
-      "hour"
-    ],
-    "turbulence": [
-      "turbulence"
-    ],
-    "source_location": [
-      "source_location"
+    "wind_direction_source_alignment": [
+      "wind_direction_source_alignment"
     ],
     "fog_duration_hours": [
       "fog_duration_hours"
     ],
-    "particle_type": [
-      "particle_type"
-    ],
-    "month": [
-      "month"
-    ],
-    "sensor_humidity_control": [
-      "sensor_humidity_control"
-    ],
-    "fog_indicator": [
-      "fog_indicator"
-    ],
-    "precipitation_type": [
-      "precipitation_type"
-    ],
-    "nh3_concentration": [
-      "nh3_concentration"
-    ],
-    "elevation_gradient": [
-      "elevation_gradient"
-    ],
-    "precipitation_occurrence": [
-      "precipitation_occurrence"
-    ],
-    "year": [
-      "year"
-    ],
-    "dry_deposition_efficiency": [
-      "dry_deposition_efficiency"
-    ],
-    "secondary_aerosol_production": [
-      "secondary_aerosol_production"
-    ],
     "soa_formation_rate": [
       "soa_formation_rate"
     ],
-    "inversion_type": [
-      "inversion_type"
+    "particle_size_um": [
+      "particle_size_um"
     ],
     "monsoon_regime": [
       "monsoon_regime"
     ],
-    "boundary_layer_height": [
-      "boundary_layer_height"
+    "inversion_type": [
+      "inversion_type"
     ],
-    "monsoon_cycle_duration": [
-      "monsoon_cycle_duration"
+    "year": [
+      "year"
     ],
-    "air_mass_trajectory": [
-      "air_mass_trajectory"
+    "local_emission_source": [
+      "local_emission_source"
     ],
-    "water_vapor": [
-      "water_vapor"
-    ],
-    "sky_condition": [
-      "sky_condition"
-    ],
-    "spatial_scale": [
-      "spatial_scale"
-    ],
-    "nox_regime": [
-      "nox_regime"
-    ],
-    "condensation_sink": [
-      "condensation_sink"
-    ],
-    "pm25_residence_time": [
-      "pm25_residence_time"
+    "stability_index": [
+      "stability_index"
     ],
     "wind_speed": [
       "wind_speed"
     ],
+    "inversion_presence": [
+      "inversion_presence"
+    ],
+    "month": [
+      "month"
+    ],
+    "precipitation_duration_hours": [
+      "precipitation_duration_hours"
+    ],
+    "emission_source": [
+      "emission_source"
+    ],
+    "turbulence": [
+      "turbulence"
+    ],
+    "dry_deposition_efficiency": [
+      "dry_deposition_efficiency"
+    ],
+    "transport_distance": [
+      "transport_distance"
+    ],
+    "ox_concentration": [
+      "ox_concentration"
+    ],
+    "land_use_type": [
+      "land_use_type"
+    ],
+    "circulation_pattern": [
+      "circulation_pattern"
+    ],
+    "condensation_sink": [
+      "condensation_sink"
+    ],
+    "geographic_region": [
+      "geographic_region"
+    ],
+    "photolysis_rate": [
+      "photolysis_rate"
+    ],
+    "surface_cooling_rate": [
+      "surface_cooling_rate"
+    ],
+    "cloud_base_height": [
+      "cloud_base_height"
+    ],
+    "temperature": [
+      "temperature"
+    ],
+    "water_vapor": [
+      "water_vapor"
+    ],
+    "oh_radical_concentration": [
+      "oh_radical_concentration"
+    ],
+    "topography_type": [
+      "topography_type"
+    ],
+    "season": [
+      "season"
+    ],
+    "pm25": [
+      "pm25_concentration"
+    ],
+    "atmospheric_stability": [
+      "atmospheric_stability"
+    ],
+    "relative_humidity": [
+      "relative_humidity"
+    ],
+    "vertical_mixing": [
+      "vertical_mixing"
+    ],
+    "air_mass_trajectory": [
+      "air_mass_trajectory"
+    ],
+    "nox_regime": [
+      "nox_regime"
+    ],
+    "sulfate_presence": [
+      "sulfate_presence"
+    ],
+    "aerosol_liquid_water": [
+      "aerosol_liquid_water"
+    ],
     "air_mass_origin": [
       "air_mass_origin"
+    ],
+    "oh_radical_availability": [
+      "oh_radical_availability"
+    ],
+    "time_of_day": [
+      "time_of_day"
+    ],
+    "boundary_layer_height": [
+      "boundary_layer_height"
+    ],
+    "emissions": [
+      "emissions"
+    ],
+    "event_type": [
+      "event_type"
+    ],
+    "urban_density_class": [
+      "urban_density_class"
+    ],
+    "upwind_air_quality": [
+      "upwind_air_quality"
+    ],
+    "latitude": [
+      "latitude"
+    ],
+    "precipitation_intensity_mmph": [
+      "precipitation_intensity_mmph"
+    ],
+    "wind_direction": [
+      "wind_direction"
+    ],
+    "uv_wavelength": [
+      "uv_wavelength"
+    ],
+    "catalysis": [
+      "catalysis"
+    ],
+    "cold_surge_phase": [
+      "cold_surge_phase"
     ],
     "industrial_zone_presence": [
       "industrial_zone_presence"
     ],
-    "wind_direction_source_alignment": [
-      "wind_direction_source_alignment"
+    "precursor_availability": [
+      "precursor_availability"
+    ],
+    "hour": [
+      "hour"
+    ],
+    "solar_radiation": [
+      "solar_radiation"
+    ],
+    "fuel_type": [
+      "fuel_type"
+    ],
+    "burning_practice": [
+      "burning_practice"
+    ],
+    "spatial_scale": [
+      "spatial_scale"
+    ],
+    "uv_index": [
+      "uv_index"
+    ],
+    "precipitation_type": [
+      "precipitation_type"
+    ],
+    "cloud_cover": [
+      "cloud_cover"
+    ],
+    "pm25_residence_time": [
+      "pm25_residence_time"
+    ],
+    "event_lag_hours": [
+      "event_lag_hours"
+    ],
+    "sky_condition": [
+      "sky_condition"
+    ],
+    "equipment_type": [
+      "equipment_type"
+    ],
+    "voc_concentration": [
+      "voc_concentration"
+    ],
+    "oxidation_products": [
+      "oxidation_products"
+    ],
+    "synoptic_pattern": [
+      "synoptic_pattern"
+    ],
+    "compound_meteorological": [
+      "compound_meteorological"
+    ],
+    "upwind_source": [
+      "upwind_source"
+    ],
+    "inversion": [
+      "inversion"
+    ],
+    "source_type": [
+      "source_type"
+    ],
+    "site_type": [
+      "site_type"
+    ],
+    "urban_zone_type": [
+      "urban_zone_type"
+    ],
+    "pm25_reduction_near_road": [
+      "pm25_reduction_near_road"
+    ],
+    "distance_to_major_road_m": [
+      "distance_to_major_road_m"
+    ],
+    "topography": [
+      "topography"
+    ],
+    "so2": [
+      "so2_concentration"
+    ],
+    "visibility_condition": [
+      "visibility_condition"
+    ],
+    "particle_type": [
+      "particle_type"
+    ],
+    "cloud_water_content": [
+      "cloud_water_content"
+    ],
+    "pollution_level": [
+      "pollution_level"
+    ],
+    "source_location": [
+      "source_location"
+    ],
+    "regional_pollution_status": [
+      "regional_pollution_status"
+    ],
+    "oc_ratio": [
+      "oc_ratio"
+    ],
+    "temporal_scale": [
+      "temporal_scale"
+    ],
+    "cap_event": [
+      "cap_event"
+    ],
+    "sensor_type": [
+      "sensor_type"
+    ],
+    "vegetation_type": [
+      "vegetation_type"
+    ],
+    "aerosol_ph": [
+      "aerosol_ph"
+    ],
+    "distance_to_road_m": [
+      "distance_to_road_m"
+    ],
+    "atmospheric_layer": [
+      "atmospheric_layer"
+    ],
+    "nh3_concentration": [
+      "nh3_concentration"
+    ],
+    "city_type": [
+      "city_type"
+    ],
+    "event_lag_days": [
+      "event_lag_days"
+    ],
+    "dust_event": [
+      "dust_event"
+    ],
+    "secondary_aerosol_production": [
+      "secondary_aerosol_production"
+    ],
+    "solar_zenith_angle": [
+      "solar_zenith_angle"
+    ],
+    "pm25_initial": [
+      "pm25_initial"
+    ],
+    "visibility": [
+      "visibility"
+    ],
+    "elevation_gradient": [
+      "elevation_gradient"
+    ],
+    "monsoon_cycle_duration": [
+      "monsoon_cycle_duration"
+    ],
+    "no2": [
+      "no2_concentration"
+    ],
+    "nox_presence": [
+      "nox_presence"
+    ],
+    "fog_indicator": [
+      "fog_indicator"
+    ],
+    "wind_direction_source": [
+      "wind_direction_source"
+    ],
+    "emission_regime": [
+      "emission_regime"
+    ],
+    "vertical_motion": [
+      "vertical_motion"
+    ],
+    "enso_phase": [
+      "enso_phase"
+    ],
+    "surface_heating": [
+      "surface_heating"
+    ],
+    "cloud_liquid_water": [
+      "cloud_liquid_water"
+    ],
+    "sensor_humidity_control": [
+      "sensor_humidity_control"
+    ],
+    "precipitation_occurrence": [
+      "precipitation_occurrence"
+    ],
+    "accumulated_precipitation_mm": [
+      "accumulated_precipitation_mm"
+    ],
+    "burning_type": [
+      "burning_type"
+    ],
+    "uv_radiation": [
+      "uv_radiation"
     ]
   },
   "summary": {
     "total_canonical_fields": 117,
     "total_synonym_groups": 117,
     "categories": [
-      "aerosol_properties",
       "atmospheric_structure",
+      "events",
+      "processes",
+      "sources",
+      "meteorology",
+      "temporal",
+      "aerosol_properties",
+      "other",
       "pollutants",
       "spatial",
-      "temporal",
-      "qualitative",
-      "sources",
-      "processes",
-      "meteorology",
-      "other",
-      "events"
+      "qualitative"
     ]
   }
 }

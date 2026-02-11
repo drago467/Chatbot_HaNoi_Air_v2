@@ -26,3 +26,6 @@ Thumbs.db
 docs/
 causal/prompts/
 causal/causal_knowledge/docs/
+
+# Markdown
+*.md

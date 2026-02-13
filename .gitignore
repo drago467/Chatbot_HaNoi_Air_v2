@@ -29,3 +29,6 @@ causal/causal_knowledge/docs/
 
 # Markdown
 *.md
+
+# Text
+*.txt

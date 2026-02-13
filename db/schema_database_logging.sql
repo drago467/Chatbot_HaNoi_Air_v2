@@ -1,7 +1,6 @@
 -- PostgreSQL schema for Hanoi Air Chatbot
 -- Core data tables (A1) + Logging & Evaluation tables (A2)
 
--- 1) Dimension: locations
 
 CREATE TABLE IF NOT EXISTS locations (
     location_id         SERIAL PRIMARY KEY,
@@ -9,7 +8,7 @@ CREATE TABLE IF NOT EXISTS locations (
     hanoiair_admin_id    VARCHAR(50),
     name_vi              VARCHAR(255) NOT NULL,
     name_norm            VARCHAR(255) NOT NULL,
-    type                 VARCHAR(20) NOT NULL, -- 'city' | 'ward'
+    type                 VARCHAR(20) NOT NULL, -- 'city' | 'ward' | 'district'
     lat                  DOUBLE PRECISION,
     lon                  DOUBLE PRECISION,
     bbox                 JSONB,                -- {minx, miny, maxx, maxy}
@@ -19,6 +18,24 @@ CREATE TABLE IF NOT EXISTS locations (
 
 CREATE INDEX IF NOT EXISTS idx_locations_name_norm
     ON locations (name_norm);
+
+
+-- 1b) Dimension: location_district_membership (virtual districts -> wards/communes)
+-- Mapping mỗi quận/huyện/thị xã (location.type='district') tới các đơn vị con (location.type='ward')
+
+CREATE TABLE IF NOT EXISTS location_district_membership (
+    id                   SERIAL PRIMARY KEY,
+    district_location_id INTEGER NOT NULL REFERENCES locations(location_id) ON DELETE CASCADE,
+    ward_location_id     INTEGER NOT NULL REFERENCES locations(location_id) ON DELETE CASCADE,
+    created_at           TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CONSTRAINT uq_location_district_membership UNIQUE (district_location_id, ward_location_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_location_district_membership_district
+    ON location_district_membership (district_location_id);
+
+CREATE INDEX IF NOT EXISTS idx_location_district_membership_ward
+    ON location_district_membership (ward_location_id);
 
 
 -- 2) Dimension: api_sources
